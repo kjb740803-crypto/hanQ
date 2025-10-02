@@ -6,9 +6,9 @@
     <Module url="Grid.json"/>
     <Module url="DeviceAPI.json"/>
     <Module url="ListView.json"/>
-    <Module url="EduLib.json"/>
-  </Modules>
-  <Components>
+    <Module url="EduLib.json"/>         
+  </Modules>   
+  <Components>   
     <Component type="JavaScript" id="Button" classname="nexacro.Button"/>
     <Component type="JavaScript" id="Combo" classname="nexacro.Combo"/>
     <Component type="JavaScript" id="Edit" classname="nexacro.Edit"/>
