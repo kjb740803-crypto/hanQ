@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Mobile_Main_Sub" width="480" height="680" titletext="New Form">
+    <Layouts>
+      <Layout height="680" mobileorientation="portrait" screenid="Phone_screen" width="480"/>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[]]></Script>
+    <Objects/>
+  </Form>
+</FDL>

@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Mobile_Work" width="480" height="840" titletext="New Form" onload="Form_onload">
+    <Layouts>
+      <Layout height="840" mobileorientation="portrait" screenid="Phone_screen" width="480">
+        <Static id="st_title" taborder="0" text="회원관리" left="10" top="5" width="110" height="30" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" cssclass="sta_WF_emptitle"/>
+        <Div id="div_search" taborder="1" left="10" top="40" height="50" right="10" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" cssclass="div_WFSA">
+          <Layouts>
+            <Layout>
+              <Edit id="edt_emp_no" taborder="0" left="81" top="9" width="70" height="30"/>
+              <Button id="btnEmp" taborder="1" text="" left="154" top="12" width="24" height="24" verticalAlign="" cssclass="btn_WF_search" onclick="div_search_btnEmp_onclick"/>
+              <Edit id="edt_emp_nm" taborder="2" left="181" top="9" width="108" height="30"/>
+              <Static id="Static00" taborder="3" text="회원정보" left="4" top="14" width="72" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+              <Edit id="edt_phone" taborder="4" left="293" top="9" width="159" height="30"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="btn_retrieve" taborder="2" text="조회" top="5" width="78" height="30" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" onclick="btn_retrieve_onclick" left="128"/>
+        <Button id="btn_add" taborder="3" text="추가" top="5" width="78" height="30" onclick="btn_add_onclick" left="216"/>
+        <Button id="btn_del" taborder="4" text="삭제" top="5" width="78" height="30" onclick="btn_del_onclick" left="304"/>
+        <Button id="btn_save" taborder="5" text="저장" top="5" width="78" height="30" onclick="btn_save_onclick" left="392"/>
+        <Tab id="Tab00" taborder="6" tabindex="0" left="10" top="98" bottom="11" right="10" tabjustify="true">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="강습내용">
+              <Layouts>
+                <Layout>
+                  <Grid id="Grid00" taborder="0" left="4" top="6" width="451" height="350" binddataset="ds_history" autofittype="col" summarytype="top">
+                    <Formats>
+                      <Format id="default">
+                        <Columns>
+                          <Column size="49"/>
+                          <Column size="130"/>
+                          <Column size="80"/>
+                          <Column size="96"/>
+                          <Column size="97"/>
+                        </Columns>
+                        <Rows>
+                          <Row size="40" band="head"/>
+                          <Row size="40"/>
+                          <Row size="30" band="summ"/>
+                        </Rows>
+                        <Band id="head">
+                          <Cell text="No"/>
+                          <Cell col="1" text="강습일자"/>
+                          <Cell col="2" text="구분"/>
+                          <Cell col="3" text="시작일시"/>
+                          <Cell col="4" text="종료일시"/>
+                        </Band>
+                        <Band id="body">
+                          <Cell text="expr:dataset.getRowCount() - currow " textAlign="center"/>
+                          <Cell col="1" text="bind:REG_DT" textAlign="center" displaytype="mask" maskedittype="string" maskeditformat="####-##-##"/>
+                          <Cell col="2" text="expr:GUBUN == &quot;001&quot; ? &quot;유료&quot; : GUBUN == &quot;002&quot; ? &quot;자율&quot; : &quot;기타&quot;" textAlign="center"/>
+                          <Cell col="3" text="expr:START_DT.substr(0,2) +&quot;:&quot;+ START_DT.substr(3,2)" displaytype="normal" textAlign="center"/>
+                          <Cell col="4" text="expr:END_DT.substr(0,2) +&quot;:&quot;+ END_DT.substr(3,2)" textAlign="center"/>
+                        </Band>
+                        <Band id="summary">
+                          <Cell text="유료"/>
+                          <Cell col="1" text="expr:dataset.getCaseCount(&quot;GUBUN == '001'&quot;)" color="blue"/>
+                          <Cell col="2" text="기타"/>
+                          <Cell col="3" text="expr:dataset.getCaseCount(&quot;GUBUN != '001'&quot;)" color="red"/>
+                          <Cell col="4"/>
+                        </Band>
+                      </Format>
+                    </Formats>
+                  </Grid>
+                  <Static id="Static00_00_00" taborder="1" text="강습일자" left="10" top="373" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Calendar id="Calendar00" taborder="2" left="94" top="366" width="147" height="35"/>
+                  <Radio id="Radio00" taborder="3" left="257" top="365" width="191" height="37" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" columncount="3">
+                    <Dataset id="innerdataset">
+                      <ColumnInfo>
+                        <Column id="codecolumn" size="256"/>
+                        <Column id="datacolumn" size="256"/>
+                      </ColumnInfo>
+                      <Rows>
+                        <Row>
+                          <Col id="codecolumn">001</Col>
+                          <Col id="datacolumn">유료</Col>
+                        </Row>
+                        <Row>
+                          <Col id="codecolumn">002</Col>
+                          <Col id="datacolumn">자율</Col>
+                        </Row>
+                        <Row>
+                          <Col id="codecolumn">003</Col>
+                          <Col id="datacolumn">기타</Col>
+                        </Row>
+                      </Rows>
+                    </Dataset>
+                  </Radio>
+                  <Static id="Static00_00_00_00_00" taborder="4" text="진행시간" left="10" top="412" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00_00_00_01" taborder="5" text="~" left="263" top="412" width="16" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <TextArea id="TextArea00" taborder="6" left="94" top="481" width="355" height="120"/>
+                  <TextArea id="TextArea00_00" taborder="7" left="94" top="605" width="355" height="88"/>
+                  <Static id="Static00_00_00_00_00_00" taborder="8" text="강습내용" left="10" top="531" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00_00_00_00_00_00" taborder="9" text="메모" left="10" top="639" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00_00_00_00_01" taborder="10" text="강습장소" left="10" top="450" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Combo id="Combo00_02" taborder="11" text="Combo00" left="94" top="444" width="355" height="33" innerdataset="ds_place" codecolumn="COMMON_CD" datacolumn="COMMON_NM"/>
+                  <MaskEdit id="MaskEdit00" taborder="12" left="94" top="405" width="147" height="35" type="string" format="##:##:##"/>
+                  <MaskEdit id="MaskEdit00_00" taborder="13" left="303" top="405" width="147" height="35" type="string" format="##:##:##"/>
+                </Layout>
+                <Layout name="default0"/>
+              </Layouts>
+            </Tabpage>
+            <Tabpage id="Tabpage2" text="강습비">
+              <Layouts>
+                <Layout>
+                  <Grid id="Grid00" taborder="0" left="5" top="5" height="473" binddataset="ds_pay" autofittype="col" right="5">
+                    <Formats>
+                      <Format id="default">
+                        <Columns>
+                          <Column size="54"/>
+                          <Column size="165"/>
+                          <Column size="103"/>
+                          <Column size="103"/>
+                        </Columns>
+                        <Rows>
+                          <Row size="40" band="head"/>
+                          <Row size="40"/>
+                          <Row size="30" band="summ"/>
+                        </Rows>
+                        <Band id="head">
+                          <Cell text="No"/>
+                          <Cell col="1" text="금액"/>
+                          <Cell col="2" text="수입/지출"/>
+                          <Cell col="3" text="등록일자"/>
+                        </Band>
+                        <Band id="body">
+                          <Cell text="expr:dataset.getRowCount() - currow" textAlign="center"/>
+                          <Cell col="1" text="bind:PAY_AMT" textAlign="right"/>
+                          <Cell col="2" text="expr:GUBUN == &quot;001&quot; ? &quot;수입(입금)&quot; : GUBUN == &quot;002&quot; ? &quot;지출(반환)&quot; : &quot;기타&quot;" textAlign="center"/>
+                          <Cell col="3" text="bind:REG_DT" textAlign="center"/>
+                        </Band>
+                        <Band id="summary">
+                          <Cell text="합계"/>
+                          <Cell col="1" text="expr:dataset.getSum(&quot;PAY_AMT&quot;)" textAlign="right" displaytype="number"/>
+                          <Cell col="2"/>
+                          <Cell col="3"/>
+                        </Band>
+                      </Format>
+                    </Formats>
+                  </Grid>
+                  <TextArea id="TextArea00" taborder="1" left="30" top="595" width="399" height="90"/>
+                  <Static id="Static00" taborder="2" text="금액" left="30" top="497" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00" taborder="3" text="수입/지출" left="30" top="527" width="84" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00_00" taborder="4" text="등록일자" left="30" top="557" width="84" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <MaskEdit id="me_amt" taborder="5" left="132" top="489" width="227" height="35" textAlign="right" format="#,##0"/>
+                  <Radio id="Radio00" taborder="6" left="132" top="520" width="230" height="35" onitemchanged="Tab00_Tabpage2_Radio00_onitemchanged" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" columncount="2">
+                    <Dataset id="innerdataset">
+                      <ColumnInfo>
+                        <Column id="codecolumn" size="256"/>
+                        <Column id="datacolumn" size="256"/>
+                      </ColumnInfo>
+                      <Rows>
+                        <Row>
+                          <Col id="codecolumn">001</Col>
+                          <Col id="datacolumn">수입(입금)</Col>
+                        </Row>
+                        <Row>
+                          <Col id="codecolumn">002</Col>
+                          <Col id="datacolumn">지출(반환)</Col>
+                        </Row>
+                      </Rows>
+                    </Dataset>
+                  </Radio>
+                  <Calendar id="Calendar00" taborder="7" left="132" top="551" width="227" height="35"/>
+                </Layout>
+                <Layout name="default0"/>
+              </Layouts>
+            </Tabpage>
+            <Tabpage id="Tabpage3" text="회원정보(상세)">
+              <Layouts>
+                <Layout>
+                  <Static id="Static00" taborder="0" text="회원번호" left="20" top="17" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Edit id="edt_emp_no" taborder="1" left="107" top="12" width="192" height="30"/>
+                  <Static id="Static00_00" taborder="2" text="성명" left="20" top="57" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Edit id="edt_name" taborder="3" left="107" top="52" width="192" height="30"/>
+                  <Static id="Static00_00_00" taborder="4" text="전화번호" left="20" top="97" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Edit id="edt_phone" taborder="5" left="107" top="92" width="192" height="30"/>
+                  <Static id="Static00_00_00_00" taborder="6" text="주소" left="20" top="137" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Edit id="edt_address" taborder="7" left="107" top="132" width="340" height="30"/>
+                  <Static id="Static00_00_00_00_00" taborder="8" text="등록일자" left="20" top="407" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00_00_00_00_00" taborder="9" text="수정일자" left="20" top="448" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00_00_00_00_01" taborder="10" text="상태" left="20" top="564" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00_00_00_00_01_00" taborder="11" text="메모" left="20" top="217" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <TextArea id="edt_memo" taborder="12" left="106" top="213" width="341" height="179"/>
+                  <Static id="Static00_00_00_00_00_02" taborder="13" text="생년월일" left="20" top="177" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Static id="Static00_00_00_00_00_01_01" taborder="14" text="아이디" left="20" top="487" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Edit id="edt_login_id" taborder="15" left="107" top="482" width="192" height="30"/>
+                  <Static id="Static00_00_00_00_00_01_01_00" taborder="16" text="비번" left="20" top="527" width="78" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+                  <Edit id="edt_login_pwd" taborder="17" left="107" top="522" width="192" height="30"/>
+                  <Calendar id="cal_reg_dt" taborder="18" left="107" top="402" width="192" height="30"/>
+                  <Calendar id="cal_update_dt" taborder="19" left="107" top="443" width="192" height="30"/>
+                  <Calendar id="cal_birthday" taborder="20" left="107" top="172" width="192" height="30"/>
+                  <Radio id="Radio00" taborder="21" left="96" top="560" width="243" height="28" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" columncount="2">
+                    <Dataset id="innerdataset">
+                      <ColumnInfo>
+                        <Column id="codecolumn" size="256"/>
+                        <Column id="datacolumn" size="256"/>
+                      </ColumnInfo>
+                      <Rows>
+                        <Row>
+                          <Col id="codecolumn">1</Col>
+                          <Col id="datacolumn">정상</Col>
+                        </Row>
+                        <Row>
+                          <Col id="codecolumn">0</Col>
+                          <Col id="datacolumn">탈퇴(삭제)</Col>
+                        </Row>
+                      </Rows>
+                    </Dataset>
+                  </Radio>
+                </Layout>
+                <Layout name="default0"/>
+              </Layouts>
+            </Tabpage>
+          </Tabpages>
+        </Tab>
+      </Layout>
+      <Layout height="728" mobileorientation="portrait" screenid="Phone_screen" width="480" name="default0"/>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_member">
+        <ColumnInfo>
+          <Column id="MEMBER_NO" type="STRING" size="32"/>
+          <Column id="MEMBER_NAME" type="STRING" size="32"/>
+          <Column id="MEMBER_PHONE" type="STRING" size="256"/>
+          <Column id="MEMBER_ADDRESS" type="STRING" size="256"/>
+          <Column id="REG_DT" type="STRING" size="256"/>
+          <Column id="UPDATE_DT" type="STRING" size="256"/>
+          <Column id="STATUS" type="STRING" size="256"/>
+          <Column id="MEMO" type="STRING" size="256"/>
+          <Column id="LOGIN_ID" type="STRING" size="256"/>
+          <Column id="LOGIN_PWD" type="STRING" size="256"/>
+          <Column id="BIRTHDAY" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_history">
+        <ColumnInfo>
+          <Column id="MEMBER_NO" type="STRING" size="256"/>
+          <Column id="SEQ" type="STRING" size="256"/>
+          <Column id="REG_DT" type="STRING" size="256"/>
+          <Column id="HISTORY_INFO" type="STRING" size="256"/>
+          <Column id="GUBUN" type="STRING" size="256"/>
+          <Column id="START_DT" type="STRING" size="256"/>
+          <Column id="END_DT" type="STRING" size="256"/>
+          <Column id="MEMO" type="STRING" size="256"/>
+          <Column id="PLACE" type="STRING" size="256"/>
+          <Column id="UPDATE_DT" type="STRING" size="256"/>
+          <Column id="STATUS" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_pay">
+        <ColumnInfo>
+          <Column id="MEMBER_NO" type="STRING" size="256"/>
+          <Column id="SEQ" type="STRING" size="256"/>
+          <Column id="PAY_AMT" type="STRING" size="256"/>
+          <Column id="MEMO" type="STRING" size="256"/>
+          <Column id="GUBUN" type="STRING" size="256"/>
+          <Column id="REG_DT" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_place">
+        <ColumnInfo>
+          <Column id="COMMON_CD" type="STRING" size="256"/>
+          <Column id="COMMON_NM" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_fram_hh">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">06</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">07</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">08</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">09</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">10</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">11</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">12</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">13</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">14</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">15</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">16</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">17</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">18</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">19</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">20</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">21</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">22</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">23</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">24</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_fram_mm">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">00</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">10</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">20</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">30</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">40</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">50</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">60</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_to_hh">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">06</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">07</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">08</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">09</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">10</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">11</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">12</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">13</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">14</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">15</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">16</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">17</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">18</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">19</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">20</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">21</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">22</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">23</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">24</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_to_mm">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">00</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">10</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">20</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">30</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">40</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">50</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">60</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[include "Lib::Common.xjs"
+
+this.Form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.fn_init();
+};
+
+this.fn_init = function(obj)
+{
+	this.gfn_transCOMMClear();   
+	// input , output,args,select  
+	var args =  "KIND='002'"	  
+	this.gfn_addTransInfo("","output",args,"003,Common,1");	
+    
+	var strSvcId    = "strCode";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";           
+	var outData     = "ds_place=output";
+	var strArg      =  "";
+	  
+	var callBackFnc = "fnCallback";      
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}  
+
+  
+// Dept Popup Callback
+this.fn_callback_pop = function(sPopupId, sReturn)
+{
+	if(sReturn == undefined){
+		sReturn = "";
+	}
+	if(sPopupId == "popDept")
+	{
+		if(sReturn.length > 0){
+			var arrRtn = sReturn.split("|");
+			this.div_search.form.edt_emp_no.set_value(arrRtn[0]);
+			this.div_search.form.edt_emp_nm.set_value(arrRtn[1]);
+			this.div_search.form.edt_phone.set_value(arrRtn[2]);
+			this.fn_query(true);
+		}  
+	}  
+}
+
+// Search Area Reset
+this.div_cont_btn_reset_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.div_search.form.edt_dept_cd.set_value("");
+	this.div_search.form.edt_dept_nm.set_value("");
+};
+
+// Retrieve Button
+this.btn_retrieve_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fn_query(true);	
+};
+
+this.fn_query = function(flag)
+{
+
+	this.gfn_transCOMMClear();   
+	// input , output,args,select  
+	var args =  "MEMBER_NO='" +this.div_search.form.edt_emp_no.value + "'";
+	if(flag == true)
+	{		
+		this.gfn_addTransInfo("","output",args,"003,Member,2");	
+		this.gfn_addTransInfo("","output2",args,"003,Member,3");	
+		this.gfn_addTransInfo("","output3",args,"003,Member,4");	
+		var outData     = "ds_history=output ds_pay=output2 ds_member=output3";		
+	} else {
+		this.gfn_addTransInfo("","output",args,"003,Member,2");	
+		this.gfn_addTransInfo("","output2",args,"003,Member,3");	
+		var outData     = "ds_history=output ds_pay=output2";		
+	}	
+   
+	var strSvcId    = "search";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";           
+
+	var strArg      = "MEMBER_NO='" +this.div_search.form.edt_emp_no.value + "'";
+	  
+	var callBackFnc = "fnCallback";      
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+
+// Add Button
+this.btn_add_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	if(this.Tab00.tabindex == 2)
+	{  
+		if(this.confirm("신규 회원을 들록하시겠습니까?"))
+		{ 
+			this.div_search.form.edt_emp_no.set_value("");
+			this.div_search.form.edt_emp_nm.set_value("");
+			this.div_search.form.edt_phone.set_value("");
+
+			this.ds_member.insertRow(0);
+			this.ds_member.setColumn(this.ds_member.rowposition,"STATUS","1");
+			this.fn_query(false);
+		}
+		
+	} else {
+
+		if(this.gfn_isNull(this.div_search.form.edt_emp_no.value)) 
+		{
+			alert("회원정보를 선택하세요");
+			this.div_search.form.edt_emp_no.setFocus();
+			return;
+		}
+		if(this.Tab00.tabindex == 0)
+		{
+			this.ds_history.insertRow(0);
+			this.ds_history.setColumn(this.ds_history.rowposition,"MEMBER_NO",this.div_search.form.edt_emp_no.value);
+			this.ds_history.setColumn(this.ds_history.rowposition,"GUBUN","001");
+			this.ds_history.setColumn(this.ds_history.rowposition,"PLACE","001");
+			this.ds_history.setColumn(this.ds_history.rowposition,"STATUS","1");
+			this.ds_history.setColumn(this.ds_history.rowposition,"REG_DT",this.gfn_getDate("date"));
+			this.ds_history.setColumn(this.ds_history.rowposition,"START_DT","100000");
+			this.ds_history.setColumn(this.ds_history.rowposition,"END_DT","120000");
+			
+			
+		} else if(this.Tab00.tabindex == 1)
+		{  
+			this.ds_pay.insertRow(0);
+			this.ds_pay.setColumn(this.ds_pay.rowposition,"MEMBER_NO",this.div_search.form.edt_emp_no.value);
+			this.ds_pay.setColumn(this.ds_pay.rowposition,"GUBUN","001");
+			this.ds_pay.setColumn(this.ds_pay.rowposition,"PAY_AMT","200000");
+			this.ds_pay.setColumn(this.ds_pay.rowposition,"REG_DT",this.gfn_getDate("date"));
+			this.ds_pay.setColumn(this.ds_pay.rowposition,"MEMO","강습비");
+		} 
+	}	
+};
+
+// Delete Button
+this.btn_del_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	if(this.gfn_isNull(this.div_search.form.edt_emp_no.value)) 
+	{
+		alert("회원정보를 선택하세요");
+		this.div_search.form.edt_emp_no.setFocus();
+		return;
+	}
+	if(this.confirm("정말로 삭제하시겠습니까?"))
+	{	
+		if(this.Tab00.tabindex == 0)
+		{
+			this.ds_history.deleteRow(this.ds_history.rowposition);
+		} else if(this.Tab00.tabindex == 1)
+		{			
+			this.ds_pay.deleteRow(this.ds_pay.rowposition);
+		} else if(this.Tab00.tabindex == 2)  
+		{			
+			this.ds_member.deleteRow(this.ds_member.rowposition);
+		}  
+	}
+};
+
+// Save Button
+this.btn_save_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	if(this.Tab00.tabindex == 2)
+	{
+		this.fn_membersave();
+	} else {
+		if(this.gfn_isNull(this.div_search.form.edt_emp_no.value)) 
+		{
+			alert("회원정보를 선택하세요");
+			this.div_search.form.edt_emp_no.setFocus();
+			return;
+		}
+		if(this.Tab00.tabindex == 0)
+		{
+			this.fn_save();
+		} else if(this.Tab00.tabindex == 1)
+		{
+			this.fn_paysave();
+		}
+	} 
+		
+};
+
+this.fn_save = function()
+{
+	this.Tab00.Tabpage1.form.Calendar00.updateToDataset();
+	
+	var args = "";    
+
+	this.gfn_transCOMMClear();  
+	this.gfn_addTransInfo("input","",args,"","003,Member,5","003,Member,7","003,Member,6");	
+
+	var strSvcId    = "strHistorySave";    
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "input=ds_history:U";
+	var outData     = "";          
+	var strArg      = "";  
+	var callBackFnc = "fnCallback";
+     
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+
+this.fn_membersave = function()
+{
+	this.Tab00.Tabpage1.form.Calendar00.updateToDataset();
+	
+	var args = "";    
+
+	this.gfn_transCOMMClear();  
+	this.gfn_addTransInfo("input","",args,"","003,Member,8","003,Member,9","003,Member,10");	
+
+	var strSvcId    = "strMemberSave";    
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "input=ds_member:U";
+	var outData     = "";            
+	var strArg      = "";  
+	var callBackFnc = "fnCallback";
+     
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+this.fn_paysave = function()
+{
+	this.Tab00.Tabpage1.form.Calendar00.updateToDataset();
+	
+	var args = "";    
+
+	this.gfn_transCOMMClear();  
+	this.gfn_addTransInfo("input","",args,"","003,PayInfo,2","003,PayInfo,3","003,PayInfo,4");	
+    
+	var strSvcId    = "strPaySave";    
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "input=ds_pay:U";
+	var outData     = "";          
+	var strArg      = "";    
+	var callBackFnc = "fnCallback";
+     
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+this.fnCallback = function(svcID, errCD, errMSG)
+{
+	if(errCD < 0){
+		this.alert("Error: " + errMSG);
+		return;
+	}
+	
+	if(svcID == "strHistorySave")
+	{
+		this.alert("저장되었습니다.");
+		this.fn_query(true);
+		return;
+	} else if(svcID == "strPaySave")
+	{
+		this.alert("저장되었습니다.");
+		this.fn_query(true);
+		return;
+	} else if(svcID == "strMemberSave")	
+	{
+		this.alert("저장되었습니다.");
+		this.fn_query(true);
+		return;
+	} 
+	
+}
+
+
+
+// Today
+this.fn_today = function()
+{
+	var objDate = new Date();
+	var sToday  = objDate.getFullYear().toString();
+	    sToday += (objDate.getMonth()+1).toString().padLeft(2, "0")
+	    sToday += objDate.getDate().toString().padLeft(2, "0"); 
+
+	return sToday;
+}
+
+// Gender Code --> Name
+this.fn_gender = function(arg)
+{
+	if(arg == "M"){
+		return "Male";
+	}
+	else{
+		return "Female";
+	}
+}
+
+this.grd_list_onheadclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+//	this.cfn_GridSort(obj, e);
+};
+
+
+this.ds_emp_onrowsetchanged = function(obj:nexacro.NormalDataset,e:nexacro.DSRowsetChangeEventInfo)
+{
+	if(e.reason == 31){
+		this.setTimer(1, 20);
+	}
+};
+
+this.Form_Emp_ontimer = function(obj:nexacro.Form,e:nexacro.TimerEventInfo)
+{
+	if(e.timerid == 1){
+		this.killTimer(1);
+		this.fn_setRow(0);
+	}
+};
+
+this.fn_setRow = function(nRow)
+{
+	
+}
+this.div_search_btnEmp_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var nLeft = system.clientToScreenX(this, 10);
+	var nTop  = system.clientToScreenY(this, 10);
+
+	var objChild = new ChildFrame("popDept", "absolute", nLeft, nTop, 300, 400);
+	objChild.set_formurl("Popup::Pop_EmpSearch.xfdl");
+	objChild.set_openalign("center middle");
+	objChild.set_dragmovetype("all");  
+	
+	var objParam = {paramGubun:"D"};  
+
+    objChild.showModal(this.getOwnerFrame()
+                     , objParam   
+                     , this
+                     , "fn_callback_pop");
+	
+};
+
+this.Tab00_Tabpage2_Radio00_onitemchanged = function(obj:nexacro.Radio,e:nexacro.ItemChangeEventInfo)
+{
+	
+};
+
+this.Tab00_Tabpage2_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+};
+
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+};
+]]></Script>
+    <Bind>
+      <BindItem id="item0" compid="Tab00.Tabpage2.form.TextArea00" propid="value" datasetid="ds_pay" columnid="MEMO"/>
+      <BindItem id="item1" compid="Tab00.Tabpage2.form.me_amt" propid="value" datasetid="ds_pay" columnid="PAY_AMT"/>
+      <BindItem id="item2" compid="Tab00.Tabpage2.form.Radio00" propid="value" datasetid="ds_pay" columnid="GUBUN"/>
+      <BindItem id="item3" compid="Tab00.Tabpage2.form.Calendar00" propid="value" datasetid="ds_pay" columnid="REG_DT"/>
+      <BindItem id="item4" compid="Tab00.Tabpage3.form.edt_login_pwd" propid="value" datasetid="ds_member" columnid="LOGIN_PWD"/>
+      <BindItem id="item5" compid="Tab00.Tabpage3.form.edt_login_id" propid="value" datasetid="ds_member" columnid="LOGIN_ID"/>
+      <BindItem id="item9" compid="Tab00.Tabpage3.form.edt_memo" propid="value" datasetid="ds_member" columnid="MEMO"/>
+      <BindItem id="item11" compid="Tab00.Tabpage3.form.edt_address" propid="value" datasetid="ds_member" columnid="MEMBER_ADDRESS"/>
+      <BindItem id="item12" compid="Tab00.Tabpage3.form.edt_phone" propid="value" datasetid="ds_member" columnid="MEMBER_PHONE"/>
+      <BindItem id="item13" compid="Tab00.Tabpage3.form.edt_name" propid="value" datasetid="ds_member" columnid="MEMBER_NAME"/>
+      <BindItem id="item14" compid="Tab00.Tabpage3.form.edt_emp_no" propid="value" datasetid="ds_member" columnid="MEMBER_NO"/>
+      <BindItem id="item6" compid="Tab00.Tabpage3.form.cal_reg_dt" propid="value" datasetid="ds_member" columnid="REG_DT"/>
+      <BindItem id="item7" compid="Tab00.Tabpage3.form.cal_birthday" propid="value" datasetid="ds_member" columnid="BIRTHDAY"/>
+      <BindItem id="item15" compid="Tab00.Tabpage3.form.cal_update_dt" propid="value" datasetid="ds_member" columnid="UPDATE_DT"/>
+      <BindItem id="item16" compid="Tab00.Tabpage1.form.Calendar00" propid="value" datasetid="ds_history" columnid="REG_DT"/>
+      <BindItem id="item17" compid="Tab00.Tabpage1.form.Radio00" propid="value" datasetid="ds_history" columnid="GUBUN"/>
+      <BindItem id="item18" compid="Tab00.Tabpage1.form.TextArea00" propid="value" datasetid="ds_history" columnid="HISTORY_INFO"/>
+      <BindItem id="item10" compid="Tab00.Tabpage1.form.TextArea00_00" propid="value" datasetid="ds_history" columnid="MEMO"/>
+      <BindItem id="item19" compid="Tab00.Tabpage1.form.Combo00_02" propid="value" datasetid="ds_history" columnid="PLACE"/>
+      <BindItem id="item22" compid="Tab00.Tabpage1.form.MaskEdit00" propid="value" datasetid="ds_history" columnid="START_DT"/>
+      <BindItem id="item20" compid="Tab00.Tabpage1.form.MaskEdit00_00" propid="value" datasetid="ds_history" columnid="END_DT"/>
+      <BindItem id="item8" compid="Tab00.Tabpage3.form.Radio00" propid="value" datasetid="ds_member" columnid="STATUS"/>
+    </Bind>
+  </Form>
+</FDL>

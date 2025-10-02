@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="colorfultreemenu" width="1280" height="720" titletext="[디자인] Colorful Tree Menu (Depth별 디자인 적용된 트리 메뉴)">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Grid id="Grid00" taborder="0" left="31" top="28" width="249" height="652" binddataset="Dataset00" treeinitstatus="expand,all" treeusecheckbox="false" treeuseline="false" scrollbartype="autoindicator" autofittype="col" treeuseexpandkey="false" treeuseimage="true" treeusebutton="no" oncellclick="Grid00_oncellclick">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="200"/>
+              </Columns>
+              <Rows>
+                <Row size="30"/>
+              </Rows>
+              <Band id="body">
+                <Cell text="bind:data" displaytype="treeitemcontrol" edittype="tree" treelevel="bind:level" cssclass="expr:dataset.parent.fnSetGridCssClass(comp, level, currow)"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="Dataset00">
+        <ColumnInfo>
+          <Column id="data" type="STRING" size="256"/>
+          <Column id="level" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="data">무한상사</Col>
+            <Col id="level">0</Col>
+          </Row>
+          <Row>
+            <Col id="data">관리부</Col>
+            <Col id="level">1</Col>
+          </Row>
+          <Row>
+            <Col id="data">재무관리팀</Col>
+            <Col id="level">2</Col>
+          </Row>
+          <Row>
+            <Col id="data">유재석</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">김종국</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">송지효</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">양세찬</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">개발사업부</Col>
+            <Col id="level">1</Col>
+          </Row>
+          <Row>
+            <Col id="data">설계팀</Col>
+            <Col id="level">2</Col>
+          </Row>
+          <Row>
+            <Col id="data">지석진</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">이광수</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">전소민</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">관리팀</Col>
+            <Col id="level">2</Col>
+          </Row>
+          <Row>
+            <Col id="data">박명수</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">정준하</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">정형돈</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">하동훈</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">노홍철</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">영업부</Col>
+            <Col id="level">1</Col>
+          </Row>
+          <Row>
+            <Col id="data">영업1팀</Col>
+            <Col id="level">2</Col>
+          </Row>
+          <Row>
+            <Col id="data">강호동</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">이수근</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">은지원</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">영업2팀</Col>
+            <Col id="level">2</Col>
+          </Row>
+          <Row>
+            <Col id="data">조규현</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">송민호</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">표지훈</Col>
+            <Col id="level">3</Col>
+          </Row>
+          <Row>
+            <Col id="data">안재현</Col>
+            <Col id="level">3</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/**
+*  @MenuPath    techtip > colorfultreemenu
+*  techtip [디자인] Colorful Tree Menu (Depth별 디자인 적용된 트리 메뉴)
+
+*  @FileName	colorfultreemenu.xfdl 
+*******************************************************************************
+*  2021.04.27		투비대원&투비미뇽		최초 생성
+*******************************************************************************
+*/
+
+/**************************************************************************
+ * include 영역 
+ **************************************************************************/
+ 
+/**************************************************************************
+ * FORM 변수 선언 영역
+ **************************************************************************/
+ 
+/**************************************************************************
+ * FORM EVENT 영역(onload)
+ **************************************************************************/
+/**
+ * @description 화면 onload시 처리내역
+*/
+
+//Tree 메뉴 클릭 이벤트
+this.Grid00_oncellclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+	//Tree Row Index 가져오기
+	var nTreeRow = obj.getTreeRow(e.row)
+	
+	//현재 트리 상태 가져오기
+	var sStatus = obj.getTreeStatus(nTreeRow);
+	
+	//접기상태일 경우
+	if(sStatus=="0")
+	{
+		//펼치기 상태로 변경
+		obj.setTreeStatus(nTreeRow, 1);
+	}
+	//펼치기 상태로 변경
+	else if(sStatus=="1")
+	{
+		//접기 상태로 변경
+		obj.setTreeStatus(nTreeRow, 0);
+	}
+};
+
+/**************************************************************************
+ * 사용자 FUNCTION 영역
+ **************************************************************************/
+
+/**
+* @description 		: Depth별 CSSCLASS를 적용하기 위한 expr용 함수
+* @param objGrid	: 그리드 컴포넌트
+* @param nLevel     : 현재 Row의 Tree Level
+* @param nRow       : 현재 Row Index
+* @return 			: 없음
+*/
+this.fnSetGridCssClass = function(objGrid, nLevel, nRow)
+{
+	//Tree Row Index 가져오기
+	var nTreeRow = objGrid.getTreeRow(nRow)
+	
+	//현재 트리 상태 가져오기
+	var sStatus = objGrid.getTreeStatus(nTreeRow);
+	
+	var sCssClass = "";
+	
+	//접기 상태일 경우 접기상태 표시를 위한 CSSCLASS 적용
+	if(sStatus=="0")
+	{
+		sCssClass = "treeCellCollapse";
+	}
+	//펼치기 상태일 경우 펼치기 상태 표시를 위한 CSSCLASS 적용
+	else if(sStatus=="1")
+	{
+		sCssClass = "treeCellExpand";
+	}
+	
+	if(sStatus!="2")sCssClass +=", ";
+	
+	//Tree Level 0을 표현하기 위한 CSSCLASS 적용
+	if(nLevel==0)
+	{
+		sCssClass += "cellTreeLevel0";
+	}
+	//Tree Level 1을 표현하기 위한 CSSCLASS 적용
+	else if(nLevel==1)
+	{
+		sCssClass += "cellTreeLevel1";
+	}
+	//Tree Level 2을 표현하기 위한 CSSCLASS 적용
+	else if(nLevel==2)
+	{
+		sCssClass += "cellTreeLevel2";
+	}
+	
+	//설정될 CSSCLASS 리스트 정보를 리턴
+	return sCssClass;
+}]]></Script>
+  </Form>
+</FDL>

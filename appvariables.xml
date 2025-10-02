@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppVariables version="2.0">
+  <Datasets>
+    <Dataset id="gds_menu">
+      <ColumnInfo>
+        <Column id="MENU_ID" type="STRING" size="256"/>
+        <Column id="MENU_NAME" type="STRING" size="256"/>
+        <Column id="MENU_LEVEL" type="STRING" size="256"/>
+        <Column id="FORM_URL" type="STRING" size="256"/>
+        <Column id="MENU_ICON" type="STRING" size="256"/>
+        <Column id="MENU_ENABLE" type="STRING" size="256"/>
+        <Column id="MENU_KEY" type="STRING" size="256"/>
+        <Column id="MENU_FLAG" type="STRING" size="256"/>
+      </ColumnInfo>
+      <Rows>
+        <Row>
+          <Col id="MENU_ID">10</Col>
+          <Col id="MENU_NAME">Application</Col>
+          <Col id="MENU_LEVEL">0</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">1010</Col>
+          <Col id="MENU_NAME">Environment</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL">EnvApp::EnvApp_Base.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">1020</Col>
+          <Col id="MENU_NAME">App</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL"/>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_KEY"/>
+          <Col id="MENU_FLAG">0</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">1030</Col>
+          <Col id="MENU_NAME">System</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">0</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">20</Col>
+          <Col id="MENU_NAME">Form</Col>
+          <Col id="MENU_LEVEL">0</Col>
+          <Col id="FORM_URL"/>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">2010</Col>
+          <Col id="MENU_NAME">Hello</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL">Base::Hello.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">2020</Col>
+          <Col id="MENU_NAME">Employees</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="FORM_URL">Form::Form_Emp.xfdl</Col>
+          <Col id="MENU_KEY">Ctrl+E</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">30</Col>
+          <Col id="MENU_NAME">Component</Col>
+          <Col id="MENU_LEVEL">0</Col>
+          <Col id="FORM_URL"/>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON"/>
+          <Col id="MENU_KEY">Ctrl+B</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3010</Col>
+          <Col id="MENU_NAME">List</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL">Comp::Comp_Base.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON"/>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020</Col>
+          <Col id="MENU_NAME">Base</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL"/>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON"/>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020010</Col>
+          <Col id="MENU_NAME">Button</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Button.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_button.png</Col>
+          <Col id="MENU_KEY">Ctrl+C</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020020</Col>
+          <Col id="MENU_NAME">Calendar</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Calendar.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_cal.png</Col>
+          <Col id="MENU_KEY">Ctrl+B</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020030</Col>
+          <Col id="MENU_NAME">CheckBox</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_CheckBox.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_check.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020040</Col>
+          <Col id="MENU_NAME">Combo</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Combo.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_combo.png</Col>
+          <Col id="MENU_KEY">Ctrl+G</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020050</Col>
+          <Col id="MENU_NAME">Div</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_div.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON"/>
+          <Col id="MENU_KEY">Alt+E</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020060</Col>
+          <Col id="MENU_NAME">Edit</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Edit.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_edit.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020070</Col>
+          <Col id="MENU_NAME">Grid</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Grid.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_grid.png</Col>
+          <Col id="MENU_KEY">Alt+G</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020080</Col>
+          <Col id="MENU_NAME">Grid Cell</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Grid_Cell.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON"/>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020090</Col>
+          <Col id="MENU_NAME">ImageViewer</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_ImageViewer.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_image.png</Col>
+          <Col id="MENU_KEY">Ctrl+Shift+G</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020100</Col>
+          <Col id="MENU_NAME">ListBox</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_ListBox.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_list.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020110</Col>
+          <Col id="MENU_NAME">MaskEdit</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_MaskEdit.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_mask.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020120</Col>
+          <Col id="MENU_NAME">PopupDiv</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL"/>
+          <Col id="MENU_ENABLE">0</Col>
+          <Col id="MENU_ICON"/>
+          <Col id="MENU_FLAG">0</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020130</Col>
+          <Col id="MENU_NAME">ProgreeBar</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_ProgressBar.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_progress.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020140</Col>
+          <Col id="MENU_NAME">Radio</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Radio.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_radio.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020150</Col>
+          <Col id="MENU_NAME">Spin</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Spin.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_spin.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020160</Col>
+          <Col id="MENU_NAME">Static</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Static.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_static.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020170</Col>
+          <Col id="MENU_NAME">Tab</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_tab.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020180</Col>
+          <Col id="MENU_NAME">TexaArea</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_TextArea.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_ICON">Images::img_comp_txt.png</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020190</Col>
+          <Col id="MENU_NAME">Dataset</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_Dataset.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3020200</Col>
+          <Col id="MENU_NAME">ListView</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">Comp::Comp_ListView.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3030</Col>
+          <Col id="MENU_NAME">Extend</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL"/>
+          <Col id="MENU_ENABLE">0</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3030010</Col>
+          <Col id="MENU_NAME">File Up/Download</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="MENU_ENABLE">0</Col>
+          <Col id="FORM_URL">CompExt::CompExt_FileUpDown.xfdl</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3030020</Col>
+          <Col id="MENU_NAME">Sketch</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">CompExt::CompExt_Sketch.xfdl</Col>
+          <Col id="MENU_ENABLE">0</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3030030</Col>
+          <Col id="MENU_NAME">WebBrowser</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="MENU_ENABLE">0</Col>
+          <Col id="FORM_URL">CompExt::CompExt_WebBrowser.xfdl</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3030040</Col>
+          <Col id="MENU_NAME">GoogleMap</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="MENU_ENABLE">0</Col>
+          <Col id="FORM_URL">CompExt::CompExt_GoogleMap.xfdl</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3030050</Col>
+          <Col id="MENU_NAME">Excel Object</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="MENU_ENABLE">0</Col>
+          <Col id="FORM_URL">CompExt::CompExt_Excel.xfdl</Col>
+          <Col id="MENU_FLAG">0</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3040</Col>
+          <Col id="MENU_NAME">Common</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3040010</Col>
+          <Col id="MENU_NAME">Bind</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">CompCom::CompCom_Bind.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3040020</Col>
+          <Col id="MENU_NAME">Event</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">CompCom::CompCom_Event.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">3040030</Col>
+          <Col id="MENU_NAME">Position(Arrange)</Col>
+          <Col id="MENU_LEVEL">2</Col>
+          <Col id="FORM_URL">CompCom::CompCom_Arrange.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">40</Col>
+          <Col id="MENU_NAME">Sample</Col>
+          <Col id="MENU_LEVEL">0</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">4010</Col>
+          <Col id="MENU_NAME">ArrangeFit</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL">Smpl::ArrangeFit.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">4020</Col>
+          <Col id="MENU_NAME">ArrangeSplit</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL">Smpl::ArrangeSplit.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">4030</Col>
+          <Col id="MENU_NAME">Grid Sum</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL">Smpl::GridSum.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">4040</Col>
+          <Col id="MENU_NAME">Grid Tree</Col>
+          <Col id="MENU_LEVEL">1</Col>
+          <Col id="FORM_URL">Smpl::GridTree.xfdl</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_ID">50</Col>
+          <Col id="MENU_NAME">Template</Col>
+          <Col id="MENU_LEVEL">0</Col>
+          <Col id="MENU_ENABLE">1</Col>
+          <Col id="MENU_FLAG">0</Col>
+        </Row>
+      </Rows>
+    </Dataset>
+    <Dataset id="gds_openForm">
+      <ColumnInfo>
+        <Column id="FORM_ID" type="STRING" size="256"/>
+        <Column id="MENU_ID" type="STRING" size="256"/>
+        <Column id="MENU_NAME" type="STRING" size="256"/>
+        <Column id="FORM_URL" type="STRING" size="256"/>
+      </ColumnInfo>
+    </Dataset>
+    <Dataset id="App_Dataset">
+      <ColumnInfo>
+        <Column id="FULL_NAME" type="STRING" size="256"/>
+        <Column id="DEPT_CD" type="STRING" size="256"/>
+        <Column id="SALARY" type="INT" size="256"/>
+      </ColumnInfo>
+      <Rows>
+        <Row>
+          <Col id="FULL_NAME">Olivia</Col>
+          <Col id="DEPT_CD">01</Col>
+          <Col id="SALARY">83000</Col>
+        </Row>
+        <Row>
+          <Col id="FULL_NAME">John</Col>
+          <Col id="DEPT_CD">02</Col>
+          <Col id="SALARY">76000</Col>
+        </Row>
+        <Row>
+          <Col id="FULL_NAME">Jackson</Col>
+          <Col id="DEPT_CD">03</Col>
+          <Col id="SALARY">95000</Col>
+        </Row>
+        <Row>
+          <Col id="FULL_NAME">Maia</Col>
+          <Col id="DEPT_CD">04</Col>
+          <Col id="SALARY">60000</Col>
+        </Row>
+      </Rows>
+    </Dataset>
+    <Dataset id="gdsMessage">
+      <ColumnInfo>
+        <Column id="MSG_ID" type="STRING" size="256"/>
+        <Column id="MSG_TEXT" type="STRING" size="256"/>
+        <Column id="MSG_TYPE" type="STRING" size="2"/>
+      </ColumnInfo>
+      <Rows>
+        <Row>
+          <Col id="MSG_ID">edu.msg.check.flag</Col>
+          <Col id="MSG_TYPE">A</Col>
+          <Col id="MSG_TEXT">입실/퇴실 중 하나를 선택하세요.</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.check.item</Col>
+          <Col id="MSG_TEXT">{0}번 설문항목을 선택해 주세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.check.itemMsg1</Col>
+          <Col id="MSG_TEXT">1. 37.5℃ 이상 및 발열감이 있는 경우 \n입실이 불가능합니다.\n{0}</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.check.itemMsg2</Col>
+          <Col id="MSG_TEXT">2. 현재 코로나19 의심되는 증상이 있는 경우 \n입실이 불가능합니다.\n{0}</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">2-1. 2에 대한 증상을 하나 이상 선택해주세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+          <Col id="MSG_ID">edu.msg.check.itemMsg2.1</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.check.itemMsg3</Col>
+          <Col id="MSG_TEXT">3. 최근(14일 이내) 해외여행을 다녀온 경우 \n입실이 불가능합니다.\n{0}</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.check.itemMsg4</Col>
+          <Col id="MSG_TEXT">4. 최근 14일 이내에 확진환자를 접촉한 경우 \n입실이 불가능합니다.\n{0}</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.check.itemMsg5</Col>
+          <Col id="MSG_TEXT">5. 최근 14일 이내에 국내 집단 발생 지역 및 \n시설을 방문한 경우 입실이 불가능합니다.\n{0}</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">6. 동거가족 중 현재 자가격리 중인 경우 \n입실이 불가능합니다.\n{0}</Col>
+          <Col id="MSG_TYPE">A</Col>
+          <Col id="MSG_ID">edu.msg.check.itemMsg6</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">고객님께서 참석할 교육과정은\n이미 자가진단을 완료하였습니다.\n\n자가진단 시간은 {0} 입니다.\n\n출결관리를 진행해주세요.</Col>
+          <Col id="MSG_ID">edu.msg.check.already</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">자가진단 설문을 완료하시겠습니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+          <Col id="MSG_ID">edu.msg.check.complete</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.save.error</Col>
+          <Col id="MSG_TEXT">자료 저장 중 오류가 발생하였습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.server.error</Col>
+          <Col id="MSG_TEXT">통신중 오류가 발생하였습니다.\n관리자에게 문의 바랍니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.edudatacheck.nodata</Col>
+          <Col id="MSG_TEXT">선택된 교육정보가 없습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.edudatacheck.select</Col>
+          <Col id="MSG_TEXT">참석할 교육과정을 선택하세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">출결처리를 위해서는 \n사전 자가진단이 선행되어야 \n가능합니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+          <Col id="MSG_ID">edu.msg.edudatacheck.precheck</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.question.check</Col>
+          <Col id="MSG_TEXT">{0}님께서는 금일 참가 가능한 \n교육이 없으므로 자가진단 대상이  아닙니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.attendance.check</Col>
+          <Col id="MSG_TEXT">{0}님께서는 금일 참가 가능한 \n교육이 없으므로 출결 대상이  아닙니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.program.exit</Col>
+          <Col id="MSG_TEXT">프로그램을 종료하시겠습니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.data.save</Col>
+          <Col id="MSG_TEXT">저장 되었습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">선택된 고객정보가 없습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+          <Col id="MSG_ID">edu.msg.data.nodata</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">선택된 교육정보가 없습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+          <Col id="MSG_ID">edu.msg.data.edu.nodata</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.data.proc</Col>
+          <Col id="MSG_TEXT">정상처리 되었습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.data.error</Col>
+          <Col id="MSG_TEXT">오류가 발생하였습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.before.delete</Col>
+          <Col id="MSG_TEXT">선택한 날자 {0} 의 \n자가진단 사항을 삭제하시겠습니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.attendance.delete</Col>
+          <Col id="MSG_TEXT">선택한 날자 {0}의 \n출결사항을 삭제하시겠습니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">교육대상자를 삭제하시겠습니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+          <Col id="MSG_ID">edu.msg.edulist.delete</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.data.proc.nullcheck</Col>
+          <Col id="MSG_TEXT">{0} 을(를) 입력하세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.user.gubun</Col>
+          <Col id="MSG_TEXT">교육신청은 회원으로 로그인해야 가능합니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.edu.attend.chk</Col>
+          <Col id="MSG_TEXT">교육신청은 한 과정씩 추가를 할 수 있습니다. </Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.edu.attend.cnt</Col>
+          <Col id="MSG_TEXT">신청할 교육과정을 선택하세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.edu.save.check</Col>
+          <Col id="MSG_TEXT">신청한 교육과정은 이미 마감되었습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.edu.attend.already</Col>
+          <Col id="MSG_TEXT">해당 교육과정은 이미 신청되었습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">수강등록을 취소하시겠십니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+          <Col id="MSG_ID">edu.msg.edu.attend.delete</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.edu.attend.cancel</Col>
+          <Col id="MSG_TEXT">교육신청이 취소되었습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.edu.attend.ing</Col>
+          <Col id="MSG_TEXT">이미 종료되었거나, \n진행중인 교육은 삭제가 불가능합니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.finish</Col>
+          <Col id="MSG_TEXT">선택 과정에 대한 출결처리가 \n모두 완료되었습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.login.change</Col>
+          <Col id="MSG_TEXT">로그인 방식을 바꾸게 되면 \n현재 입력된 정보는 삭제됩니다.\n이동 하시겠습니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.device.size</Col>
+          <Col id="MSG_TEXT">해당 프로그램은 세로모드에서 사용가능합니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.certificate</Col>
+          <Col id="MSG_TEXT">수료증을 내려받으시겠습니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.duplication</Col>
+          <Col id="MSG_TEXT">해당 기간에 이미 등록된 과정이 있습니다.\n메인화면 - 과정관리 메뉴에서 확인하세요.\n교육신청은 1일 1과정만 가능합니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.already</Col>
+          <Col id="MSG_TEXT">해당 정보는 이미 처리가 완료되었습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.captcha.nodata</Col>
+          <Col id="MSG_TEXT">현재 관리자가 입실 가능한 \n문자열을 생성하지 않았습니다.\n관리자에게 문의하세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">입력한 정보가 잘못되었습니다.</Col>
+          <Col id="MSG_ID">edu.msg.data.error2</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">현재 관리자가 퇴실 가능한 \n문자열을 생성하지 않았습니다.\n관리자에게 문의하세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+          <Col id="MSG_ID">edu.msg.captcha.out.nodata</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.checknumber3</Col>
+          <Col id="MSG_TEXT">체크인 3번째 숫자를 입력하세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.checknumber5</Col>
+          <Col id="MSG_TEXT">체크인 5번째 숫자를 입력하세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">해당 기능은 회원(인터넷)으로\n로그인 한 사용자만 설정이 가능합니다.</Col>
+          <Col id="MSG_ID">edu.msg.only.userid</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_TEXT">알림 기능은 회원(인터넷)으로\n로그인 한 사용자 중 알림수신(기본)을\n설정한 경우 확인이 가능합니다.</Col>
+          <Col id="MSG_ID">edu.msg.only.xpushsservice</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">edu.msg.xpush.setup</Col>
+          <Col id="MSG_TEXT">정보가 정상 처리되었습니다.\n설정된 정보를 반영하기 위해서는\n재로그인이 필요합니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">msg.server.error.msg</Col>
+          <Col id="MSG_TEXT">서버에서 다음과 같은 에러메시지를 받았습니다.\n{0}</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">msg.session.timeout</Col>
+          <Col id="MSG_TEXT">세션이 종료되었습니다. \n다시 로그인해주세요.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">msg.login.url.error</Col>
+          <Col id="MSG_TEXT">정상적인 경로로 접속하시기 바랍니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">msg.login.error</Col>
+          <Col id="MSG_TEXT">해당하는 사용자 정보가 없습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">msg.nomenu</Col>
+          <Col id="MSG_TEXT">해당 Menu가 존재하지 않습니다.</Col>
+          <Col id="MSG_TYPE">A</Col>
+        </Row>
+        <Row>
+          <Col id="MSG_ID">confirm.logout</Col>
+          <Col id="MSG_TEXT">로그아웃 하시겠습니까?</Col>
+          <Col id="MSG_TYPE">C</Col>
+        </Row>
+      </Rows>
+    </Dataset>
+  </Datasets>
+  <Variables>
+    <Variable id="gv_variable" initval="nexacro patform"/>
+    <Variable id="App_Var1" initval="App Variable Value1"/>
+    <Variable id="App_Var2" initval="App Variable Value2"/>
+  </Variables>
+  <DataObjects/>
+</AppVariables>

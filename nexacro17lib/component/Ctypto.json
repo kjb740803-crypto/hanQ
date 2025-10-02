@@ -1,0 +1,14 @@
+﻿{
+	"name": "Crypto",
+	"version": "2019.1.30",
+	"description": "CryptoJS - code.google.com/p/crypto-js",
+	"license": "New BSD License",
+	"scripts": [			
+			/* open source */
+			"CryptoJS/core-min.js", 
+			"CryptoJS/aes.js", 
+			"CryptoJS/pad-zeropadding.js"
+			
+			/* open source end */			
+	]
+}

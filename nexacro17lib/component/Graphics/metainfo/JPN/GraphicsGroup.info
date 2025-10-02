@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GraphicsGroup">
+    <ObjectInfo finalclass="false" inheritance="nexacro._GraphicsObject" classname="nexacro.GraphicsGroup" shorttypename="GraphicsGroup" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsControlに属するGraphics関連オブジェクトを論理的なグループとして処理するためのオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="fillstyle" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="fillstyle" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="miterlimit" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="miterlimit" />
+      <Property name="opacity" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupの親オブジェクトを持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="strokecap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokecap" />
+      <Property name="strokejoin" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokejoin" />
+      <Property name="strokepen" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="strokepen" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupが画面に表示されるかどうかを設定するプロパティです。" csspropertyname="" normalpropertyname="visible" />
+      <Property name="x" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親オブジェクトを基準にGraphicsGroupが表示されるx軸座標値を設定するプロパティです。" csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親オブジェクトを基準にGraphicsGroupが表示されるy軸の座標値を設定するプロパティです。" csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに子としてGraphicsオブジェクトを追加するメソッドです。">
+        <Syntax text="GraphicsGroup.addChild( strID, objGObject )">
+          <Return type="Number" description="GraphicsGroupに追加されたGraphicsオブジェクトのインデックスを返します。" />
+          <Arguments>
+            <Argument name="objGObject" type="Object" in="false" out="false" option="false" variable="false" description="子として追加されるGraphics関連オブジェクトを設定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="子として追加されるGraphics関連オブジェクトのIDをユニークな値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに追加されたオブジェクトをメモリから完全に削除するメソッドです。">
+        <Syntax text="GraphicsGroup.clear()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupをメモリから完全に削除するメソッドです。">
+        <Syntax text="GraphicsGroup.destroy()">
+          <Return type="Boolean" description="GraphicsGroupが正常に削除された場合は、「true」を返します。&#xA;&#xA;GraphicsGroupが正常に削除されない場合は、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupが表示される領域の情報をGraphicsコンポーネントの基準でBorder領域を含めて返すメソッドです。">
+        <Syntax text="GraphicsGroup.getBoundRect( );">
+          <Return type="Object" description="Graphicsコンポーネントの基準でGraphicsGroupが表示される領域の情報をnexacroのRectオブジェクトに返します。&#xA;GraphicsGroupにBorderがある場合に返される領域の情報には、Border領域が含まれます。&#xA;&#xA;* Rectオブジェクトは、「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持っています。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFirstChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに追加されたオブジェクトの最初のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsGroup.getFirstChild()">
+          <Return type="Object" description="GraphicsGroupに追加された最初のオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getLastChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに追加されたオブジェクトの最後のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsGroup.getLastChild()">
+          <Return type="Object" description="GraphicsGroupに追加された最後のオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupと親が同じGraphicsオブジェクトの次の順序のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsGroup.getNextSibling()">
+          <Return type="Object" description="親が同じ次の順序のGraphicsオブジェクトを返します。&#xA;&#xA;次の順序のGraphicsオブジェクトが存在しない場合はnullを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getObjectByID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに追加されたオブジェクトのうち、特定のIDに該当するオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsGroup.getObjectByID( strID )">
+          <Return type="Object" description="strIDに該当するオブジェクトを返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="取得しようとするオブジェクトのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getObjects" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに追加されたオブジェクトを配列として返すメソッドです。">
+        <Syntax text="GraphicsGroup.getObjects()">
+          <Return type="Array" description="GraphicsGroupに追加された順にオブジェクトを配列として返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupが表示される領域の情報を親オブジェクトに基づいてBorder領域を含めて返すメソッドです。">
+        <Syntax text="GraphicsGroup.getOffsetBoundRect( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsGroupにBorderがある場合に返される領域の情報には、Border領域が含まれます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupが表示される領域の情報を親オブジェクトに基づいて返すメソッドです。">
+        <Syntax text="GraphicsGroup.getOffsetRect( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsGroupにBorderがあってもBorder領域に関係なく、GraphicsGroupの実際の領域を返します。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupが表示される領域の情報を親オブジェクトに基づいてBorder領域を除いて返すメソッドです。">
+        <Syntax text="GraphicsGroup.getOffsetRegion( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsGroupにBorderがある場合に返される領域の情報には、Border領域が除外されます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupと親が同じであるGraphicsオブジェクトの前の順序のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsGroup.getPreviousSibling()">
+          <Return type="Object" description="親が同じである以前の順序のGraphicsオブジェクトを返します。&#xA;&#xA;以前の順序のGraphicsオブジェクトが存在しない場合は「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupの領域の情報をGraphicsコンポーネントに基づいて返すメソッドです。">
+        <Syntax text="GraphicsGroup.getRect( );">
+          <Return type="Object" description="Graphicsコンポーネントのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsGroupにBorderがあってもBorder領域に関係なく、GraphicsGroupの実際の領域を返します。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupが表示される領域の情報をGraphicsコンポーネントに基づいてBorder領域を除いて返すメソッドです。">
+        <Syntax text="GraphicsGroup.getRegion( );">
+          <Return type="Object" description="Graphicsコンポーネントのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsGroupにBorderがある場合に返される領域の情報には、Border領域が除外されます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="hasChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupにてGraphicsオブジェクトの追加有無を返すメソッドです。">
+        <Syntax text="GraphicsGroup.hasChild()">
+          <Return type="Boolean" description="Graphicsオブジェクトが1つ以上の追加されている場合は「true」を返します。&#xA;&#xA;Graphicsオブジェクトが追加されていない場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="indexOf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに追加されたオブジェクトのうち、特定のIDに該当するオブジェクトのインデックスを返すメソッドです。">
+        <Syntax text="GraphicsGroup.indexOf( strID )">
+          <Return type="Number" description="strIDに該当するオブジェクトのインデックスを返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="インデックスを取得しようとするオブジェクトのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsオブジェクトをGraphicsGroupの特定の場所に子として挿入するメソッドです。">
+        <Syntax text="GraphicsGroup.insertChild( nIdx, strID, objGObject )">
+          <Return type="Number" description="GraphicsGroupに子として挿入されたGraphicsオブジェクトのインデックスを返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="Graphicsオブジェクトが挿入される位置のインデックスを数値に設定します。" />
+            <Argument name="objGPath" type="Object" in="false" out="false" option="false" variable="false" description="挿入するGraphicsオブジェクトを設定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="挿入するGraphicsオブジェクトのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="引数として渡された座標位置がGraphicsGroup領域に含まれるかどうかを返すメソッドです。">
+        <Syntax text="GraphicsGroup.isHitTest( nX, nY )">
+          <Return type="Boolean" description="引数として渡された座標位置がGraphicsGroup領域に含まれる場合は「true」を返します。&#xA;&#xA;引数として渡された座標位置がGraphicsGroup領域に含まれない場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="確認する位置のx座標値をpixel単位の数値に設定します。&#xA;&#xA;設定値はGraphicsコンポーネントを基準に処理されます。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="確認する位置のy座標値をpixel単位の数値に設定します。&#xA;&#xA;設定値はGraphicsコンポーネントを基準に処理されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupの子の中で、特定のGraphicsオブジェクトを削除するメソッドです。">
+        <Syntax text="GraphicsGroup.removeChild( strID )">
+          <Return type="Object" description="GraphicsGroupから削除されたオブジェクトを返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="削除するGraphics関連オブジェクトのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに回転効果を適用するメソッドです。">
+        <Syntax text="GraphicsGroup.rotate( nAngle [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nAngle" type="Number" in="false" out="false" option="false" variable="false" description="現在の形で回転される角度を数字で設定します。&#xA;&#xA;正の設定時、時計回りに回転します。&#xA;負の設定時、反時計回りに回転します。" />
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="回転の中心となるx座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="回転の中心となるy座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupに拡大および縮小効果を適用するメソッドです。">
+        <Syntax text="GraphicsGroup.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="拡大および縮小の中心となるx座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="拡大および縮小の中心となるy座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大および縮小される横倍率を整数で設定します。&#xA;&#xA;1.0より大きい値を設定すると、GraphicsGroupが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsGroupが縮小されます。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大および縮小される縦倍率を整数で設定します。&#xA;&#xA;1.0より大きい値を設定すると、GraphicsGroupが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsGroupが縮小されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupの一部の領域のみを表示されるようにClippingする領域の座標を設定するメソッドです。">
+        <Syntax text="GraphicsGroup.setClipRect( nX, nY, nWidth, nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域の高さを数字で設定します。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域の幅を数字で設定します。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域のx座標を数字に設定します。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域のy座標を数字に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupの元の位置を基準としてtransform関連効果を連続的に適用するメソッドです。">
+        <Syntax text="GraphicsGroup.setTransform( strMethod );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="GraphicsGroupに適用するTransform関連メソッドをカンマ（,）で区切って指定します。&#xA;translate、scale、rotate、shearメソッドを使用することができます。&#xA;nullを設定した場合にはtransformの効果が指定されていない状態で初期化します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupにワープ効果を適用するメソッドです。">
+        <Syntax text="GraphicsGroup.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="ワープの中心となるx座標を数値に設定します。&#xA;設定値は親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="ワープの中心となるy座標を数値に設定します。&#xA;設定値は親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="現在の姿にて、x軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="現在の形にて、y軸を基準にねじる角度をラジアン値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupにワープ効果を適用するメソッドです。">
+        <Syntax text="GraphicsGroup.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="ワープの中心となるx座標を数値に設定します。&#xA;設定値は親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="ワープの中心となるy座標を数値に設定します。&#xA;設定値は親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="現在の姿にて、x軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="現在の形にて、y軸を基準にねじる角度をラジアン値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupにTransform関連効果を適用するメソッドです。">
+        <Syntax text="GraphicsGroup.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大/縮小される横倍率を実数に設定します。&#xA;&#xA;1.0より大きな値を設定すると、GraphicsGroupが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsGroupが縮小されます。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大/縮小される縦倍率を実数に設定します。&#xA;&#xA;1.0より大きな値を設定すると、GraphicsGroupが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsGroupが縮小されます。" />
+            <Argument name="nShearX" type="Number" in="false" out="false" option="false" variable="false" description="現在の姿にて、x軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nShearY" type="Number" in="false" out="false" option="false" variable="false" description="現在の形にて、y軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からx軸方向に移動する距離をpixel単位の数値に設定します。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からy軸方向に移動する距離をpixel単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroupの位置が移動される効果を適用するメソッドです。">
+        <Syntax text="GraphicsGroup.translate( nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からx軸方向に移動する距離をpixel単位の数値に設定します。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からy軸方向に移動する距離をpixel単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

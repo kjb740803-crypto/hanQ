@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileUpTransfer">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileUpTransfer" shorttypename="FileUpTransfer" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="서버로 파일을 업로드하기 위한 Invisible 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="filelist" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 에서 서버로 업로드할 파일의 정보를 Collection 형태로 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="filelist" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer의 고유 식별자를 설정하는 속성입니다." csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 이름을 설정하는 속성입니다." csspropertyname="" normalpropertyname="name" />
+      <Property name="postdatalist" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파일을 업로드할 때 서버로 전송할 데이터를 Collection 형태로 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="postdatalist" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 에서 업로드 한 파일을 수신할 서버페이지 정보를 설정하는 속성입니다." csspropertyname="" normalpropertyname="url" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 에 특정 이벤트를 선언하여 추가하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.addEvent( strEventID )">
+          <Return type="Boolean" description="이벤트 추가에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 추가에 실패하거나 선언되어 있는 이벤트 ID 설정 시 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="FileUpTransfer 에 추가할 이벤트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 FileUpTransfer 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성의 마지막 위치에 파일정보를 추가하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.addFile( strID, objVFile )">
+          <Return type="Number" description="파일정보 추가에 성공하면 추가된 위치의 인덱스를 반환합니다.&#xA;&#xA;strID 가 중복이거나 strID, objVFile 파라미터를 잘못 설정하면 -1 을 반환합니다.&#xA;파일정보 추가에 실패하면 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="filelist 속성에 추가 할 파일정보를 VirtualFile 오브젝트 형태로 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="filelist 속성에 추가 할 파일정보의 ID 를 문자열로 설정합니다.&#xA;&#xA;파일 업로드 시 &quot;name&quot; 파라미터값으로 사용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearFileList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성에 설정된 파일정보를 모두 삭제하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.clearFileList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearPostDataList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="postdatalist 속성에 설정된 데이터를 모두 삭제하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.clearPostDataList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 FileUpTransfer 을(를) 삭제하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.destroy()">
+          <Return type="Boolean" description="FileUpTransfer 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;FileUpTransfer 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="existFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성에서 인수로 전달된 VirtualFile 오브젝트와 일치하는 파일정보의 존재여부를 반환하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.existFile( objVFile )">
+          <Return type="Boolean" description="인수로 전달된 VirtualFile 오브젝트와 일치하는 파일정보가 filelist 속성에 존재하면 true 를 반환합니다.&#xA;&#xA;인수로 전달된 VirtualFile 오브젝트와 일치하는 파일정보가 filelist 속성에 존재하지 않으면 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="filelist 속성에서 존재여부를 확인할 파일정보를 VirtualFile 오브젝트 형태로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;&#xA;핸들러 함수의 인덱스는 0 부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileArrayByFileName" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성에서 지정한 파일명과 일치하는 파일정보를 VirtualFile 오브젝트 배열로 반환하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.getFileArrayByFileName( strFileName )">
+          <Return type="Array" description="filelist 속성에서 지정한 파일명과 일치하는 파일정보를 VirtualFile 오브젝트 배열로 반환합니다.&#xA;&#xA;반환할 파일정보가 1 개인 경우도 VirtualFile 오브젝트 배열로 반환합니다.&#xA;&#xA;지정한 파일명과 일치하는 파일정보가 없을 경우 null 을 반환합니다." />
+          <Arguments>
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="반환 받으려는 파일정보의 파일명을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getIndexArrayByFileName" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성에서 지정한 파일명과 일치하는 파일정보의 인덱스를 배열로 반환하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.getIndexArrayByFileName( strFileName )">
+          <Return type="Object" description="filelist 속성에서 지정한 파일명과 일치하는 파일정보의 인덱스를 배열로 반환합니다.&#xA;&#xA;반환할 파일정보가 1 개인 경우도 배열로 반환합니다.&#xA;&#xA;지정한 파일명과 일치하는 파일정보가 없을 경우 null 을 반환합니다." />
+          <Arguments>
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="인덱스를 반환 받으려는 파일정보의 파일명을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getPostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="postdatalist 속성에서 특정 Key 값에 해당하는 데이터를 반환하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.getPostData( strKey )">
+          <Return type="Variant" description="strKey 값에 해당하는 데이터를 반환합니다.&#xA;&#xA;strKey 값에 해당하는 데이터가 없을 경우 null 을 반환합니다." />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="반환 받으려는 데이터의 Key 값을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="핸들러 함수가 삽입될 위치를 인덱스로 설정합니다.&#xA;&#xA;-1 값 설정 시 마지막에 추가됩니다.&#xA;이벤트에 설정된 핸들러 함수의 갯수보다 큰 값을 설정한 경우 마지막에 추가됩니다.&#xA;NaN 값을 입력하면 ECMA 의 정수 변환 규칙에 따라 0 이 설정됩니다." />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 삽입될 이벤트의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 에 선언된 특정 이벤트를 삭제하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.removeEvent( strEventID )">
+          <Return type="Boolean" description="이벤트 삭제에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 삭제에 실패하거나 선언되지 않은 이벤트 ID 설정 시 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="FileUpTransfer 에서 삭제할 이벤트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성에 설정된 파일정보에서 인수로 전달된 VirtualFile 오브젝트와 일치하는 파일정보를 제거하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.removeFile( strID )">
+          <Return type="Number" description="filelist 속성에서 제거된 파일정보의 인덱스를 반환합니다.&#xA;&#xA;strID 파라미터를 잘못 설정하거나 파일정보 제거에 실패하면 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="filelist 속성에서 제거할 파일정보의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeFileByIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성에 설정된 파일정보에서 인수로 전달된 인덱스의 파일정보를 제거하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.removeFileByIndex( nIndex )">
+          <Return type="Number" description="filelist 속성에서 제거된 파일정보의 인덱스를 반환합니다.&#xA;&#xA;nIndex 파라미터를 잘못 설정하거나 파일정보 제거에 실패하면 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="filelist 속성에서 제거할 파일정보의 인덱스를 숫자로 설정합니다.&#xA;&#xA;NaN 값을 입력하면 ECMA 의 정수 변환 규칙에 따라 0 이 설정됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removePostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="postdatalist 속성에 설정된 데이터에서 특정 Key 값에 해당하는 데이터를 제거하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.removePostData( strKey );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="제거할 데이터의 Key 값을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransfer 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성에서 인수로 전달된 인덱스의 파일정보를 변경하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.setFile( nIndex, objVFile )">
+          <Return type="Boolean" description="인수로 전달된 인덱스의 파일정보 변경에 성공하면 true 를 반환합니다.&#xA;&#xA;nIndex 파라미터를 잘못 설정하거나 파일정보 변경에 실패하면 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="filelist 속성에서 변경할 파일정보의 인덱스를 숫자로 설정합니다.&#xA;&#xA;NaN 값을 입력하면 ECMA 의 정수 변환 규칙에 따라 0 이 설정됩니다." />
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="기존 파일정보를 대체할 새로운 파일정보를 VirtualFile 오브젝트 형태로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파일 업로드 요청 시 서버로 전송할 데이터를 postdatalist 속성에 추가하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.setPostData( strKey, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="서버로 전송할 데이터의 Key 값을 문자열로 설정합니다.&#xA;&#xA;동일한 Key 값이 존재할 경우 새로운 데이터로 변경됩니다." />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="서버로 전송할 데이터를 설정합니다.&#xA;&#xA;기본 자료형(number, string, boolean 등)을 설정할 수 있습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="upload" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelist 속성에 설정한 파일들을 HTTP/HTTPS 프로토콜의 POST 방식으로 업로드 하는 메소드입니다.">
+        <Syntax text="FileUpTransfer.upload( [strUrl] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="업로드 파일을 수신할 서버페이지 정보를 문자열로 설정합니다.&#xA;&#xA;값을 생략할 경우 url 속성에 설정된 값이 적용됩니다.&#xA;값을 설정하면 url 속성에 설정된 값이 무시됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파일 업로드에 실패하거나 에러코드가 반환 되었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FileUpTransfer.onerror(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onprogress" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파일이 업로드 중일 때 일정간격으로 발생하는 이벤트입니다.">
+        <Syntax text="FileUpTransfer.onprogress(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferProgressEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferProgressEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파일 업로드가 완료된 후 성공코드값이 전달 되었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FileUpTransfer.onsuccess(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

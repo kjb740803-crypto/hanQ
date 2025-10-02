@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExtendedCommandEventInfo">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ExtendedCommandEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="DeviceAdaptorsに定義されたデバイスによって発生するonextendedcommandイベントに渡されるEventInfoオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="data" group="" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="イベントの発生時にDeviceAdaptorsから転送されたデータを持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="data" />
+      <Property name="deviceid" group="" subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="イベント発生の原因となるデバイスのIDを持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="deviceid" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="イベントのIDを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="eventid" />
+      <Property name="eventtype" group="" subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="イベントが発生した理由についての情報を持つ、読み取り専用プロパティです。" csspropertyname="" normalpropertyname="eventtype" />
+      <Property name="fromobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="イベント発生の原因となるコンポーネントを持つプロパティです。" csspropertyname="" normalpropertyname="fromobject" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="preventDefault" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="現在のイベントのDefault Actionをキャンセルするメソッドです。">
+        <Syntax text="ExtendedCommandEventInfo.preventDefault()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="stopPropagation" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="現在のイベントを上位コンポーネントに伝播しないように停止するメソッドです。">
+        <Syntax text="ExtendedCommandEventInfo.stopPropagation()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

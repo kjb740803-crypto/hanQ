@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.System">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.System" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="OS、ハードウェア、入力装置の情報を提供するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="computername" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたコンピュータのNetBIOS名を返す読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="computername" />
+      <Property name="cpuarchitecture" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたコンピュータのCPUメーカー名を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="cpuarchitecture" />
+      <Property name="cpucount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたコンピュータのCPU数を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="cpucount" />
+      <Property name="cputype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたコンピュータのCPUの種類の情報を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="cputype" />
+      <Property name="locale" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたコンピュータのlocaleコード値を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="locale" />
+      <Property name="loginuser" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたコンピュータにログインしたユーザーのIDを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="loginuser" />
+      <Property name="mobileorientation" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたモバイル機器の現在の方向情報を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="mobileorientation" />
+      <Property name="mobileproducttype" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたモバイル機器の機種名を持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="mobileproducttype" />
+      <Property name="monitorcount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたコンピュータのモニターの個数を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="monitorcount" />
+      <Property name="navigatorfullname" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="アプリが実行されたWindows nexacroのエンジンタイプを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="navigatorfullname" />
+      <Property name="navigatorname" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたブラウザ情報を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="navigatorname" />
+      <Property name="navigatorversion" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されるブラウザのバージョンを返す読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="navigatorversion" />
+      <Property name="notificationtoken" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたモバイル機器でPush通知を受信するためのDevice Token値を持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="notificationtoken" />
+      <Property name="osversion" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行された環境のOS名称とバージョンを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="osversion" />
+      <Property name="taskbarsize" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたモバイル機器のタスクバー（AndroidはIndicatorBar）のサイズを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="taskbarsize" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="attachChildFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox" description="Webブラウザでnexacro Studioでジェネレートされた「xfdl」ファイルをユーザーDOMにロードするメソッドです。">
+        <Syntax text="system.attachChildFrame(window, document, strKey, stradlurl, strDivId, strxfdlurl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="document" type="Object" in="false" out="false" option="false" variable="false" description="documentオブジェクトを設定します。" />
+            <Argument name="stradlurl" type="String" in="false" out="false" option="false" variable="false" description="ジェネレートされた「xadl」ファイルの名前を文字列に設定します。" />
+            <Argument name="strDivId" type="String" in="false" out="false" option="false" variable="false" description="ジェネレートされた「xfdl」ファイルがロードされるユーザーDivisionのIDを設定します。" />
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="ApplicationのAppVariablesに登録するときに使用Key値を文字列に設定します。" />
+            <Argument name="strxfdlurl" type="String" in="false" out="false" option="false" variable="false" description="ジェネレートされた「xfdl」ファイルの名前を設定します。" />
+            <Argument name="window" type="Object" in="false" out="false" option="false" variable="false" description="windowオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="checkDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="指定した権限の設定有無を確認するメソッドです。">
+        <Syntax text="system.checkDevicePermission(arrPermissiontypes);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrPermissiontypes" type="Array" in="false" out="false" option="false" variable="false" description="確認対象の権限を配列として指定します。&#xA;指定できる値は下記の通りです。&#xA;&#xA;// 共通&#xA;nexacro.DevicePermissionType.CALENDAR: &quot;calendar&quot; &#xA;nexacro.DevicePermissionType.CAMERA: &quot;camera&quot; &#xA;nexacro.DevicePermissionType.CONTACTS: &quot;contacts&quot; &#xA;nexacro.DevicePermissionType.LOCATION: &quot;location&quot; &#xA;nexacro.DevicePermissionType.MICROPHONE: &quot;microphone&quot; &#xA;&#xA;// Android &#xA;nexacro.DevicePermissionType.PHONE: &quot;phone&quot; &#xA;nexacro.DevicePermissionType.SMS: &quot;sms&quot; &#xA;nexacro.DevicePermissionType.STORAGE: &quot;storage&quot; &#xA;&#xA;// iOS &#xA;nexacro.DevicePermissionType.PHOTO: &quot;photo&quot; &#xA;nexacro.DevicePermissionType.REMINDERS: &quot;reminders&quot;" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,iOS/iPadOS NRE" description="システムのクリップボードに保存されたデータを削除するメソッドです。">
+        <Syntax text="system.clearClipboard()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="コンポーネントのクライアント基準のx座標値をスクリーン基準のx座標値として返すメソッドです。">
+        <Syntax text="system.clientToScreenX(objComp, nPosX)">
+          <Return type="Number" description="スクリーン基準のx座標値を返します。" />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="変換するコンポーネント基準のx座標値を設定します。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="変換するx座標値の基準となるコンポーネントを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="コンポーネントのクライアント基準のy座標値をスクリーン基準のy座標値として返すメソッドです。">
+        <Syntax text="system.clientToScreenY(objComp, nPosY)">
+          <Return type="Number" description="スクリーン基準のy座標値を返します。" />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="変換するコンポーネント基準のy座標値を設定します。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="変換するy座標値の基準となるコンポーネントを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="convertRealPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="Aliasが含まれたパスを実際の絶対パスに変換するメソッドです。">
+        <Syntax text="system.convertRealPath(strAlias)">
+          <Return type="String" description="実際の絶対パスを返します。" />
+          <Arguments>
+            <Argument name="strAlias" type="String" in="false" out="false" option="false" variable="false" description="絶対パスに変換するAliasを含むパスを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="指定した文字列の情報によってブラウザ（もしくはアプリ）を実行するメソッドです。">
+        <Syntax text="system.execBrowser( strUrl )">
+          <Return type="" description="　&#xD;&#xA;　" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="URLパスもしくはダイヤル機能、メール送信機能を実行するための情報を文字列として指定します。&#xA;Android NRE、iOS/iPadOS NREでは、ファイルもしくはアプリを実行するための文字列を設定することができます。詳細についてはRemarkをご参照ください。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execDefaultBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="指定したURLをデフォルトブラウザで実行するメソッドです。">
+        <Syntax text="system.execDefaultBrowser(strUrl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="WebページのURLを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execNexacro" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="渡された実行パスと引数の値でnexacroを実行するメソッドです。">
+        <Syntax text="system.execNexacro(strCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCommand" type="String" in="false" out="false" option="false" variable="false" description="オプション予約語とオプション値をペアとし、実行オプションを設定します。&#xA;オプション値にスペースが含まれている場合は、二重引用符（&quot;）で囲む必要があります。&#xA;&#xA;- K：アプリケーションを区別するためのキー値を文字列に設定します。&#xA;- S：ブートストラップパスを指定します。 &#xA;- C：コンポーネントのインストールパスを指定します。  &#xA;-THR：エンジン内部の通信とその他のManagerのスレッドの数を数字で設定します。&#xA;       スレッドの数は、最小3個、最大10個であり、デフォルト値は3です。&#xA;- SP：Splash Imageのパスを指定します。&#xA;- SM：Splash Imageにシステムメッセージが表示されないように、「none」を設定します。&#xA;　　　アプリケーションの実行時にエラーが発生した場合、「none」に設定してもエラーメッセージが表示されます。&#xA;- LF：最初の実行時にLeftの位置を指定します。 &#xA;- TP：最初の実行時にTopの位置を指定します。 &#xA;- WD：最初の実行時にWidthを指定します。&#xA;- HT：最初の実行時にHeightを指定します。 &#xA;- LG：ロードイメージのパスを指定します。 &#xA;- TW：エンジン内部マネージャのスレッドが待機する時間を指定します。 （数値） &#xA;- OO：同じキーのアプリケーションの実行を一つのみ許可するかをBooleanに設定します。&#xA;- V：アプリケーションが実行されるときに追加されるGlobal変数を「変数名:タイプ=値変数名:タイプ=値」の形式で設定します。&#xA;    各変数は、コンマ（,）で区切って設定します。&#xA;   「タイプ」に「ev」を設定した場合、EnvironmentのVariables領域に変数が追加されます。&#xA;   「タイプ」に「ec」を設定した場合、EnvironmentのCookies領域に変数が追加されます。&#xA;   「タイプ」を設定しないか、もしくは「av」を設定した場合、ApplicationのVariables領域に変数が追加されます。&#xA;-SIE：アプリケーションの実行時にエラーが発生した場合、エラーメッセージを表示して終了するかをBooleanに設定します。&#xA;　　　オプション値を省略した場合は「false」に適用されます。&#xA;- CT : 初期ネットワークが接続されているかをチェックする Timeoutを設定します。&#xA;          ネットワークが接続されているかどうかをアプリケーションが動作される前にチェックします。&#xA;          待ち時間中にネットワークの接続有無が確認されていない場合、アプリケーションが終了されます。&#xA;- SCR : LayoutManagerで使用するための ScreenIDを設定します。&#xA;- CC：V8エンジンのCodeCache機能を無効にするために設定します。&#xA;       「NO」に設定時CodeCache機能を使用しません。&#xA;       「AL」に設定またはオプション値省略時CodeCache機能が有効になります。&#xA;- AU：アプリケーションが実行されると、エンジンのアップデート有無を設定します。&#xA;      「auto」設定時のエンジンを最新のバージョンに更新します。&#xA;      「manual」設定時のエンジンを更新しません。&#xA;- NC：アプリケーション実行時に適用されるConfigファイルのパスとファイル名を指定します。&#xA;　　　ローカルパスのXML形式のファイルのみ指定することができます。&#xA;　　　ファイル名のみ指定している場合はnexacro.exeが格納されているパスと同じパスにてファイルを検索します。&#xA;　　　オプション値を省略した場合は&quot;%USERAPP%\config\&quot;+[Key]パスにて「nexacro_config.xml」ファイルを検索します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execShell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="WindowsシステムのShellを介してプログラムを実行するメソッドです。">
+        <Syntax text="system.execShell( strShellCmd )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strShellCmd" type="String" in="false" out="false" option="false" variable="false" description="WindowsシステムのShellを使用して実行するコマンドを設定します。&#xA;&#xA;「notepad」、「calc」のようなコマンドで、Windowsシステムに登録されているプログラムを実行することができます。&#xA;&#xA;「file://絶対パス\\ファイル名」の形式でローカルにあるファイルをオープンすることができます。&#xA;&#xA;「http://パス」、「https://パス」の形式で、Webページをオープンすることができます。&#xA;「http://パス/ファイル名」、「https://パス/ファイル名」の形式で、Webにあるファイルをオープンすることができます。&#xA;「http://」、「https://」形式のURLを設定した場合、システムに設定されたデフォルトのWebブラウザが実行されます。&#xA;&#xA;AliasをconvertRealPath()メソッドを使用して、実際のパスに変換してパスとして使用することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="システムのクリップボードに保存されたデータを指定された形式で返すメソッドです。">
+        <Syntax text="system.getClipboard( strFormat [, objCallBackFunc [, objTarget]] )">
+          <Return type="Variant" description="システムのクリップボードのデータを指定された形式で返します。&#xA;&#xA;* Chromeは「undefined」を返します。" />
+          <Arguments>
+            <Argument name="objCallBackFunc" type="Object" in="false" out="false" option="false" variable="false" description="システムのクリップボードのデータが返されるCallBack関数をオブジェクト型として指定します。&#xA;&#xA;* Chromeでのみ有効になるパラメータです。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="CallBack関数が定義された領域をオブジェクト型として指定します。&#xA;&#xA;値を省略した場合はwindowが適用されます。&#xA;&#xA;* Chromeでのみ有効になるパラメータです。" />
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="システムのクリップボードのデータを保存する際に適用する形式を文字列として指定します。&#xA;&#xA;「CF_TEXT」に設定した場合、データをテキスト形式で保存します。&#xA;「CF_UNICODETEXT」に設定した場合、データを、Unicodeテキスト形式で保存します。&#xA;「CF_CSV」に設定した場合、データをCSV形式で保存します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCursorX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在のマウスカーソルのx座標を表示するメソッドです。">
+        <Syntax text="system.getCursorX()">
+          <Return type="Number" description="現在のマウスカーソルのx座標を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCursorY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在のマウスカーソルのy座標を表示するメソッドです。">
+        <Syntax text="system.getCursorY()">
+          <Return type="Number" description="現在のマウスカーソルのy座標を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonitorIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="マルチモニターのときにマウスポインタ値に最も近いモニターの番号を返すメソッドです。">
+        <Syntax text="system.getMonitorIndex(nCursorX, nCursorY)">
+          <Return type="Number" description="座標に該当するモニター番号を返します。" />
+          <Arguments>
+            <Argument name="nCursorX" type="Number" in="false" out="false" option="false" variable="false" description="スクリーンのx座標値を設定します。" />
+            <Argument name="nCursorY" type="Number" in="false" out="false" option="false" variable="false" description="スクリーンのy座標値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたスクリーンの高さを返すメソッドです。">
+        <Syntax text="system.getScreenHeight()">
+          <Return type="Number" description="スクリーンの高さを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getScreenRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="指定されたモニターのスクリーン情報をRectオブジェクトとして取得するメソッドです。&#xA;　">
+        <Syntax text="system.getScreenRect(nMonitorIndex)">
+          <Return type="Object" description="引数として渡されたモニターの画面情報を持つRectオブジェクトを返します。&#xA;&#xA;Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="スクリーン情報を取得するモニターの番号を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenResolution" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="指定したモニターの解像度を返すメソッドです。">
+        <Syntax text="system.getScreenResolution(nMonitorIndex)">
+          <Return type="String" description="指定されたモニターの解像度の値を文字列として返します。&#xA;&#xA;無効なモニター番号を入力した場合、「0」を返します。" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="解像度を取得するモニターの番号を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="アプリケーションが実行されたスクリーンの幅を返すメソッドです。">
+        <Syntax text="system.getScreenWidth()">
+          <Return type="Number" description="スクリーンの幅を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isPrimaryMonitor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="マルチモニターの場合に特定のモニターがメインモニターであるかを判断するメソッドです。&#xA;　">
+        <Syntax text="system.isPrimaryMonitor(nMonitorIndex)">
+          <Return type="Boolean" description="指定されたモニターがメインモニターである場合、「true」を返します。&#xA;指定されたモニターがメインモニターではない場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="メインモニターであるかを判断するモニターの番号を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="print" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE" description="指定したコンポーネントの画像をプリンターで印刷するメソッドです。">
+        <Syntax text="system.print( objComponent [, bHideDialog [, strVAlign [, strHAlign [, bFitOnePage [, strOrientation]]]]] )">
+          <Return type="Boolean" description="画像印刷の要求に成功した場合、trueを返します。&#xA;画像印刷の要求に失敗した場合、falseを返します。&#xA;&#xA;実際の印刷の成功有無に関係なく、メソッド呼び出しの成功有無を返します。" />
+          <Arguments>
+            <Argument name="bFitOnePage" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」を指定している場合、1ページに印刷しきれない画像は1ページに収まるサイズに縮小されます。&#xA;「true」を指定している場合、1ページより小さい画像は1ページに合わせて拡大されます。&#xA;&#xA;「false」を指定している場合、画像のサイズに合わせて、複数のページに印刷します。&#xA;「false」を指定している場合、strVAlignは「top」、strHAlignは「left」として動作します。&#xA;&#xA;未指定にした場合は「false」として動作します。&#xA;&#xA;* Desktop用のWREではサポートしません。常に「false」として動作します。" />
+            <Argument name="bHideDialog" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」を指定した場合はプリンターの設定画面を表示させずに印刷します。&#xA;「false」を指定した場合は印刷前にプリンターの設定画面を表示します。&#xA;&#xA;未指定にした場合は「true」として動作します。&#xA;&#xA;* Desktop用のWREではサポートしません。常に「false」として動作します。" />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="印刷対象のコンポーネントをオブジェクトとして指定します。" />
+            <Argument name="strHAlign" type="String" in="false" out="false" option="false" variable="false" description="画像が用紙に印刷される水平方向の位置を指定します。&#xA;&#xA;「left」を指定した場合は画像が用紙の左側に印刷されます。&#xA;「center」を指定した場合は画像が用紙の中央に印刷されます。&#xA;「right」を指定した場合は画像が用紙の右側に印刷されます。&#xA;&#xA;未指定にした場合は「center」として動作します。&#xA;&#xA;* Desktop用のWREではサポートしません。常に「left」として動作します。" />
+            <Argument name="strOrientation" type="String" in="false" out="false" option="false" variable="false" description="用紙の出力方向を指定します。&#xA;&#xA;「portrait」を指定した場合は縦方向に印刷されます。&#xA;「landscape」を指定した場合は横方向に印刷されます。&#xA;&#xA;bHideDialogパラメータを「true」に設定している場合にのみ有効になります。&#xA;未指定にした場合は「portrait」として動作します。&#xA;&#xA;* Windows用のNREでのみサポートします。" />
+            <Argument name="strVAlign" type="String" in="false" out="false" option="false" variable="false" description="画像が用紙に印刷される垂直方向の位置を指定します。&#xA;&#xA;「top」を指定した場合は画像が用紙の上部に印刷されます。&#xA;「middle」を指定した場合は画像が用紙の中央に印刷されます。&#xA;「bottom」を指定した場合は画像が用紙の下部に印刷されます。&#xA;&#xA;未指定にした場合は「middle」として動作します。&#xA;&#xA;* Desktop用のWREではサポートしません。常に「top」として動作します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="必要な権限を要求するメソッドです。">
+        <Syntax text="system.requestDevicePermission(arrPermissionTypes[, strDescription])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrPermissionTypes" type="Array" in="false" out="false" option="false" variable="false" description="要求する権限を配列として指定します。&#xA;指定できる値は下記の通りです。&#xA;&#xA;//共通&#xA;nexacro.DevicePermissionType.CALENDAR: &quot;calendar&quot; &#xA;nexacro.DevicePermissionType.CAMERA: &quot;camera&quot; &#xA;nexacro.DevicePermissionType.CONTACTS: &quot;contacts&quot; &#xA;nexacro.DevicePermissionType.LOCATION: &quot;location&quot; &#xA;nexacro.DevicePermissionType.MICROPHONE: &quot;microphone&quot; &#xA;&#xA;//Android &#xA;nexacro.DevicePermissionType.PHONE: &quot;phone&quot; &#xA;nexacro.DevicePermissionType.SMS: &quot;sms&quot; &#xA;nexacro.DevicePermissionType.STORAGE: &quot;storage&quot; &#xA;&#xA;//iOS &#xA;nexacro.DevicePermissionType.PHOTO: &quot;photo&quot; &#xA;nexacro.DevicePermissionType.REMINDERS: &quot;reminders&quot;" />
+            <Argument name="strDescription" type="String" in="false" out="false" option="false" variable="false" description="要求する権限に関する説明を指定します。ユーザーが許可していない権限を要求する際にダイアログに表示します。&#xA;iOSではサポートしません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageBase64String" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="指定されたコンポーネントの画像をBase64でエンコードされたStringに返すメソッドです。">
+        <Syntax text="system.saveToImageBase64String( objComponent [, bWholeForm [,strImageType [,strOptions]]] )">
+          <Return type="String" description="- コンポーネントの画像をBase64でエンコードされた文字列として返します。&#xA;　エンコードに失敗した場合は、空の文字列を返します。" />
+          <Arguments>
+            <Argument name="bWholeForm" type="Boolean" in="false" out="false" option="false" variable="false" description="コンポーネントがForm型である場合のみ指定した値が適用されます。&#xA;&#xA;trueに設定した場合、スクロールによって画面に表示されない領域を含めて全体Formを画像として出力します。&#xA;falseに指定した場合、現在の画面に表示されているForm領域のみを画像として出力します。&#xA;&#xA;未指定にした場合はfalseが適用されます。" />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="画像に出力するコンポーネントをオブジェクト型として指定します。" />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="出力する画像ファイルの形式を指定します。&#xA;デフォルト値は「JPG」です。&#xA;&#xA;「BMP」、「BMP_MONO」、「JPG」、「TIF」、「TIF_24」、「TIF_MONO」、「GIF」、「PNG」を指定できます。" />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="出力する画像ファイルの画像圧縮率、画像圧縮方式、DPI解像度を指定します。&#xA;&#xA;圧縮率は画像形式が「JPG」である場合のみサポートし、「Compress:圧縮比率」の形式で指定します。&#xA;圧縮比率は「0~100」の範囲の整数値として指定します。&#xA;画像形式が「JPG」である場合に未指定にすると、50が適用されます。&#xA;&#xA;圧縮方式は画像形式が「TIF」である場合のみサポートし、、「Compress:圧縮タイプ」の形式で指定します。&#xA;圧縮タイプは「NONE」、「LZW」、「CCITT3」、「CCITT4」のいずれかの値を指定します。&#xA;画像形式が「TIF」である場合に未指定にすると、「LZW」が適用されます。&#xA;&#xA;DPI解像度は、横を「ResolutionX:解像度」の形式で、縦を「ResolutionY:解像度」の形式で指定します。&#xA;解像度は整数値として指定します。&#xA;解像度を未指定にした場合は横/縦の両方とも「96」が適用されます。&#xA;&#xA;各オプションは「Compress:95;ResolutionX:300」のように「;」文字で区切って指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="指定されたコンポーネントの画像をファイルに出力するメソッドです。">
+        <Syntax text="system.saveToImageFile(objComponent, strFileName, strImageType[,strOptions [,bWholeForm]])">
+          <Return type="Boolean" description="画像出力に成功した場合、trueを返します。&#xA;&#xA;画像出力に失敗した場合、falseを返します。" />
+          <Arguments>
+            <Argument name="bWholeForm" type="Boolean" in="false" out="false" option="false" variable="false" description="コンポーネントがForm型である場合のみ指定した値が適用されます。&#xA;&#xA;trueに設定した場合、スクロールによって画面に表示されない領域を含めて全体Formを画像として出力します。&#xA;falseに指定した場合、現在の画面に表示されているForm領域のみを画像として出力します。&#xA;&#xA;未指定にした場合はfalseが適用されます。" />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="画像ファイルとして出力するコンポーネントをオブジェクト型として指定します。" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="出力する画像ファイル名を指定します。" />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="出力する画像ファイルの形式を指定します。&#xA;&#xA;「BMP」、「BMP_MONO」、「JPG」、「TIF」、「TIF_24」、「TIF_MONO」、「GIF」、「PNG」を指定することができます。&#xA;&#xA;Android NREでは「JPG」、「PNG」形式のみサポートします。" />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="出力する画像ファイルの画像圧縮率、画像圧縮方式、DPI解像度を指定します。&#xA;&#xA;圧縮率は画像形式が「JPG」である場合のみサポートし、「Compress:圧縮比率」の形式で指定します。&#xA;圧縮比率は「0~100」の範囲の整数値として指定します。&#xA;画像形式が「JPG」である場合に未指定にすると、50が適用されます。&#xA;&#xA;圧縮方式は画像形式が「TIF」である場合のみサポートし、、「Compress:圧縮タイプ」の形式で指定します。&#xA;圧縮タイプは「NONE」、「LZW」、「CCITT3」、「CCITT4」のいずれかの値を指定します。&#xA;画像形式が「TIF」である場合に未指定にすると、「LZW」が適用されます。&#xA;&#xA;DPI解像度は、横を「ResolutionX:解像度」の形式で、縦を「ResolutionY:解像度」の形式で指定します。&#xA;解像度は整数値として指定します。&#xA;解像度を未指定にした場合は横/縦の両方とも「96」が適用されます。&#xA;&#xA;各オプションは「Compress:95;ResolutionX:300」のように「;」文字で区切って指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="スクリーン基準のx座標値を、コンポーネントのクライアント基準のy座標値として返すメソッドです。">
+        <Syntax text="system.screenToClientX(objComp, nPosX)">
+          <Return type="Number" description="コンポーネントのクライアント基準のx座標値を返します。" />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="変換するスクリーン基準のx座標値を設定します。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="変換されるx座標値の基準となるコンポーネントを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="スクリーン基準のy座標値を、コンポーネントのクライアント基準のy座標値として返すメソッドです。">
+        <Syntax text="system.screenToClientY(objComp, nPosY)">
+          <Return type="Number" description="コンポーネントのクライアント基準のy座標値を返します。" />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="変換するスクリーン基準のy座標値を設定します。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="変換されるy座標値の基準となるコンポーネントを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="システムのクリックボードに指定された形式でデータを保存するメソッドです。">
+        <Syntax text="system.setClipboard( strFormat, varData )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="システムのクリップボードにデータを保存する際に適用する形式を文字列として指定します。&#xA; &#xA;「CF_TEXT」に設定した場合、データをテキスト形式で保存します。&#xA;「CF_UNICODETEXT」に設定した場合、データをUnicodeテキスト形式で保存します。&#xA;「CF_CSV」に設定した場合、データをCSV形式で保存します。" />
+            <Argument name="varData" type="String" in="false" out="false" option="false" variable="false" description="保存するデータを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalSync" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="動的に生成したChildFrameをSyncで動作するモダールウィンドウに表示するメソッドです。">
+        <Syntax text="system.showModalSync( objChildframe [, strID ] , objParentFrame, [{objArguList} [, objOpener]] );">
+          <Return type="Boolean" description="表示されたModalウィンドウが閉じられた後、成功/失敗の結果を返します。" />
+          <Arguments>
+            <Argument name="objArguList" type="Object" in="false" out="false" option="false" variable="false" description="Modalで表示するChildFrameに追加される変数のリストを&quot;{変数名:変数の値、変数名:変数の値}」の形式で設定します。" />
+            <Argument name="objChildframe" type="Object" in="false" out="false" option="false" variable="false" description="Modalで表示するChildFrameをオブジェクトに設定します。" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="Modalで表示するChildFrameのOpenerに設定されるFormをオブジェクトに設定します。&#xA;&#xA;値省略時、objParentFrameパラメータに設定されたFrameのFormが設定されます。&#xA;objParentFrameパラメータをnullに設定した場合、undefinedが設定されます。" />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="表示されるModalウィンドウの親FrameをObject型に設定します。&#xA;&#xA;null設定時、MainFrameが親として設定されません。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Modalウィンドウで表示するChildFrameのIDを文字列に設定します。&#xA;&#xA;値省略時、objChildFrameに設定されたChildFrameのnameプロパティ値が設定されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="動的に生成されたChildFrameを別のModalウィンドウで表示するメソッドです。">
+        <Syntax text="system.showModalWindow( objChildFrame [, strID] , objParentFrame[, {objArguList} [, objOpener]] );">
+          <Return type="String" description="Modalウィンドウで表示されたChildFrameでclose()メソッドに設定したパラメータ値を返します。" />
+          <Arguments>
+            <Argument name="objArguList" type="Object" in="true" out="false" option="false" variable="false" description="Modalウィンドウで表示するChildFrameに追加される変数のリストを&quot;{変数名:変数値、変数名:変数値}」の形式で設定します。" />
+            <Argument name="objChildFrame" type="Object" in="true" out="false" option="false" variable="false" description="Modalウィンドウで表示するChildFrameをオブジェクトに設定します。" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="Modalで表示するChildFrameのOpenerに設定されるFormのオブジェクトを設定します。&#xA;&#xA;値省略時、objParentFrameに設定されたFrameのFormオブジェクトが設定されます。&#xA;objParentFrameパラメータをnullに設定した場合、undefinedが設定されます。" />
+            <Argument name="objParentFrame" type="Object" in="true" out="false" option="false" variable="false" description="表示されているModalウィンドウの親FrameをObject型に設定します。&#xA;&#xA;null設定時、親が設定されません。&#xA;&#xA;ChildFrame以外のObject設定時、親Frame使用不可を意味するOverLay Colorが表示されません。" />
+            <Argument name="strID" type="String" in="true" out="false" option="false" variable="false" description="Modalウィンドウで表示するChildFrameのIDを文字列に設定します。&#xA;&#xA;値省略時、objChildFrameに設定されたChildFrameのnameプロパティ値が設定されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

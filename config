@@ -1,0 +1,10 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+[remote "hanQ"]
+	url = https://github.com/kjb740803-crypto/hanQ.git
+	fetch = +refs/heads/*:refs/remotes/hanQ/*
+	tagopt = --no-tags

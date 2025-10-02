@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.AnimationTimeline">
+    <ObjectInfo finalclass="true" inheritance="nexacro.Animation" classname="nexacro.AnimationTimeline" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アイテムに登録されたAnimationオブジェクトを順番に実行するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="beziercurve" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="beziercurve" />
+      <Property name="delay" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="delay" />
+      <Property name="direction" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="AniDirection" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="direction" />
+      <Property name="duration" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="1000" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="duration" />
+      <Property name="easing" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="easeOutElastic" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="easing" />
+      <Property name="elasticity" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="elasticity" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="AnimationTimelineオブジェクトの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="items" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Animationオブジェクトに登録されている全てのAnimationTimelineItemオブジェクトを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="items" />
+      <Property name="loop" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="loop" />
+      <Property name="loopcount" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="loopcount" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="AnimationTimelineオブジェクトの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="AnimationTimelineの親オブジェクトを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="parent" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アニメーション効果が定義されたAnimationオブジェクトをAnimationTimelineオブジェクトにアイテムとして追加するメソッドです。">
+        <Syntax text="AnimationTimeline.addTarget( strID, objAnimation, nOffset );">
+          <Return type="Number" description="追加されたAnimationTimelineItemオブジェクトのインデックスを返します。&#xA;&#xA;AnimationTimelineItemオブジェクトの追加に失敗した場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="アニメーション効果の開始時間をミリ秒単位で指定します。&#xA;&#xA;以前のアニメーションの終了から設定した開始時間が経過した後、現在のAnimationTimelineItemのアニメーションが開始します。" />
+            <Argument name="objAnimation" type="Object" in="false" out="false" option="false" variable="false" description="対象のAnimationオブジェクトを指定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="対象のAnimationTimelineItemオブジェクトのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="スクリプトで動的に生成したAnimationTimelineを削除するメソッドです。">
+        <Syntax text="AnimationTimeline.destroy()">
+          <Return type="Boolean" description="AnimationTimelineが正常に削除された場合、「true」を返します。&#xA;&#xA;AnimationTimelineが正常に削除されない場合、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="insertTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アニメーション効果が定義されたAnimationオブジェクトをAnimationTimelineオブジェクトにアイテムとして挿入するメソッドです。">
+        <Syntax text="AnimationTimeline.insertTarget( nIndex, strID, objAnimation, nOffset );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="挿入位置のインデックスを指定します。&#xA;&#xA;インデックスは0ベースです。0~アイテム数までの範囲で指定することができます。&#xA;不正なインデックス値を指定した場合は最終に追加されます。" />
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="アニメーション効果の開始時間をミリ秒単位で指定します。以前のアニメーションの終了から設定した開始時間が経過した後、現在のAnimationTimelineItemのアニメーションが開始します。" />
+            <Argument name="objAnimation" type="Object" in="false" out="false" option="false" variable="false" description="対象のAnimationオブジェクトを指定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="対象のAnimationTimelineItemオブジェクトのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="pause" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="再生中のアニメーションを一時停止するメソッドです。">
+        <Syntax text="AnimationTimeline.pause()">
+          <Return type="Boolean" description="メソッドの実行に成功した場合は「true」を返します。&#xA;&#xA;メソッドの実行に失敗した場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="play" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アニメーション効果を再生するメソッドです。">
+        <Syntax text="AnimationTimeline.play()">
+          <Return type="Boolean" description="メソッドの実行に成功した場合は「true」を返します。&#xA;&#xA;メソッドの実行に失敗した場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="AnimationTimelineオブジェクトにアイテムとして追加されているAnimationItemオブジェクトを削除するメソッドです。">
+        <Syntax text="AnimationTimeline.removeTarget( strID );">
+          <Return type="Object" description="AnimationTimelineオブジェクトから削除されたAnimationItemオブジェクトを返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="削除対象のAnimationItemオブジェクトのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="reverse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アニメーションの再生方向を逆方向に変更するメソッドです。">
+        <Syntax text="AnimationTimeline.reverse()">
+          <Return type="Boolean" description="メソッドの実行に成功した場合は「true」を返します。&#xA;&#xA;メソッドの実行に失敗した場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アニメーションの再生位置を指定した時間に移動するメソッドです。">
+        <Syntax text="AnimationTimeline.seek( nMSecond )">
+          <Return type="Number" description="メソッドにより実際に変更された再生位置の時間を返します。" />
+          <Arguments>
+            <Argument name="nMSecond" type="Number" in="false" out="false" option="false" variable="false" description="移動させる位置の時間をミリ秒単位の数値として指定します。&#xA;&#xA;全体時間の範囲内の値を指定してください。&#xA;全体時間外の値を指定した場合は最小値もしくは最大値の時間が適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="再生中のアニメーション効果を停止するメソッドです。">
+        <Syntax text="AnimationTimeline.stop()">
+          <Return type="Boolean" description="メソッドの実行に成功した場合は「true」を返します。&#xA;&#xA;メソッドの実行に失敗した場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onbegin" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アニメーション効果の再生が開始する際に発生するイベントです。">
+        <Syntax text="AnimationTimeline.onbegin(obj:nexacro.AnimationTimeline,e:nexacro.AnimationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AnimationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncomplete" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アニメーション効果の再生が終了した際に発生するイベントです。">
+        <Syntax text="AnimationTimeline.oncomplete(obj:nexacro.AnimationTimeline,e:nexacro.AnimationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AnimationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrun" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="アニメーション効果の再生中にTickごとに発生するイベントです。">
+        <Syntax text="AnimationTimeline.onrun(obj:nexacro.AnimationTimeline,e:nexacro.AnimationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AnimationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onupdate" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="playメソッドによるアニメーション効果の再生が終了するまでTickごとに発生するイベントです。">
+        <Syntax text="AnimationTimeline.onupdate(obj:nexacro.AnimationTimeline,e:nexacro.AnimationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AnimationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

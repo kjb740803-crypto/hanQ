@@ -1,0 +1,24 @@
+﻿{
+  "name": "Accessibility",
+  "version": "17.1.3.300",
+  "description": "nexacro platform 17 Unified Framework Library",
+  "license": "",
+  "scripts": [
+    "Accessibility/Accessibility.js",
+    "Accessibility/Accessibility_Comp.js",
+    "Accessibility/Accessibility_HTML5.js",
+    "Accessibility/Accessibility_Runtime.js"
+  ],
+  "scriptsfilter": [
+    {
+      "name": "Accessibility_HTML5.js",
+      "target": "WRE,iOS_NRE"
+    },
+    {
+      "name": "Accessibility_Runtime.js",
+      "target": "NRE"
+    }
+
+  ]
+}
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileDownloadErrorEventInfo">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileDownloadErrorEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="EventInfo" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This EventInfo object is delivered to the events triggered by an error in the process of a FileDownload component downloading files." />
+    <PropertyInfo>
+      <Property name="errormsg" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This property holds the message of an error that has occurred." csspropertyname="" normalpropertyname="errormsg" />
+      <Property name="errorobj" group="Misc." subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This property holds a component that has caused an error." csspropertyname="" normalpropertyname="errorobj" />
+      <Property name="errortype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This property represents the type of an error that has occurred." csspropertyname="" normalpropertyname="errortype" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the ID of an event." csspropertyname="" normalpropertyname="eventid" />
+      <Property name="locationuri" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This property holds the value of the location header field in a response from the server when the specified URI has changed." csspropertyname="" normalpropertyname="locationuri" />
+      <Property name="requesturi" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This property holds a URI that has caused an error during a data transaction." csspropertyname="" normalpropertyname="requesturi" />
+      <Property name="statuscode" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the code of an error that has occurred." csspropertyname="" normalpropertyname="statuscode" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

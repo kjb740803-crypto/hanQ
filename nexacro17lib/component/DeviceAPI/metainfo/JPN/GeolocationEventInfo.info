@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GeolocationEventInfo">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.GeolocationEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="EventInfo" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="モバイル機器で位置情報の受信に成功したときに発生するイベントに渡すEventInfoオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="coords" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="モバイル機器から最後に受信した位置情報オブジェクトを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="coords" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="イベントのIDを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="eventid" />
+      <Property name="sourcetype" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE" description="位置情報を提供したソースを持つプロパティです。" csspropertyname="" normalpropertyname="sourcetype" />
+      <Property name="timestamp" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="位置情報を受信した時間を持つプロパティです。" csspropertyname="" normalpropertyname="timestamp" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

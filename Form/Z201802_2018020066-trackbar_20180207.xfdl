@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="trackbar_20180207" left="0" top="0" width="1024" height="768" titletext="New Form">
+    <Layouts>
+      <Layout>
+        <Grid id="Grid00" taborder="0" useinputpanel="false" left="4%" top="52" right="61%" height="153" binddataset="Dataset00">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+              </Columns>
+              <Rows>
+                <Row band="head" size="24"/>
+                <Row band="body" size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell col="0" disptype="normal" text="Column0"/>
+                <Cell col="1" disptype="normal" text="Column1"/>
+                <Cell col="2" disptype="normal" text="Column2"/>
+              </Band>
+              <Band id="body">
+                <Cell col="0" disptype="normal" text="bind:Column0"/>
+                <Cell col="1" disptype="normal" text="bind:Column1"/>
+                <Cell col="2" disptype="normal" text="bind:Column2"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="Button00" taborder="1" text="addRow" left="46%" top="89" right="42%" height="52" onclick="Button00_onclick"/>
+        <Button id="Button01" taborder="2" text="add Event to trackbar" left="19%" top="243" right="63%" height="73" onclick="Button01_onclick" onsize="Button01_onsize"/>
+        <WebView id="WebView00" taborder="3" left="462" top="188" width="384" height="252" url="support.tobesoft.co.kr"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="Dataset00">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Button00_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.Dataset00.addRow();
+}
+
+this.Button01_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+//	this.Grid00.vscrollbar.trackbar.style.set_background("red");
+	this.Grid00.vscrollbar.trackbar.addEventHandler("onsize", this.test_onsize, this);
+
+}
+ 
+this.test_onsize = function(obj, e:nexacro.SizeEventInfo)
+{
+	var c = obj.getOffsetHeight();
+	var b = obj.getOffsetWidth();
+	var d = this.Grid00.vscrollbar.incbutton.getOffsetTop();
+	
+	var limit = 30;
+	
+	if(c <= limit)
+	{
+		obj.parent.style.set_trackbarsize(limit);
+		
+	}
+}
+]]></Script>
+  </Form>
+</FDL>

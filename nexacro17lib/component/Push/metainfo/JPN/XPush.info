@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.XPush">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.XPush" shorttypename="XPush" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバーから配信するメッセージを受信できるクライアントコンポーネントです。" />
+    <PropertyInfo>
+      <Property name="controlretry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="X-PUSHサーバにTopic登録/削除時にエラーが発生した場合、再試行する回数を設定するプロパティです。" csspropertyname="" normalpropertyname="controlretry" />
+      <Property name="debug" group="" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="nexacro Studioのoutputウィンドウにデバッグ用XPushメッセージの表示有無を設定するプロパティです。" csspropertyname="" normalpropertyname="debug" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エラーが発生した場合、エラーコードを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エラーが発生した場合は、エラーメッセージを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="errormsg" />
+      <Property name="iplist" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="接続するX-PUSHサーバのIPとPortを設定するプロパティです。" csspropertyname="" normalpropertyname="iplist" />
+      <Property name="keepalivetime" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバとの接続を維持するためのメッセージを送信する周期を設定するプロパティです。" csspropertyname="" normalpropertyname="keepalivetime" />
+      <Property name="keeptimeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="X-PUSHサーバとの接続を維持するために送信したメッセージの応答待ち時間を設定するプロパティです。" csspropertyname="" normalpropertyname="keeptimeout" />
+      <Property name="layouturl" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Message Layout定義ファイルの場所を設定するプロパティです。" csspropertyname="" normalpropertyname="layouturl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="XPushの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="projectid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバと通信するときに使用Project IDを設定するプロパティです。" csspropertyname="" normalpropertyname="projectid" />
+      <Property name="protocolversion" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバとの通信時に使用するProtocolのバージョンを設定するプロパティです。" csspropertyname="" normalpropertyname="protocolversion" />
+      <Property name="retry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="X-PUSHサーバへの接続を試みたときにエラーが発生した場合、再試行する回数を設定するプロパティです。" csspropertyname="" normalpropertyname="retry" />
+      <Property name="sessionid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバ接続時に使用するSession IDを設定するプロパティです。" csspropertyname="" normalpropertyname="sessionid" />
+      <Property name="timeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="X-PUSHサーバとの接続のために送信されるメッセージの応答待ち時間を設定するプロパティです。" csspropertyname="" normalpropertyname="timeout" />
+      <Property name="userid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバ接続時に使用するUser IDを設定するプロパティです。" csspropertyname="" normalpropertyname="userid" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="XPushのイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="XPush.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="検索結果の関数をXPushのイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="XPush.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数が定義されているスコープを指定します。指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="XPush.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="connect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバとの接続を行うメソッドです。">
+        <Syntax text="XPush.connect( [strUserID [,strSessionID]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSessionID" type="String" in="false" out="false" option="false" variable="false" description="X-PUSHサーバへの接続時に認証のためのSession IDを設定します。&#xA;&#xA;値省略時、sessionidプロパティ値が適用されます。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="X-PUSHサーバへの接続時に認証のためのUser IDを設定します。&#xA;&#xA;値省略時、useridプロパティ値が適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="disconnect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバーとの接続を解除するメソッドです。">
+        <Syntax text="XPush.disconnect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="XPushの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="XPush.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="特定のイベントで検出したハンドラ関数のインデックスを返します。&#xA;&#xA;特定のイベントで検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurrentIP" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在接続中であるPushサーバーのIP値を返すメソッドです。">
+        <Syntax text="XPush.getCurrentIP()">
+          <Return type="String" description="現在接続中であるX-PUSHサーバのIP値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCurrentPort" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在接続中であるPushサーバーのPort値を返すメソッドです。">
+        <Syntax text="XPush.getCurrentPort()">
+          <Return type="Number" description="現在接続中であるX-PUSHサーバのPort値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="XPushの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="XPush.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;&#xA;ハンドラ関数のインデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="モバイルでNotificationを受信するためにDeviceToken値をX-PUSHサーバに登録するメソッドです。">
+        <Syntax text="XPush.registerDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="registerTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="信頼性の高いメッセージを受信するために、X-PUSHサーバにTopicを登録するメソッドです。">
+        <Syntax text="this.XPush00.registerTopic(strMessageType, strMessgageKey);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの中で受信するメッセージのタイプを設定します。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="受信するメッセージのキー値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerTopicWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="信頼性の高いメッセージが特定のユーザーに受信できるように、X-PUSHサーバにTopicを登録するメソッドです。">
+        <Syntax text="this.XPush00.registerTopicWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの受信するメッセージタイプを文字列に設定します。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="受信するメッセージのキー値を文字列に設定します。" />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="信頼性の高いメッセージの受信するプロジェクトのIDを文字列に設定します。&#xA;&#xA;値省略時projectidプロパティ値が適用されます。&#xA;&#xA;* protocolversionプロパティ値が「3」である場合にのみ適用されます。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="信頼性の高いメッセージを受信するユーザーのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="XPushの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="XPush.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="XPushの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="XPush.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバから未受信された信頼性の高いメッセージを要求するメソッドです。">
+        <Syntax text="requestMessage ( strMsgType, strMsgKeys );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMsgKeys" type="String" in="false" out="false" option="false" variable="false" description="受信するメッセージのキー値を設定します。&#xA;&#xA;受信するメッセージが複数の場合、カンマ（,）で区切って複数のキー値を設定することができます。" />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの中で受信するメッセージのタイプを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバで未受信した信頼性の高いメッセージの数を要求するメソッドです。">
+        <Syntax text="XPush.requestMessageCount(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの数を受信するメッセージのタイプを設定します。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="未受信した信頼性の高いメッセージのキー値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCountWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のユーザーが未受信した信頼性の高いメッセージの数をX-PUSHサーバに要求するメソッドです。">
+        <Syntax text="XPush.requestMessageCountWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの数を受信するメッセージのタイプを文字列に設定します。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="未受信した信頼性の高いメッセージのキー値を文字列に設定します。" />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="未受信した信頼性の高いメッセージの数を確認するプロジェクトのIDを文字列に設定します。&#xA;&#xA;値省略時projectidプロパティ値が適用されます。&#xA;&#xA;* protocolversionプロパティ値が「3」である場合にのみ適用されます。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="未受信した信頼性の高いメッセージの数を確認するユーザーのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendResponse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバから受信した信頼性の高いメッセージの受信応答を送信するメソッドです。">
+        <Syntax text="XPush.sendResponse(strmsgid)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strmsgid" type="String" in="false" out="false" option="false" variable="false" description="受信された信頼性の高いメッセージのIDを設定します。&#xA;&#xA;メッセージの受信時に発生するCallBack関数「msgid」パラメータの値にIDが渡されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="XPushの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="XPush.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="XPushの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="XPush.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="メッセージを受信するために接続しているX-PUSHサーバにTopicを登録するメソッドです。">
+        <Syntax text="XPush.subscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack[, nRow[, strCheck[, bUseActiveFormCallBack]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bUseActiveFormCallBack" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」設定時に有効になったFormのみCallBack関数を呼び出します。&#xA;「false」設定時に有効になっていないFormでもCallBack関数を呼び出します。&#xA; &#xA;値の省略時には「false」が適用されます。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="strTypeパラメータ値が「insert」で場合にDatasetに挿入するRowのインデックスを指定します。&#xA;&#xA;値の省略時には「0」が適用されます。" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="受信したメッセージを保存するDatasetオブジェクトを指定します。" />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="メッセージを受信するFormオブジェクトを指定します。" />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="受信したメッセージをDatasetに保存した後に呼び出すCallBack関数名を文字列として指定します。&#xA;&#xA;CallBack関数はCallBackName ( ChangeRow, ChangeCol, ColList, strMsgType, strActionType, strMsgID ) の形式で定義し、strTypeパラメータおよび条件に応じてパラメータの意味が異なります。詳細についてはRemarkをご参照ください。" />
+            <Argument name="strCheck" type="String" in="false" out="false" option="false" variable="false" description="「0」を指定した場合、Datasetにメッセージを必ず反映します。&#xA;strCheckに指定した値がMessage Layoutファイルのcheckプロパティ値が「true」に設定されたフィールド（Field）値と一致する場合にのみ、Datasetにメッセージを反映します。&#xA;&#xA;値の省略時には「0」が適用されます。" />
+            <Argument name="strMsgKey" type="String" in="false" out="false" option="false" variable="false" description="受信されるメッセージのKey値を設定します。" />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの受信されるメッセージのタイプを設定します。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="受信したメッセージをDatasetに保存する方法を指定します。&#xA;&#xA;「append」を指定した場合、Datasetの最終行に受信メッセージを追加します。&#xA;&#xA;「insert」を指定した場合、nRowパラメータとして指定した位置に受信メッセージを追加します。&#xA;nRowを未指定にした場合には0が適用されます。&#xA;&#xA;「replace」を指定した場合、最初の行が受信メッセージで置き換えられます。&#xA;Rowが存在しない場合、メッセージがDatasetに追加されません。&#xA;&#xA;「update」を指定した場合、DatasetのRowの中でKey値が同一である最初の行を受信メッセージで更新します。&#xA;更新するRowが存在しない場合、CallBack関数は呼び出されません。&#xA;&#xA;「allUpdate」を指定した場合、DatasetのRowの中でKey値が同一である全ての行を受信メッセージで更新します。&#xA;&#xA;「updateorappend」を指定した場合、「update」と同じように動作しますが、Key値が同一であるRowが存在しない場合、「append」として動作します。&#xA;&#xA;* Key値が同一であるRowは、下記の手順に検索します。&#xA;  a）Message Layoutファイルでkeyプロパティ値が「true」に設定されたフィールドの名前を確認&#xA;  b）上記a）で確認したフィールドの名前と同じ名前のColumnを確認&#xA;  c）上記b）で確認したColumnでメッセージに含まれているKey値と同じ値を持つRowを確認" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="モバイルでNotificationを受信するために、X-PUSHサーバに登録したDeviceToken値を削除するメソッドです。">
+        <Syntax text="XPush.unregisterDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="信頼性の高いメッセージを受信するためにX-PUSHサーバに登録したTopicを削除するメソッドです。">
+        <Syntax text="XPush.unregisterTopic(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの中で受信を停止するメッセージのタイプを設定します。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="受信を停止するメッセージのKey値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopicWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のユーザーに受信された信頼性の高いメッセージのTopicをX-PUSHサーバから削除するメソッドです。">
+        <Syntax text="XPush.unregisterTopicWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの中で受信を中止するメッセージタイプを設定します。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="受信を停止するメッセージのキー値を文字列に設定します。" />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="信頼性の高いメッセージの受信を停止するプロジェクトのIDを文字列に設定します。&#xA;&#xA;値省略時projectidプロパティ値が適用されます。&#xA;&#xA;* protocolversionプロパティ値が「3」である場合にのみ適用されます。" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="信頼性の高いメッセージの受信を停止するユーザーのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unsubscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="メッセージを受信するため、X-PUSHサーバに登録したTopicを削除するメソッドです。">
+        <Syntax text="XPush.unsubscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="Topic登録時に設定したDataSetオブジェクトを設定します。" />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="Topic登録時に設定したFormオブジェクトを設定します。" />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="Topic登録時に設定したCallBack関数名を設定します。" />
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layoutファイルに定義されたメッセージタイプの中で受信を停止するTopicのメッセージタイプを設定します。" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="受信を停止するメッセージのキー値を設定します。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="opic登録時に設定したメッセージ保存方法を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="XPushに要求された作業が失敗した際に発生するイベントです。">
+        <Syntax text="XPush.onerror(obj:nexacro.XPush,e:nexacro.XPushErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeepalive" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="X-PUSHサーバからの通信を維持するために、メッセージを受信したときに発生するイベントです。">
+        <Syntax text="XPush.onkeepalive(obj:nexacro.XPush,e:nexacro.XPushKeepAliveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushKeepAliveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="XPushサーバーに要求された作業が成功した際に発生するイベントです。">
+        <Syntax text="XPush.onsuccess(obj:nexacro.XPush,e:nexacro.XPushEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

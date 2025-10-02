@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GoogleMapPolygon">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.GoogleMapPolygon" shorttypename="GoogleMapPolygon" csstypename="GoogleMapPolygon" csscontrolname="" group="Object" subgroup="" csspseudo="false" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This object is used to mark a certain area on the map loaded onto a GoogleMap component." />
+    <PropertyInfo>
+      <Property name="fillbrushcolor" group="Appearance" subgroup="" refreshinfo="" edittype="Color" defaultvalue="black" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="NamedColor" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to set the color filling the inside of a GoogleMapPolygon." csspropertyname="" normalpropertyname="fillbrushcolor" />
+      <Property name="linecolor" group="" subgroup="" refreshinfo="" edittype="Color" defaultvalue="black" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="NamedColor" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to specify the color of a line that is drawn by linking the points defined by the locationdata property of the GoogleMapPolygon object." csspropertyname="" normalpropertyname="linecolor" />
+      <Property name="linewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to set the width of a line that links the points defined by the locationdata property of a GoogleMapPolygon object." csspropertyname="" normalpropertyname="linewidth" />
+      <Property name="locationdata" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to set the coordinates of a GoogleMapPolygon marked on a map." csspropertyname="" normalpropertyname="locationdata" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to determine whether to display a GoogleMapPolygon object." csspropertyname="" normalpropertyname="visible" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

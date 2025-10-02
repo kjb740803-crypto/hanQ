@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.nexacroAPI">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.nexacro" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="These are methods provided by Nexacro Platform for functional extensions." />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addErrorMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add a user-defined error message to an application.">
+        <Syntax text="nexacro.addErrorMessage( enumLang, strCode, strMsg )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumLang" type="String" in="false" out="false" option="false" variable="false" description="It specifies the language field to which an error message will be added.&#xA;&#xA;If you specify &quot;ko&quot;, the message will be added to the Korean field.&#xA;If you specify &quot;en&quot;, the message will be added to the English field.&#xA;If you specify &quot;ja&quot;, the message will be added to the Japanese field." />
+            <Argument name="strCode" type="String" in="false" out="false" option="false" variable="false" description="It is the code of an error message to add." />
+            <Argument name="strMsg" type="String" in="false" out="false" option="false" variable="false" description="It specifies an error message to add." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="base64Decode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to decode base64-encoded data.">
+        <Syntax text="nexacro.base64Decode( strData )">
+          <Return type="String" description="This method returns decoded data." />
+          <Arguments>
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing base64-encoded data that will be decoded." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="base64Encode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to encode data in the Base64 scheme.">
+        <Syntax text="nexacro.base64Encode( strData )">
+          <Return type="Object" description="This method returns a base64-encoded object." />
+          <Arguments>
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing data that will be encoded in the Base64 scheme." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method rounds a numeric value upward to a value of the defined number of digits. Otherwise, this method rounds a numeric value off to its nearest integer.">
+        <Syntax text="nexacro.ceil( nVal [,nFractionDigit] );">
+          <Return type="Number" description="This method returns the result of rounding up a value." />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of digits that the rounded-up value will hold.&#xA;&#xA;If you specify 0, the decimal separator will be a base.&#xA;If you specify a positive number, the number of digits will fall on the fractional part.&#xA;If you specify a negative number, the number of digits will fall on the integer part.&#xA;&#xA;The default value is 0." />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="This is a numeric value that will be rounded up." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteCacheDB" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to delete the cache DB files and related temporary files of a current application.">
+        <Syntax text="nexacro.deleteCacheDB()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="flashWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method is used to flash the icon of an application on the taskbar.">
+        <Syntax text="nexacro.flashWindow( enumType, nCount, [,nInterval] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumType" type="String" in="false" out="false" option="false" variable="false" description="It determines the flash status of the application icon.&#xA;&#xA;For &quot;count&quot;, the icon flashes for the number of specified times.&#xA;For &quot;timer&quot;, the icon flashes until the flashWindow() is called again with the &quot;stop&quot; argument.&#xA;For &quot;timernofg&quot;, the icon flashes until the application's window comes to the foreground.&#xA;For &quot;stop&quot;, the icon stop flashing." />
+            <Argument name="nCount" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the number of times to flash the icon when the enumType parameter is specified as &quot;count&quot;.&#xA;&#xA;If the enumType parameter is not specified as &quot;count&quot;, this value will be ignored." />
+            <Argument name="nInterval" type="Number" in="false" out="false" option="false" variable="false" description="It represents the interval of the icon's flashing, counted in millisecond." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method rounds a numeric value downward up to a value of the defined number of digits. Otherwise, this method rounds a numeric value downward to its nearest integer.">
+        <Syntax text="nexacro.floor( nVal [,nFractionDigit] );">
+          <Return type="Number" description="This method returns the result of rounding down a value." />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of digits that the rounded-down value will hold.&#xA;&#xA;If you specify 0, the decimal separator will be a base.&#xA;If you specify a positive number, the number of digits will fall on the fractional part.&#xA;If you specify a negative number, the number of digits will fall on the integer part.&#xA;&#xA;The default value is 0." />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="This is a numeric value that will be rounded down." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="gc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method is used to immediately remove the data that remains unused in a memory.">
+        <Syntax text="nexacro.gc()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getApplication" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the Application object of a currently-executed application.">
+        <Syntax text="nexacro.getApplication()">
+          <Return type="Object" description="It returns the Application object of a currently-executed application." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the value of a cookie defined in the Cookies area in Environment.">
+        <Syntax text="nexacro.getCookieVariable( strID [, bSecure] )">
+          <Return type="String" description="It returns the value of a cookie variable defined in the Cookies area.&#xA;&#xA;If there is no cookie that satisfies the arguments, it will return &quot;undefined&quot;." />
+          <Arguments>
+            <Argument name="bSecure" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter determines whether to obtain a cookie variable depending on the value of the Secure property.&#xA;&#xA;For true, this method will obtain a cookie variable only when the Secure property is set to &quot;true&quot;.&#xA;For false, this method will obtain a cookie variable only when the Secure property is set to &quot;false&quot;.&#xA;&#xA;If nothing is specified, this method will obtain a cookie variable regardless of the value of the Secure property." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It is a string that represents the ID of a cookie whose value will be returned." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEnableWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method returns whether a zoom feature is set for the window, one of whose frame is designated as an argument.">
+        <Syntax text="nexacro.getEnableWheelZoom( objFrame )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if a zoom feature is set for the window, one of whose frame is designated as an argument.&#xA;&#xA;This method will return &quot;false&quot; if a zoom feature is not set for the window, one of whose frame is designated as an argument." />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="This is an object representing a frame of the window that will be checked for the availability of a zoom feature.&#xA;&#xA;This method will produce the same result whichever frame you specify from the same window." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEnvironment" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the Environment object of a currently-executed application.">
+        <Syntax text="nexacro.getEnvironment()">
+          <Return type="Object" description="It returns the Environment object of a currently-executed application." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to return the value of a variable defined in the Variables field in Environment.">
+        <Syntax text="nexacro.getEnvironmentVariable( strID )">
+          <Return type="String" description="It returns the value of a variable defined in the Variables field in Environment." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It specifies the ID of a variable whose value will be returned." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns a variable defined in the HTTP Header of Environment.">
+        <Syntax text="nexacro.getHTTPHeaderVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It is a string resenting the ID of a variable whose value will be returned." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getLogFilePath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="">
+        <Syntax text="nexacro.getLogFilePath()">
+          <Return type="String" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPopupFrames" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns a list of ChildFrames opened in the window that includes the frame designated as an argument. The list is returned in the form of a collection.">
+        <Syntax text="nexacro.getPopupFrames( [objFrame] )">
+          <Return type="Array" description="It returns a collection of the frames popping up in the window that includes the frame designated as an argument.&#xA;&#xA;If you specify &quot;null&quot; or an invalid value as the value of the objFrame parameter, this method will return &quot;undefined&quot;." />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="It is an object representing a base frame.&#xA;&#xA;If unspecified, a base frame may vary according to the conditions that are explained in the Remark section." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to return a piece of individualized data that has been saved by an application.">
+        <Syntax text="nexacro.getPrivateProfile( strKey )">
+          <Return type="Variant" description="It returns a piece of individualized data whose key value matches the specified argument. The data type will be maintained as it was first defined." />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="It is a key value that was specified when the relevant individualized data was saved." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getProjectPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the execution path of an application.">
+        <Syntax text="nexacro.getProjectPath()">
+          <Return type="String" description="It returns the execution path of an application in the form of a string." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTextSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the size of the area where text is displayed. The area is calculated based on the delivered arguments.">
+        <Syntax text="nexacro.getTextSize( strText, strFont [, nLimitWidth, strWordWrap] );">
+          <Return type="Object" description="This returns an object that holds the information on the size of the area where text is displayed.&#xA;&#xA;The width of the text will be saved as the nx property of the returned object.&#xA;The height of the text will be saved as the ny property of the returned object." />
+          <Arguments>
+            <Argument name="nLimitWidth" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the maximum size of the text area, expressed in pixel.&#xA;&#xA;If the strWordWrap parameter is set to &quot;none&quot; or &quot;line&quot;, this parameter will be ignored.&#xA;If strWordWrap is set to &quot;char&quot; or &quot;english&quot;, line wrap will be applied according to the value of this parameter." />
+            <Argument name="strFont" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing a font to apply to the text set by the strText parameter.&#xA;&#xA;You can apply a font among those defined by the font property of the relevant component." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the text to be displayed on the screen." />
+            <Argument name="strWordWrap" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents how to conduct line wrap.&#xA;&#xA;If you specify &quot;none&quot;, both the line feed characters included in the text and the value of the nLimitWidth parameter will be ignored. As a result, the text will be displayed on one line.&#xA;If you specify &quot;line&quot;, line wrap can be conducted by applying the line feed characters included in the text while the value of nLimitWidth will be ignored .&#xA;If you specify &quot;char&quot;, line wrap will be conducted between characters based on the value of nLimitWidth.&#xA;If you specify &quot;english&quot;, line wrap will be conducted between characters based on the value of nLimitWidth.&#xA;&#xA;With this parameter set to &quot;char&quot; or &quot;english&quot;, line wrap can be caused by the line feed characters included in the text." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method returns the zoom factor of the window, one of whose frame is designated as an argument.">
+        <Syntax text="nexacro.getWheelZoom( objFrame )">
+          <Return type="Number" description="This method returns the zoom factor of the window, one of whose frame is designated as an argument. The zoom factor is expressed in percentage." />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="This is an object representing a frame of the window that will be checked for its zoom factor.&#xA;&#xA;This method will produce the same result whichever frame you specify from the same window." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAlpha" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method checks a character code or a string that is delivered as an argument. Then, this method returns whether the argument is an alphabet letter.">
+        <Syntax text="nexacro.isAlpha( nChar )&#xA;nexacro.isAlpha( strChar )">
+          <Return type="Boolean" description="If the delivered character code or string is an alphabet letter, this method will return &quot;true&quot;.&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="This is a decimal number representing a character code that will be checked." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="This is a string that will be checked." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAlphaNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method checks a character code or a string that is delivered as an argument. Then, this method returns whether the argument is alphanumeric.">
+        <Syntax text="nexacro.isAlphaNumeric( nChar )&#xA;nexacro.isAlphaNumeric( strChar )">
+          <Return type="Boolean" description="If the delivered character code is alphanumeric, this method will return &quot;true&quot;.&#xA;If the delivered string is alphanumeric, this method will return &quot;true&quot;.&#xA;&#xA;If the delivered character code is neither an alphabet letter nor a number, this method will return &quot;false&quot;.&#xA;If the delivered string contains a non-alphanumeric character, this method will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="This is a decimal number representing a character code that will be checked." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="This is a string that will be checked." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isExistCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the existence of a certain cookie variable defined in the Cookies area in Environment.">
+        <Syntax text="nexacro.isExistCookieVariable( strID [, bSecure] )">
+          <Return type="Boolean" description="If this method finds a sought cookie variable, it will return &quot;true&quot;.&#xA;Otherwise, it will return &quot;false&quot;.&#xA;&#xA;If you set the bSecure parameter, this method will return &quot;true&quot; only when it finds a cookie variable satisfying even the value of the bSecure parameter." />
+          <Arguments>
+            <Argument name="bSecure" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter determines whether to return the existence of a certain cookie variable depending on the value of the Secure property.&#xA;&#xA;If &quot;true&quot;, this method will return &quot;true&quot; only when it finds a cookie variable whose ID corresponds with the value of the strID parameter and the Secure property is set to &quot;true&quot;.&#xA;If &quot;false&quot;, this method will return &quot;true&quot; only when it finds a cookie variable whose ID corresponds with the value of the strID parameter and the Secure property is set to &quot;false&quot;.&#xA;&#xA;If nothing is specified, this method will return the existence of a certain cookie variable depending on the value of the Secure property." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It is a string that represents the ID of a cookie whose existence will be returned." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isLower" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method checks a character code or a string that is delivered as an argument. Then, this method returns whether the argument is lower case.">
+        <Syntax text="nexacro.isLower( nChar )&#xA;nexacro.isLower( strChar )">
+          <Return type="Boolean" description="If the delivered character code or string is lower case, this method will return &quot;true&quot;.&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="This is a decimal number representing a character code that will be checked for the case." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="This is a string that will be checked for the case." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method checks a character code or a string that is delivered as an argument. Then, this method returns whether the argument is a number.">
+        <Syntax text="nexacro.isNumeric( nChar )&#xA;nexacro.isNumeric( strChar )">
+          <Return type="Boolean" description="If the delivered character code or string is a number, this method will return &quot;true&quot;.&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="This is a decimal number representing a character code that will be checked." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="This is a string that will be checked." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isSpace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method checks a character code or a string that is delivered as an argument. Then, this method returns whether the argument is a whitespace.">
+        <Syntax text="nexacro.isSpace( nChar )&#xA;nexacro.isSpace( strChar )">
+          <Return type="Boolean" description="If the delivered character code or string is a whitespace, this method will return &quot;true&quot;.&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="This is a decimal number representing a character code that will be checked." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="This is a string that will be checked." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isUpper" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method checks a character code or a string that is delivered as an argument. Then, this method returns whether the argument is upper case.">
+        <Syntax text="nexacro.isUpper( nChar );&#xA;nexacro.isUpper( strChar );">
+          <Return type="Boolean" description="If the delivered character code or string is upper case, this method will return &quot;true&quot;.&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="This is a decimal number representing a character code that will be checked for the case." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="This is a string that will be checked for the case." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadStyle" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to load an XCSS file and apply it to an application.">
+        <Syntax text="nexacro.loadStyle( strURL )">
+          <Return type="" description="Return the decoding result." />
+          <Arguments>
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="You can specify the path to an XCSS file with the format &quot;xcssrc::[FileID]&quot;.&#xA;&#xA;As &quot;xcssrc::&quot; is a predefined prefix, you cannot change it.&#xA;XCSS files should be located in the &quot;./_resource_/_xcss_&quot; directory under the Resource Service field." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to display a dynamically-created ChildFrame in the form of a modeless window.">
+        <Syntax text="nexacro.open( strID, strFormURL, objParentFrame, {objArguList}, strOpenStyle, nLeft, nTop [, nWidth, nHeight [, objOpener [, strExtOpenStyle ]]])">
+          <Return type="Boolean" description="If a modeless window is displayed properly, it will return &quot;true&quot;.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the height of a ChildFrame that will be displayed as a modeless window.." />
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the coordinates of the left edge of a ChildFrame that will be displayed as a modeless window." />
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the coordinates of the top edge of a ChildFrame that will be displayed as a modeless window.." />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the width of a ChildFrame that will be displayed as a modeless window.." />
+            <Argument name="objArguList" type="Object" in="false" out="false" option="false" variable="false" description="It specifies a list of variables to add to a ChildFrame that will be displayed as a modeless window, with the format {variable name:variable value, variable name:variable value}." />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="It specifies a Form object that will serve as an opener.&#xA;&#xA;If unspecified, this parameter will take the Form defined by the objParentFrame parameter." />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that will serve as the parent of the ChildFrame displayed as a modeless window.&#xA;&#xA;If you specify &quot;null&quot;, nothing will be defined as the parent." />
+            <Argument name="strExtOpenStyle" type="String" in="false" out="false" option="false" variable="false" description="You can specify additional properties of the ChildFrame with the format &quot;Property1=value1 Property2=value2&quot;.&#xA;Applicable properties vary according to environments and properties are separated by spaces.&#xA;&#xA;* This parameter is supported only by IE11, and the default value set by the web browser will be applied if omitted.&#xA;You can determine whether to display the address bar of the web browser by setting the location property to true/false. (This property is supported only by some versions of IE11)&#xA;You can determine whether to display the menu bar of the web browser by setting the menubar property to true/false.&#xA;You can determine whether to display the toolbar of the web browser by setting the toolbar property to true/false.&#xA;&#xA;* The noactivate property is applicable only to the Windows NRE, and the default value of the property is &quot;false&quot;.&#xA;If you set the noactivate property to &quot;true&quot;, the displayed ChildFrame will not be activated.&#xA;If you set noactivate to &quot;false&quot;, the displayed ChildFrame will be activated and focused.&#xA;The noactivate property is used to prevent focus from going to the displayed ChildFrame." />
+            <Argument name="strFormURL" type="String" in="false" out="false" option="false" variable="false" description="It specifies the URL of a Form that will be loaded onto the ChildFrame displayed as a modeless window." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It specifies the ID of a ChildFrame to display as modeless window." />
+            <Argument name="strOpenStyle" type="String" in="false" out="false" option="false" variable="false" description="You can specify properties of a ChildFrame that will be displayed as a modeless window, with the format &quot;Property1=value Property2=value&quot;.&#xA;&#xA;You can set some properties of a ChildFrame and properties are separated by spaces.&#xA;You cannot set CSS-related properties (e.g. background, -nexa-border, font).&#xA;&#xA;The value &quot;all&quot; of the dragmovetype property is supported only by the Windows NRE.&#xA;The layered property is supported only by the Windows NRE and macOS NRE.&#xA;The value &quot;maximize&quot; of the openstatus property is supported only by the Windows NRE and IE.&#xA;The values &quot;normal&quot; and &quot;minimize&quot; of the openstatus property is supported only by the Windows NRE.&#xA;The titlebar property is supported only by the Windows NRE.&#xA;The showstatusbar property is supported only by the Windows NRE and IE." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="parseDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to parse a date string and returns the number of milliseconds between the date string and midnight of January 1, 1970.">
+        <Syntax text="nexacro.parseDate( strDate )">
+          <Return type="Number" description="This method returns the number of milliseconds between the specified date-time and midnight January 1, 1970." />
+          <Arguments>
+            <Argument name="strDate" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing a date.&#xA;&#xA;If the string fails to follow date formats, an error will occur." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a cookie from the Cookies area in Environment.">
+        <Syntax text="nexacro.removeCookieVariable( strID [, bSecure] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bSecure" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter determine whether to remove a cookie variable depending on the value of the Secure property.&#xA;&#xA;For true, this method will remove a cookie variable only when the Secure property is set to &quot;true&quot;.&#xA;For false, this method will remove a cookie variable only when the Secure property is set to &quot;false&quot;.&#xA;&#xA;If nothing is specified, this method will remove a cookie variable regardless of the value of the Secure property." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="The ID of a cookie to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a variable defined in the Variables field in Environment.">
+        <Syntax text="nexacro.removeEnvironmentVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It specifies the ID of a variable that will be removed." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a variable defined in the HTTP Header of Environment.">
+        <Syntax text="nexacro.removeHTTPHeaderVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It is a string resenting the ID of a variable that will be removed." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="replaceAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method replaces a certain string with a new string all through the defined range. Then, this method returns the new string entered as the result of the replacement.">
+        <Syntax text="nexacro.replaceAll( strText, strOrgText, strRepText );">
+          <Return type="String" description="This method returns a new string entered as the result of the replacement." />
+          <Arguments>
+            <Argument name="strOrgText" type="String" in="false" out="false" option="false" variable="false" description="This is a string that is located in the range defined by the strText and will be replaced with a new string." />
+            <Argument name="strRepText" type="String" in="false" out="false" option="false" variable="false" description="This is a string the will replace the string defined by the strOrgText parameter." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the entire range where the original string is located." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method rounds a numeric value off to a value of the defined number of digits. Otherwise, this method rounds a numeric value off to its nearest integer.">
+        <Syntax text="nexacro.round( nVal [,nFractionDigit] );">
+          <Return type="Number" description="This method returns the result of rounding off a value." />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of digits that the rounded-off value will hold.&#xA;&#xA;If you specify 0, the decimal separator will be a base.&#xA;If you specify a positive number, the number of digits will fall on the fractional part.&#xA;If you specify a negative number, the number of digits will fall on the integer part.&#xA;&#xA;The default value is 0." />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="This is a numeric value that will be rounded off." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add a cookie to the Cookies area in Environment.">
+        <Syntax text="nexacro.setCookieVariable( strID, varVal [, bSecure] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bSecure" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter determines whether to set the Secure property for the added cookie variable.&#xA;&#xA;If &quot;true&quot;, a cookie variable will not be included for an HTTP transaction.&#xA;However, a cookie variable will be included for an HTTPS transaction with the Secure property set.&#xA;If &quot;false&quot;, a cookie variable will be included for all types of transactions without the Secure property set.&#xA;&#xA;The default value is &quot;false&quot;." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="The ID of a cookie to add" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="The value of a cookie to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEnableWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method sets a zoom feature is set for the window, one of whose frame is designated as an argument.">
+        <Syntax text="nexacro.setEnableWheelZoom( objFrame, bZoom)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bZoom" type="Boolean" in="false" out="false" option="false" variable="false" description="If you specify &quot;true&quot;, you will activate the zoom feature of the window, one of whose frame is designated as a value of the objFrame parameter.&#xA;&#xA;If you specify &quot;false&quot;, you will deactivate the zoom feature of the window, one of whose frame is designated as a value of the objFrame parameter." />
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="This is an object representing a frame of the window whose zoom feature will be set.&#xA;&#xA;This method will produce the same result whichever frame you specify from the same window." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add a variable to the Variables area in Environment.">
+        <Syntax text="nexacro.setEnvironmentVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="The ID of a variable to add" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="The value of a variable to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add variables to the HTTP Header area in Environment.">
+        <Syntax text="nexacro.setHTTPHeaderVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="The ID of a variable to add to the HTTP Header area" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="The value of a variable to add to the HTTP Header area" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setInitialVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used in the web browser environment to set a variable in a global area before&#xA;the loading of an application.">
+        <Syntax text="nexacro.setInitialVariable( strType, strID, varVal )">
+          <Return type="" description="Object that has been converted to UTF-8" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It is a string that represents the ID of a global variable." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="It is a string that represents a global area where a variable will be set.&#xA;&#xA;If you specify “environment”, a variable will be set in the Variables field in Environment.&#xA;If you specify “cookie”, a variable will be set in the Cookies field in Environment.&#xA;If you specify “httpheader”, a variable will be set in the HTTPHeader field in Environment.&#xA;If you specify “application”, a variable will be set in the Variables field in an application." />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="It is a string that represents the value of a global variable." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used for an application to store individualized data.">
+        <Syntax text="nexacro.setPrivateProfile( strKey, varVal )">
+          <Return type="Boolean" description="If individualized data is successfully saved, it will return &quot;true.&quot;&#xA;If individualized data fails to be saved, it will return &quot;false.&quot;" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="It is a key value for saving the relevant individualized data.&#xA;&#xA;Since it will be used as a tag in an XML script, you cannot specify the characters that are not allowed as XML tags.&#xA;Moreover, you cannot use a colon (:)." />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="It is data to be saved as a individualized data piece.&#xA;&#xA;You can apply basic data types (integer, float, string and boolean) and set a date for the data." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setProtocolVar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to deliver the value of a setting to a communications protocol adapter.">
+        <Syntax text="nexacro.setProtocolVar(strName, strKey, strValue) ;">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="It is a key that indicates the setting whose value will be delivered to a protocol adapter." />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="It is the ID of a protocol adapter that is defined in the Protocols section of the TypeDefinition and to which the value of a setting will be delivered." />
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="It is the value of the setting." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRenderingType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method is used to determine how to render a screen in the Windows NRE.">
+        <Syntax text="nexacro.setRenderingType( nType )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nType" type="Number" in="false" out="false" option="false" variable="false" description="You can specify either 0 or 1 to determine the method of rendering conducted by Windows Nexacro Platform.&#xA;&#xA;0 indicates the real-time method (existing one), which conducts rendering on a regular basis.&#xA;1 indicates the event-based method, which conducts rendering according to system rules." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method sets the zoom factor of the window, one of whose frame is designated as an argument.">
+        <Syntax text="nexacro.setWheelZoom( objFrame, nZoomScale)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nZoomScale" type="Number" in="false" out="false" option="false" variable="false" description="This is a zoom factor you will set for the window, one of whose frame is designated as a value of the objFrame parameter. The zoom factor is expressed in percentage.&#xA;&#xA;You should specify a number that can vary with the increments by 10% within the range from 50% to 200%.&#xA;If the number exceeds the range or does not follow the 10% increment, this method will not be executed." />
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="This is an object representing a frame of the window whose zoom factor will be set.&#xA;&#xA;This method will produce the same result whichever frame you specify from the same window." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stripQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method removes the quotation marks surrounding a string delivered as an argument and then returns the result.">
+        <Syntax text="nexacro.stripQuote( strText )">
+          <Return type="String" description="This method removes the quotation marks surrounding the delivered string and then returns the result." />
+          <Arguments>
+            <Argument name="strText" type="Object" in="false" out="false" option="false" variable="false" description="This is a string whose quotation marks will be removed." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toNumber" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the result of converting a string delivered as an argument into a number.">
+        <Syntax text="nexacro.toNumber( varValue [, varNanVal [, varPinfVal [, varNinfVal]]] )">
+          <Return type="Number" description="This method returns the result of converting a string into a number." />
+          <Arguments>
+            <Argument name="varNanVal" type="Number" in="false" out="false" option="false" variable="false" description="This is a value that will be returned when the result of the conversion is Not-a-Number (NaN).&#xA;&#xA;The default value is &quot;NaN&quot;." />
+            <Argument name="varNinfVal" type="Number" in="false" out="false" option="false" variable="false" description="This is a value that will be returned when the result of the conversion is negative infinity.&#xA;&#xA;The default value is &quot;NEGATIVE_INFINITY&quot;." />
+            <Argument name="varPinfVal" type="Number" in="false" out="false" option="false" variable="false" description="This is a value that will be returned when the result of the conversion is positive infinity.&#xA;&#xA;The default value is &quot;POSITIVE_INFINITY&quot;." />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="This is a string that will be converted into a number." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trim" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove white space or predefined characters from both sides of a string that is delivered as an argument.">
+        <Syntax text="nexacro.trim( strText [,strChar] )">
+          <Return type="String" description="It returns a string after removing white space or predefined characters from both sides of the string." />
+          <Arguments>
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="These are characters that will be removed from the both ends of the string specified as strText.&#xA;&#xA;If you omit this parameter, this method will remove white space from the both ends." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="It is a string whose white space or predefined characters will be removed from both ends." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trimLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove white space or predefined characters from the left side of a string that is delivered as an argument.">
+        <Syntax text="nexacro.trimLeft( strText [,strChar] )">
+          <Return type="String" description="It returns a string after removing white space or predefined characters from the left side of the string." />
+          <Arguments>
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="These are characters that will be removed from the left side of the string specified as strText.&#xA;&#xA;If you omit this parameter, this method will remove white space from the left side." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="It is a string whose white space or predefined characters will be removed from the left side." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trimRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove white space or predefined characters from the right side of a string that is delivered as an argument.">
+        <Syntax text="nexacro.trimRight( strText [,strChar] )">
+          <Return type="String" description="It returns a string after removing white space or predefined characters from the right side of the string." />
+          <Arguments>
+            <Argument name="strTarget" type="String" in="false" out="false" option="false" variable="false" description="These are characters that will be removed from the right side of the string specified as strText.&#xA;&#xA;If you omit this parameter, this method will remove white space from the right side." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="It is a string whose white space or predefined characters will be removed from the right side." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="wrapQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method surrounds a string delivered as an argument with quotation marks and then returns the result.">
+        <Syntax text="nexacro.wrapQuote( strText )">
+          <Return type="String" description="This method surrounds the delivered string with quotation marks and then returns the result." />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="This is a string that will be surrounded with quotation marks." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

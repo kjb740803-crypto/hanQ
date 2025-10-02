@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Mobile_Check" width="480" height="728" titletext="강습회수" onload="Form_onload">
+    <Layouts>
+      <Layout height="728" mobileorientation="portrait" screenid="Phone_screen" width="480" stepcount="2">
+        <Div id="div_search" taborder="0" left="10" top="40" height="50" right="10" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" cssclass="div_WFSA">
+          <Layouts>
+            <Layout>
+              <Button id="btn_retrieve" taborder="1" text="조회" top="11" width="78" height="30" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" onclick="btn_retrieve_onclick" left="372"/>
+              <Combo id="comYear" taborder="1" text="Combo00" left="89" top="8" width="120" height="31" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" onitemchanged="div_search_comYear_onitemchanged">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">%</Col>
+                      <Col id="datacolumn">전체</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2021</Col>
+                      <Col id="datacolumn">2021</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2022</Col>
+                      <Col id="datacolumn">2022</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2023</Col>
+                      <Col id="datacolumn">2023</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2024</Col>
+                      <Col id="datacolumn">2024</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2025</Col>
+                      <Col id="datacolumn">2025</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Combo>
+              <Static id="Static00" taborder="2" text="년도" left="4" top="14" width="72" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Grid id="Grid00" taborder="1" left="12" top="96" width="458" height="574" binddataset="ds_Check" autofittype="col" summarytype="top">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="68"/>
+                <Column size="102"/>
+                <Column size="48"/>
+                <Column size="60"/>
+                <Column size="61"/>
+                <Column size="60"/>
+                <Column size="59"/>
+              </Columns>
+              <Rows>
+                <Row size="25" band="head"/>
+                <Row size="25" band="head"/>
+                <Row size="40"/>
+              </Rows>
+              <Band id="head">
+                <Cell rowspan="2" text="NO"/>
+                <Cell col="1" rowspan="2" text="성명"/>
+                <Cell col="2" rowspan="2" text="보장"/>
+                <Cell col="3" colspan="3" text="진행내용"/>
+                <Cell col="6" rowspan="2" text="잔여"/>
+                <Cell row="1" col="3" text="전체"/>
+                <Cell row="1" col="4" text="유료"/>
+                <Cell row="1" col="5" text="기타"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:MEMBER_NO" textAlign="center"/>
+                <Cell col="1" text="bind:MEMBER_NAME" textAlign="center"/>
+                <Cell col="2" text="bind:PAY_CNT" textAlign="center" displaytype="number"/>
+                <Cell col="3" text="bind:TOTAL_CNT" textAlign="center" displaytype="number"/>
+                <Cell col="4" text="bind:PAY_Y" textAlign="center" displaytype="number"/>
+                <Cell col="5" text="bind:PAY_N" textAlign="center" displaytype="number"/>
+                <Cell col="6" text="bind:REST_CNT" textAlign="center" displaytype="number"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="st_title" taborder="2" text="강습회수" left="10" top="5" width="110" height="30" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" cssclass="sta_WF_emptitle"/>
+        <Static id="Static00" taborder="3" text="회원정보" left="14" top="24" width="72" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" positionstep="1"/>
+        <Edit id="edt_emp_no" taborder="4" left="91" top="19" width="70" height="30" positionstep="1" readonly="true"/>
+        <Edit id="edt_emp_nm" taborder="5" left="166" top="19" width="129" height="30" positionstep="1" readonly="true"/>
+        <Grid id="Grid00_00" taborder="6" left="11" top="61" width="451" height="279" binddataset="ds_history" autofittype="col" summarytype="top" positionstep="1">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="49"/>
+                <Column size="130"/>
+                <Column size="80"/>
+                <Column size="96"/>
+                <Column size="97"/>
+              </Columns>
+              <Rows>
+                <Row size="40" band="head"/>
+                <Row size="40"/>
+                <Row size="30" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="No"/>
+                <Cell col="1" text="강습일자"/>
+                <Cell col="2" text="구분"/>
+                <Cell col="3" text="시작일시"/>
+                <Cell col="4" text="종료일시"/>
+              </Band>
+              <Band id="body">
+                <Cell text="expr:dataset.getRowCount() - currow " textAlign="center"/>
+                <Cell col="1" text="bind:REG_DT" textAlign="center" displaytype="mask" maskedittype="string" maskeditformat="####-##-##"/>
+                <Cell col="2" text="expr:GUBUN == &quot;001&quot; ? &quot;유료&quot; : GUBUN == &quot;002&quot; ? &quot;자율&quot; : &quot;기타&quot;" textAlign="center"/>
+                <Cell col="3" text="expr:START_DT.substr(0,2) +&quot;:&quot;+ START_DT.substr(3,2)" displaytype="normal" textAlign="center"/>
+                <Cell col="4" text="expr:END_DT.substr(0,2) +&quot;:&quot;+ END_DT.substr(3,2)" textAlign="center"/>
+              </Band>
+              <Band id="summary">
+                <Cell text="유료"/>
+                <Cell col="1" text="expr:dataset.getCaseCount(&quot;GUBUN == '001'&quot;)" color="blue"/>
+                <Cell col="2" text="기타"/>
+                <Cell col="3" text="expr:dataset.getCaseCount(&quot;GUBUN != '001'&quot;)" color="red"/>
+                <Cell col="4"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static00_00_00_00_00" taborder="7" text="진행시간" left="20" top="397" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" positionstep="1"/>
+        <Static id="Static00_00_00_00_01" taborder="8" text="~" left="273" top="397" width="16" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" positionstep="1"/>
+        <TextArea id="TextArea00" taborder="9" left="104" top="474" width="355" height="120" positionstep="1" readonly="true"/>
+        <Static id="Static00_00_00_00_00_00" taborder="10" text="강습내용" left="20" top="487" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" positionstep="1"/>
+        <Static id="Static00_00_00_00_00_00_00" taborder="11" text="메모" left="20" top="597" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" positionstep="1"/>
+        <Static id="Static00_00_00_00_00_01" taborder="12" text="강습장소" left="20" top="439" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" positionstep="1"/>
+        <Combo id="Combo00_02" taborder="13" text="Combo00" left="104" top="434" width="355" height="33" innerdataset="ds_place" codecolumn="COMMON_CD" datacolumn="COMMON_NM" positionstep="1" readonly="true"/>
+        <MaskEdit id="MaskEdit00" taborder="14" left="104" top="392" width="147" height="35" type="string" format="##:##:##" positionstep="1"/>
+        <MaskEdit id="MaskEdit00_00" taborder="15" left="313" top="392" width="147" height="35" type="string" format="##:##:##" positionstep="1" readonly="true"/>
+        <Static id="Static00_00_00" taborder="16" text="강습일자" left="20" top="357" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" positionstep="1"/>
+        <Calendar id="Calendar00" taborder="17" left="102" top="351" width="147" height="35" positionstep="1" readonly="true"/>
+        <Radio id="Radio00" taborder="18" left="267" top="351" width="191" height="37" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" columncount="3" positionstep="1" readonly="true">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">001</Col>
+                <Col id="datacolumn">유료</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">002</Col>
+                <Col id="datacolumn">무료</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">003</Col>
+                <Col id="datacolumn">기타</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <TextArea id="TextArea00_00" taborder="19" left="104" top="602" width="355" height="88" positionstep="1" readonly="true"/>
+        <Edit id="edt_phone" taborder="20" left="298" top="19" width="164" height="30" positionstep="1" readonly="true"/>
+      </Layout>
+      <Layout height="728" mobileorientation="portrait" screenid="Phone_screen" width="480" name="default0"/>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_Check" onrowposchanged="ds_Check_onrowposchanged">
+        <ColumnInfo>
+          <Column id="MEMBER_NO" type="STRING" size="256"/>
+          <Column id="MEMBER_NAME" type="STRING" size="256"/>
+          <Column id="PAY_CNT" type="STRING" size="256"/>
+          <Column id="PAY_Y" type="STRING" size="256"/>
+          <Column id="PAY_N" type="STRING" size="256"/>
+          <Column id="TOTAL_CNT" type="STRING" size="256"/>
+          <Column id="REST_CNT" type="STRING" size="256"/>
+          <Column id="MEMBER_PHONE" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_history">
+        <ColumnInfo>
+          <Column id="MEMBER_NO" type="STRING" size="256"/>
+          <Column id="SEQ" type="STRING" size="256"/>
+          <Column id="REG_DT" type="STRING" size="256"/>
+          <Column id="HISTORY_INFO" type="STRING" size="256"/>
+          <Column id="GUBUN" type="STRING" size="256"/>
+          <Column id="START_DT" type="STRING" size="256"/>
+          <Column id="END_DT" type="STRING" size="256"/>
+          <Column id="MEMO" type="STRING" size="256"/>
+          <Column id="PLACE" type="STRING" size="256"/>
+          <Column id="UPDATE_DT" type="STRING" size="256"/>
+          <Column id="STATUS" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_place">
+        <ColumnInfo>
+          <Column id="COMMON_CD" type="STRING" size="256"/>
+          <Column id="COMMON_NM" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[this.Form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	var objDate = new nexacro.Date();
+	this.div_search.form.comYear.set_value("%");	
+	this.fn_init();
+	
+};    
+
+
+this.fn_init = function(obj)
+{
+	this.gfn_transCOMMClear();   
+	// input , output,args,select  
+	var args =  "KIND='002'"	  
+	this.gfn_addTransInfo("","output",args,"003,Common,1");	
+    
+	var strSvcId    = "strCode";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";           
+	var outData     = "ds_place=output";
+	var strArg      =  "";
+	  
+	var callBackFnc = "fnCallback";      
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}  
+
+
+
+this.btn_retrieve_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fn_query();	  
+};
+
+this.fn_query = function()
+{
+	this.ds_history.clearData();
+	this.edt_emp_no.set_value(this.ds_Check.getColumn(this.ds_Check.rowposition,""));
+	this.edt_emp_nm.set_value(this.ds_Check.getColumn(this.ds_Check.rowposition,""));
+	this.edt_phone.set_value(this.ds_Check.getColumn(this.ds_Check.rowposition,""));
+	
+	
+	this.gfn_transCOMMClear();   
+	// input , output,args,select  
+	var strYear = "";
+	/*
+	if(this.div_search.form.comYear.value != "9999")
+	{
+		strYear = this.div_search.form.comYear.value;
+	}
+	*/
+	var args =  "REG_DT='" + strYear +  "%'";
+
+	this.gfn_addTransInfo("","output",args,"003,Member,11");	
+         
+	var strSvcId    = "search";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";           
+	var outData     = "ds_Check=output";
+	var strArg      = ""
+	     
+	var callBackFnc = "fnCallback";      
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+
+this.fn_subquery = function()
+{
+	this.edt_emp_no.set_value(this.ds_Check.getColumn(this.ds_Check.rowposition,"MEMBER_NO"));
+	this.edt_emp_nm.set_value(this.ds_Check.getColumn(this.ds_Check.rowposition,"MEMBER_NAME"));
+	this.edt_phone.set_value(this.ds_Check.getColumn(this.ds_Check.rowposition,"MEMBER_PHONE"));
+	  
+	this.gfn_transCOMMClear();   
+	// input , output,args,select  
+	
+	
+	var args =  "MEMBER_NO='" +this.ds_Check.getColumn(this.ds_Check.rowposition,"MEMBER_NO") + "'";
+
+	this.gfn_addTransInfo("","output",args,"003,Member,2");	
+         
+	var strSvcId    = "subsearch";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";           
+	var outData     = "ds_history=output";
+	var strArg      = ""  
+    
+	var callBackFnc = "fnCallback";      
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+this.fnCallback = function(svcID, errCD, errMSG)
+{
+	if(errCD < 0){
+		this.alert("Error: " + errMSG);
+		return;  
+	} 
+	if(svcID == "strCode")
+	{
+		this.fn_query();
+	}
+}	  
+
+this.div_search_comMonth_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	this.fn_query();
+};
+
+this.div_search_comYear_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	this.fn_query();
+};
+
+
+this.ds_Check_onrowposchanged = function(obj:nexacro.NormalDataset,e:nexacro.DSRowPosChangeEventInfo)
+{
+	this.fn_subquery();
+};
+]]></Script>
+    <Bind>
+      <BindItem id="item0" compid="TextArea00" propid="value" datasetid="ds_history" columnid="HISTORY_INFO"/>
+      <BindItem id="item1" compid="Tab00.Tabpage1.form.TextArea00_00" propid="value" datasetid="ds_history" columnid="MEMO"/>
+      <BindItem id="item2" compid="Combo00_02" propid="value" datasetid="ds_history" columnid="PLACE"/>
+      <BindItem id="item3" compid="MaskEdit00" propid="value" datasetid="ds_history" columnid="START_DT"/>
+      <BindItem id="item4" compid="Tab00.Tabpage1.form.MaskEdit00_00" propid="value" datasetid="ds_history" columnid="END_DT"/>
+      <BindItem id="item5" compid="MaskEdit00_00" propid="value" datasetid="ds_history" columnid="END_DT"/>
+      <BindItem id="item6" compid="Calendar00" propid="value" datasetid="ds_history" columnid="REG_DT"/>
+      <BindItem id="item7" compid="Radio00" propid="value" datasetid="ds_history" columnid="GUBUN"/>
+      <BindItem id="item8" compid="TextArea00_00" propid="value" datasetid="ds_history" columnid="MEMO"/>
+    </Bind>
+  </Form>
+</FDL>

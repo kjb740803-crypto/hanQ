@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.CameraErrorEventInfo">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.CameraErrorEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="EventInfo" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="This EventInfo object is delivered to the events that are triggered by the failure to access a camera app of a mobile device" />
+    <PropertyInfo>
+      <Property name="errormsg" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property holds the message of an error that has occurred." csspropertyname="" normalpropertyname="errormsg" />
+      <Property name="errortype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property represents the type of an error that has occurred." csspropertyname="" normalpropertyname="errortype" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the ID of an event." csspropertyname="" normalpropertyname="eventid" />
+      <Property name="statuscode" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property holds the code of an error that has occurred." csspropertyname="" normalpropertyname="statuscode" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

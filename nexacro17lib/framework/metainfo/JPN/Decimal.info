@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Decimal">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.Decimal" shorttypename="Decimal" csstypename="" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="decimal型を処理するために提供するオブジェクトです。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="abs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値を絶対値に変更するメソッドです。">
+        <Syntax text="Decimal.abs()">
+          <Return type="Decimal" description="変更された絶対値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値にDecimal型の値を加えるメソッドです。">
+        <Syntax text="Decimal.addDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトに加えるDecimalオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値に数値を加えるメソッドです。">
+        <Syntax text="Decimal.addDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトに加える数値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値を、小数点基準に切り上げた値に変更するメソッドです。">
+        <Syntax text="Decimal.ceil()">
+          <Return type="Decimal" description="小数点を基準に切り上げた値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="divDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値をDecimal型の値に割算するメソッドです。">
+        <Syntax text="Decimal.divDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトを割算するDecimalオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="divDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値を数値に分割するメソッドです。">
+        <Syntax text="Decimal.divDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトを分割する数値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値を、小数点基準に切り捨てた値に変更するメソッドです。">
+        <Syntax text="Decimal.floor()">
+          <Return type="Decimal" description="小数点を基準に切り捨てた値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEqual" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値と引数として渡されたDecimalオブジェクトの値が一致するかどうかを比較するメソッドです。">
+        <Syntax text="Decimal.isEqual( objDecimal )">
+          <Return type="Boolean" description="２つのオブジェクトの値が一致した場合は、「true」を返します。&#xA;&#xA;２つのオブジェクトの値が異なる場合は、「false」を返します。" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="値を比較するDecimalオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isInfinity" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値がInfinityであるかを確認するメソッドです。">
+        <Syntax text="Decimal.isInfinity()">
+          <Return type="Boolean" description="Decimalオブジェクトの値がInfinity値であれば「true」を返します。&#xA;&#xA;Decimalオブジェクトの値がInfinity値でなければ「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値がNaNであるかを確認するメソッドです。">
+        <Syntax text="Decimal.isNaN()">
+          <Return type="Boolean" description="Decimalオブジェクトの値がNaNであれば「true」を返します。&#xA;&#xA;Decimalオブジェクトの値がNaNでなければ「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaNOrInf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値がInfinityもしくはNaNであるかを確認するメソッドです。">
+        <Syntax text="Decimal.isNaNOrInf()">
+          <Return type="Boolean" description="Decimalオブジェクトの値がInfinityもしくはNaN値であれば「true」を返します。&#xA;&#xA;Decimalオブジェクトの値がInfinity、NaN値でなければ「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNegative" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値が負であるか否かを返すメソッドです。">
+        <Syntax text="Decimal.isNegative()">
+          <Return type="Boolean" description="Decimalオブジェクトの値が負であれば「true」を返します。&#xA;&#xA;Decimalオブジェクトの値が負でなければ「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isZero" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクト値がゼロであるか否かを返すメソッドです。">
+        <Syntax text="Decimal.isZero()">
+          <Return type="Boolean" description="Decimalオブジェクトの値が0であれば「true」を返します。&#xA;&#xA;Decimalオブジェクトの値が0でなければ「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="modDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値をDecimal型の値で割った余りの値に変更するメソッドです。">
+        <Syntax text="Decimal.modDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトを割算するDecimalオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="modDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値を数値で割った残りの値に変更するメソッドです。">
+        <Syntax text="Decimal.modDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトを分割する数値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトの値に指定したBigDecimal値を乗算するメソッドです。">
+        <Syntax text="Decimal.mulDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトに乗算するDecimalオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値に数値を乗算するメソッドです。">
+        <Syntax text="Decimal.mulDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトに乗算する数値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値を、小数点基準に丸めた値に変更するメソッドです。">
+        <Syntax text="Decimal.round()">
+          <Return type="Decimal" description="小数点を基準に丸めた値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに引数として渡されたDecimalオブジェクトの値を保存するメソッドです。">
+        <Syntax text="Decimal.setDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトに保存する他のDecimalオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに引数として渡された数値を保存するメソッドです。">
+        <Syntax text="Decimal.setDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトに保存する数値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに数値の文字列を保存するメソッドです。">
+        <Syntax text="Decimal.setString( strValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトに保存する数値の文字列を設定します。&#xA;&#xA;数字以外の文字が含まれている場合、正常に保存されません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値でDecimal型の値を減算するメソッドです。">
+        <Syntax text="Decimal.subDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトから値を減算するDecimalオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値で数値を減算するメソッドです。">
+        <Syntax text="Decimal.subDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimalオブジェクトから値を減算する数値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値を文字列として返すメソッドです。">
+        <Syntax text="Decimal.toString()">
+          <Return type="String" description="Decimalオブジェクトに保存された値を文字列として返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="trunc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Decimalオブジェクトに保存された値を、小数点基準に切り捨てた値に変更するメソッドです。">
+        <Syntax text="Decimal.trunc()">
+          <Return type="Decimal" description="小数点を基準に切り捨てた値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

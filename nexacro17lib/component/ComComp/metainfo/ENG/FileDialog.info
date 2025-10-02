@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileDialog">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileDialog" shorttypename="FileDialog" csstypename="FileDialog" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This is a file dialog component, which allows users to open a file or select a location for saving a file." />
+    <PropertyInfo>
+      <Property name="accept" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Android NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the file types applicable to a FileDialog in the web browser environment." csspropertyname="" normalpropertyname="accept" />
+      <Property name="defaultextension" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="This property determines whether to automatically attach a selected extension to the names of the files in a FileDialog." csspropertyname="" normalpropertyname="defaultextension" />
+      <Property name="filter" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="This property is used to set the file types applicable to a FileDialog." csspropertyname="" normalpropertyname="filter" />
+      <Property name="filterindex" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="This property is used to determine the default file type presented by a FileDialog by specifying an index number." csspropertyname="" normalpropertyname="filterindex" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the identification of a FileDialog." csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to specify the name of a FileDialog." csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This read-only property holds the parent object of a FileDialog." csspropertyname="" normalpropertyname="parent" />
+      <Property name="SELFOLDER" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="SELFOLDER" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to add a handler to a certain event of a FileDialog.">
+        <Syntax text="FileDialog.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to find a function and add it to a certain event of a FileDialog as a handler.">
+        <Syntax text="FileDialog.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="FileDialog.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method finds a handler in a certain event of a FileDialog and returns the index of the handler.">
+        <Syntax text="FileDialog.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you attempt to find.&#xA;&#xA;If the handler does not exist, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns a specific handler from a certain event of a FileDialog by specifying the index number of the handler.">
+        <Syntax text="FileDialog.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;&#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to display a FileDialog.">
+        <Syntax text="FileDialog.open( strTitle, constOpenMode [, strInitialPath [, strFileName [, nWidth [, nHeight ]]]] )">
+          <Return type="Boolean" description="If the execution of this method is successful, it will return &quot;true&quot;.&#xA;&#xA;If you specify inaccurate values for parameters, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="constOpenMode" type="Constant" in="false" out="false" option="false" variable="false" description="This parameter defines the type of the FileDialog to open.&#xA;&#xA;If you specify &quot;FileDialog.LOAD&quot; or 1, this method will open a FileDialog that can read a single file.&#xA;If you specify &quot;FileDialog.SAVE&quot; or 2, this method will open a FileDialog that can save a single file.&#xA;If you specify &quot;FileDialog.MULTILOAD&quot; or 3, this method will open a FileDialog that can read multiple files.&#xA;If you specify &quot;FileDialog.SELFOLDER&quot; or 4, this method will open a FileDialog that can select a folder.&#xA;&#xA;If you specify an invalid value, the value &quot;FileDialog.LOAD&quot; will be applied.&#xA;&#xA;* In the desktop WRE, you can apply only the &quot;FileDialog.LOAD&quot; and &quot;FileDialog.MULTILOAD&quot; options.&#xA;* In the mobile environment, you can only apply the &quot;FileDialog.MULTILOAD&quot; option to the iOS/iPadOS default web browser." />
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the height of the FileDialog, expressed in pixel.&#xA;&#xA;If you specify a number smaller than 356 or do not set this parameter, the value of this parameter will be either 356 or the last-displayed height.&#xA;If you specify a value bigger than the height of the monitor, the monitor's height will be set as a value of this parameter.&#xA;&#xA;* This parameter is applicable only to the Windows NRE." />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the width of the FileDialog, expressed in pixel.&#xA;&#xA;If you specify a number smaller than 648 or do not set this parameter, the value of this parameter will be either 648 or the last-displayed width.&#xA;If you specify a value bigger than the width of the monitor, the monitor's width will be set as a value of this parameter.&#xA;&#xA;* This parameter is applicable only to the Windows NRE." />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="This parameter defines the name of a file that will be designated by default when a FileDialog is displayed.&#xA;&#xA;When the constOpenMode parameter is set to &quot;FileDialog.SELFOLDER&quot;, this parameter will be ignored.&#xA;&#xA;* This parameter is not applied in web runtime environment." />
+            <Argument name="strInitialPath" type="String" in="false" out="false" option="false" variable="false" description="This parameter defines the folder that will be selected by default when a FileDialog is opened.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias.&#xA;&#xA;* This parameter is not applied in web runtime environment." />
+            <Argument name="strTitle" type="String" in="false" out="false" option="false" variable="false" description="This is a string that is displayed on the title bar of a FileDialog.&#xA;&#xA;* This property does not apply to the macOS NRE and web runtime environment." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to remove a handler in a certain event of a FileDialog.">
+        <Syntax text="FileDialog.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to find a handler in a certain event of a FileDialog and remove it.">
+        <Syntax text="FileDialog.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to change the first handler in a certain event of a FileDialog.">
+        <Syntax text="FileDialog.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method finds a function and uses it to replace the first handler in a certain event of a FileDialog.">
+        <Syntax text="FileDialog.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs when a FileDialog is closed.">
+        <Syntax text="FileDialog.onclose(obj:nexacro.FileDialog,e:nexacro.FileDialogEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileDialogEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ListViewCellControl">
+    <ObjectInfo finalclass="true" inheritance="nexacro.Component" classname="nexacro._ListViewCellControl" shorttypename="ListViewCellControl" csstypename="" csscontrolname="ListViewCellControl" group="Component" subgroup="Control" csspseudo="true" container="false" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellは、ListViewが出力される最小単位でBand内に表示されるオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControlの背景領域を設定するプロパティです。" csspropertyname="background" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの角の形を設定するプロパティです。" csspropertyname="border-radius" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellを表示するための下部座標を設定するプロパティです。" csspropertyname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+      <Property name="calendarautoselect" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="セルのedittypeプロパティ値が「date」である場合、編集モードに切り替えた際にテキストを全選択するかどうかを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarautoselect" />
+      <Property name="calendarbackgroundcol" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式である場合、calendardatasetプロパティに設定されたDatasetのカラムの中から、MonthCalendar上の任意の日付に対して背景色を定義したカラムのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarbackgroundcol" />
+      <Property name="calendarbordercol" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式である場合、calendardatasetプロパティに設定されたDatasetのカラムの中から、MonthCalendar上の任意の日付に対してボーダーを定義したカラムのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarbordercol" />
+      <Property name="calendarbuttonsize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、表示されるドロップダウンボタンのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarbuttonsize" />
+      <Property name="calendardataset" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerDatasetID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式である場合、MonthCalendarにて記念日や締日などの日付データとして、任意の日付に対して背景色やフォント色などのデータを持つDatasetを設定するプロパティです。" csspropertyname="" normalpropertyname="calendardataset" />
+      <Property name="calendardatecol" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式である場合、calendardatasetプロパティに設定されたDatasetのカラムの中から、MonthCalendar上の任意の日付を定義したカラムのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="calendardatecol" />
+      <Property name="calendardateformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy-MM-dd ddd" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのdisplaytypeプロパティ値が「date」もしくは「calendarcontrol」の場合、表示される日付の形式を設定するプロパティです。" csspropertyname="" normalpropertyname="calendardateformat" />
+      <Property name="calendardaysize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、ポップアップで表示されるカレンダーの各日付の領域のサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="calendardaysize" />
+      <Property name="calendardisplayinvalidtext" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式のときにバインドされたデータの値が有効でない場合、代替して表示される文字列を設定するプロパティです。" csspropertyname="" normalpropertyname="calendardisplayinvalidtext" />
+      <Property name="calendardisplayinvalidtype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CellDpInvalidType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式のときにバインドされたデータの値が有効でない場合、代替して表示される形式を設定するプロパティです。" csspropertyname="" normalpropertyname="calendardisplayinvalidtype" />
+      <Property name="calendardisplaynulltext" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellCellのcalendardisplaynulltypeプロパティ値が「nulltext」の場合、Cellに表示するテキストを設定するプロパティです。" csspropertyname="" normalpropertyname="calendardisplaynulltext" />
+      <Property name="calendardisplaynulltype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridDateNullType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのdisplaytypeプロパティ値が「date」もしくは「calendarcontrol」であり、バインドされた値が「null」である場合、Cellに表示される値を設定するプロパティです。" csspropertyname="" normalpropertyname="calendardisplaynulltype" />
+      <Property name="calendareditformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy-MM-dd" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「date」の場合、入力される日付の書式を設定するプロパティです。" csspropertyname="" normalpropertyname="calendareditformat" />
+      <Property name="calendarheadformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、ポップアップカレンダーの上部に表示される年/月の順序を設定するプロパティです。" csspropertyname="" normalpropertyname="calendarheadformat" />
+      <Property name="calendarheadheight" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、ポップアップカレンダーから年/月が表示されるHead領域の高さを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarheadheight" />
+      <Property name="calendarpopupsize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、ポップアップで表示されるカレンダーのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarpopupsize" />
+      <Property name="calendarpopuptype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CalendarPopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式のときに、ポップアップカレンダー（DatePicker）が表示される方法を設定するプロパティです。" csspropertyname="" normalpropertyname="calendarpopuptype" />
+      <Property name="calendarshowmonthspin" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、ポップアップカレンダーの上に「月変更」ボタンを表示するかを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarshowmonthspin" />
+      <Property name="calendarshowyearspin" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、ポップアップカレンダーの上部に「年度変更」ボタンを表示するかを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarshowyearspin" />
+      <Property name="calendartextcolorcol" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式である場合、calendardatasetプロパティに設定されたDatasetのカラムの中から、MonthCalendar上の任意の日付に対してフォント色を定義したカラムのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="calendartextcolorcol" />
+      <Property name="calendartype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridDateType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、Calendarが画面に表示される形式を設定するプロパティです。" csspropertyname="" normalpropertyname="calendartype" />
+      <Property name="calendarusetrailingday" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、ポップアップカレンダーの開始/終了余白に前/後の月の日付を表示するかを設定するプロパティです。" csspropertyname="" normalpropertyname="calendarusetrailingday" />
+      <Property name="calendarweekformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、ポップアップカレンダーに曜日が表示される形式を設定するプロパティです。" csspropertyname="" normalpropertyname="calendarweekformat" />
+      <Property name="checkboxsize" group="CellCheckBox" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCheckBox形式の場合、CheckBoxのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="checkboxsize" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" normalpropertyname="color" />
+      <Property name="comboautoselect" group="CellCombo" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、編集モード用コントロールが有効になると、テキストをすべて選択するかを設定するプロパティです。" csspropertyname="" normalpropertyname="comboautoselect" />
+      <Property name="combobuttonsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式のときに表示されるドロップダウンボタンのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="combobuttonsize" />
+      <Property name="combocodecol" group="CellCombo" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、Cellのアイテムリストからコード値として使用されるColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="combocodecol" />
+      <Property name="combodatacol" group="CellCombo" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、Cellのアイテムリストからデータ値に使用されるColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="combodatacol" />
+      <Property name="combodataset" group="CellCombo" subgroup="bind(combodataset)" refreshinfo="" edittype="InnerDatasetID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、SubCellのアイテムリストを構成するDataSetのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="combodataset" />
+      <Property name="combodisplaynulltext" group="CellCombo" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、バインドされた値と一致するアイテムが存在しない場合に表示するテキストを設定するプロパティです。" csspropertyname="" normalpropertyname="combodisplaynulltext" />
+      <Property name="combodisplaynulltype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridComboNullType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の状態でバインドされた値と一致するアイテムがない場合、表示される値の種類を設定するプロパティです。" csspropertyname="" normalpropertyname="combodisplaynulltype" />
+      <Property name="combodisplayrowcount" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、アイテムリストに一度に表示されるアイテムの数を設定するプロパティです。" csspropertyname="" normalpropertyname="combodisplayrowcount" />
+      <Property name="comboimemode" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Windows NRE,Android NRE" description="CellがCombo形式のときに、編集モード用コントロールで使用されるデフォルト入力言語を設定するプロパティです。" csspropertyname="" normalpropertyname="comboimemode" />
+      <Property name="comboitemheight" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、アイテムリストの各行の高さを設定するプロパティです。" csspropertyname="" normalpropertyname="comboitemheight" />
+      <Property name="combopopupsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、ポップアップで表示されるアイテムのリストのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="combopopupsize" />
+      <Property name="combopopuptype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="PopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、アイテムのリストが表示される方法を設定するプロパティです。" csspropertyname="" normalpropertyname="combopopuptype" />
+      <Property name="comboscrollbarsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo 形式の場合、アイテムリストに表示されるスクロールバーの幅を設定するプロパティです。" csspropertyname="" normalpropertyname="comboscrollbarsize" />
+      <Property name="combotype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ComboType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、動作する方法を設定するプロパティです。" csspropertyname="" normalpropertyname="combotype" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellのStyleをXCSSファイルに定義されたクラスに設定するプロパティです。" csspropertyname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" normalpropertyname="cursor" />
+      <Property name="displaytype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ListView_DispType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが編集状態ではない場合にバインドされたデータが画面に表示される形式を設定するプロパティです。" csspropertyname="" normalpropertyname="displaytype" />
+      <Property name="editautoselect" group="CellEdit" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「text」の状態で編集領域が活性化された場合、テキストをすべて選択するかを設定するプロパティです。" csspropertyname="" normalpropertyname="editautoselect" />
+      <Property name="editimeaction" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CellImeActionType" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE" description="キーボードの確定ボタン（EditText）のUIと動作を設定するプロパティです。" csspropertyname="" normalpropertyname="editimeaction" />
+      <Property name="editimemode" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Windows NRE,Android NRE" description="Cellのedittypeプロパティ値が「text」である場合、編集モード用コントロールで使用されるデフォルト入力言語を設定するプロパティです。" csspropertyname="" normalpropertyname="editimemode" />
+      <Property name="editinputfilter" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputFilterType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「text」の場合、Cellの編集時に入力を制限する文字をタイプごとに設定するプロパティです。" csspropertyname="" normalpropertyname="editinputfilter" />
+      <Property name="editinputmode" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「text」の場合、編集モード用コントロールに入力される英字を大文字もしくは小文字に変換するかを設定するプロパティです。" csspropertyname="" normalpropertyname="editinputmode" />
+      <Property name="editinputtype" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「text」の場合、編集モード用コントロールに入力を許可する文字をタイプごとに設定するプロパティです。" csspropertyname="" normalpropertyname="editinputtype" />
+      <Property name="editmaxlength" group="CellEdit" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「text」の場合、SubCellに入力できる文字列の最大長を設定するプロパティです。" csspropertyname="" normalpropertyname="editmaxlength" />
+      <Property name="edittype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ListView_EditType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellがフォーカスを受けて表示される編集モードのコントロールの形式を設定するプロパティです。" csspropertyname="" normalpropertyname="edittype" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="enableevent" />
+      <Property name="expandchar" group="CellExpand" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの拡張ボタンに表示されるテキストを設定するプロパティです。" csspropertyname="" normalpropertyname="expandchar" />
+      <Property name="expandimage" group="CellExpand" subgroup="" refreshinfo="" edittype="ImageID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの拡張ボタンにテキストと一緒に表示する画像のパスを設定するプロパティです。" csspropertyname="" normalpropertyname="expandimage" />
+      <Property name="expandshow" group="CellExpand" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="hide" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridExpandShow" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの右側に展開ボタンを表示するかを設定するプロパティです。" csspropertyname="" normalpropertyname="expandshow" />
+      <Property name="expandsize" group="CellExpand" subgroup="" refreshinfo="" edittype="Number" defaultvalue="16" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの右側に表示される拡張ボタンのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="expandsize" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="セルに表示されるテキストを数式や関数により動的に設定するプロパティです。" csspropertyname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellで使用するフォントを設定するプロパティです。" csspropertyname="font" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellを表示するための高さを設定するプロパティです。" csspropertyname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="id" />
+      <Property name="imagestretch" group="CellImage" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Stretch" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのサイズに合わせて画像が拡大/縮小される方法を設定するプロパティです。" csspropertyname="" normalpropertyname="imagestretch" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellを表示するための左側座標を設定するプロパティです。" csspropertyname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+      <Property name="locale" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに適用される国と言語（locale）を設定するプロパティです。" csspropertyname="" normalpropertyname="locale" />
+      <Property name="maskeditautoselect" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「mask」の状態で編集領域が活性化された場合、テキストをすべて選択するかを設定するプロパティです。" csspropertyname="" normalpropertyname="maskeditautoselect" />
+      <Property name="maskeditclipmode" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ClipModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのmaskeditformatプロパティに設定された形式の中で、入力しないマスクの処理方法を決定するプロパティです。" csspropertyname="" normalpropertyname="maskeditclipmode" />
+      <Property name="maskeditformat" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「mask」の場合、入力される文字の種類を指定するプロパティです。" csspropertyname="" normalpropertyname="maskeditformat" />
+      <Property name="maskeditimeaction" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CellImeActionType" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE" description="キーボードの確定ボタン（EditText）のUIと動作を設定するプロパティです。" csspropertyname="" normalpropertyname="maskeditimeaction" />
+      <Property name="maskeditlimitbymask" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="decimal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LimitByMask" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの形式が数字入力を受けるMaskEditである場合、マスク値が適用される部分を設定するプロパティです。" csspropertyname="" normalpropertyname="maskeditlimitbymask" />
+      <Property name="maskeditmaskchar" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="String" defaultvalue="_" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのmaskeditformatプロパティに定義されたマスク文字に対応する文字を指定するプロパティです。" csspropertyname="" normalpropertyname="maskeditmaskchar" />
+      <Property name="maskeditpostfixtext" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="表示テキストの末尾に付けて表示する文字列を設定するプロパティです。" csspropertyname="" normalpropertyname="maskeditpostfixtext" />
+      <Property name="maskedittrimtype" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TrimType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのmaskeditformatプロパティに設定された形式の左右空白の処理方法を決定するプロパティです。" csspropertyname="" normalpropertyname="maskedittrimtype" />
+      <Property name="maskedittype" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="MaskEditType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「mask」の場合、Cellに入力される値の形式を設定するプロパティです。" csspropertyname="" normalpropertyname="maskedittype" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが画面に表示される最大高さを設定するプロパティです。" csspropertyname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが画面に表示される最大幅を設定するプロパティです。" csspropertyname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが画面に表示される最小高さを設定するプロパティです。" csspropertyname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが画面に表示される最小幅を設定するプロパティです。" csspropertyname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControlの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの境界線を設定するプロパティです。" csspropertyname="-nexa-border" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストもしくはコンテンツの横配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストもしくはコンテンツの縦並び替えを設定するプロパティです。" csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストが出力領域よりも長い場合、自動的に改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの透明度を設定するプロパティです。" csspropertyname="opacity" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="positionstep" />
+      <Property name="progressbarblockgap" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのdisplaytypeプロパティ値が「progressbarcontrol」の場合、プログレスバーの進行状況を表示するブロックの間隔を設定するプロパティです。" csspropertyname="" normalpropertyname="progressbarblockgap" />
+      <Property name="progressbarblocksize" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのdisplaytypeプロパティ値が「progressbarcontrol」の場合、プログレスバーの進行状況を表示するブロックの幅を設定するプロパティです。" csspropertyname="" normalpropertyname="progressbarblocksize" />
+      <Property name="progressbardirection" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="forward" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ProgressBarDirection" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのdisplaytypeプロパティ値が「progressbarcontrol」の場合、プログレスバーの進行方向を設定するプロパティです。" csspropertyname="" normalpropertyname="progressbardirection" />
+      <Property name="progressbarsmooth" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのdisplaytypeプロパティ値が「progressbarcontrol」の場合、プログレスバーが表示される形を設定するプロパティです。" csspropertyname="" normalpropertyname="progressbarsmooth" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellを表示するための右側座標を設定するプロパティです。" csspropertyname="" normalpropertyname="right" />
+      <Property name="rtl" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="rtl" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="セルの表示テキストを設定するプロパティです。" csspropertyname="" normalpropertyname="text" />
+      <Property name="textareaacceptsenter" group="CellTextArea" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「textarea」である場合、編集領域でEnterキーを入力の処理方法を設定するプロパティです。" csspropertyname="" normalpropertyname="textareaacceptsenter" />
+      <Property name="textareaautoselect" group="CellTextArea" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「textarea」の場合、編集モード用コントロールが有効になるときに、文字列をすべて選択するかを設定するプロパティです。" csspropertyname="" normalpropertyname="textareaautoselect" />
+      <Property name="textareaimemode" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Windows NRE,Android NRE" description="Cellのedittypeプロパティ値が「textarea」である場合、編集モード用コントロールで使用されるデフォルト入力言語を設定するプロパティです。" csspropertyname="" normalpropertyname="textareaimemode" />
+      <Property name="textareainputfilter" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputFilterType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「textarea」の場合、編集モード用コントロールで入力を制限する文字をタイプごとに設定するプロパティです。" csspropertyname="" normalpropertyname="textareainputfilter" />
+      <Property name="textareainputmode" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「textarea」の場合、編集モード用コントロールに入力される英字を大文字もしくは小文字に変換するかを設定するプロパティです。" csspropertyname="" normalpropertyname="textareainputmode" />
+      <Property name="textareainputtype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「textarea」の場合、編集モード用コントロールに入力を許可する文字をタイプごとに設定するプロパティです。" csspropertyname="" normalpropertyname="textareainputtype" />
+      <Property name="textareamaxlength" group="CellTextArea" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「textarea」の場合、編集モード用コントロールに入力できる文字列の最大値を設定するプロパティです。" csspropertyname="" normalpropertyname="textareamaxlength" />
+      <Property name="textareascrollbarsize" group="CellTextArea" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがTextArea形式の場合、表示されるスクロールバーのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="textareascrollbarsize" />
+      <Property name="textareascrollbartype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum2" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollBarType" enuminfo2="ScrollBarType" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「textarea」の場合は、編集モード用コントロールにスクロールバーが表示される形式を設定するプロパティです。" csspropertyname="" normalpropertyname="textareascrollbartype" />
+      <Property name="textareascrolltype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellのedittypeプロパティ値が「textarea」の場合、編集モード用コントロールで使用されるスクロールの種類を設定するプロパティです。" csspropertyname="" normalpropertyname="textareascrolltype" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE" description="マウスポインタがCell領域に移動したときに表示されるバルーンヘルプを設定するプロパティです。" csspropertyname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="Cellでバルーンヘルプが表示される位置と方法を設定するプロパティです。" csspropertyname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellを表示するための上段座標を設定するプロパティです。" csspropertyname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellを表示するための幅を設定するプロパティです。" csspropertyname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示される文字列の単語の間隔を設定するプロパティです。" csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControlの背景領域を設定するプロパティです。" csspropertyname="background" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの角の形を設定するプロパティです。" csspropertyname="border-radius" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellで使用するフォントを設定するプロパティです。" csspropertyname="font" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの境界線を設定するプロパティです。" csspropertyname="-nexa-border" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" normalpropertyname="padding" />
+        <Property name="-nexa-rtl-background-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControlのrtlプロパティが「true」に適用された場合、背景に表示される画像を設定するプロパティです。" csspropertyname="-nexa-rtl-background-image" normalpropertyname="" />
+        <Property name="-nexa-rtl-edge-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControlのrtlプロパティが「true」に適用された場合、境界線（Border）の内側に表示されるEdge画像を設定するプロパティです。" csspropertyname="-nexa-rtl-edge-image" normalpropertyname="" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストもしくはコンテンツの横配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストもしくはコンテンツの縦並び替えを設定するプロパティです。" csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示されるテキストが出力領域よりも長い場合、自動的に改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの透明度を設定するプロパティです。" csspropertyname="opacity" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示される文字列の単語の間隔を設定するプロパティです。" csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="readonly" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+      <Status name="invalidtext" control="true" default="false" deprecated="false" unused="false" group="userstatus" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="cellbutton" classname="nexacro.Button" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcalendar" classname="nexacro.Calendar" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcheckbox" classname="nexacro.CheckBox" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcombo" classname="nexacro.Combo" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celledit" classname="nexacro.Edit" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellmaskedit" classname="nexacro.MaskEdit" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellprogressbar" classname="nexacro.ProgressBar" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celltextarea" classname="nexacro.TextArea" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellimage" classname="nexacro._ImageAreaControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellexpandbutton" classname="nexacro.Button" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celltreeitem" classname="nexacro._CellTreeItemControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="true" group="" subgroup="" />
+      <Control name="celltreeline" classname="nexacro.CellTreeLineControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="true" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="clearEventHandler( strEventID )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.destroy()">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="getDisplayText()">
+          <Return type="String" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getFocus()">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetBottom();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetHeight();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetLeft();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetRight();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetTop();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetWidth();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelBottom();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelHeight();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelLeft();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelRight();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelTop();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelWidth();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.move( nLeft, nTop [, nWidth, nHeight [, nRight, nBottom]] )">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.moveToNext( objComp )&#xA;XComponent.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.moveToPrev( objComp )&#xA;XComponent.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.resize( nWidth, nHeight )">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setFocus( [bMoveScroll] )">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onclick(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.oncontextmenu(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondblclick(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondrag(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondragenter(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondragleave(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondragmove(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondrop(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.oninput(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onkeydown(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onkeyup(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onkillfocus(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onlbuttondown(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onlbuttonup(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmousedown(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmouseenter(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmouseleave(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmousemove(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmouseup(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmousewheel(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmove(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onrbuttondown(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onrbuttonup(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onsetfocus(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onsize(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ontouchend(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ontouchmove(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ontouchstart(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

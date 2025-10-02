@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GraphicsPaths">
+    <ObjectInfo finalclass="false" inheritance="nexacro.GraphicsGroup" classname="nexacro.GraphicsPaths" shorttypename="GraphicsPaths" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="リンクされていないパスをGraphics Controlに表示する際に使用されるオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="fillstyle" group="Appearance" subgroup="" refreshinfo="" edittype="ChartFillStyle" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsの内部領域に塗る形式と色を設定するプロパティです。" csspropertyname="" normalpropertyname="fillstyle" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="miterlimit" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="10" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="strokejoinプロパティ値が「miter」のとき、特定の条件から「bevel」に変更適用される割合値を設定するプロパティです。" csspropertyname="" normalpropertyname="miterlimit" />
+      <Property name="opacity" group="Style" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPaths領域の透明度を設定するプロパティです。" csspropertyname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsの親オブジェクトを持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="strokecap" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="butt" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="StrokeCap" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに表示されるパスの両端の形状を設定するプロパティです。" csspropertyname="" normalpropertyname="strokecap" />
+      <Property name="strokejoin" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="miter" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="StrokeJoin" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに表示されるパスが接続される部分の形状を設定するプロパティです。" csspropertyname="" normalpropertyname="strokejoin" />
+      <Property name="strokepen" group="Misc." subgroup="" refreshinfo="" edittype="Line" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに表示されるパスの色と形式を設定するプロパティです。" csspropertyname="" normalpropertyname="strokepen" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsが画面に表示されるかどうかを設定するプロパティです。" csspropertyname="" normalpropertyname="visible" />
+      <Property name="x" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親オブジェクトを基準にGraphicsPathsが表示されるx軸座標値を設定するプロパティです。" csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親オブジェクトを基準にGraphicsPathsが表示されるy軸の座標値を設定するプロパティです。" csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathオブジェクトをGraphicsPathsに追加するメソッドです。">
+        <Syntax text="GraphicsPaths.addChild( strID, objGPath )">
+          <Return type="Number" description="GraphicsPathsに追加されたGraphicsPathオブジェクトのインデックスを返します。" />
+          <Arguments>
+            <Argument name="objGPath" type="Object" in="false" out="false" option="false" variable="false" description="追加するGraphicsPathオブジェクトを設定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="追加するGraphicsPathオブジェクトのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに追加されたオブジェクトをメモリから完全に削除するメソッドです。">
+        <Syntax text="GraphicsPaths.clear()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="closePath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに設定されたパスの終点と始点を直線でつなぐメソッドです。">
+        <Syntax text="GraphicsPaths.closePath()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsをメモリから完全に削除するメソッドです。">
+        <Syntax text="GraphicsPaths.destroy()">
+          <Return type="Boolean" description="GraphicsPathsが正常に削除された場合は、「true」を返します。&#xA;&#xA;GraphicsPathsが正常に削除されない場合は、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsが表示される領域の情報をGraphicsコンポーネントの基準でBorder領域を含めて返すメソッドです。">
+        <Syntax text="GraphicsPaths.getBoundRect( );">
+          <Return type="Object" description="Graphicsコンポーネントの基準でGraphicsPathsが表示される領域の情報をnexacroのRectオブジェクトに返します。&#xA;GraphicsPathsにBorderがある場合に返される領域の情報には、Border領域が含まれます。&#xA;&#xA;* Rectオブジェクトは、「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持っています。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getChildByIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsで特定のインデックスのGraphicsPathオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsPaths.getChildByIndex( nIndex )">
+          <Return type="Object" description="GraphicsPathsでnIndexに該当するGraphicsPathオブジェクトを返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="取得するGraphicsPathオブジェクトのインデックスを数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFirstChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに追加されたオブジェクトの最初のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsPaths.getFirstChild()">
+          <Return type="Object" description="GraphicsPathsに追加された最初のオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getLastChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに追加されたオブジェクトの最後のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsPaths.getLastChild()">
+          <Return type="Object" description="GraphicsPathsに追加された最後のオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsと親が同じGraphicsオブジェクトの次の順序のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsPaths.getNextSibling()">
+          <Return type="Object" description="親が同じ次の順序のGraphicsオブジェクトを返します。&#xA;&#xA;次の順序のGraphicsオブジェクトが存在しない場合はnullを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getObjectByID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに追加されたオブジェクトのうち、特定のIDに該当するオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsPaths.getObjectByID( strID )">
+          <Return type="Object" description="strIDに該当するオブジェクトを返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="取得しようとするオブジェクトのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getObjects" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに追加されたオブジェクトを配列として返すメソッドです。">
+        <Syntax text="GraphicsPaths.getObjects()">
+          <Return type="Array" description="GraphicsPathsに追加された順にオブジェクトを配列として返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsが表示される領域の情報を親オブジェクトに基づいてBorder領域を含めて返すメソッドです。">
+        <Syntax text="GraphicsPaths.getOffsetBoundRect( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsPathsにBorderがある場合に返される領域の情報には、Border領域が含まれます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsが表示される領域の情報を親オブジェクトに基づいて返すメソッドです。">
+        <Syntax text="GraphicsPaths.getOffsetRect( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsPathsにBorderがあってもBorder領域に関係なく、GraphicsPathsの実際の領域を返します。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsが表示される領域の情報を親オブジェクトに基づいてBorder領域を除いて返すメソッドです。">
+        <Syntax text="GraphicsPaths.getOffsetRegion( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsPathsにBorderがある場合に返される領域の情報には、Border領域が除外されます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPathData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに設定されたパスデータをSVG形式の文字列として返すメソッドです。">
+        <Syntax text="GraphicsPaths.getPathData()">
+          <Return type="String" description="パスデータをSVG形式の文字列として返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsと親が同じであるGraphicsオブジェクトの前の順序のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsPaths.getPreviousSibling()">
+          <Return type="Object" description="親が同じである以前の順序のGraphicsオブジェクトを返します。&#xA;&#xA;以前の順序のGraphicsオブジェクトが存在しない場合は「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsの領域の情報をGraphicsコンポーネントに基づいて返すメソッドです。">
+        <Syntax text="GraphicsPaths.getRect( );">
+          <Return type="Object" description="Graphicsコンポーネントのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsPathsにBorderがあってもBorder領域に関係なく、GraphicsPathsの実際の領域を返します。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsが表示される領域の情報をGraphicsコンポーネントに基づいてBorder領域を除いて返すメソッドです。">
+        <Syntax text="GraphicsPaths.getRegion( );">
+          <Return type="Object" description="Graphicsコンポーネントのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsPathsにBorderがある場合に返される領域の情報には、Border領域が除外されます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="hasChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsにGraphicsPathオブジェクトが追加されたかどうかを返すメソッドです。">
+        <Syntax text="GraphicsPaths.hasChild()">
+          <Return type="Boolean" description="GraphicsPathオブジェクトが1つ以上の追加されている場合は「true」を返します。&#xA;&#xA;GraphicsPathオブジェクトが追加されていない場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="indexOf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに追加されたオブジェクトのうち、特定のIDに該当するオブジェクトのインデックスを返すメソッドです。">
+        <Syntax text="GraphicsPaths.indexOf( strID )">
+          <Return type="Number" description="strIDに該当するオブジェクトのインデックスを返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="インデックスを取得しようとするオブジェクトのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsオブジェクトをGraphicsPathsの特定の位置に挿入するメソッドです。">
+        <Syntax text="GraphicsPaths.insertChild( nIdx, strID, objGPath )">
+          <Return type="Number" description="GraphicsGroupに挿入されたGraphicsPathオブジェクトのインデックスを返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="GraphicsPathオブジェクトが挿入される位置のインデックスを数値に設定します。" />
+            <Argument name="objGPath" type="Object" in="false" out="false" option="false" variable="false" description="挿入するGraphicsPathオブジェクトを設定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="挿入するGraphicsPathオブジェクトのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="引数として渡された座標位置がGraphicsPaths領域に含まれるかどうかを返すメソッドです。">
+        <Syntax text="GraphicsPaths.isHitTest( nX, nY )">
+          <Return type="Boolean" description="引数として渡された座標位置がGraphicsPaths領域に含まれる場合は「true」を返します。&#xA;&#xA;引数として渡された座標位置がGraphicsPaths領域に含まれない場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="確認する位置のx座標値をpixel単位の数値に設定します。&#xA;&#xA;設定値はGraphicsコンポーネントを基準に処理されます。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="確認する位置のy座標値をpixel単位の数値に設定します。&#xA;&#xA;設定値はGraphicsコンポーネントを基準に処理されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsで特定のIDのGraphicsPathオブジェクトを削除するメソッドです。">
+        <Syntax text="GraphicsPaths.removeChild( strID )">
+          <Return type="Object" description="GraphicsPathsで削除されたGraphicsPathオブジェクトを返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="削除するGraphicsPathオブジェクトのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに回転効果を適用するメソッドです。">
+        <Syntax text="GraphicsPaths.rotate( nAngle [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nAngle" type="Number" in="false" out="false" option="false" variable="false" description="現在の形で回転される角度を数字で設定します。&#xA;&#xA;正の設定時、時計回りに回転します。&#xA;負の設定時、反時計回りに回転します。" />
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="回転の中心となるx座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="回転の中心となるy座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsに拡大および縮小効果を適用するメソッドです。">
+        <Syntax text="GraphicsPaths.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="拡大および縮小の中心となるx座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="拡大および縮小の中心となるy座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大および縮小される横倍率を整数で設定します。&#xA;&#xA;1.0より大きい値を設定すると、GraphicsPathsが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsPathsが縮小されます。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大および縮小される縦倍率を整数で設定します。&#xA;&#xA;1.0より大きい値を設定すると、GraphicsPathsが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsPathsが縮小されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsの一部の領域のみを表示されるようにClippingする領域の座標を設定するメソッドです。">
+        <Syntax text="GraphicsPaths.setClipRect( nX, nY, nWidth, nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域の高さを数字で設定します。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域の幅を数字で設定します。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域のx座標を数字に設定します。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域のy座標を数字に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPathData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsにSVG形式でパスデータを設定するメソッドです。">
+        <Syntax text="GraphicsPaths.setPathData( strPath )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="パスデータをSVG形式の文字列に設定します。&#xA;&#xA;設定できるSVG形式です。&#xA;- &quot;M x、y&quot;：開始位置をx、y座標の位置に設定します。&#xA;- &quot;L x、y&quot;：現在の位置からx、y座標位置までの線を表示します。&#xA;- &quot;H x&quot;：現在の位置からx座標位置までの水平線を表示します。&#xA;- &quot;V y&quot;：現在の位置からy座標位置までの縦線を表示します。&#xA;- &quot;Z&quot;：現在の位置から開始されるまでの線を表示します。&#xA;- &quot;C x1、y1 x2、y2、x、y&quot;：現在の位置からx、y座標位置までのcubic Bezier曲線を表示します。&#xA;- &quot;S x2、y2、x、y&quot;：現在の位置からx、y座標位置までのcubic Bezier曲線を表示します。&#xA;- &quot;Q x1、y1、x、y&quot;：現在の位置からx、y座標位置までのquadratic Bezier曲線を表示します。&#xA;- &quot;T x、y&quot;：現在の位置からx、y座標位置までのquadratic Bezier曲線を表示します。&#xA;- &quot;A rx、ry rotation large clockwise x、y&quot;：現在の位置からx、y座標位置までの楕円弧を表示します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsの元の位置を基準としてtransform関連効果を連続的に適用するメソッドです。">
+        <Syntax text="GraphicsPaths.setTransform( strMethod );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="GraphicsPathsに適用するTransform関連メソッドをカンマ（,）で区切って指定します。&#xA;translate、scale、rotate、shearメソッドを使用することができます。&#xA;nullを設定した場合にはtransformの効果が指定されていない状態で初期化します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsにワープ効果を適用するメソッドです。">
+        <Syntax text="GraphicsPaths.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="ワープの中心となるx座標を数値に設定します。&#xA;設定値は親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="ワープの中心となるy座標を数値に設定します。&#xA;設定値は親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="現在の姿にて、x軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="現在の形にて、y軸を基準にねじる角度をラジアン値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsのタイプを文字列として返すメソッドです。">
+        <Syntax text="GraphicsPaths.toString();">
+          <Return type="String" description="一般的に、[object GraphicsPaths]の形の文字列を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsにTransform関連効果を適用するメソッドです。">
+        <Syntax text="GraphicsPaths.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大/縮小される横倍率を実数に設定します。&#xA;&#xA;1.0より大きな値を設定すると、GraphicsPathsが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsPathsが縮小されます。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大/縮小される縦倍率を実数に設定します。&#xA;&#xA;1.0より大きな値を設定すると、GraphicsPathsが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsPathsが縮小されます。" />
+            <Argument name="nShearX" type="Number" in="false" out="false" option="false" variable="false" description="現在の姿にて、x軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nShearY" type="Number" in="false" out="false" option="false" variable="false" description="現在の形にて、y軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からx軸方向に移動する距離をpixel単位の数値に設定します。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からy軸方向に移動する距離をpixel単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsPathsの位置が移動される効果を適用するメソッドです。">
+        <Syntax text="GraphicsPaths.translate( nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からx軸方向に移動する距離をpixel単位の数値に設定します。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からy軸方向に移動する距離をpixel単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

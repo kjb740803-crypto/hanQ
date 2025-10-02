@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExternalAPI">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ExternalAPI" shorttypename="ExternalAPI" csstypename="ExternalAPI" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="This object is used to connect to an API module defined in an external app." />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property is used to set the identification of a ExternalAPI." csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property is used to specify the name of a ExternalAPI." csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the parent object of a ExternalAPI." csspropertyname="" normalpropertyname="parent" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="execExtAPI" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This method is used to execute an API module defined in a certain external app.">
+        <Syntax text="ExternalAPI.execExtAPI( strRecvID, strAppID, strAPI [, strParams] )">
+          <Return type="Boolean" description="If this method is successfully called, it returns &quot;true&quot; regardless of the execution of an API module.&#xA;&#xA;If this method fails to be called, it returns &quot;false&quot; regardless of the execution of an API module." />
+          <Arguments>
+            <Argument name="strAPI" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represent the name of an API module you want to execute." />
+            <Argument name="strAppID" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the ID of the external app where the target API module is defined." />
+            <Argument name="strParams" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the parameters of the API module to execute.&#xA;&#xA;If there are multiple parameters, they are divided by whitespaces.&#xA;If a parameter contains a whitespace, you must surround it by single quotation marks (')." />
+            <Argument name="strRecvID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represent the ID of a method you want to execute.&#xA;&#xA;This argument will be delivered to the recvid property of the ExternalAPIEventIfo object, which is linked to the onsuccess and onrecvdata events." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAccessible" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This method is used to check whether the access to a certain external app is permitted.">
+        <Syntax text="ExternalAPI.isAccessible ( strAppID )">
+          <Return type="Boolean" description="If this method is successfully called, it returns &quot;true&quot; regardless of the access permission.&#xA;&#xA;If this method fails to be called, it returns &quot;false&quot; regardless of the access permission." />
+          <Arguments>
+            <Argument name="strAppID" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the ID of an external app to which you will check whether the access is permitted.&#xA;&#xA;In Android, an argument takes the form of a domain. (&quot;com.tobesoft.nexacroplatform.testmodule&quot;)&#xA;In iOS, an argument takes the form of a URL scheme. (&quot;TobesoftTestApp://&quot;)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This event occurs when a task requested by an ExternalAPI object fails.">
+        <Syntax text="ExternalAPI.onerror(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrecvdata" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This event occurs when data (a string) is received from an external app.">
+        <Syntax text="ExternalAPI.onrecvdata(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This event occurs when a task requested by an ExternalAPI object succeeds.">
+        <Syntax text="ExternalAPI.onsuccess(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

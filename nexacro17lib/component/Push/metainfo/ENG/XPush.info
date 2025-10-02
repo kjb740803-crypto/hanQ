@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.XPush">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.XPush" shorttypename="XPush" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This is a client component used to receive messages delivered from an X-PUSH server." />
+    <PropertyInfo>
+      <Property name="controlretry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property sets the number of retries conducted for the error that occurs when a topic is registered in or deleted from the X-PUSH server." csspropertyname="" normalpropertyname="controlretry" />
+      <Property name="debug" group="" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="This property is used to determine whether to show XPush messages on the Debug pane of Nexacro Studio." csspropertyname="" normalpropertyname="debug" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This read-only property holds a code indicating the error that occurred." csspropertyname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This read-only property holds the message of an error that has occurred." csspropertyname="" normalpropertyname="errormsg" />
+      <Property name="iplist" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the IP addresses and ports of X-PUSH servers to connect." csspropertyname="" normalpropertyname="iplist" />
+      <Property name="keepalivetime" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property sets the intervals between messages sent for maintaining the connection with an X-PUSH server." csspropertyname="" normalpropertyname="keepalivetime" />
+      <Property name="keeptimeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property sets a period of time allowed for receiving the X-PUSH server's response to a message sent for maintaining the connection with the server." csspropertyname="" normalpropertyname="keeptimeout" />
+      <Property name="layouturl" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to specify the location of a message layout file." csspropertyname="" normalpropertyname="layouturl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to specify the name of a XPush." csspropertyname="" normalpropertyname="name" />
+      <Property name="projectid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set a project ID used in the communication with the X-PUSH server." csspropertyname="" normalpropertyname="projectid" />
+      <Property name="protocolversion" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the version of the protocol used in the communication with the X-PUSH server." csspropertyname="" normalpropertyname="protocolversion" />
+      <Property name="retry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property sets the number of retries conducted in the event of the X-PUSH server connection error." csspropertyname="" normalpropertyname="retry" />
+      <Property name="sessionid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set a session ID that will be used for connecting to an X-PUSH server." csspropertyname="" normalpropertyname="sessionid" />
+      <Property name="timeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property sets a period of time allowed for receiving the X-PUSH server's response to a message sent for connecting with the server." csspropertyname="" normalpropertyname="timeout" />
+      <Property name="userid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set a user ID that will be used for connecting to an X-PUSH server." csspropertyname="" normalpropertyname="userid" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to add a handler to a certain event of a XPush.">
+        <Syntax text="XPush.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to find a function and add it to a certain event of a XPush as a handler.">
+        <Syntax text="XPush.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="XPush.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="connect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to connect to an X-PUSH server.">
+        <Syntax text="XPush.connect( [strUserID [,strSessionID]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSessionID" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing a session ID that will be used for authentication when you attempt to connect to an X-PUSH server.&#xA;&#xA;If omitted, this parameter will be replaced with the value of the sessionid property." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing a user ID that will be used for authentication when you attempt to connect to an X-PUSH server.&#xA;&#xA;If omitted, this parameter will be replaced with the value of the userid property." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="disconnect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to disconnect from an X-PUSH server.">
+        <Syntax text="XPush.disconnect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method finds a handler in a certain event of a XPush and returns the index of the handler.">
+        <Syntax text="XPush.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you attempt to find.&#xA;&#xA;If the handler does not exist, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurrentIP" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the IP value of a currently-connected X-PUSH server.">
+        <Syntax text="XPush.getCurrentIP()">
+          <Return type="String" description="This method returns the IP value of a currently-connected X-PUSH server." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCurrentPort" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the port number of a currently-connected X-PUSH server.">
+        <Syntax text="XPush.getCurrentPort()">
+          <Return type="Number" description="This method returns the port number of a currently-connected X-PUSH server." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns a specific handler from a certain event of a XPush by specifying the index number of the handler.">
+        <Syntax text="XPush.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;&#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This method registers a device token in an X-PUSH server to receive notifications through the mobile device.">
+        <Syntax text="XPush.registerDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="registerTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to register a topic in the connected X-PUSH server for reliable messaging.">
+        <Syntax text="this.XPush00.registerTopic(strMessageType, strMessgageKey);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the type of messages you want to receive. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key value of the message to be received." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerTopicWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method registers a topic in an X-PUSH server so that a certain user can receive reliable messages.">
+        <Syntax text="this.XPush00.registerTopicWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the type of messages to be received. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the key value of messages to be received." />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of a project to receive reliable messages.&#xA;&#xA;If this parameter is not set, the value of the projectid property will be applied instead.&#xA;&#xA;* This parameter is applicable only when the protocolversion property is set to 3." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of a user to receive reliable messages." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to remove a handler in a certain event of a XPush.">
+        <Syntax text="XPush.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to find a handler in a certain event of a XPush and remove it.">
+        <Syntax text="XPush.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to request reliable messaging messages that are not received yet from an X-PUSH server.">
+        <Syntax text="requestMessage ( strMsgType, strMsgKeys );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMsgKeys" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key value of the message to be received.&#xA;&#xA;If you want to receive multiple messages, you can specify multiple keys by using commas (,) as separators." />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the type of messages you want to receive. You can specify a type among those defined in a message layout file." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method requests the number of reliable messaging messages that are not received yet from an X-PUSH server.">
+        <Syntax text="XPush.requestMessageCount(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the type of messages you want to receive. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key value of the unreceived message." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCountWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to request the number of reliable messages that a certain user has not received. The request is sent to an X-PUSH server.">
+        <Syntax text="XPush.requestMessageCountWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the type of unreceived messages whose number will be requested. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represent the key value of the unreceived reliable messages." />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of a project to obtain the number of reliable messages.&#xA;&#xA;If this parameter is not set, the value of the projectid property will be applied instead.&#xA;&#xA;* This parameter is applicable only when the protocolversion property is set to 3." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of a user to obtain the number of reliable messages." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendResponse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to respond to a reliable messaging message sent by an X-PUSH server.">
+        <Syntax text="XPush.sendResponse(strmsgid)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strmsgid" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the ID of the received message.&#xA;&#xA;This ID will be delivered to the callback function called when the message is received. The ID will be delivered as a value of the msgid parameter of the callback." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to change the first handler in a certain event of a XPush.">
+        <Syntax text="XPush.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method finds a function and uses it to replace the first handler in a certain event of a XPush.">
+        <Syntax text="XPush.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to register a topic in the connected X-PUSH server that sends messages.">
+        <Syntax text="XPush.subscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack[, nRow[, strCheck[, bUseActiveFormCallBack]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bUseActiveFormCallBack" type="Boolean" in="false" out="false" option="false" variable="false" description="If you specify &quot;true&quot;, the defined callback is called only from activated Forms.&#xA;If you specify &quot;false&quot;, the defined callback is also called from deactivated Forms.&#xA;&#xA;The default value is &quot;false&quot;." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="This is the index number of a Dataset row to which a received message will be inserted. This parameter is application when the strType parameter is set to &quot;insert&quot;.&#xA;&#xA;The default value is 0." />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="This is a Dataset object to which received messages will be saved." />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="This is a From object that will receive messages." />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing a callback performed after a received message is saved to the Dataset.&#xA;&#xA;A callback is defined as a CallBackName (ChangeRow, ChangeCol, ColList, strMsgType, strActionType, strMsgID). The foregoing parameters will vary depending on the strType parameter and other conditions. Accordingly, please see the below Remark for the details." />
+            <Argument name="strCheck" type="String" in="false" out="false" option="false" variable="false" description="If you specify 0 as a value of this parameter, a received message will apply to the Dataset in any case.&#xA;This method searches the message layout file for messages whose check properties are set to &quot;true&quot;. Among the found messages, this method finds the message whose field values are the same the value of this parameter.&#xA;&#xA;The default value of this property is 0." />
+            <Argument name="strMsgKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key value of the message to be received." />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the type of messages you want to receive. You can specify a type among those defined in a message layout file." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="This is a string that defines how to save a received message to the Dataset.&#xA;&#xA;If you specify &quot;append&quot;, a received message will be added as the last row of the Dataset.&#xA;&#xA;If you specify &quot;insert&quot;,a received message will be added to a specified position.&#xA;If you do not designate a row, the index number of the row will be 0.&#xA;&#xA;If you specify &quot;replace&quot;, a received message will the first row.&#xA;If there is no row, a received message will not be added to the Dataset.&#xA;&#xA;If you specify &quot;update&quot;, a received message will update the first row among whose key values are identical to that of the message.&#xA;&#xA;If you specify &quot;allUpdate&quot;, a received message will update the all the rows whose key values are identical to that of the message.&#xA;&#xA;While the &quot;updateorappend&quot; basically behaves the same as &quot;update&quot;, it will work like &quot;append&quot; if there is no row whose key value is identical to that of the message.&#xA;&#xA;* Process of searching for rows whose key values are the same as a message's key value&#xA; a) This method searches the message layout file for a field whose value of the key property is &quot;true&quot;.&#xA;  b) Then, this method finds a Dataset column whose name matches the field found in a)&#xA;  c) Next, this method finds the first Dataset row whose message contains the same key as the column found in b)." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This method delete a device token from an X-PUSH server. The device token was registered to receive notifications through the mobile device.">
+        <Syntax text="XPush.unregisterDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to delete a topic in the connected X-PUSH server. The topic here was registered for reliable messaging.">
+        <Syntax text="XPush.unregisterTopic(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the type of messages you will stop receiving. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key value of the message that you will stop receiving." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopicWithUserID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a topic for reliable messages that are received by a certain user. The topic is removed from an X-PUSH server.">
+        <Syntax text="XPush.unregisterTopicWithUserID( strMessageType, strMessgageKey, strUserID [, strProjectID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the type of messages to remove. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the key value of messages to remove." />
+            <Argument name="strProjectID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of a project to stop receiving reliable messages.&#xA;&#xA;If this parameter is not set, the value of the projectid property will be applied instead.&#xA;&#xA;* This parameter is applicable only when the protocolversion property is set to 3." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of a user to stop receiving reliable messages." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unsubscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to cancel the topic for receiving messages.">
+        <Syntax text="XPush.unsubscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="This is a Dataset object that is set to save the topic of messages." />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="This is a From object that is set to receive the topic of messages." />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the callback set when the topic was registered." />
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the type of messages that are classified by a topic you want to cancel. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key value of the topic to cancel." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="This is a string that defines how to save the topic of messages." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs when a task requested to an XPush server fails.">
+        <Syntax text="XPush.onerror(obj:nexacro.XPush,e:nexacro.XPushErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeepalive" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs when an X-PUSH server receives a message sent for maintaining the connection.">
+        <Syntax text="XPush.onkeepalive(obj:nexacro.XPush,e:nexacro.XPushKeepAliveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushKeepAliveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs when a task requested by an XPush succeeds.">
+        <Syntax text="XPush.onsuccess(obj:nexacro.XPush,e:nexacro.XPushEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ListViewCellControl">
+    <ObjectInfo finalclass="true" inheritance="nexacro.Component" classname="nexacro._ListViewCellControl" shorttypename="ListViewCellControl" csstypename="" csscontrolname="ListViewCellControl" group="Component" subgroup="Control" csspseudo="true" container="false" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 은 ListView 가 출력되는 최소단위로 Band 내에 표시되는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControl 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 을 표시하기 위한 하단 좌표값을 설정하는 속성입니다." csspropertyname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+      <Property name="calendarautoselect" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;date&quot; 일 때 편집모드용 컨트롤이 활성화 되면 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarautoselect" />
+      <Property name="calendarbackgroundcol" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell이 Calendar 형식일 때 Calendar 의 특정날짜에 배경색을 표시하기 위해 calendardataset 속성에 설정된 Dataset 오브젝트의 Column을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarbackgroundcol" />
+      <Property name="calendarbordercol" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell이 Calendar 형식일 때 Calendar 의 특정날짜에 테두리을 표시하기 위해 calendardataset 속성에 설정된 Dataset 오브젝트의 Column을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarbordercol" />
+      <Property name="calendarbuttonsize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 표시되는 드롭다운 버튼의 크기를 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarbuttonsize" />
+      <Property name="calendardataset" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerDatasetID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell이 Calendar 형식일 때 Calendar 에 특정날짜를 표시하기 위해 Dataset 오브젝트 ID를 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendardataset" />
+      <Property name="calendardatecol" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell이 Calendar 형식일 때 Calendar 에 특정날짜를 표시하기 위해 calendardataset 속성에 설정된 Dataset 오브젝트의 Column을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendardatecol" />
+      <Property name="calendardateformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy-MM-dd ddd" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 displaytype 속성값이 &quot;date&quot; 또는 &quot;calendarcontrol&quot; 일 경우 표시되는 날짜의 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendardateformat" />
+      <Property name="calendardaysize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업으로 표시되는 달력의 각 날짜영역크기를 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendardaysize" />
+      <Property name="calendardisplayinvalidtext" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 바인드 된 데이터값이 유효하지 않으면 대체되어 표시할 문자열을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendardisplayinvalidtext" />
+      <Property name="calendardisplayinvalidtype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CellDpInvalidType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 바인드 된 데이터값이 유효하지 않으면 대체되어 표시할 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendardisplayinvalidtype" />
+      <Property name="calendardisplaynulltext" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 calendardisplaynulltype 속성값이 &quot;nulltext&quot; 일 경우 Cell 에 표시할 텍스트를 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendardisplaynulltext" />
+      <Property name="calendardisplaynulltype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridDateNullType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 displaytype 속성값이 &quot;date&quot; 또는 &quot;calendarcontrol&quot; 이고 바인드 된 값이 &quot;null&quot; 인 경우 Cell 에 표시되는 값의 종류를 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendardisplaynulltype" />
+      <Property name="calendareditformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy-MM-dd" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;date&quot; 일 경우 입력받는 날짜의 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendareditformat" />
+      <Property name="calendarheadformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업달력의 상단에 표시되는 년/월의 순서를 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarheadformat" />
+      <Property name="calendarheadheight" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업달력에서 년/월이 표시되는 Head 영역의 높이를 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarheadheight" />
+      <Property name="calendarpopupsize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업으로 표시되는 달력의 크기를 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarpopupsize" />
+      <Property name="calendarpopuptype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CalendarPopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업달력(DatePicker)이 표시되는 방식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarpopuptype" />
+      <Property name="calendarshowmonthspin" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업달력의 상단에 월 변경버튼을 표시할 지 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarshowmonthspin" />
+      <Property name="calendarshowyearspin" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업달력의 상단에 연도 변경버튼을 표시할 지 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarshowyearspin" />
+      <Property name="calendartextcolorcol" group="CellCalendar" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell이 Calendar 형식일 때 Calendar 의 특정날짜에 날짜색을 표시하기 위해 calendardataset 속성에 설정된 Dataset 오브젝트의 Column을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendartextcolorcol" />
+      <Property name="calendartype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridDateType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 편집모드용 컨트롤이 화면에 표시되는 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendartype" />
+      <Property name="calendarusetrailingday" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업달력의 시작/끝 여백에 전/후 달의 날짜를 표시할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarusetrailingday" />
+      <Property name="calendarweekformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Calendar 형식일 때 팝업달력에 요일이 표시되는 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="calendarweekformat" />
+      <Property name="checkboxsize" group="CellCheckBox" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 CheckBox 형식일 때 CheckBox 의 크기를 설정하는 속성입니다." csspropertyname="" normalpropertyname="checkboxsize" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" normalpropertyname="color" />
+      <Property name="comboautoselect" group="CellCombo" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 편집모드용 컨트롤이 활성화 되면 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="comboautoselect" />
+      <Property name="combobuttonsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 표시되는 드롭다운 버튼의 크기를 설정하는 속성입니다." csspropertyname="" normalpropertyname="combobuttonsize" />
+      <Property name="combocodecol" group="CellCombo" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 Cell 의 아이템 리스트에서 코드값으로 사용될 Column 을 설정하는 속성입니다." csspropertyname="" normalpropertyname="combocodecol" />
+      <Property name="combodatacol" group="CellCombo" subgroup="" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 Cell 의 아이템 리스트에서 데이터값으로 사용될 Column 을 설정하는 속성입니다." csspropertyname="" normalpropertyname="combodatacol" />
+      <Property name="combodataset" group="CellCombo" subgroup="bind(combodataset)" refreshinfo="" edittype="InnerDatasetID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 Cell 의 아이템 리스트를 구성할 DataSet 의 ID를 설정하는 속성입니다." csspropertyname="" normalpropertyname="combodataset" />
+      <Property name="combodisplaynulltext" group="CellCombo" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 바인드 된 값과 일치하는 아이템이 없을 경우 표시할 텍스트를 설정하는 속성입니다." csspropertyname="" normalpropertyname="combodisplaynulltext" />
+      <Property name="combodisplaynulltype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridComboNullType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 바인드 된 값과 일치하는 아이템이 없을 경우 표시되는 값의 종류를 설정하는 속성입니다." csspropertyname="" normalpropertyname="combodisplaynulltype" />
+      <Property name="combodisplayrowcount" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 아이템 리스트에 한번에 표시될 아이템의 갯수를 설정하는 속성입니다." csspropertyname="" normalpropertyname="combodisplayrowcount" />
+      <Property name="comboimemode" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Windows NRE,Android NRE" description="Cell 이 Combo 형식일 때 편집모드용 컨트롤에서 사용될 기본 입력 언어를 설정하는 속성입니다." csspropertyname="" normalpropertyname="comboimemode" />
+      <Property name="comboitemheight" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 아이템 리스트의 각 행높이를 설정하는 속성입니다." csspropertyname="" normalpropertyname="comboitemheight" />
+      <Property name="combopopupsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 팝업으로 표시되는 아이템 리스트의 크기를 설정하는 속성입니다." csspropertyname="" normalpropertyname="combopopupsize" />
+      <Property name="combopopuptype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="PopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 아이템 리스트가 표시되는 방식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="combopopuptype" />
+      <Property name="comboscrollbarsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 아이템 리스트에 표시되는 스크롤바의 너비를 설정하는 속성입니다." csspropertyname="" normalpropertyname="comboscrollbarsize" />
+      <Property name="combotype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ComboType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Combo 형식일 때 동작하는 방법을 설정하는 속성입니다." csspropertyname="" normalpropertyname="combotype" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 Style 을 XCSS 파일에 정의된 class 로 설정하는 속성입니다." csspropertyname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" normalpropertyname="cursor" />
+      <Property name="displaytype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ListView_DispType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드가 아닐 때 바인드 된 데이터가 화면에 표시되는 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="displaytype" />
+      <Property name="editautoselect" group="CellEdit" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;text&quot; 일 경우 편집모드용 컨트롤이 활성화 되면 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="editautoselect" />
+      <Property name="editimeaction" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CellImeActionType" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE" description="키보드에 하단 모서리에 표시되는 사용자 작업 버튼 UI와 동작을 설정하는 속성입니다." csspropertyname="" normalpropertyname="editimeaction" />
+      <Property name="editimemode" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Windows NRE,Android NRE" description="Cell 의 edittype 속성값이 &quot;text&quot; 일 때 편집모드용 컨트롤에서 사용될 기본 입력 언어를 설정하는 속성입니다." csspropertyname="" normalpropertyname="editimemode" />
+      <Property name="editinputfilter" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputFilterType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;text&quot; 일 때 편집모드용 컨트롤에서 입력을 제한 시킬 문자를 타입별로 설정하는 속성입니다." csspropertyname="" normalpropertyname="editinputfilter" />
+      <Property name="editinputmode" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;text&quot; 일 경우 편집모드용 컨트롤에 입력되는 영문자를 대문자 또는 소문자로 변환할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="editinputmode" />
+      <Property name="editinputtype" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;text&quot; 일 때 편집모드용 컨트롤에서 입력을 허용할 문자를 타입별로 설정하는 속성입니다." csspropertyname="" normalpropertyname="editinputtype" />
+      <Property name="editmaxlength" group="CellEdit" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;text&quot; 일 때 편집모드용 컨트롤에 입력할 수 있는 문자열의 최대길이를 설정하는 속성입니다." csspropertyname="" normalpropertyname="editmaxlength" />
+      <Property name="edittype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ListView_EditType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 포커스를 받아 표시되는 편집모드용 컨트롤의 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="edittype" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="enableevent" />
+      <Property name="expandchar" group="CellExpand" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 확장버튼에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" normalpropertyname="expandchar" />
+      <Property name="expandimage" group="CellExpand" subgroup="" refreshinfo="" edittype="ImageID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 확장버튼에 텍스트와 함께 표시할 이미지의 위치 경로를 설정하는 속성입니다." csspropertyname="" normalpropertyname="expandimage" />
+      <Property name="expandshow" group="CellExpand" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="hide" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridExpandShow" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 오른쪽에 확장버튼을 표시할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="expandshow" />
+      <Property name="expandsize" group="CellExpand" subgroup="" refreshinfo="" edittype="Number" defaultvalue="16" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 오른쪽에 표시되는 확장버튼의 크기를 설정하는 속성입니다." csspropertyname="" normalpropertyname="expandsize" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시될 텍스트를 동적으로 생성하는 수식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 을 표시하기 위한 높이를 설정하는 속성입니다." csspropertyname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="id" />
+      <Property name="imagestretch" group="CellImage" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Stretch" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 크기에 맞게 이미지가 확대/축소되는 방식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="imagestretch" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 을 표시하기 위한 좌측 좌표값을 설정하는 속성입니다." csspropertyname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+      <Property name="locale" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 적용될 국가 및 언어(locale)를 설정하는 속성입니다." csspropertyname="" normalpropertyname="locale" />
+      <Property name="maskeditautoselect" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;mask&quot; 일 때 편집모드용 컨트롤이 활성화 되면 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="maskeditautoselect" />
+      <Property name="maskeditclipmode" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ClipModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 maskeditformat 속성에 설정된 형식 중 입력하지 않은 마스크에 대한 처리 방법을 결정하는 속성입니다." csspropertyname="" normalpropertyname="maskeditclipmode" />
+      <Property name="maskeditformat" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;mask&quot; 일 때 입력 받을 문자의 형식을 지정하는 속성입니다." csspropertyname="" normalpropertyname="maskeditformat" />
+      <Property name="maskeditimeaction" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CellImeActionType" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE" description="키보드에 하단 모서리에 표시되는 사용자 작업 버튼 UI와 동작을 설정하는 속성입니다." csspropertyname="" normalpropertyname="maskeditimeaction" />
+      <Property name="maskeditlimitbymask" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="decimal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LimitByMask" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 숫자를 입력받는 MaskEdit 형식일 때 마스크 값이 적용되는 부분을 설정하는 속성입니다." csspropertyname="" normalpropertyname="maskeditlimitbymask" />
+      <Property name="maskeditmaskchar" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="String" defaultvalue="_" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 maskeditformat 속성에 정의된 마스크 문자에 대응하는 문자를 지정하는 속성입니다." csspropertyname="" normalpropertyname="maskeditmaskchar" />
+      <Property name="maskeditpostfixtext" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="표시되는 텍스트 뒤에 붙여서 표시할 문자열을 지정하는 속성입니다." csspropertyname="" normalpropertyname="maskeditpostfixtext" />
+      <Property name="maskedittrimtype" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TrimType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 maskeditformat 속성에 설정된 형식 중 좌우 공백에 대한 처리 방법을 결정하는 속성입니다." csspropertyname="" normalpropertyname="maskedittrimtype" />
+      <Property name="maskedittype" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="MaskEditType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;mask&quot; 일 때 Cell 에 입력되는 값의 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="maskedittype" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 화면에 표시되는 최대 높이를 설정하는 속성입니다." csspropertyname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 화면에 표시되는 최대 너비를 설정하는 속성입니다." csspropertyname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 화면에 표시되는 최소 높이를 설정하는 속성입니다." csspropertyname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 화면에 표시되는 최소 너비를 설정하는 속성입니다." csspropertyname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControl 의 이름을 설정하는 속성입니다." csspropertyname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="positionstep" />
+      <Property name="progressbarblockgap" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 displaytype 속성값이 &quot;progressbarcontrol&quot; 일 때 ProgressBar 의 진행 상태를 표시하는 블럭의 간격을 설정하는 속성입니다." csspropertyname="" normalpropertyname="progressbarblockgap" />
+      <Property name="progressbarblocksize" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 displaytype 속성값이 &quot;progressbarcontrol&quot; 일 때  ProgressBar 의 진행 상태를 표시하는 블럭의 너비를 설정하는 속성입니다." csspropertyname="" normalpropertyname="progressbarblocksize" />
+      <Property name="progressbardirection" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="forward" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ProgressBarDirection" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 displaytype 속성값이 &quot;progressbarcontrol&quot; 일 때 ProgressBar 의 진행 방향을 설정하는 속성입니다." csspropertyname="" normalpropertyname="progressbardirection" />
+      <Property name="progressbarsmooth" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 displaytype 속성값이 &quot;progressbarcontrol&quot; 일 때 ProgressBar 가 표시되는 형태를 설정하는 속성입니다." csspropertyname="" normalpropertyname="progressbarsmooth" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 을 표시하기 위한 우측 좌표값을 설정하는 속성입니다." csspropertyname="" normalpropertyname="right" />
+      <Property name="rtl" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="rtl" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="탭키 입력으로 Cell 간 포커스를 이동할 때 Cell 의 순서를 설정하는 속성입니다." csspropertyname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" normalpropertyname="text" />
+      <Property name="textareaacceptsenter" group="CellTextArea" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집영역에서 Enter 키 입력의 처리방식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareaacceptsenter" />
+      <Property name="textareaautoselect" group="CellTextArea" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집모드용 컨트롤이 활성화 되면 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareaautoselect" />
+      <Property name="textareaimemode" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Windows NRE,Android NRE" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집모드용 컨트롤에서 사용될 기본 입력 언어를 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareaimemode" />
+      <Property name="textareainputfilter" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputFilterType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집모드용 컨트롤에서 입력을 제한 시킬 문자를 타입별로 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareainputfilter" />
+      <Property name="textareainputmode" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집모드용 컨트롤에 입력되는 영문자를 대문자 또는 소문자로 변환할지 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareainputmode" />
+      <Property name="textareainputtype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집모드용 컨트롤에 입력을 허용할 문자를 타입별로 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareainputtype" />
+      <Property name="textareamaxlength" group="CellTextArea" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집모드용 컨트롤에 입력할 수 있는 문자열의 최대길이를 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareamaxlength" />
+      <Property name="textareascrollbarsize" group="CellTextArea" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 TextArea 형식일 때 표시되는 스크롤바의 크기를 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareascrollbarsize" />
+      <Property name="textareascrollbartype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum2" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollBarType" enuminfo2="ScrollBarType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집모드용 컨트롤에 스크롤바가 표시되는 형식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareascrollbartype" />
+      <Property name="textareascrolltype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 edittype 속성값이 &quot;textarea&quot; 일 때 편집모드용 컨트롤에 사용되는 스크롤의 종류를 설정하는 속성입니다." csspropertyname="" normalpropertyname="textareascrolltype" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE" description="Cell 영역에 마우스 포인터를 올려 놓았을 때 표시되는 풍선도움말을 설정하는 속성입니다." csspropertyname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="Cell 에서 풍선도움말이 표시될 위치와 방식을 설정하는 속성입니다." csspropertyname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 을 표시하기 위한 상단 좌표값을 설정하는 속성입니다." csspropertyname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 을 표시하기 위한 너비를 설정하는 속성입니다." csspropertyname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControl 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" normalpropertyname="padding" />
+        <Property name="-nexa-rtl-background-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControl 의 rtl 속성이 true 로 적용될 때 배경에 표시될 이미지를 설정하는 속성입니다." csspropertyname="-nexa-rtl-background-image" normalpropertyname="" />
+        <Property name="-nexa-rtl-edge-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewCellControl 의 rtl 속성이 true 로 적용될 때 테두리(Border) 안쪽에 표시될 Edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-rtl-edge-image" normalpropertyname="" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="readonly" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+      <Status name="invalidtext" control="true" default="false" deprecated="false" unused="false" group="userstatus" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="cellbutton" classname="nexacro.Button" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcalendar" classname="nexacro.Calendar" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcheckbox" classname="nexacro.CheckBox" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcombo" classname="nexacro.Combo" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celledit" classname="nexacro.Edit" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellmaskedit" classname="nexacro.MaskEdit" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellprogressbar" classname="nexacro.ProgressBar" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celltextarea" classname="nexacro.TextArea" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellimage" classname="nexacro._ImageAreaControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellexpandbutton" classname="nexacro.Button" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celltreeitem" classname="nexacro._CellTreeItemControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="true" group="" subgroup="" />
+      <Control name="celltreeline" classname="nexacro.CellTreeLineControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="true" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="clearEventHandler( strEventID )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.destroy()">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="getDisplayText()">
+          <Return type="String" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getFocus()">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetBottom();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetHeight();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetLeft();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetRight();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetTop();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getOffsetWidth();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelBottom();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelHeight();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelLeft();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelRight();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelTop();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getPixelWidth();">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.move( nLeft, nTop [, nWidth, nHeight [, nRight, nBottom]] )">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.moveToNext( objComp )&#xA;XComponent.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.moveToPrev( objComp )&#xA;XComponent.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.resize( nWidth, nHeight )">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setFocus( [bMoveScroll] )">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onclick(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.oncontextmenu(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondblclick(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondrag(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondragenter(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondragleave(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondragmove(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ondrop(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.oninput(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onkeydown(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onkeyup(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onkillfocus(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onlbuttondown(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onlbuttonup(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmousedown(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmouseenter(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmouseleave(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmousemove(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmouseup(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmousewheel(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onmove(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onrbuttondown(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onrbuttonup(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onsetfocus(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.onsize(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ontouchend(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ontouchmove(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListViewCellControl.ontouchstart(obj:nexacro._ListViewCellControl,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

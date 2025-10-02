@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.SocketEventInfo">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.SocketEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="EventInfo" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE" description="TCPClientSocketコンポーネントで要求された操作が成功したときに発生するイベントに渡されるEventInfoオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="bytesremain" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE" description="write()メソッドによって送信されて、その残りのデータの長さをバイト単位で持つ読み取り専用プロパティです。" csspropertyname="" normalpropertyname="bytesremain" />
+      <Property name="bytessent" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE" description="write()メソッドによって送信されたデータの長さをバイト単位で持つ読み取り専用プロパティです。" csspropertyname="" normalpropertyname="bytessent" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE" description="イベントのIDを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="eventid" />
+      <Property name="reason" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE" description="イベントが発生した原因についての情報を整数として持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="reason" />
+      <Property name="reasonmsg" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE" description="イベントが発生した原因をnexacro14イベント名に持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="reasonmsg" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

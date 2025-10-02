@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExcelExportObject">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ExcelExportObject" shorttypename="ExcelExportObject" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Gridに表示される内容を、Excelファイルにエクスポートするオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="commcompress" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="Exportのためにサーバーと通信時PostDataの圧縮有無を設定するプロパティです。" csspropertyname="" normalpropertyname="commcompress" />
+      <Property name="commdataformat" group="Hidden" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="xml" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エクスポートのためのデータをサーバーに送信するときに使用する通信フォーマットを設定するプロパティです。" csspropertyname="" normalpropertyname="commdataformat" />
+      <Property name="exportactivemode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="noactive" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportActiveMode" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="エクスポート完了後に生成されたファイルを自動的に開くかどうかを設定するプロパティです。" csspropertyname="" normalpropertyname="exportactivemode" />
+      <Property name="exporteventtype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportEventType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Exportの進行中に情報が表示される方式とonprogressイベントが発生する方式を設定するプロパティです。" csspropertyname="" normalpropertyname="exporteventtype" />
+      <Property name="exportfilename" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エクスポート完了後に生成されるファイル名を設定するプロパティです。" csspropertyname="" normalpropertyname="exportfilename" />
+      <Property name="exportfilepassword" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser" description="Export完了後に生成されるファイルに適用されるパスワードを設定するプロパティです。" csspropertyname="" normalpropertyname="exportfilepassword" />
+      <Property name="exportfilepath" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="エクスポート完了後にファイルが生成される場所を絶対パスに設定するプロパティです。" csspropertyname="" normalpropertyname="exportfilepath" />
+      <Property name="exportmessagealert" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Export前に表示される警告ダイアログに出力されるテキストを設定するプロパティです。" csspropertyname="" normalpropertyname="exportmessagealert" />
+      <Property name="exportmessagecomplete" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="exportuitypeプロパティ値が「exportprogress」の場合、Exportが完了すると、進行バーに表示されるテキストを設定するプロパティです。" csspropertyname="" normalpropertyname="exportmessagecomplete" />
+      <Property name="exportmessageprocess" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="exportuitypeプロパティ値が「exportprogress」の場合、Export進行中に進行バーに表示されるテキストの形式を設定するプロパティです。" csspropertyname="" normalpropertyname="exportmessageprocess" />
+      <Property name="exportmessageready" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="exportuitypeプロパティ値が「exportprogress」の場合、Export進行前に進行バーに表示されるテキストを設定するプロパティです。" csspropertyname="" normalpropertyname="exportmessageready" />
+      <Property name="exporttype" group="Misc." subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectをエクスポートして生成するファイルの形式を定数として設定するプロパティです。" csspropertyname="" normalpropertyname="exporttype" />
+      <Property name="exportuitype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportUIType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エクスポート実行時の進行状況を表示する方法を設定するプロパティです。" csspropertyname="" normalpropertyname="exportuitype" />
+      <Property name="exporturl" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectのExportを実行するサーバーのURLを設定するプロパティです。" csspropertyname="" normalpropertyname="exporturl" />
+      <Property name="exportwordwrap" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Exportする際にCellにテキスト改行設定の適用有無を設定するプロパティです。" csspropertyname="" normalpropertyname="exportwordwrap" />
+      <Property name="filefilter" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="エクスポートするファイルの選択時に、ファイルダイアログボックスに表示されるファイルの形式を設定するプロパティです。" csspropertyname="" normalpropertyname="filefilter" />
+      <Property name="filefilterindex" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="ファイル選択ダイアログにデフォルトで表示されるファイル形式をインデックス値に設定するプロパティです。" csspropertyname="" normalpropertyname="filefilterindex" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="quotechar" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportImportQuoteType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エクスポート時にテキスト修飾子文字として使用する値を設定するプロパティです。" csspropertyname="" normalpropertyname="quotechar" />
+      <Property name="separator" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エクスポート時に区切り文字として使用する値を設定するプロパティです。" csspropertyname="" normalpropertyname="separator" />
+      <Property name="transferrowcount" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="500" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エクスポート時にサーバーに分割して送信するRowの数を設定するプロパティです。" csspropertyname="" normalpropertyname="transferrowcount" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectにイベントを宣言して追加するメソッドです。">
+        <Syntax text="ExcelExportObject.addEvent( strEventID )">
+          <Return type="Boolean" description="イベントの追加に成功した場合は「true」を返します。&#xA;&#xA;イベントの追加に失敗した場合、もしくは同一のイベントIDが既に宣言されている場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectのイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="ExcelExportObject.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="検索結果の関数をExcelExportObjectのイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="ExcelExportObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数が定義されているスコープを指定します。指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エクスポートするアイテムをExcelExportObjectに追加するメソッドです。">
+        <Syntax text="ExcelExportObject.addExportItem( constExportItemType, objExportItem )&#xA;ExcelExportObject.addExportItem( constExportItemType, varExportSource, strRange [,strExportHead [,strExportSelect [,strExportMerge [,strExportValue [,strExportImage [,strExceptStyle [,strExportSize [,arrCellIndex]]]]]]]])">
+          <Return type="Number" description="ExcelExportObjectに追加されたItemのインデックスを返します。&#xA;&#xA;追加に失敗した場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="arrCellIndex" type="Array" in="false" out="false" option="false" variable="false" description="エクスポート際にバインドされたColumn値を適用するCellのインデックスを配列として指定します。&#xA;&#xA;インデックスが設定されたCellは表示されたテキスト値ではなく、バインドされたColumn値をExportします。&#xA;&#xA;インデックスが設定されていないCellは使用メソッドによって結果が異なる場合があります。&#xA;* exportData()：nOrgValueパラメータ値に基づいてExport値が決定されます。&#xA;* exportDataEx()：Cellに表示されるテキスト値がエクスポートされます。" />
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="エクスポート対象となるコンポーネントの種類を定数として指定します。&#xA;&#xA;現在はGridのみエクスポートすることができ、&quot;nexacro.ExportItemTypes.GRID&quot;で設定する必要があります。" />
+            <Argument name="objExportItem" type="Object" in="false" out="false" option="false" variable="false" description="エクスポート情報が設定されたExportItemオブジェクトを指定します。" />
+            <Argument name="strExceptStyle" type="String" in="false" out="false" option="false" variable="false" description="Gridに適用されたCSS関連のプロパティの中でエクスポート時に除外するプロパティを設定します。&#xA;&#xA;「none」に設定した場合、エクスポート対象から除外されるプロパティはありません。&#xA;「align」に設定した場合、Align関連の-nexa-text-align、-nexa-vertical-alignプロパティ値がエクスポート対象から除外されます。&#xA;「background」に設定した場合、backgroundのcolor関連プロパティ値がエクスポート対象から除外されます。&#xA;「color」に設定した場合、colorプロパティ値がエクスポート対象から除外されます。&#xA;「font」に設定した場合、fontプロパティ値がエクスポート対象から除外されます。&#xA;「border」に設定した場合、-nexa-borderプロパティ値がエクスポート対象から除外されます。&#xA;&#xA;各設定値はカンマ区切りで複数指定することができます。" />
+            <Argument name="strExportHead" type="String" in="false" out="false" option="false" variable="false" description="GridのHead、Summary領域のエクスポート方式を指定します。&#xA;&#xA;「allband」に設定した場合、Head、Summary領域をすべてエクスポートします。&#xA;「nohead」に設定した場合、Head領域はエクスポートせず、Summary領域のみエクスポートします。&#xA;「nosumm」に設定した場合、Head領域のみExportして、Summary領域はエクスポートしません。&#xA;「nohead,nosumm」に設定した場合、Head、Summary領域をすべてエクスポートしません。&#xA;&#xA;値を省略した場合は、strExportSelect値が「allrecord」であれば「allband」を適用し、「selectrecord」であれば「nohead、nosumm」を適用します。&#xA;&#xA;* Gridのselecttypeプロパティ値が「area」もしくは「multiarea」である場合は、設定値に関係なく常に「nohead,nosumm」を適用します。" />
+            <Argument name="strExportImage" type="String" in="false" out="false" option="false" variable="false" description="GridのCellに設定されている画像のエクスポート方式を指定します。&#xA;&#xA;「none」に設定した場合、設定された画像情報を無視して、空白としてエクスポートします。&#xA;「url」に設定した場合、設定された画像の位置情報をURL形式の文字列としてエクスポートします。&#xA;「image」に設定した場合、設定された画像の位置が「http://」、「https://」で始まるインターネットURLパスである画像のみそのままエクスポートします。&#xA;&#xA;値を省略した場合は「none」を適用します。" />
+            <Argument name="strExportMerge" type="String" in="false" out="false" option="false" variable="false" description="Gridでフォーマットと関係なく、論理的に結合されたセルのエクスポート方式を指定します。&#xA;「selectrecord」に設定した場合は、常に「nosuppress」を適用します。&#xA;&#xA;「suppress」に設定した場合は、結合された結果の通りに1つのセルにのみ値をエクスポートします。&#xA;それ以外のセルは結合されず、全て空白値として処理されます。&#xA;&#xA;「nosuppress」に設定した場合は、結合された結果を無視して各セルに同じ値をエクスポートします。&#xA;&#xA;「merge」に設定した場合は、結合された結果の通りに1つのセルにのみ値をエクスポートします。&#xA;それ以外のセルは結合されます。&#xA;&#xA;値を省略した場合は「suppress」を適用します。&#xA;&#xA;* 論理的な結合とは、suppressプロパティもしくはmergeCellメソッドによってGridの表示データが結合されていることを意味します。" />
+            <Argument name="strExportSelect" type="String" in="false" out="false" option="false" variable="false" description="Gridで選択範囲のエクスポート方式を指定します。&#xA;&#xA;「allrecord」に設定した場合、選択範囲に関係なく、すべてのRowをエクスポートします。&#xA;「selectrecord」に設定した場合、選択したRow、Cell、Areaのみエクスポートします。&#xA;&#xA;値を省略した場合は「allrecord」を適用します。" />
+            <Argument name="strExportSize" type="String" in="false" out="false" option="false" variable="false" description="Grid CellのColumn size（width）、Row size（height）値をExcelファイルに適用するかどうかを指定します。&#xA;&#xA;「width」に設定した場合、同じ幅でエクスポートします。&#xA;「height」に設定した場合、同じ高さでエクスポートします。&#xA;「both」に設定した場合、同じ幅と高さでエクスポートします。&#xA;&#xA;値を省略した場合は「width」を適用します。&#xA;&#xA;「height」もしくは「both」に設定していても、autofittype、autosizingtype、extendsizetypeなど、データによってGrid Cellの高さに影響を与えるプロパティを設定している場合には、画面上に表示されるGrid Cellの高さとエクスポートされたファイル内のCellの高さを同じ高さで処理することはできません。" />
+            <Argument name="strExportValue" type="String" in="false" out="false" option="false" variable="false" description="Excelファイルとしてエクスポートされる内容と形式を指定します。&#xA;&#xA;選択された領域がある場合には下記の通りに動作します。&#xA;-「allstyle」に設定した場合は選択によって変更されたプロパティはエクスポートされません。&#xA;-「selectstyle」に設定した場合は選択によって変更されたプロパティもエクスポートされます。&#xA;&#xA;値を設定している場合はvalue、format、calendardateformat、font、color、background(color)、-nexa-textaign、-nexa-vertical-align、-nexa-border（style、color）プロパティがエクスポートされます。&#xA;&#xA;値を省略した場合は「allstyle」を適用します。" />
+            <Argument name="strRange" type="String" in="false" out="false" option="false" variable="false" description="「シート名!セル領域」もしくは「セル領域」の形式で、オブジェクトの内容をエクスポートする位置を指定します。&#xA;&#xA;* 複数のアイテムを追加する場合、各データのRowの位置が重複しないように指定する必要があります。&#xA;同じシート内で重複するRowをstrRangeパラメータ値として指定することはできません。 &#xA;例えば、下記のように、1つ目のコードで2行目のRow（A2）をエクスポートする位置として指定している場合、2つ目のコードでは異なるカラムであっても2行目のRow（P2）を指定することはできません。&#xA;例）addExportItem(nexacro.ExportItemTypes.GRID, this.Grid00, &quot;Sheet1!A2&quot;);&#xA;　　addExportItem(nexacro.ExportItemTypes.GRID, this.Grid01, &quot;Sheet1!P2&quot;);&#xA;&#xA;複数のアイテムを出力する場合、縦方向に重複しないRowを出力することはできますが、横方向にアイテムを配置して出力することはできません。" />
+            <Argument name="varExportSource" type="Object" in="false" out="false" option="false" variable="false" description="エクスポート対象となるコンポーネントをオブジェクトとして指定します。&#xA;&#xA;現在はGridのみエクスポートすることができ、「this.Grid00」の形式で設定する必要があります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectに追加されたすべてのItemを削除するメソッドです。">
+        <Syntax text="ExcelExportObject.clear()">
+          <Return type="Number" description="削除されたItemの数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="ExcelExportObject.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser" description="ExcelExportObjectで指定したタイプのItemのみを削除するメソッドです。">
+        <Syntax text="ExcelExportObject.clearExportItems(constExportItemType)">
+          <Return type="Number" description="削除されたItemの数を返します。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="削除対象となるItemのタイプを定数で設定します。&#xA;&#xA;現在GridのみItemに追加することができますので、「nexacro.ExportItemTypes.GRID」に設定する必要があります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="count" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectに登録されたItemの数を返すメソッドです。">
+        <Syntax text="ExcelExportObject.count()">
+          <Return type="Number" description="すべてのitemの数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="countExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectで指定されたタイプのItem数を返すメソッドです。">
+        <Syntax text="ExcelExportObject.countExportItems(constExportItemType)">
+          <Return type="Number" description="指定されたタイプのitem数を返します。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="数を確認するItemのタイプを定数で設定します。&#xA;&#xA;現在GridのみItemに追加することができますので、「nexacro.ExportItemTypes.GRID」に設定する必要があります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="delExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectで指定したタイプの特定のアイテムを削除するメソッドです。">
+        <Syntax text="ExcelExportObject.delExportItem(constExportItemType,nItemIndex)">
+          <Return type="Boolean" description="アイテムの削除に成功した場合、「true」を返します。&#xA;パラメータが有効でないか、アイテムの削除に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="削除対象となるアイテムのタイプを定数に設定します。&#xA;&#xA;現在Gridのみアイテムに追加することができますので、「nexacro.ExportItemTypes.GRID」に設定する必要があります。" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="削除するアイテムのインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="スクリプトで動的に生成したExcelExportObjectを削除するメソッドです。">
+        <Syntax text="ExcelExportObject.destroy()">
+          <Return type="Boolean" description="ExcelExportObjectが正常に削除された場合、「true」を返します。&#xA;&#xA;ExcelExportObjectが正常に削除されない場合、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="exportData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectに設定されたアイテムをすべてExportするメソッドです。">
+        <Syntax text="ExcelExportObject.exportData( [strParam, strParamDS, nOrgValue, bFileDown] ) ;">
+          <Return type="Number" description="Export要求に成功したアイテムの数を返します。&#xA;&#xA;Exportするアイテムがない場合、0を返します。&#xA;&#xA;パラメータが有効でない値である場合、-1を返します。" />
+          <Arguments>
+            <Argument name="bFileDown" type="Boolean" in="false" out="false" option="false" variable="false" description="Exportが完了した後に生成されたファイルのダウンロード有無を設定します。&#xA;&#xA;trueに設定時、ファイルを自動的にダウンロードします。&#xA;falseに設定時、ファイルを自動的にダウンロードしません。&#xA;&#xA;値省略時、trueに適用されます。" />
+            <Argument name="nOrgValue" type="Number" in="false" out="false" option="false" variable="false" description="Exportの際にCell値として処理される対象を設定します。&#xA;&#xA;0もしくはfalseに設定時、Cellに表示されるテキストをValueにエクスポートします。&#xA;1もしくはtrueに設定時、CellにバインドされたDataSetのデータ値をValueにエクスポートします。&#xA;2設定時、Cellのdisplaytypeプロパティ値が「date」である場合は0に適用され、「date」ではない場合は1に適用されます。&#xA;&#xA;値省略時、0に適用されます。&#xA;&#xA;* valuetypecellindexプロパティに設定されたCellはnOrgValueパラメータ値に関係なく、バインドされたColumnの値をエクスポートします。&#xA;　valuetypecellindexプロパティに設定されていないCellはnOrgValueパラメータ値に合わせてExportされます。&#xA;&#xA;* エクスポートの結果の一貫性のためにvaluetypecellindexプロパティとexportDataEx()メソッドの使用をお勧めします。" />
+            <Argument name="strParam" type="String" in="false" out="false" option="false" variable="false" description="サーバー間の通信時にパラメータとして渡される値を設定します。&#xA;&#xA;DB keyのような値を渡すときに使用する拡張機能です。" />
+            <Argument name="strParamDS" type="String" in="false" out="false" option="false" variable="false" description="サーバーに転送されるDataSetを「Param_DataSet= export_DataSet」の形に設定します。&#xA;&#xA;開発環境に応じて、サーバーに追加機能を実装するためにDataSetを渡すときに使用する拡張機能です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exportDataEx" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellに表示された値に基づいてExcelExportObjectに設定されたItemをすべてExportするメソッドです。">
+        <Syntax text="ExcelExportObject.exportDataEx( [strParam, strParamDS, bFileDown] ) ;">
+          <Return type="Number" description="エクスポート要求に成功したItemの数を返します。&#xA;&#xA;エクスポートするItemが存在しない場合は、0を返します。&#xA;&#xA;パラメータが有効でない値である場合は、-1を返します。" />
+          <Arguments>
+            <Argument name="bFileDown" type="Boolean" in="false" out="false" option="false" variable="false" description="Exportが完了した後に生成されたファイルの自動ダウンロード有無を設定します。&#xA;&#xA;trueに設定時、ファイルを自動的にダウンロードします。&#xA;trueに設定時、環境に応じてダウンロードするためのポップアップウィンドウが表示されることがあります。&#xA;&#xA;falseに設定時、ファイルの自動ダウンロードができません。&#xA;&#xA;値を省略すると、trueに適用されます。" />
+            <Argument name="strParam" type="String" in="false" out="false" option="false" variable="false" description="サーバー間の通信時にパラメータとして転送される値を設定します。&#xA;&#xA;DB keyのような値を渡すときに使用する拡張機能です。" />
+            <Argument name="strParamDS" type="String" in="false" out="false" option="false" variable="false" description="サーバーに転送されるDataSetを「Param_DataSet=export_DataSet」の形式に設定します。&#xA;&#xA;開発環境に応じて、サーバーに追加機能を実装するためにDataSetを渡す際に使用する拡張機能です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectで指定されたタイプのアイテムのみExportするメソッドです。">
+        <Syntax text="ExcelExportObject.exportItems(constExportItemType)">
+          <Return type="Number" description="Export要求に成功したアイテムの数を返します。&#xA;ExportするItemがない場合は、「0」を返します。&#xA;無効なパラメータ値である場合は、「-1」を返します。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="Exportするアイテムのタイプを定数に設定します。&#xA;&#xA;現在GridのみItemに追加することができますので、「nexacro.ExportItemTypes.GRID」に設定する必要があります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="ExcelExportObject.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="特定のイベントで検出したハンドラ関数のインデックスを返します。&#xA;&#xA;特定のイベントで検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="ExcelExportObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;&#xA;ハンドラ関数のインデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectで指定されたタイプの特定のアイテムを返すメソッドです。">
+        <Syntax text="ExcelExportObject.getExportItem(constExportItemType,nItemIndex)">
+          <Return type="Object" description="指定されたインデックスに該当するItemをExportItemオブジェクトとして返します。&#xA;指定されたインデックスに該当するItemがない場合は、「null」を返します。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="返すアイテムのタイプを定数に設定します。&#xA;&#xA;現在Gridのみアイテムに追加することができますので、「nexacro.ExportItemTypes.GRID」に設定する必要があります。" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="返すアイテムのインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectのイベントにハンドラ関数を指定した位置に挿入するメソッドです。">
+        <Syntax text="ExcelExportObject.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="イベントに挿入されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;&#xA;正常に挿入されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="ハンドラ関数が挿入される位置のインデックス値を指定します。&#xA;&#xA;-1を指定した場合は最後に追加されます。&#xA;イベントに設定されたハンドラ関数の個数より大きい値を指定した場合は最後に追加されます。&#xA;NaN値を指定した場合はECMA Scriptの仕様に基づいて0が設定されます。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectに宣言された特定のイベントを削除するメソッドです。">
+        <Syntax text="ExcelExportObject.removeEvent( strEventID )">
+          <Return type="Boolean" description="イベントの削除に成功した場合は「true」を返します。&#xA;&#xA;イベントの削除に失敗、もしくは宣言されていないイベントIDの設定時は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ExcelExportObjectから削除するイベントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="ExcelExportObject.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="ExcelExportObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="ExcelExportObject.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObjectの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="ExcelExportObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExportするItemをExcelExportObjectの特定の場所に追加するメソッドです。">
+        <Syntax text="ExcelExportObject.setExportItem( constExportItemType,nItemIndex,objExportItem )">
+          <Return type="Boolean" description="Item追加に成功した場合、「true」を返します。&#xA;パラメータが有効でないか、Itemの追加に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="Export対象となるコンポーネントの種類を定数値に設定します。&#xA;&#xA;現在GridのみExport可能でありますので、「nexacro.ExportItemTypes.GRID」に設定する必要があります。" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="追加するItemが位置するインデックスを設定します。" />
+            <Argument name="objExportItem" type="Object" in="false" out="false" option="false" variable="false" description="Export情報を設定したExportItemオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="エクスポート中にエラーが生じた際に発生するイベントです。">
+        <Syntax text="ExcelExportObject.onerror(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onprogress" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Export途中の進行状況に応じて発生するイベントです。">
+        <Syntax text="ExcelExportObject.onprogress(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportProgressEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportProgressEventInfo" in="false" out="false" option="false" variable="false" description="　" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="すべてのエクスポートが完了した際に発生するイベントです。">
+        <Syntax text="ExcelExportObject.onsuccess(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

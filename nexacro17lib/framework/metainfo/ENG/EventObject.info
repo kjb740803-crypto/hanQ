@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.EventObject">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.EventObject" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This is the original object of an event that is declared in a component." />
+    <PropertyInfo>
+      <Property name="length" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This read-only property holds the number of event handlers defined in an event." csspropertyname="" normalpropertyname="length" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the name of an EventObject." csspropertyname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="fireEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to fire an event by calling the handler defined in the event.">
+        <Syntax text="EventObject.fireEvent( objFireComp, objEventInfo [, bCancelable] )">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if a handler returns &quot;false&quot; with the bCancelable parameter set to &quot;true&quot;.&#xA;This method will return &quot;true&quot; if no handler returns &quot;false&quot; with bCancelable set to &quot;true&quot;.&#xA;&#xA;This method will return the value that is returned by the last handler if bCancelable is set to &quot;false&quot;.&#xA;This method will return an empty value if bCancelable is set to &quot;false&quot; and the last handler does not return any value." />
+          <Arguments>
+            <Argument name="bCancelable" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter determines whether to cancel the execution of handlers depending on a return value.&#xA;&#xA;With this parameter set to &quot;true&quot;, all the following handlers will be canceled if a handler returns &quot;false&quot;.&#xA;With this parameter set to &quot;true&quot;, the following handler will be executed if any of a handler returns &quot;true&quot;.&#xA;&#xA;With this parameter set to &quot;false&quot;, the following handler will be executed regardless of a return value.&#xA;&#xA;The default value of this parameter is &quot;false&quot;." />
+            <Argument name="objEvent" type="Object" in="false" out="false" option="false" variable="false" description="This is an EventInfo object that will be delivered to the event handler." />
+            <Argument name="objFireComp" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that will be delivered to the event handler.&#xA;&#xA;Normally, this object constitutes an object that fires the relevant event." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

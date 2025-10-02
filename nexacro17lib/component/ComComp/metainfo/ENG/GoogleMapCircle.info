@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GoogleMapCircle">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.GoogleMapCircle" shorttypename="GoogleMapCircle" csstypename="GoogleMapCircle" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This object is used to mark a circle at a particular point on the map loaded onto a GoogleMap component." />
+    <PropertyInfo>
+      <Property name="latitude" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to set the value of the latitude where a GoogleMapCircle will be displayed." csspropertyname="" normalpropertyname="latitude" />
+      <Property name="longitude" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to set the value of the longitude where a GoogleMapCircle will be displayed." csspropertyname="" normalpropertyname="longitude" />
+      <Property name="radius" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="100" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to set the radius of a GoogleMapCircle." csspropertyname="" normalpropertyname="radius" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="This property is used to determine whether to display a GoogleMapCircle object on the map." csspropertyname="" normalpropertyname="visible" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

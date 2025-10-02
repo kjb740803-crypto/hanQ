@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.EventObject">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.EventObject" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="コンポーネントに宣言されたイベントの円形オブジェクトです。" />
+    <PropertyInfo>
+      <Property name="length" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="イベントに定義されたイベントハンドラ関数の数を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="length" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="EventObjectの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="fireEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="イベントに定義されたハンドラ関数を呼び出して、イベントを発生させるメソッドです。">
+        <Syntax text="EventObject.fireEvent( objFireComp, objEventInfo [, bCancelable] )">
+          <Return type="Boolean" description="bCancelableパラメータがtrueであり、ハンドラ関数の実行中にfalseが返された場合、falseを返します。&#xA;bCancelableパラメータがtrueであり、ハンドラ関数の実行中にfalseが返されなかった場合、trueを返します。&#xA;&#xA;bCancelableパラメータがfalseの場合、最後のハンドラ関数から返された値を返します。&#xA;bCancelableパラメータがfalseであり、最後のハンドラ関数から値を返さない場合、空値を返します。" />
+          <Arguments>
+            <Argument name="bCancelable" type="Boolean" in="false" out="false" option="false" variable="false" description="イベントハンドラ関数の返り値に基づいて、関数の実行を停止させるかどうかを設定します。&#xA;&#xA;true設定時、ハンドラ関数でfalseを返した場合、ハンドラ関数の実行を停止します。&#xA;true設定時、ハンドラ関数がtrueを返した場合、次のハンドラ関数を実行します。&#xA;&#xA;false設定時、ハンドラ関数でtrue/falseを返した場合、次のハンドラ関数を実行します。&#xA;&#xA;値省略時、falseに適用されます。" />
+            <Argument name="objEvent" type="Object" in="false" out="false" option="false" variable="false" description="イベントハンドラ関数に渡すEventInfoオブジェクトを設定します。" />
+            <Argument name="objFireComp" type="Object" in="false" out="false" option="false" variable="false" description="イベントハンドラ関数に渡すコンポーネントを設定します。&#xA;&#xA;一般的に、イベントが発生したコンポーネントを同一に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

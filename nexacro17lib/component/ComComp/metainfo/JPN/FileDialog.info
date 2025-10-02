@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileDialog">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileDialog" shorttypename="FileDialog" csstypename="FileDialog" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ユーザーがファイルを開くか保存するパスを選択するためのファイル選択ダイアログコンポーネントです。" />
+    <PropertyInfo>
+      <Property name="accept" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Firefox,Android NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileDialogに適用されるファイル形式を設定するプロパティです。" csspropertyname="" normalpropertyname="accept" />
+      <Property name="defaultextension" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="FileDialogに選択されているファイル形式の拡張子をファイル名に含めるかを設定するプロパティです。" csspropertyname="" normalpropertyname="defaultextension" />
+      <Property name="filter" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="FileDialogに適用されるファイル形式を設定するプロパティです。" csspropertyname="" normalpropertyname="filter" />
+      <Property name="filterindex" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="FileDialogにデフォルトで表示されるファイルの種類をインデックス値に設定するプロパティです。" csspropertyname="" normalpropertyname="filterindex" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileDialogの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileDialogの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileDialogの親オブジェクトを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="SELFOLDER" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="SELFOLDER" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="FileDialogのイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="FileDialog.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="検索結果の関数をFileDialogのイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="FileDialog.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数が定義されているスコープを指定します。指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="FileDialog.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="FileDialogの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="FileDialog.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="特定のイベントで検出したハンドラ関数のインデックスを返します。&#xA;&#xA;特定のイベントで検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileDialogの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="FileDialog.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;&#xA;ハンドラ関数のインデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileDialogを表示するメソッドです。">
+        <Syntax text="FileDialog.open( strTitle, constOpenMode [, strInitialPath [, strFileName [, nWidth [, nHeight ]]]] )">
+          <Return type="Boolean" description="メソッドの実行に成功した場合は「true」を返します。&#xA;&#xA;不正なパラメータ値を設定しているか、メソッドの実行に失敗した場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="constOpenMode" type="Constant" in="false" out="false" option="false" variable="false" description="表示されるFileDialogの種類を指定します。&#xA;&#xA;「FileDialog.LOAD」もしくは「1」を指定した場合、一個のファイルが読み取れるFileDialogが表示されます。&#xA;「FileDialog.SAVE」もしくは「2」を指定した場合、一個のファイルが書き込めるFileDialogが表示されます。&#xA;「FileDialog.MULTILOAD」もしくは「3」を指定した場合、複数のファイルが読み取れるFileDialogが表示されます。&#xA;「FileDialog.SELFOLDER」もしくは「4」を指定した場合、フォルダを選択できるFileDialogが表示されます。&#xA;&#xA;不正な値を指定した場合は「FileDialog.LOAD」が適用されます。&#xA;&#xA;* Desktop WREでは「FileDialog.LOAD」と「FileDialog.MULTILOAD」のみ指定することができます。&#xA;* MobileではiOS/iPadOS Default Web Browserのみ「FileDialog.MULTILOAD」を指定することができます。" />
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="FileDialogの高さをpixel単位の数値として指定します。&#xA;&#xA;未指定もしくは356より小さい値を指定した場合には356もしくは最後に表示された高さが適用されます。&#xA;モニターの高さより大きい値を指定した場合にはモニターの高さの値が適用されます。&#xA;&#xA;* Windows NREでのみ設定値が適用されます。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="FileDialogの幅をpixel単位の数値として指定します。&#xA;&#xA;未指定もしくは648より小さい値を指定した場合には648もしくは最後に表示された幅が適用されます。&#xA;モニターの幅より大きい値を指定した場合にはモニターの幅の値が適用されます。&#xA;&#xA;* Windows NREでのみ設定値が適用されます。" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="FileDialogが表示される際にデフォルトで設定されるファイル名を指定します。&#xA;&#xA;constOpenModeパラメータ値が「FileDialog.SELFOLDER」である場合、このパラメータは無視されます。&#xA;&#xA;* web runtime environmentでは設定値が適用されません。" />
+            <Argument name="strInitialPath" type="String" in="false" out="false" option="false" variable="false" description="FileDialogが表示される際にデフォルトとして選択されるフォルダを指定します。&#xA;絶対パスもしくはAliasを使用して指定します。&#xA;&#xA;* モバイルNREでは設定値が適用されません。&#xA;* WREでは設定値が適用されません。" />
+            <Argument name="strTitle" type="String" in="false" out="false" option="false" variable="false" description="File DialogのTitleBarに表示する文字列を表します。&#xA;&#xA;* macOS NREとweb runtime environmentでは設定値が適用されません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="FileDialogの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="FileDialog.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="FileDialogの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="FileDialog.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="FileDialogの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="FileDialog.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,Android NRE,iOS/iPadOS NRE" description="FileDialogの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="FileDialog.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileDialogを閉じたときに発生するイベントです。">
+        <Syntax text="FileDialog.onclose(obj:nexacro.FileDialog,e:nexacro.FileDialogEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileDialogEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

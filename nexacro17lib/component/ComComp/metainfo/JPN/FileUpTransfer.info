@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileUpTransfer">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileUpTransfer" shorttypename="FileUpTransfer" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="サーバーにファイルをアップロードするためのInvisibleオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="filelist" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferからサーバーにアップロードするファイルの情報をCollectionとして持つ読み取り専用プロパティです。" csspropertyname="" normalpropertyname="filelist" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="postdatalist" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ファイルをアップロードする際にサーバーに送信するデータをCollection形で持つ読み取り専用プロパティです。" csspropertyname="" normalpropertyname="postdatalist" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferでアップロードしたファイルを受信するサーバーページ情報を設定するプロパティです。" csspropertyname="" normalpropertyname="url" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferにイベントを宣言して追加するメソッドです。">
+        <Syntax text="FileUpTransfer.addEvent( strEventID )">
+          <Return type="Boolean" description="イベントの追加に成功した場合は「true」を返します。&#xA;&#xA;イベントの追加に失敗した場合、もしくは同一のイベントIDが既に宣言されている場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferのイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="FileUpTransfer.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="検索結果の関数をFileUpTransferのイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="FileUpTransfer.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数が定義されているスコープを指定します。指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelistプロパティの末尾にファイル情報を追加するメソッドです。">
+        <Syntax text="FileUpTransfer.addFile( strID, objVFile )">
+          <Return type="Number" description="ファイル情報の追加に成功すると、追加された位置のインデックスを返します。&#xA;&#xA;strIDが重複、もしくはstrID、objVFileパラメータを誤って設定すると、-1を返します。&#xA;ファイル情報の追加に失敗した場合は、-1を返します。" />
+          <Arguments>
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="filelistプロパティに追加するファイルの情報をVirtualFileオブジェクト型に設定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="filelistプロパティに追加するファイル情報のIDを文字列に設定します。&#xA;&#xA;ファイルアップロード時に「name」パラメータ値として使用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="FileUpTransfer.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearFileList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelistプロパティに設定されたファイル情報をすべて削除するメソッドです。">
+        <Syntax text="FileUpTransfer.clearFileList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearPostDataList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="postdatalistプロパティに設定されたデータをすべて削除するメソッドです。">
+        <Syntax text="FileUpTransfer.clearPostDataList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="スクリプトで動的に生成したFileUpTransferを削除するメソッドです。">
+        <Syntax text="FileUpTransfer.destroy()">
+          <Return type="Boolean" description="FileUpTransferが正常に削除された場合、「true」を返します。&#xA;&#xA;FileUpTransferが正常に削除されない場合、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="existFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelistプロパティの引数として渡されたVirtualFileオブジェクトと一致するファイルの情報の存在有無を返すメソッドです。">
+        <Syntax text="FileUpTransfer.existFile( objVFile )">
+          <Return type="Boolean" description="引数として渡されたVirtualFileオブジェクトと一致するファイルがfilelistプロパティに存在する場合は「true」を返します。&#xA;&#xA;引数として渡されたVirtualFileオブジェクトと一致するファイルがfilelistプロパティに存在しない場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="filelistプロパティで存在有無を確認するファイル情報をVirtualFileオブジェクト型に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="FileUpTransfer.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="特定のイベントで検出したハンドラ関数のインデックスを返します。&#xA;&#xA;特定のイベントで検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="FileUpTransfer.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;&#xA;ハンドラ関数のインデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileArrayByFileName" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelistプロパティにて、特定したファイル名と一致するファイルの情報をVirtualFileオブジェクト配列として返すメソッドです。">
+        <Syntax text="FileUpTransfer.getFileArrayByFileName( strFileName )">
+          <Return type="Array" description="filelistプロパティで指定されたファイル名と一致するファイルをVirtualFileオブジェクト配列を返します。&#xA;&#xA;返すファイルが1つである場合も、VirtualFileオブジェクト配列を返します。&#xA;&#xA;指定したファイル名と一致するファイルが存在しない場合はnullを返します。" />
+          <Arguments>
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="返すファイル情報のファイル名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getIndexArrayByFileName" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelistプロパティで指定されたファイル名と一致するファイルの情報のインデックスを配列として返すメソッドです。">
+        <Syntax text="FileUpTransfer.getIndexArrayByFileName( strFileName )">
+          <Return type="Object" description="filelistプロパティで指定されたファイル名と一致するファイルのインデックスを配列として返します。&#xA;返すファイルが1つである場合も、配列で返します。&#xA;&#xA;指定されたファイル名と一致するファイルが存在しない場合は、nullを返します。" />
+          <Arguments>
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="インデックスを返すファイル情報のファイル名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getPostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="postdatalistプロパティにて、特定のKey値に該当するデータを返すメソッドです。">
+        <Syntax text="FileUpTransfer.getPostData( strKey )">
+          <Return type="Variant" description="strKey値に該当するデータを返します。&#xA;&#xA;strKey値に該当するデータがない場合はnullを返します。" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="返すデータのKey値を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferのイベントにハンドラ関数を指定した位置に挿入するメソッドです。">
+        <Syntax text="FileUpTransfer.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="イベントに挿入されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;&#xA;正常に挿入されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="ハンドラ関数が挿入される位置のインデックス値を指定します。&#xA;&#xA;-1を指定した場合は最後に追加されます。&#xA;イベントに設定されたハンドラ関数の個数より大きい値を指定した場合は最後に追加されます。&#xA;NaN値を指定した場合はECMA Scriptの仕様に基づいて0が設定されます。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferに宣言された特定のイベントを削除するメソッドです。">
+        <Syntax text="FileUpTransfer.removeEvent( strEventID )">
+          <Return type="Boolean" description="イベントの削除に成功した場合は「true」を返します。&#xA;&#xA;イベントの削除に失敗、もしくは宣言されていないイベントIDの設定時は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="FileUpTransferから削除するイベントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="FileUpTransfer.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="FileUpTransfer.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelistプロパティに設定されたファイルの中で特定のインデックスのファイルを削除するメソッドです。">
+        <Syntax text="FileUpTransfer.removeFile( strID )">
+          <Return type="Number" description="filelistプロパティから削除されたファイルのインデックスを返します。&#xA;&#xA;strIDパラメータを無効な値に設定したか、ファイルの情報を削除に失敗した場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="filelistプロパティから削除するファイル情報のIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeFileByIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelistプロパティに設定されたファイルの情報から引数として渡されたインデックスのファイル情報を削除するメソッドです。">
+        <Syntax text="FileUpTransfer.removeFileByIndex( nIndex )">
+          <Return type="Number" description="filelistプロパティから削除されたファイルのインデックスを返します。&#xA;&#xA;nIndexパラメータを無効な値に設定したか、ファイルの情報を削除に失敗した場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="filelistプロパティから削除するファイル情報のインデックスを数字で設定します。&#xA;&#xA;NaN値を入力すると、ECMAの整数変換ルールに基づいて「0」が設定されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removePostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="postdatalistプロパティに設定されたデータから特定のKey値に該当するデータを削除するメソッドです。">
+        <Syntax text="FileUpTransfer.removePostData( strKey );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="削除するデータのKey値を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="FileUpTransfer.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="FileUpTransferの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="FileUpTransfer.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ilelistプロパティの引数として渡されたインデックスのファイル情報を変更するメソッドです。">
+        <Syntax text="FileUpTransfer.setFile( nIndex, objVFile )">
+          <Return type="Boolean" description="引数として渡されたインデックスのファイル情報の変更に成功した場合は「true」を返します。&#xA;&#xA;無効なnIndexパラメータを設定するか、ファイル情報の変更に失敗した場合は、「false」を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="filelistプロパティのCollectionにファイルが位置するインデックスを数字で設定します。&#xA;&#xA;NaN値を入力すると、ECMAの整数変換のルールに基づいて0が設定されます。" />
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="既存のファイルの情報を交換する新しいファイル情報をVirtualFileオブジェクト型に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ファイルアップロード要求時にサーバーに送信するデータをpostdatalistプロパティに追加するメソッドです。">
+        <Syntax text="FileUpTransfer.setPostData( strKey, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="サーバーに送信するデータのKey値を文字列に設定します。&#xA;&#xA;同じKey値が存在する場合は、新しいデータに変更されます。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="サーバーに送信するデータを設定します。&#xA;&#xA;基本型（number、string、booleanなど）を設定することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="upload" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="filelistプロパティに設定したファイルをHTTP/HTTPSプロトコルのPOST形式でアップロードするメソッドです。">
+        <Syntax text="FileUpTransfer.upload( [strUrl] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="アップロードファイルを受信するサーバーページの情報を文字列に設定します。&#xA;&#xA;値を省略した場合、urlプロパティに設定された値が適用されます。&#xA;値を設定した場合、urlプロパティに設定された値は無視されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ファイルのアップロードに失敗、もしくはエラーコードが返された際に発生するイベントです。">
+        <Syntax text="FileUpTransfer.onerror(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onprogress" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ファイルアップロードの際に一定間隔で発生するイベントです。">
+        <Syntax text="FileUpTransfer.onprogress(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferProgressEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferProgressEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ファイルアップロードが完了した後、成功コード値が渡された際に発生するイベントです。">
+        <Syntax text="FileUpTransfer.onsuccess(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TCPClientSocket">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.TCPClientSocket" shorttypename="TCPClientSocket" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCP通信を使用してサーバーに接続して情報を送受信することができるクライアントコンポーネントです。" />
+    <PropertyInfo>
+      <Property name="address" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="接続したサーバーのアドレスの値を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="address" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketで要求された作業が失敗した際に発生したエラーコードの値を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketで要求された作業が失敗した際に発生したエラーメッセージの値を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="errormsg" />
+      <Property name="isopen" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="false" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="サーバーへの接続状態の値を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="isopen" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="port" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="接続したサーバーのポート番号の値を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="port" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketにイベントを宣言して追加するメソッドです。">
+        <Syntax text="TCPClientSocket.addEvent( strEventID )">
+          <Return type="Boolean" description="イベントの追加に成功した場合は「true」を返します。&#xA;&#xA;イベントの追加に失敗した場合、もしくは同一のイベントIDが既に宣言されている場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="TCPClientSocket.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="検索結果の関数をTCPClientSocketのイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="TCPClientSocket.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数が定義されているスコープを指定します。&#xA;&#xA;指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントに登録されている全てのハンドラ関数を削除するメソッドです。">
+        <Syntax text="TCPClientSocket.clearEventHandler( strEventID )">
+          <Return type="Number" description="削除されたイベントハンドラの個数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="サーバーへの接続の解除を要求するメソッドです。">
+        <Syntax text="TCPClientSocket.close()">
+          <Return type="Boolean" description="要求が正常に実行された場合は「true」を返します。&#xA;&#xA;要求が正常に実行されなかった場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントからハンドラ関数を検索するメソッドです。">
+        <Syntax text="TCPClientSocket.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数のインデックスを返します。&#xA;&#xA;対象のハンドラ関数が存在しなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="検索対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントから指定したインデックスのハンドラ関数を取得するメソッドです。">
+        <Syntax text="TCPClientSocket.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="ハンドラ関数オブジェクトを返します。&#xA;&#xA;対象のハンドラ関数が存在しなかった場合は「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="対象のハンドラ関数のインデックスを指定します。&#xA;&#xA;インデックスは0ベースです。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントにハンドラ関数を指定した位置に挿入するメソッドです。">
+        <Syntax text="TCPClientSocket.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="イベントに挿入されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;&#xA;正常に挿入されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="ハンドラ関数が挿入される位置のインデックス値を指定します。&#xA;&#xA;-1を指定した場合は最後に追加されます。&#xA;イベントに設定されたハンドラ関数の個数より大きい値を指定した場合は最後に追加されます。&#xA;NaN値を指定した場合はECMA Scriptの仕様に基づいて0が設定されます。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPを用いてサーバーにソケット接続を要求するメソッドです。">
+        <Syntax text="TCPClientSocket.open( strAddress, nPort )">
+          <Return type="Boolean" description="要求が正常に実行された場合は「true」を返します。&#xA; &#xA;要求が正常に実行されなかった場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="nPort" type="Number" in="false" out="false" option="false" variable="false" description="接続先のサーバーのポート番号を数値として指定します。" />
+            <Argument name="strAddress" type="String" in="false" out="false" option="false" variable="false" description="接続先のサーバーのドメイン名もしくはIPv4形式のIPアドレスを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="接続しているサーバーからデータを受信するメソッドです。">
+        <Syntax text="TCPClientSocket.read( nSize [, nTimeOut [, strCharSet]] )">
+          <Return type="Array" description="受信の成功有無と受信データを配列形式で返します。&#xA;&#xA;配列の第1要素として、Boolean型の成功有無を返します。&#xA;配列の第2要素として、受信データを返します。" />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="受信データの最大サイズをバイト単位の数値として指定します。&#xA;&#xA;設定値は最大サイズとして適用され、実際の受信データのサイズは設定値より小さいことがあります。&#xA; &#xA;0を指定した場合は受信データがあるかどうかのチェックのみ行います。&#xA;負値を指定した場合はメソッドの実行時に失敗したこととして処理されます。" />
+            <Argument name="nTimeOut" type="Number" in="false" out="false" option="false" variable="false" description="データを受信するまでの待機時間を秒単位の数値として指定します。&#xA;&#xA;0以下の値を指定した場合は待機時間が無限になります。&#xA; &#xA;未指定にした場合は0として動作します。" />
+            <Argument name="strCharSet" type="String" in="false" out="false" option="false" variable="false" description="データを受信する際に適用する文字セットを指定します。&#xA;&#xA;未指定にした場合はシステムの文字セットが適用されます。&#xA;&#xA;文字セットを変換する必要のある場合にのみ指定することを推奨します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="接続しているサーバーからデータを行単位で受信するメソッドです。">
+        <Syntax text="TCPClientSocket.readLine( nSize [, nTimeOut [, strCharSet]] )">
+          <Return type="Array" description="受信の成功有無と受信データを配列形式で返します。&#xA;&#xA;配列の第1要素として、Boolean型の成功有無を返します。&#xA;配列の第2要素として、受信データを返します。" />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="受信データの最大サイズをバイト単位の数値として指定します。&#xA;&#xA;設定値は最大サイズとして適用され、実際の受信データのサイズは設定値より小さいことがあります。&#xA;&#xA;0以下の値を指定した場合はメソッドが正常に実行されません。" />
+            <Argument name="nTimeOut" type="Number" in="false" out="false" option="false" variable="false" description="データを受信するまでの待機時間を秒単位の数値として指定します。&#xA;&#xA;受信データに改行文字がない場合は待機時間が再度適用されるため、値の設定に注意してください。&#xA;&#xA;0以下の値を指定した場合は待機時間が無限になります。&#xA;未指定にした場合は0として動作します。" />
+            <Argument name="strCharSet" type="String" in="false" out="false" option="false" variable="false" description="データを受信する際に適用する文字セットを指定します。&#xA;&#xA;未指定にした場合はシステムの文字セットが適用されます。&#xA;&#xA;文字セットを変換する必要のある場合にのみ指定することを推奨します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketに宣言された特定のイベントを削除するメソッドです。">
+        <Syntax text="TCPClientSocket.removeEvent( strEventID )">
+          <Return type="Boolean" description="イベントの削除に成功した場合は「true」を返します。&#xA;&#xA;イベントの削除に失敗、もしくは宣言されていないイベントIDの設定時は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="TCPClientSocketから削除するイベントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="TCPClientSocket.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功した場合は「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗した場合は「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除対象のハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除対象のハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントから検索したハンドラ関数を削除するメソッドです。">
+        <Syntax text="TCPClientSocket.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功した場合、「1」を返します。&#xA;&#xA;ハンドラ関数を削除に失敗した場合、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除対象のハンドラ関数が定義されているスコープを指定します。&#xA;指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除対象のハンドラ関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントにて、最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="TCPClientSocket.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="変更に成功した場合は「0」を返します。&#xA;&#xA;変更に失敗した場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を代替する関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="代替ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketのイベントにて、最初のハンドラ関数を検索したハンドラ関数に変更するメソッドです。">
+        <Syntax text="TCPClientSocket.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="変更に成功した場合は「0」を返します。&#xA;&#xA;変更に失敗した場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="代替ハンドラ関数が定義されているスコープを指定します。&#xA;&#xA;指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置き換える関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="接続しているサーバーにデータを送信するメソッドです。">
+        <Syntax text="TCPClientSocket.write( strData [, strCharset] )">
+          <Return type="Boolean" description="データ送信を開始した場合は「true」を返します。&#xA;&#xA;データ送信を開始できない場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="データを送信する際に適用する文字セットを指定します。&#xA;&#xA;未指定にした場合はシステムの文字セットが適用されます。&#xA;&#xA;文字セットを変換する必要のある場合にのみ指定することを推奨します。" />
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="送信データを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="ondataarrived" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="接続されたサーバーに受信可能なデータがある場合に発生するイベントです。">
+        <Syntax text="TCPClientSocket.ondataarrived(obj:nexacro.TCPClientSocket,e:nexacro.SocketReceiveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketReceiveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketで要求された作業が失敗した際に発生するイベントです。">
+        <Syntax text="TCPClientSocket.onerror(obj:nexacro.TCPClientSocket,e:nexacro.SocketErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="TCPClientSocketで要求された作業が成功した際に発生するイベントです。">
+        <Syntax text="TCPClientSocket.onsuccess(obj:nexacro.TCPClientSocket,e:nexacro.SocketEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

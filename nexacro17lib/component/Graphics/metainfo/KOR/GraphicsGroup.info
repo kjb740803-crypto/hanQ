@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GraphicsGroup">
+    <ObjectInfo finalclass="false" inheritance="nexacro._GraphicsObject" classname="nexacro.GraphicsGroup" shorttypename="GraphicsGroup" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Graphics 관련 오브젝트를 논리적인 그룹으로 관리하기 위한 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="fillstyle" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="fillstyle" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 의 고유 식별자를 설정하는 속성입니다." csspropertyname="" normalpropertyname="id" />
+      <Property name="miterlimit" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="miterlimit" />
+      <Property name="opacity" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 의 부모 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="parent" />
+      <Property name="strokecap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokecap" />
+      <Property name="strokejoin" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokejoin" />
+      <Property name="strokepen" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="iOS/iPadOS Default Web Browser" description="" csspropertyname="" normalpropertyname="strokepen" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 가 화면에 표시될지 여부를 설정하는 속성입니다." csspropertyname="" normalpropertyname="visible" />
+      <Property name="x" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 오브젝트를 기준으로 GraphicsGroup 가 표시될 x 축 좌표값을 설정하는 속성입니다." csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 오브젝트를 기준으로 GraphicsGroup 가 표시될 y 축 좌표값을 설정하는 속성입니다." csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Graphics 오브젝트를 GraphicsGroup 에 자식으로 추가하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.addChild( strID, objGObject )">
+          <Return type="Number" description="GraphicsGroup 에 추가된 Graphics 오브젝트의 인덱스를 반환합니다." />
+          <Arguments>
+            <Argument name="objGObject" type="Object" in="false" out="false" option="false" variable="false" description="자식으로 추가하려는 Graphics 오브젝트를 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="자식으로 추가하려는 Graphics 오브젝트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 추가된 오브젝트를 메모리에서 완전히 삭제하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.clear()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 를 메모리에서 완전히 삭제하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.destroy()">
+          <Return type="Boolean" description="GraphicsGroup 가 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;GraphicsGroup 가 정상적으로 삭제되지 않으면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 가 표시되는 영역정보를 Graphics 컴포넌트 기준으로 Border 영역을 포함하여 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getBoundRect( );">
+          <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsGroup 에 Border 가 있을 경우 반환되는 영역정보에는 Border 영역이 포함됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFirstChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 추가된 오브젝트 중 첫번째 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getFirstChild()">
+          <Return type="Object" description="GraphicsGroup 에 추가된 첫번째 오브젝트를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getLastChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 추가된 오브젝트 중 마지막 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getLastChild()">
+          <Return type="Object" description="GraphicsGroup 에 추가된 마지막 오브젝트를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 와 부모가 동일한 Graphics 오브젝트 중 다음 순서의 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getNextSibling()">
+          <Return type="Object" description="부모가 동일한 다음 순서의 Graphics 오브젝트를 반환합니다.&#xA;&#xA;다음 순서의 Graphics 오브젝트가 없을 경우 null 을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getObjectByID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 추가된 오브젝트 중 특정 ID 에 해당하는 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getObjectByID( strID )">
+          <Return type="Object" description="strID 에 해당하는 오브젝트를 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="얻으려 하는 오브젝트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getObjects" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 추가된 오브젝트를 배열로 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getObjects()">
+          <Return type="Array" description="GraphicsGroup 에 추가된 순서대로 오브젝트를 배열로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 가 표시되는 영역정보를 부모 오브젝트 기준으로 Border 영역을 포함하여 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getOffsetBoundRect( );">
+          <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsGroup 에 Border 가 있을 경우 반환되는 영역정보에는 Border 영역이 포함됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 가 표시되는 영역정보를 부모 오브젝트 기준으로 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getOffsetRect( );">
+          <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsGroup 에 Border 가 있어도 Border 영역과 관계없이 GraphicsGroup 의 실제 영역이 반환됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 가 표시되는 영역정보를 부모 오브젝트 기준으로 Border 영역을 제외하고 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getOffsetRegion( );">
+          <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsGroup 에 Border 가 있을 경우 반환되는 영역정보에는 Border 영역이 제외됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 와 부모가 동일한 Graphics 오브젝트 중 이전 순서의 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getPreviousSibling()">
+          <Return type="Object" description="부모가 동일한 이전 순서의 Graphics 오브젝트를 반환합니다.&#xA;&#xA;이전 순서의 Graphics 오브젝트가 없을 경우 null 을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 의 영역정보를 Graphics 컴포넌트 기준으로 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getRect( );">
+          <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsGroup 에 Border 가 있어도 Border 영역과 관계없이 GraphicsGroup 의 실제 영역이 반환됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 가 표시되는 영역정보를 Graphics 컴포넌트 기준으로 Border 영역을 제외하고 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.getRegion( );">
+          <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsGroup 에 Border 가 있을 경우 반환되는 영역정보에는 Border 영역이 제외됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="hasChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 Graphics 오브젝트가 추가 되었는지 여부를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.hasChild()">
+          <Return type="Boolean" description="Graphics 오브젝트가 한 개 이상 추가되어 있으면 true 를 반환합니다.&#xA;&#xA;Graphics 오브젝트가 추가되어 있지 않으면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="indexOf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 추가된 오브젝트 중 특정 ID 에 해당하는 오브젝트의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.indexOf( strID )">
+          <Return type="Number" description="strID 에 해당하는 오브젝트의 인덱스를 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="인덱스를 얻으려 하는 오브젝트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Graphics 오브젝트를 GraphicsGroup 의 특정 위치에 자식으로 삽입하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.insertChild( nIdx, strID, objGObject )">
+          <Return type="Number" description="GraphicsGroup 에 자식으로 삽입된 Graphics 오브젝트의 인덱스를 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="Graphics 오브젝트가 삽입될 위치의 인덱스를 숫자로 설정합니다." />
+            <Argument name="objGPath" type="Object" in="false" out="false" option="false" variable="false" description="삽입하려는 Graphics 오브젝트를 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="삽입하려는 Graphics 오브젝트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 좌표위치가 GraphicsGroup 영역에 포함되는지 여부를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.isHitTest( nX, nY )">
+          <Return type="Boolean" description="인수로 전달된 좌표위치가 GraphicsGroup 영역에 포함되면 true 를 반환합니다.&#xA;&#xA;인수로 전달된 좌표위치가 GraphicsGroup 영역에 포함되지 않으면 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="확인할 위치의 x 좌표값을 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;설정값은 Graphics 컴포넌트를 기준으로 처리됩니다." />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="확인할 위치의 y 좌표값을 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;설정값은 Graphics 컴포넌트를 기준으로 처리됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 의 자식 오브젝트 중 특정 ID 의 Graphics 오브젝트를 제거하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.removeChild( strID )">
+          <Return type="Object" description="GraphicsGroup 에서 제거된 Graphics 오브젝트를 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="제거하려는 Graphics 오브젝트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 회전효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.rotate( nAngle [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nAngle" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 회전될 각도를 숫자로 설정합니다.&#xA;&#xA;양수로 설정 시 시계방향으로 회전합니다.&#xA;음수로 설정 시 반시계방향으로 회전합니다." />
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="회전의 중심이 되는 x 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="회전의 중심이 되는 y 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 확대/축소 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="확대/축소의 중심이 되는 x 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="확대/축소의 중심이 되는 y 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="현재 크기에서 확대/축소 될 가로 배율을 실수로 설정합니다.&#xA;&#xA;1.0 보다 큰값을 설정하면 GraphicsGroup 가 확대됩니다.&#xA;1.0 보다 작은값을 설정하면 GraphicsGroup 가 축소됩니다." />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="현재 크기에서 확대/축소 될 세로 배율을 실수로 설정합니다.&#xA;&#xA;1.0 보다 큰값을 설정하면 GraphicsGroup 가 확대됩니다.&#xA;1.0 보다 작은값을 설정하면 GraphicsGroup 가 축소됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 의 일부 영역만 표시되게 Clipping 할 영역의 좌표를 설정하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.setClipRect( nX, nY, nWidth, nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="Clipping 할 영역의 높이를 숫자로 설정합니다.&#xA;&#xA;설정값은 nY 파라미터값을 기준으로 처리됩니다." />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="Clipping 할 영역의 너비를 숫자로 설정합니다.&#xA;&#xA;설정값은 nX 파라미터값을 기준으로 처리됩니다." />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="Clipping 할 영역의 x 좌표를 숫자로 설정합니다.&#xA;&#xA;설정값은 GraphicsGroup 의 x 속성값 위치를 0 으로 가정하고 처리됩니다." />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="Clipping 할 영역의 y 좌표를 숫자로 설정합니다.&#xA;&#xA;설정값은 GraphicsGroup 의 y 속성값 위치를 0 으로 가정하고 처리됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 의 원본 위치를 기준으로 Transform 관련 효과를 연속적으로 적용하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.setTransform( strMethod );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="GraphicsGroup 에 적용할 Transform 관련 메소드를 &quot;,&quot; 로 구분하여 설정합니다.&#xA;translate(), scale(), rotate(), shear() 메소드를 사용할 수 있습니다.&#xA;null 값 설정 시 transform 효과가 지정되지 않은 상태로 초기화합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 비틀기 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="비틀기의 중심이 되는 x 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="비틀기의 중심이 되는 y 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 x 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 y 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 비틀기 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="비틀기의 중심이 되는 x 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="비틀기의 중심이 되는 y 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 x 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 y 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 에 Transform 관련 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="현재 크기에서 확대/축소 될 가로 배율을 실수로 설정합니다.&#xA;&#xA;1.0 보다 큰값을 설정하면 GraphicsGroup 가 확대됩니다.&#xA;1.0 보다 작은값을 설정하면 GraphicsGroup 가 축소됩니다." />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="현재 크기에서 확대/축소 될 세로 배율을 실수로 설정합니다.&#xA;&#xA;1.0 보다 큰값을 설정하면 GraphicsGroup 가 확대됩니다.&#xA;1.0 보다 작은값을 설정하면 GraphicsGroup 가 축소됩니다." />
+            <Argument name="nShearX" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 x 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+            <Argument name="nShearY" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 y 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="현재 위치에서 x 축 방향으로 이동 할 거리를 pixel 단위의 숫자로 설정합니다." />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="현재 위치에서 y 축 방향으로 이동 할 거리를 pixel 단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsGroup 의 위치가 이동되는 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsGroup.translate( nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="현재 위치에서 x 축 방향으로 이동 할 거리를 pixel 단위의 숫자로 설정합니다." />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="현재 위치에서 y 축 방향으로 이동 할 거리를 pixel 단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

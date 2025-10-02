@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GraphicsRect">
+    <ObjectInfo finalclass="false" inheritance="nexacro._GraphicsShape" classname="nexacro.GraphicsRect" shorttypename="GraphicsRect" csstypename="" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This object is used to display a rectangle in a Graphics component." />
+    <PropertyInfo>
+      <Property name="fillstyle" group="Appearance" subgroup="" refreshinfo="" edittype="ChartFillStyle" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to color the inside area of a GraphicsRect." csspropertyname="" normalpropertyname="fillstyle" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the height of a GraphicsRect." csspropertyname="" normalpropertyname="height" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the identification of a GraphicsRect." csspropertyname="" normalpropertyname="id" />
+      <Property name="miterlimit" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="10" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property sets a value used to determine whether the corner of a GraphicsRect becomes a beveled join even if the strokejoin property is set to &quot;miter&quot;." csspropertyname="" normalpropertyname="miterlimit" />
+      <Property name="opacity" group="Style" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the opacity of a GraphicsRect." csspropertyname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This read-only property holds the parent object of a GraphicsRect." csspropertyname="" normalpropertyname="parent" />
+      <Property name="radiusx" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property sets the x-axis radius of the ellipse that is used to round the corners of a GraphicsRect." csspropertyname="" normalpropertyname="radiusx" />
+      <Property name="radiusy" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property sets the y-axis radius of the ellipse that is used to round the corners of a GraphicsRect." csspropertyname="" normalpropertyname="radiusy" />
+      <Property name="strokecap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokecap" />
+      <Property name="strokejoin" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="miter" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="StrokeJoin" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property determines the shape of corners of a GraphicsRect object." csspropertyname="" normalpropertyname="strokejoin" />
+      <Property name="strokepen" group="Appearance" subgroup="" refreshinfo="" edittype="Line" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the color and type of the outer line of a GraphicsRect." csspropertyname="" normalpropertyname="strokepen" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to determine whether to make a GraphicsRect visible or not." csspropertyname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the width of a GraphicsRect." csspropertyname="" normalpropertyname="width" />
+      <Property name="x" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the x-coordinate of a position where a GraphicsRect is displayed. The coordinate is calculated based on the position of the parent object." csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the y-coordinate of a position where a GraphicsRect is displayed. The coordinate is calculated based on the position of the parent object." csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to completely remove a GraphicsRect from a memory.">
+        <Syntax text="GraphicsRect.destroy()">
+          <Return type="Boolean" description="- If the GraphicsRect is removed successfully, this method will return &quot;true&quot;.&#xA;&#xA;- Otherwise, this method will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the area where a GraphicsRect is displayed, including the border of the GraphicsRect. The area is calculated based on the Graphics component.">
+        <Syntax text="GraphicsRect.getBoundRect( );">
+          <Return type="Object" description="This method returns an area in the form of a Rect object after calculating the area based on the top-left of the Graphics component.&#xA;If the GraphicsRect has its border, the resulting area will include the border area.&#xA;&#xA;* A Rect object holds the left, top, right, bottom, width and height properties." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the next object among those under the same parent as a GraphicsRect.">
+        <Syntax text="GraphicsRect.getNextSibling()">
+          <Return type="Object" description="This method returns the next object among those under the same parent.&#xA;&#xA;If there is no next Graphics object, this method will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the area where a GraphicsRect is displayed, including the border of the GraphicsRect. The area is calculated based on the parent object.">
+        <Syntax text="GraphicsRect.getOffsetBoundRect( );">
+          <Return type="Object" description="This method returns an area in the form of a Rect object after calculating the area based on the top-left of the parent object.&#xA;If the GraphicsRect has its border, the resulting area will include the border area.&#xA;&#xA;* A Rect object holds the left, top, right, bottom, width and height properties." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the area where a GraphicsRect is displayed, with the area calculated based on the parent object.">
+        <Syntax text="GraphicsRect.getOffsetRect( );">
+          <Return type="Object" description="This method returns an area in the form of a Rect object after calculating the area based on the top-left of the parent object.&#xA;Even if the GraphicsRect has its border, the resulting area will include only the actual area of the GraphicsRect, excluding the border area.&#xA;&#xA;* A Rect object holds the left, top, right, bottom, width and height properties." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the area where a GraphicsRect is displayed, excluding the border of the GraphicsRect. The area is calculated based on the parent object.">
+        <Syntax text="GraphicsRect.getOffsetRegion( );">
+          <Return type="Object" description="This method returns an area in the form of a Rect object after calculating the area based on the top-left of the parent object.&#xA;If the GraphicsRect has its border, the resulting area will exclude the border area.&#xA;&#xA;* A Rect object holds the left, top, right, bottom, width and height properties." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the previous object among those under the same parent as a GraphicsRect.">
+        <Syntax text="GraphicsRect.getPreviousSibling()">
+          <Return type="Object" description="This method returns the previous object among those under the same parent.&#xA;&#xA;If there is no previous Graphics object, this method will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the area where a GraphicsRect is displayed, with the area calculated based on the Graphics component.">
+        <Syntax text="GraphicsRect.getRect( );">
+          <Return type="Object" description="This method returns an area in the form of a Rect object after calculating the area based on the top-left of the Graphics component.&#xA;Even if the GraphicsRect has its border, the resulting area will include only the actual area of the GraphicsRect, excluding the border area.&#xA;&#xA;* A Rect object holds the left, top, right, bottom, width and height properties." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the area where a GraphicsRect is displayed, excluding the border of the GraphicsRect. The area is calculated based on the Graphics component.">
+        <Syntax text="GraphicsRect.getRegion( );">
+          <Return type="Object" description="This method returns an area in the form of a Rect object after calculating the area based on the top-left of the Graphics component.&#xA;If the GraphicsRect has its border, the resulting area will exclude the border area.&#xA;&#xA;* A Rect object holds the left, top, right, bottom, width and height properties." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEmptyRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns whether a region is created in a GraphicsRect.">
+        <Syntax text="GraphicsRect.isEmptyRect()">
+          <Return type="Boolean" description="- This method will return &quot;true&quot; if a region is not created in the GraphicsRect.&#xA;&#xA;- This method will return &quot;false&quot; if a region is created in the GraphicsRect." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method finds the position marked by the coordinates delivered as arguments and returns whether the position is included in the area of a GraphicsRect.">
+        <Syntax text="GraphicsRect.isHitTest( nX, nY )">
+          <Return type="Boolean" description="If the delivered coordinates are included in the area of the GraphicsRect, this method wii return &quot;true&quot;.&#xA;&#xA;Otherwise, this method wii return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of pixels, indicating the x-coordinate of the position whose inclusion is checked by this method.&#xA;&#xA;The value is calculated based on the Graphics component." />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of pixels, indicating the y-coordinate of the position whose inclusion is checked by this method.&#xA;&#xA;The value is calculated based on the Graphics component." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to rotate a GraphicsRect.">
+        <Syntax text="GraphicsRect.rotate( nAngle [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nAngle" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating the angle at which the GraphicsRect rotates.&#xA;&#xA;If the value is a positive number, the GraphicsRect will rotate clockwise.&#xA;If the value is a negative number, the GraphicsRect will rotate counterclockwise." />
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating an x-coordinate that serves as an axis of the rotation.&#xA;The value is calculated based on the parent object.&#xA;&#xA;The default value is 0." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating a y-coordinate that serves as an axis of the rotation.&#xA;The value is calculated based on the parent object.&#xA;&#xA;The default value is 0." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to scale a GraphicsRect up/down.">
+        <Syntax text="GraphicsRect.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating an x-coordinate that serves as an axis for scaling up/down the GraphicsRect.&#xA;The value is calculated based on the parent object.&#xA;&#xA;The default value is 0." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating a y-coordinate that serves as an axis for scaling up/down the GraphicsRect.&#xA;The value is calculated based on the parent object.&#xA;&#xA;The default value is 0." />
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number, indicating the scale in which the width of the GraphicsRect is scaled up/down.&#xA;&#xA;If you specify a number bigger than 1.0, the GraphicsRect will be scaled up.&#xA;If you specify a number smaller than 1.0, the GraphicsRect will be scaled down." />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number, indicating the scale in which the height of the GraphicsRect is scaled up/down.&#xA;&#xA;If you specify a number bigger than 1.0, the GraphicsRect will be scaled up.&#xA;If you specify a number smaller than 1.0, the GraphicsRect will be scaled down." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to set coordinates for clipping a certain region of a GraphicsRect.">
+        <Syntax text="GraphicsRect.setClipRect( nX, nY, nWidth, nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating the height of a region to clip.&#xA;&#xA;The value is calculated based on the value of the nY parameter." />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating the width of a region to clip.&#xA;&#xA;The value is calculated based on the value of the nX parameter." />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating the x-coordinate of a region to clip.&#xA;&#xA;The value is processed based on the assumption that the x property of the GraphicsRect holds 0 as its value." />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating the y-coordinate of a region to clip.&#xA;&#xA;The value is processed based on the assumption that the y property of the GraphicsRect holds 0 as its value." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to apply transformational methods to a GraphicsRect consecutively based on the original position of the GraphicsRect.">
+        <Syntax text="GraphicsRect.setTransform( strMethod );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing a series of transformational methods that will apply to the GraphicsRect.&#xA;&#xA;You can use the translate(), scale(), rotate() and shear() methods." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to shear a GraphicsRect.">
+        <Syntax text="GraphicsRect.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating an x-coordinate that serves as an axis for shearing.&#xA;The value is calculated based on the parent object.&#xA;&#xA;The default value is 0." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number indicating an y-coordinate that serves as an axis for shearing.&#xA;The value is calculated based on the parent object.&#xA;&#xA;The default value is 0." />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="This is a radian value at which the GraphicsRect will be sheared based on the x-axis." />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="This is a radian value at which the GraphicsRect will be sheared based on the y-axis." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns a string representing the type that constitutes a GraphicsRect.">
+        <Syntax text="GraphicsRect.toString();">
+          <Return type="String" description="Normally, this method returns a string whose format is  &quot;[object GraphicsRect]&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to apply transformational methods to a GraphicsRect.">
+        <Syntax text="GraphicsRect.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number, indicating the scale in which the width of the GraphicsRect is scaled up/down.&#xA;&#xA;If you specify a number bigger than 1.0, the GraphicsRect will be scaled up.&#xA;If you specify a number smaller than 1.0, the GraphicsRect will be scaled down." />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number, indicating the scale in which the height of the GraphicsRect is scaled up/down.&#xA;&#xA;If you specify a number bigger than 1.0, the GraphicsRect will be scaled up.&#xA;If you specify a number smaller than 1.0, the GraphicsRect will be scaled down." />
+            <Argument name="nShearX" type="Number" in="false" out="false" option="false" variable="false" description="This is a radian value at which the GraphicsRect will be sheared based on the x-axis." />
+            <Argument name="nShearY" type="Number" in="false" out="false" option="false" variable="false" description="This is a radian value at which the GraphicsRect will be sheared based on the y-axis." />
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of pixels, indicating the distance at which the GraphicsRect will be moved in the direction of the x-axis." />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of pixels, indicating the distance at which the GraphicsRect will be moved in the direction of the y-axis." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to move the position of a GraphicsRect.">
+        <Syntax text="GraphicsRect.translate( nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of pixels, indicating the distance at which the GraphicsRect will be moved in the direction of the x-axis." />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="This is the number of pixels, indicating the distance at which the GraphicsRect will be moved in the direction of the y-axis." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

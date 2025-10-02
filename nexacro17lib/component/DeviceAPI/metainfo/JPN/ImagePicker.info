@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ImagePicker">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ImagePicker" shorttypename="ImagePicker" csstypename="ImagePicker" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="モバイル機器の写真アルバムやカメラアプリと連動し、画像もしくは画像のパスを取得します。" />
+    <PropertyInfo>
+      <Property name="encodingtype" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="取得した画像のタイプ情報を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="encodingtype" />
+      <Property name="gettype" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="取得した画像が渡された方式を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="gettype" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="ImagePickerの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="imageheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="取得する画像の高さを設定するプロパティです。" csspropertyname="" normalpropertyname="imageheight" />
+      <Property name="imagequality" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="取得する画像の品質を設定するプロパティです。" csspropertyname="" normalpropertyname="imagequality" />
+      <Property name="imagewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="取得する画像の幅を設定するプロパティです。" csspropertyname="" normalpropertyname="imagewidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="ImagePickerの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="ImagePickerの親オブジェクトを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="parent" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="モバイル機器の写真アルバムやカメラアプリ、もしくは接続されている他のアプリを起動し、画像を取得するメソッドです。">
+        <Syntax text="ImagePicker.open( enumGettype, enumEncodingype )">
+          <Return type="Boolean" description="メソッドの実行に成功した場合はtrueを返します。&#xA;&#xA;メソッドの実行に失敗したり、指定したパラメータ値が不正な値である場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="enumEncodingtype" type="String" in="false" out="false" option="false" variable="false" description="画像が配信されるファイル形式を設定します。&#xA;&#xA;「JPEG」設定時、画像の位置情報が「JPEG」ファイルに渡されます。&#xA;「PNG」設定時、画像が「PNG」ファイルに渡されます。&#xA;&#xA;メソッド実行後、encodingtypeプロパティにパラメータ値が保存されます。" />
+            <Argument name="enumGettype" type="String" in="false" out="false" option="false" variable="false" description="画像が渡される方式を指定します。&#xA;&#xA;「url」を指定した場合、画像のパス情報が「URL」形式で渡されます。&#xA;「imagedata」を指定した場合、画像がオブジェクト型で渡されます。&#xA;&#xA;メソッドの実行後、gettypeプロパティにパラメータ値が保存されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="画像の取得に失敗した際に発生するイベントです。">
+        <Syntax text="ImagePicker.onerror(obj:nexacro.ImagePicker,e:nexacro.ImagePickerErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ImagePickerErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="画像の取得に成功した際に発生するイベントです。">
+        <Syntax text="ImagePicker.onsuccess(obj:nexacro.ImagePicker,e:nexacro.ImagePickerEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ImagePickerEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

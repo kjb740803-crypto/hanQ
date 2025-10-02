@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.System">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.System" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This object provides information about the OS, hardware and input devices." />
+    <PropertyInfo>
+      <Property name="computername" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the name of the NetBIOS of the computer where an application is running." csspropertyname="" normalpropertyname="computername" />
+      <Property name="cpuarchitecture" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the manufacture of the CPU of the computer where an application is running." csspropertyname="" normalpropertyname="cpuarchitecture" />
+      <Property name="cpucount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the number of CPUs in the computer where an application is running." csspropertyname="" normalpropertyname="cpucount" />
+      <Property name="cputype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the information on the CPU of the computer where an application is running." csspropertyname="" normalpropertyname="cputype" />
+      <Property name="locale" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This property holds the locale code value set by the computer that is running an application." csspropertyname="" normalpropertyname="locale" />
+      <Property name="loginuser" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the ID of the user who logs into the computer where an application is running." csspropertyname="" normalpropertyname="loginuser" />
+      <Property name="mobileorientation" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the current screen orientation of the mobile device that runs the application." csspropertyname="" normalpropertyname="mobileorientation" />
+      <Property name="mobileproducttype" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the model name of the mobile device where an application is running." csspropertyname="" normalpropertyname="mobileproducttype" />
+      <Property name="monitorcount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the number of monitors connected to the computer where an application is running." csspropertyname="" normalpropertyname="monitorcount" />
+      <Property name="navigatorfullname" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="This read-only property holds a certain type of Windows Nexacro engine where an application runs." csspropertyname="" normalpropertyname="navigatorfullname" />
+      <Property name="navigatorname" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the information on the browser where an application is running." csspropertyname="" normalpropertyname="navigatorname" />
+      <Property name="navigatorversion" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the version of the browser where an application is running." csspropertyname="" normalpropertyname="navigatorversion" />
+      <Property name="notificationtoken" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the value of a device token for receiving push notifications in the mobile device that runs your application." csspropertyname="" normalpropertyname="notificationtoken" />
+      <Property name="osversion" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the name and version of the OS where an application is running." csspropertyname="" normalpropertyname="osversion" />
+      <Property name="taskbarsize" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the size of the taskbar (indicator bar for Android) of the mobile device in which an application is running." csspropertyname="" normalpropertyname="taskbarsize" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="attachChildFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera" description="This method is used to load an .xfdl file onto a user-DOM in a web browser. The .xfdl file here is generated through Nexacro Studio.">
+        <Syntax text="system.attachChildFrame(window, document, strKey, stradlurl, strDivId, strxfdlurl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="document" type="Object" in="false" out="false" option="false" variable="false" description="This is a document object." />
+            <Argument name="stradlurl" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the name of the generated .xadl file." />
+            <Argument name="strDivId" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the ID of the user division onto which the generated xfdl file will be loaded." />
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing a key used to register a variable to the AppVariables field of the application." />
+            <Argument name="strxfdlurl" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the name of the generated .xfdl file." />
+            <Argument name="window" type="Object" in="false" out="false" option="false" variable="false" description="This is a window object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="checkDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="">
+        <Syntax text="system.checkDevicePermission(arrPermissiontypes);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrPermissiontypes" type="Array" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,iOS/iPadOS NRE" description="This method is used to delete data stored in the clipboard of the system.">
+        <Syntax text="system.clearClipboard()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method converts an x-coordinate based on the client of the component into an x-coordinate based on the screen.">
+        <Syntax text="system.clientToScreenX(objComp, nPosX)">
+          <Return type="Number" description="This method returns an x-coordinate based on the screen." />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the component-based x-coordinate that will be converted." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that serves as a base for the x-coordinate to convert." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method converts a y-coordinate based on the client of the component into a y-coordinate based on the screen.">
+        <Syntax text="system.clientToScreenY(objComp, nPosY)">
+          <Return type="Number" description="This method returns a y-coordinate based on the screen." />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the component-based y-coordinate that will be converted." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that serves as a base for the y-coordinate to convert." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="convertRealPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to convert a path with an alias into its actual path.">
+        <Syntax text="system.convertRealPath(strAlias)">
+          <Return type="String" description="This method returns an actual path." />
+          <Arguments>
+            <Argument name="strAlias" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents a path with an alias. The path will be converted into its actual path." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to open a web browser with a specified URL.">
+        <Syntax text="system.execBrowser( strUrl )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the URL of a web page." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execDefaultBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="">
+        <Syntax text="system.execDefaultBrowser(strUrl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execNexacro" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method is used to execute Nexacro Platform by by specifying an execution path and arguments.">
+        <Syntax text="system.execNexacro(strCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCommand" type="String" in="false" out="false" option="false" variable="false" description="You can specify an option by combining an option reserved word and option value.&#xA;If you want to specify an empty value as an option value, you must surround the value with quotation marks.&#xA;&#xA;-K: this specifies a string that represents the key of an application.&#xA;-S: this specifies a path to a bootstrap.&#xA;-C: this specifies the directory of components.&#xA;-THR: this specifies the number of threads executed in the communications inside the engine or in other manages.&#xA;          Threads amount to three at least and ten at most. The default number is three.&#xA;-SP: this specifies a path to a splash image.&#xA;-SM: this specifies &quot;none&quot; , which prevent a system message from appearing in a splash image.&#xA;        If an error occurs in the process of launching an application, the error message will occur even if this option is set to &quot;none&quot;.&#xA;-LF: this specifies the coordinates of the left position of an application.&#xA;-TP : this specifies the coordinates of the top position of an application.&#xA;-WD: this specifies the width of an application in pixel.&#xA;-HT: this specifies the height of an application in pixel.&#xA;-LG: this specifies a path to a loading image.&#xA;-TW: this specifies the maximum waiting time for the threads of the managers inside the engine.&#xA;-OO: this specifies a Boolean value to determine whether to permit the execution of only one application if there are more than one application that have the same key.&#xA;-V: this specifies global variables with the format &quot;variable name:type=value variable name:type=value&quot;.&#xA;       Variables are separated by whitespaces.&#xA;       If you specify &quot;Type&quot; as &quot;ev&quot;, the variable will be added to the Variables field in Environment.&#xA;       If you specify &quot;Type&quot; as &quot;ec&quot;, the variable will be added to the Cookies field in Environment.&#xA;       If you do not specify &quot;Type&quot; or specifies it as &quot;av&quot;, the variable will be added to the Variables field in the application.&#xA;-SIE: this specifies a Boolean value to determine whether to close an application with an error message opened if the error occurs while executing the application.&#xA;         This option defaults to &quot;false&quot;.&#xA;-CT: this specifies the maximum waiting time for checking whether a network is connected.&#xA;         The check-up is conducted before the launch of the application&#xA;         if a network is not detected in the waiting time, the application will be closed.&#xA;-SCR: this specifies screen IDs used for the Layout Manager. &#xA;-CC: this option is designed to deactivate the code caching of V8.&#xA;         If you specify &quot;NO&quot;, the code caching will be unavailable.&#xA;         If you specify &quot;AL&quot; or nothing, the code caching will be available.&#xA;-AU: this option determines whether the engine is updated when an application launches.&#xA;         If you specify &quot;auto&quot;, the engine will be updated to the latest version.&#xA;         If you specify &quot;manual&quot;, the engine will not be updated.&#xA;- NC: this specifies the location and name of a Config file applied when the application is launched.&#xA;         You can set only an XML file located in the local path.&#xA;         If you specify a file name only, Nexacro Platform will attempt to find the file in the location where the nexacro.exe file exists.&#xA;         If you do not set this option, Nexacro Platform will search for the nexacro_config.xml file located in the path %USERAPP%\config\&quot;+[Key]." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execShell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method is used to execute a program in the Windows shell.">
+        <Syntax text="system.execShell( strShellCmd )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strShellCmd" type="String" in="false" out="false" option="false" variable="false" description="This is a command that prompts the Windows shell to perform a certain task.&#xA;&#xA;You can execute basic programs registered in Windows by specifying command like &quot;notepad&quot; and &quot;calc&quot;.&#xA;&#xA;You can open a local file with the format &quot;file://absolute path\\file name&quot;.&#xA;&#xA;You can open a web page with the format &quot;http://path&quot; or &quot;https://path&quot;.&#xA;You can open a file on the Web with the format &quot;http://path/file name&quot;, &quot;https://path/file name&quot;.&#xA;If you specify a URL with the scheme &quot;http://&quot; or &quot;https://&quot;, a default web browser set by the system will be launched.&#xA;&#xA;You can convert an alias to its actual path by calling the convertRealPath() method." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns data from the clipboard of the system. The data is returned in the form of a defined type.">
+        <Syntax text="system.getClipboard( strFormat [, objCallBackFunc [, objTarget]] )">
+          <Return type="Variant" description="This method returns data from the clipboard of the system. The data is returned in the form of a defined type.&#xA;&#xA;* Google Chrome and Opera return &quot;undefined&quot;." />
+          <Arguments>
+            <Argument name="objCallBackFunc" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that represents a callback used to obtain data from the system clipboard.&#xA;&#xA;* This parameter is applicable only to Google Chrome and Opera." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that represents a region where the callback is defined.&#xA;&#xA;If you omit this parameter, the current window will be applied automatically.&#xA;&#xA;* This parameter is applicable only to Google Chrome and Opera." />
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the data type to apply when the data is obtained from the system clipboard.&#xA;&#xA;If you specify &quot;CF_TEXT&quot;, the data will be returned in the form of text.&#xA;If you specify &quot;CF_UNICODETEXT&quot;, the data will be returned in the form of Unicode text.&#xA;If you specify &quot;CF_CSV&quot;, the data will be returned in the CSV form." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCursorX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to obtain the x-coordinate of the position where a mouse cursor is located.">
+        <Syntax text="system.getCursorX()">
+          <Return type="Number" description="This method returns the x-coordinate of the position where a mouse cursor is located." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCursorY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to obtain the y-coordinate of the position where a mouse cursor is located.">
+        <Syntax text="system.getCursorY()">
+          <Return type="Number" description="This method returns the y-coordinate of the position where a mouse cursor is located." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonitorIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns the index number of the monitor closest to a delivered coordinate in the multi-monitor environment.">
+        <Syntax text="system.getMonitorIndex(nCursorX, nCursorY)">
+          <Return type="Number" description="This method returns the index number of the monitor closest to the delivered coordinate." />
+          <Arguments>
+            <Argument name="nCursorX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number that indicates an x-coordinate." />
+            <Argument name="nCursorY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number that indicates a y-coordinate." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns the height of the screen where the application is running.">
+        <Syntax text="system.getScreenHeight()">
+          <Return type="Number" description="It returns the height of the screen where the application is running." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getScreenRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns a Rect object that contains the information on a specified monitor.">
+        <Syntax text="system.getScreenRect(nMonitorIndex)">
+          <Return type="Object" description="This method returns a Rect object that contains the information on the monitor delivered as an argument.&#xA;&#xA;A Rect object has the following properties: left, top, right, bottom, width and height." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="This is the index number of a monitor about which the information will be returned." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenResolution" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns the resolution of a specified monitor.">
+        <Syntax text="system.getScreenResolution(nMonitorIndex)">
+          <Return type="String" description="This method returns the resolution of the specified monitor in the form of a string.&#xA;&#xA;If you enter an invalid monitor number, this method will return 0." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="This is the index number of a monitor whose resolution will be obtained." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns the width of the screen where the application is running.">
+        <Syntax text="system.getScreenWidth()">
+          <Return type="Number" description="It returns the width of the screen where the application is running." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isPrimaryMonitor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns whether a specified monitor is a main monitor in the multi-monitor environment.">
+        <Syntax text="system.isPrimaryMonitor(nMonitorIndex)">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if the specified monitor is a main monitor.&#xA;Otherwise, this monitor will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="This is the index number of a monitor that will be checked to determine whether it is a main monitor." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="print" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE" description="This method is used to print out the image of a specified component through a printer.">
+        <Syntax text="system.print( objComponent [, bHideDialog [, strVAlign [, strHAlign [, bFitOnePage [, strOrientation]]]]] )">
+          <Return type="Boolean" description="If this method successfully makes a request to print out the image, this method will return &quot;true&quot;.&#xA;Otherwise, it will return &quot;false&quot;.&#xA;&#xA;The return value indicates the success or failure of the method calling, whether an image is actually printed out or not." />
+          <Arguments>
+            <Argument name="bFitOnePage" type="Boolean" in="false" out="false" option="false" variable="false" description="If the size of the image exceeds one page with this parameter set to &quot;true&quot;, the image will be printed out, being squeezed within one page.&#xA;If the size of the image is smaller than one page with this parameter set to &quot;true&quot;, the image will be printed on one page, being expanded as proportionally appropriate.&#xA;&#xA;If this parameter is set to &quot;false&quot; in the same circumstances, the image will be printed out on multiple pages to fit the size.&#xA;In this case, the strVAlign and strHAlign parameters are automatically set to &quot;top&quot; and &quot;left&quot; respectively.&#xA;&#xA;The default value is &quot;false&quot;.&#xA;&#xA;** This parameter always works as if its value is &quot;false&quot; in the desktop WRE as the environment does not support this parameter." />
+            <Argument name="bHideDialog" type="Boolean" in="false" out="false" option="false" variable="false" description="For &quot;true&quot;, the image will be printed out without a window for setting a printer.&#xA;For &quot;false&quot;, a window for setting a printer will be opened before the image is printed out.&#xA;&#xA;The default value is &quot;true&quot;.&#xA;&#xA;* This parameter always works as if its value is &quot;false&quot; in the desktop WRE as the environment does not support this parameter." />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that represents a component to print out." />
+            <Argument name="strHAlign" type="String" in="false" out="false" option="false" variable="false" description="This parameter specifies a horizontal position of paper where the image is printed out.&#xA;&#xA;&quot;left&quot; : the image will be printed out on the left side of paper.&#xA;&quot;center&quot; : the image will be printed out at the center of paper.&#xA;&quot;right&quot; : the image will be printed out on the right side of paper.&#xA;&#xA;The default value is &quot;center&quot;.&#xA;&#xA;* This parameter always works as if its value is &quot;left&quot; in the desktop WRE as the environment does not support this parameter." />
+            <Argument name="strOrientation" type="String" in="false" out="false" option="false" variable="false" description="This parameter determines paper orientation.&#xA;&#xA;If you specify &quot;portrait&quot;, the orientation will be portrait.&#xA;If you specify &quot;landscape&quot;, the orientation will be landscape.&#xA;&#xA;This parameter is applicable only when the bHideDialog parameter is set to &quot;true&quot;.&#xA;The default value of this parameter is &quot;portrait&quot;.&#xA;&#xA;* This parameter is applicable only to the Windows NRE." />
+            <Argument name="strVAlign" type="String" in="false" out="false" option="false" variable="false" description="This parameter specifies a vertical position of paper where the image is printed out.&#xA;&#xA;&quot;top&quot; : the image will be printed out in the upper part of paper.&#xA;&quot;middle&quot; : the image will be printed out in the middle part of paper.&#xA;&quot;bottom&quot; : the image will be printed out in the lower part of paper.&#xA;&#xA;The default value is &quot;middle&quot;.&#xA;&#xA;* This parameter always works as if its value is &quot;top&quot; in the desktop WRE as the environment does not support this parameter." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="">
+        <Syntax text="system.requestDevicePermission(arrPermissionTypes[, strDescription])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrPermissionTypes" type="Array" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strDescription" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageBase64String" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="This method returns the image of a specified component in the form of a Base64-encoded string.">
+        <Syntax text="system.saveToImageBase64String( objComponent [, bWholeForm [,strImageType [,strOptions]]] )">
+          <Return type="String" description="This method returns the image of a specified component in the form of a Base64-encoded string.&#xA;&#xA;If the encoding is unsuccessful, it will return an empty string." />
+          <Arguments>
+            <Argument name="bWholeForm" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter is applicable only when the component is a Form.&#xA;&#xA;If you specify &quot;true&quot;, the entire Form including the area out of sight will be printed as an image.&#xA;If you specify &quot;false&quot;, only the area of the Form within sight of the current screen will be printed as an image.&#xA;&#xA;The default value of this parameter is &quot;false&quot;." />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="This is an object representing a component whose image will be printed." />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="This method is used to print the image of a specified component as a file.">
+        <Syntax text="system.saveToImageFile(objComponent, strFileName, strImageType[,strOptions [,bWholeForm]])">
+          <Return type="Boolean" description="If this method successfully prints an image, it will return &quot;true&quot;.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="bWholeForm" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter is applicable only when the component is a Form.&#xA;&#xA;If you specify &quot;true&quot;, the entire Form including the area out of sight will be printed as an image.&#xA;If you specify &quot;false&quot;, only the area of the Form within sight of the current screen will be printed as an image.&#xA;&#xA;The default value of this parameter is &quot;false&quot;." />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="This is an object representing a component whose image will be printed." />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="This is the name of an image file that will be printed." />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="This is the format of an image file that will be printed.&#xA;&#xA;You can select a format among BMP, BMP_MONO, JPG, TIF, TIF_24, TIF_MONO, GIF and PNG." />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the options for printing an image file, such as a compression rate, compression type and DPI resolution.&#xA;&#xA;You can set a compression rate only when the image type is JPG. You can set a rate with the format &quot;Compression:rate&quot;.&#xA;The compression rate ranges from 0 to 100.&#xA;If you do not specify a compression rate when the image type is JPG, the rate will be set at 50 by default.&#xA;&#xA;You can set a compression type only when the image type is TIF. You can set a type with the format &quot;Compression:type&quot;.&#xA;You can select a compression type among NONE, LZW, CCITT3 and CCITT4.&#xA;If you do not specify a compression type when the image type is TIF, the compression type will be set to &quot;LZW&quot; by default.&#xA;&#xA;As for DPI resolution, the formats for setting horizontal and vertical resolutions are &quot;ResolutionX:resolution&quot; and &quot;ResolutionY:resolution&quot;&#xA;The resolution is set in the form of an integer.&#xA;If you do not specify resolution, the both horizontal and vertical resolutions will be set at 96 by default.&#xA;&#xA;Options are separated by semicolons like &quot;Compress:95;ResolutionX:300&quot;." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method converts an x-coordinate based on the screen into an x-coordinate based on the client of the component.">
+        <Syntax text="system.screenToClientX(objComp, nPosX)">
+          <Return type="Number" description="This method returns an x-coordinate based on the client of the component." />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the screen-based x-coordinate that will be converted." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that serves as a base for the x-coordinate to convert." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method converts a y-coordinate based on the screen into a y-coordinate based on the client of the component.">
+        <Syntax text="system.screenToClientY(objComp, nPosY)">
+          <Return type="Number" description="This method returns a y-coordinate based on the client of the component." />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the screen-based y-coordinate that will be converted." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="This is an object that serves as a base for the y-coordinate to convert." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to save data to the clipboard of the system. The data is saved in the form of a defined type.">
+        <Syntax text="system.setClipboard( strFormat, varData )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the data type to apply when the data is saved to the system clipboard.&#xA;&#xA;If you specify &quot;CF_TEXT&quot;, the data will be saved in the form of text.&#xA;If you specify &quot;CF_UNICODETEXT&quot;, the data will be saved in the form of Unicode text.&#xA;If you specify &quot;CF_CSV&quot;, the data will be saved in the CSV form." />
+            <Argument name="varData" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents data to save." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalSync" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method is used to display a dynamically-created ChildFrame in the form of a modal window that works in a synchronous manner.">
+        <Syntax text="system.showModalSync( objChildframe [, strID ] , objParentFrame, [{objArguList} [, objOpener]] );">
+          <Return type="Boolean" description="The success or failure of this method is returned when the modal window is closed." />
+          <Arguments>
+            <Argument name="objArguList" type="Object" in="false" out="false" option="false" variable="false" description="This a list of variables to add to a ChildFrame that takes the form of a modal window, with the format {variable name:variable value, variable name:variable value}." />
+            <Argument name="objChildframe" type="Object" in="false" out="false" option="false" variable="false" description="This a ChildFrame object that will be displayed as a modal window." />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="This a Form object that will be the opener of the ChildFrame displayed as a modal window.&#xA;&#xA;If unspecified, the opener will be the Form connected to the frame designated by the objParentFrame parameter.&#xA;If you specify &quot;null&quot; as a value of the objParentFrame parameter, this parameter will be undefined." />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="This is an object representing the parent frame of the ChildFrame displayed as a modal window.&#xA;&#xA;If you specify &quot;null&quot;, the MainFrame will serve as a parent." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of a ChildFrame that will be opened as a modal window.&#xA;&#xA;If you omit this parameter, the argument will adopt the name property of the ChildFrame." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="This method is used to display a dynamically-created ChildFrame in the form of a separate modal window.">
+        <Syntax text="system.showModalWindow( objChildFrame [, strID] , objParentFrame[, {objArguList} [, objOpener]] );">
+          <Return type="String" description="This method returns the argument of the close( ) method called from a ChildFrame displayed as a modal window." />
+          <Arguments>
+            <Argument name="objArguList" type="Object" in="true" out="false" option="false" variable="false" description="This a list of variables to add to a ChildFrame that takes the form of a modal window, with the format {variable name:variable value, variable name:variable value}." />
+            <Argument name="objChildFrame" type="Object" in="true" out="false" option="false" variable="false" description="This a ChildFrame object that will be displayed as a modal window." />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="This a Form object that will be the opener of the ChildFrame displayed as a modal window.&#xA;&#xA;If unspecified, the opener will be the Form connected to the frame designated by the objParentFrame parameter.&#xA;If you specify &quot;null&quot; as a value of the objParentFrame parameter, this parameter will be undefined." />
+            <Argument name="objParentFrame" type="Object" in="true" out="false" option="false" variable="false" description="This is an object representing the parent frame of the ChildFrame displayed as a modal window.&#xA;&#xA;If you specify &quot;null&quot;, nothing will be set as a parent.&#xA;&#xA;If you specify an object other than a ChildFrame, an overlay color will not be displayed. An overlay color here indicates that the parent frame is not usable." />
+            <Argument name="strID" type="String" in="true" out="false" option="false" variable="false" description="This is a string that represents the ID of a ChildFrame that will be opened as a modal window.&#xA;&#xA;If you omit this parameter, the argument will adopt the name property of the ChildFrame designated by the objChildFrame parameter." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

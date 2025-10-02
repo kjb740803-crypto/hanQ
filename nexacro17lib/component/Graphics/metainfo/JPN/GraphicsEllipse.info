@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GraphicsEllipse">
+    <ObjectInfo finalclass="false" inheritance="nexacro._GraphicsShape" classname="nexacro.GraphicsEllipse" shorttypename="GraphicsEllipse" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsControlに円または楕円を表示するときに使用するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="fillstyle" group="Appearance" subgroup="" refreshinfo="" edittype="ChartFillStyle" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの内部領域に塗る形式と色を設定するプロパティです。" csspropertyname="" normalpropertyname="fillstyle" />
+      <Property name="height" group="Position" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipse領域の縦径を設定するプロパティです。" csspropertyname="" normalpropertyname="height" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="miterlimit" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="miterlimit" />
+      <Property name="opacity" group="Style" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipse領域の透明度を設定するプロパティです。" csspropertyname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの親オブジェクトを持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="strokecap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokecap" />
+      <Property name="strokejoin" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokejoin" />
+      <Property name="strokepen" group="Appearance" subgroup="" refreshinfo="" edittype="Line" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの枠線に適用される色と形式を設定するプロパティです。" csspropertyname="" normalpropertyname="strokepen" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseが画面に表示されるかどうかを設定するプロパティです。" csspropertyname="" normalpropertyname="visible" />
+      <Property name="height" group="Position" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipse領域の横径を設定するプロパティです。" csspropertyname="" normalpropertyname="height" />
+      <Property name="x" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親オブジェクトを基準にしGraphicsEllipseが表示されるx軸中心座標値を設定するプロパティです。" csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親オブジェクトを基準にしGraphicsEllipseが表示されるy軸中心座標値を設定するプロパティです。" csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseをメモリから完全に削除するメソッドです。">
+        <Syntax text="GraphicsEllipse.destroy()">
+          <Return type="Boolean" description="GraphicsEllipseが正常に削除された場合は、「true」を返します。&#xA;&#xA;GraphicsEllipseが正常に削除されない場合は、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseが表示される領域の情報をGraphicsコンポーネントの基準でBorder領域を含めて返すメソッドです。">
+        <Syntax text="GraphicsEllipse.getBoundRect( );">
+          <Return type="Object" description="Graphicsコンポーネントの基準でGraphicsEllipseが表示される領域の情報をnexacroのRectオブジェクトに返します。&#xA;GraphicsEllipseにBorderがある場合に返される領域の情報には、Border領域が含まれます。&#xA;&#xA;* Rectオブジェクトは、「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持っています。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseと親が同じGraphicsオブジェクトの次の順序のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsEllipse.getNextSibling()">
+          <Return type="Object" description="親が同じ次の順序のGraphicsオブジェクトを返します。&#xA;&#xA;次の順序のGraphicsオブジェクトが存在しない場合はnullを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseが表示される領域の情報を親オブジェクトに基づいてBorder領域を含めて返すメソッドです。">
+        <Syntax text="GraphicsEllipse.getOffsetBoundRect( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsEllipseにBorderがある場合に返される領域の情報には、Border領域が含まれます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseが表示される領域の情報を親オブジェクトに基づいて返すメソッドです。">
+        <Syntax text="GraphicsEllipse.getOffsetRect( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsEllipseにBorderがあってもBorder領域に関係なく、GraphicsEllipseの実際の領域を返します。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseが表示される領域の情報を親オブジェクトに基づいてBorder領域を除いて返すメソッドです。">
+        <Syntax text="GraphicsEllipse.getOffsetRegion( );">
+          <Return type="Object" description="親オブジェクトのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsEllipseにBorderがある場合に返される領域の情報には、Border領域が除外されます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseと親が同じであるGraphicsオブジェクトの前の順序のオブジェクトを返すメソッドです。">
+        <Syntax text="GraphicsEllipse.getPreviousSibling()">
+          <Return type="Object" description="親が同じである以前の順序のGraphicsオブジェクトを返します。&#xA;&#xA;以前の順序のGraphicsオブジェクトが存在しない場合は「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの領域の情報をGraphicsコンポーネントに基づいて返すメソッドです。">
+        <Syntax text="GraphicsEllipse.getRect( );">
+          <Return type="Object" description="Graphicsコンポーネントのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsEllipseにBorderがあってもBorder領域に関係なく、GraphicsEllipseの実際の領域を返します。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseが表示される領域の情報をGraphicsコンポーネントに基づいてBorder領域を除いて返すメソッドです。">
+        <Syntax text="GraphicsEllipse.getRegion( );">
+          <Return type="Object" description="Graphicsコンポーネントのleft、topの位置を基準に計算された領域の情報がRectオブジェクトに返されます。&#xA;GraphicsEllipseにBorderがある場合に返される領域の情報には、Border領域が除外されます。&#xA;&#xA;* Rectオブジェクトは、 「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持ちます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEmptyRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの領域設定有無を返すメソッドです。">
+        <Syntax text="GraphicsEllipse.isEmptyRect()">
+          <Return type="Boolean" description="GraphicsEllipseに領域が設定されていない場合は「true」を返します。&#xA;&#xA;GraphicsEllipseに領域が設定されている場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="引数として渡された座標位置がGraphicsEllipse領域に含まれるかどうかを返すメソッドです。">
+        <Syntax text="GraphicsEllipse.isHitTest( nX, nY )">
+          <Return type="Boolean" description="引数として渡された座標位置がGraphicsEllipse領域に含まれる場合は「true」を返します。&#xA;&#xA;引数として渡された座標位置がGraphicsEllipse領域に含まれない場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="確認する位置のx座標値をpixel単位の数値に設定します。&#xA;&#xA;設定値はGraphicsコンポーネントを基準に処理されます。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="確認する位置のy座標値をpixel単位の数値に設定します。&#xA;&#xA;設定値はGraphicsコンポーネントを基準に処理されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseに回転効果を適用するメソッドです。">
+        <Syntax text="GraphicsEllipse.rotate( nAngle [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nAngle" type="Number" in="false" out="false" option="false" variable="false" description="現在の形で回転される角度を数字で設定します。&#xA;&#xA;正の設定時、時計回りに回転します。&#xA;負の設定時、反時計回りに回転します。" />
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="回転の中心となるx座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="回転の中心となるy座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseに拡大および縮小効果を適用するメソッドです。">
+        <Syntax text="GraphicsEllipse.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="拡大および縮小の中心となるx座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="拡大および縮小の中心となるy座標を数字で設定します。&#xA;設定値は、親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大および縮小される横倍率を整数で設定します。&#xA;&#xA;1.0より大きい値を設定すると、GraphicsEllipseが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsEllipseが縮小されます。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大および縮小される縦倍率を整数で設定します。&#xA;&#xA;1.0より大きい値を設定すると、GraphicsEllipseが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsEllipseが縮小されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの一部の領域のみを表示されるようにClippingする領域の座標を設定するメソッドです。">
+        <Syntax text="GraphicsEllipse.setClipRect( nX, nY, nWidth, nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域の高さを数字で設定します。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域の幅を数字で設定します。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域のx座標を数字に設定します。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="Clippingする領域のy座標を数字に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの元の位置を基準としてtransform関連効果を連続的に適用するメソッドです。">
+        <Syntax text="GraphicsEllipse.setTransform( strMethod );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="GraphicsEllipseに適用するTransform関連メソッドをカンマ（,）で区切って指定します。&#xA;translate、scale、rotate、shearメソッドを使用することができます。&#xA;nullを設定した場合にはtransformの効果が指定されていない状態で初期化します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseにワープ効果を適用するメソッドです。">
+        <Syntax text="GraphicsEllipse.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="ワープの中心となるx座標を数値に設定します。&#xA;設定値は親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="ワープの中心となるy座標を数値に設定します。&#xA;設定値は親オブジェクトを基準に処理されます。&#xA;&#xA;値省略時、0が適用されます。" />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="現在の姿にて、x軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="現在の形にて、y軸を基準にねじる角度をラジアン値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseのタイプを文字列として返すメソッドです。">
+        <Syntax text="GraphicsEllipse.toString();">
+          <Return type="String" description="一般的に、[object GraphicsEllipse]の形の文字列を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseにTransform関連効果を適用するメソッドです。">
+        <Syntax text="GraphicsEllipse.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大/縮小される横倍率を実数に設定します。&#xA;&#xA;1.0より大きな値を設定すると、GraphicsEllipseが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsEllipseが縮小されます。" />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="現在のサイズから拡大/縮小される縦倍率を実数に設定します。&#xA;&#xA;1.0より大きな値を設定すると、GraphicsEllipseが拡大されます。&#xA;1.0よりも小さい値を設定すると、GraphicsEllipseが縮小されます。" />
+            <Argument name="nShearX" type="Number" in="false" out="false" option="false" variable="false" description="現在の姿にて、x軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nShearY" type="Number" in="false" out="false" option="false" variable="false" description="現在の形にて、y軸を基準にねじる角度をラジアン値に設定します。" />
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からx軸方向に移動する距離をpixel単位の数値に設定します。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からy軸方向に移動する距離をpixel単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsEllipseの位置が移動される効果を適用するメソッドです。">
+        <Syntax text="GraphicsEllipse.translate( nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からx軸方向に移動する距離をpixel単位の数値に設定します。" />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からy軸方向に移動する距離をpixel単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

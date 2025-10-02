@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.BindItem">
+    <ObjectInfo finalclass="true" inheritance="" classname="nexacro.BindItem" shorttypename="BindItem" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="It is an object used to bind a certain property of a component to the data of a Dataset." />
+    <PropertyInfo>
+      <Property name="columnid" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property is used to set the ID of a Dataset column to bind." csspropertyname="" normalpropertyname="columnid" />
+      <Property name="compid" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property is used to set the ID of a component to bind." csspropertyname="" normalpropertyname="compid" />
+      <Property name="datasetid" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property is used to set the ID of a Dataset to bind." csspropertyname="" normalpropertyname="datasetid" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property is used to specify the name of a BindItem." csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the parent object of a BindItem." csspropertyname="" normalpropertyname="parent" />
+      <Property name="propid" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This property sets a certain property of a component to bind the property." csspropertyname="" normalpropertyname="propid" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="bind" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to execute a BindItem that is dynamically created in a script.">
+        <Syntax text="BindItem.bind()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to delete a BindItem that is dynamically created through a script.">
+        <Syntax text="BindItem.destroy()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a BindItem is successfully removed.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to initialize a BindItem that is dynamically created in a script.">
+        <Syntax text="BindItem.init(strName[,strCompID,strPropertyID,strDatasetID,strColumnID])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strColumnID" type="String" in="false" out="false" option="false" variable="false" description="This is the ID of the Dataset column to bind." />
+            <Argument name="strCompID" type="String" in="false" out="false" option="false" variable="false" description="This is the ID of the component to bind." />
+            <Argument name="strDatasetID" type="String" in="false" out="false" option="false" variable="false" description="This is the ID of the Dataset to bind." />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="This is the name of the BindItem." />
+            <Argument name="strPropertyID" type="String" in="false" out="false" option="false" variable="false" description="This is the ID of the property to bind." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

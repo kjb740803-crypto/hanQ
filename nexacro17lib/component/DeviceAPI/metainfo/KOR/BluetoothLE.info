@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.BluetoothLE">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.BluetoothLE" shorttypename="BluetoothLE" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="외부 디바이스와 Bluetooth 방식의 연결을 제공하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="BluetoothLE의 고유 식별자를 설정하는 속성입니다." csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="BluetoothLE 의 이름을 설정하는 속성입니다." csspropertyname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="connect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="Peripheral 디바이스와 연결을 수행하는 메소드입니다.">
+        <Syntax text="BluetoothLE.connect( strAddress )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strAddress" type="String" in="false" out="false" option="false" variable="false" description="Peripheral 디바이스의 주소를 문자열로 설정합니다.&#xA;&#xA;Windows NRE 와 Android NRE 는 MAC Address 를 사용합니다.&#xA;macOS NRE 는 OS 가 부여한 UUID 를 사용합니다.&#xA;iOS/iPadOS NRE 는 검색된 디바이스 목록의 Index 를 사용합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="disconnect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="Peripheral 디바이스와의 연결을 해제하는 메소드입니다.">
+        <Syntax text="BluetoothLE.disconnect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="discoverService" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="연결된 Peripheral 디바이스가 제공하는 서비스 UUID 를 요청하는 메소드입니다.">
+        <Syntax text="BluetoothLE.discoverService()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="readCharacteristic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="연결된 Peripheral 디바이스에 특정 서비스의 Characteristic 값을 요청하는 메소드입니다.">
+        <Syntax text="BluetoothLE.readCharacteristic( strSvcUUID, strCharUUID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCharUUID" type="String" in="false" out="false" option="false" variable="false" description="값을 가져오려는 Characteristic 의 UUID 를 문자열로 설정합니다." />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="Characteristic 이 정의된 서비스의 UUID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scanStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="게시(Advertisement)중인 Peripheral 디바이스의 검색을 시작하는 메소드입니다.">
+        <Syntax text="BluetoothLE.scanStart( [nDuration [, strSvcUUID]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nDuration" type="Number" in="false" out="false" option="false" variable="false" description="검색을 지속할 시간을 밀리초(Millisecond) 단위의 숫자로 설정합니다.&#xA;&#xA;값 생략 시 2000 으로 적용됩니다." />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="찾으려고 하는 특정 서비스의 UUID 를 문자열로 설정합니다.&#xA;&#xA;값 생략 시 게시(Advertiesement)중인 모든 Peripheral 디바이스를 검색합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scanStop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="게시(Advertisement)중인 Peripheral 디바이스의 검색을 종료하는 메소드입니다.">
+        <Syntax text="BluetoothLE.scanStop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="subscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="연결된 Peripheral 디바이스에 특정 서비스의 Characteristic 값이 변경될 때 Notification 을 요청하는 메소드입니다.">
+        <Syntax text="BluetoothLE.subscribe( strSvcUUID, strCharUUID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCharUUID" type="String" in="false" out="false" option="false" variable="false" description="Notification 을 요청할 Characteristic 의 UUID 를 문자열로 설정합니다.&#xA;&#xA;Characteristic 의 값이 변경되면 서버로 부터 Notification 이 전달됩니다." />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="Characteristic 이 정의된 서비스의 UUID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unsubscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="연결된 Peripheral 디바이스에 Notification 해지를 요청하는 메소드입니다.">
+        <Syntax text="BluetoothLE.unsubscribe( strSvcUUID, strCharUUID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCharUUID" type="String" in="false" out="false" option="false" variable="false" description="Notification 해제를 요청할 Characteristic 의 UUID 를 문자열로 설정합니다." />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="Characteristic 이 정의된 서비스의 UUID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="writeCharacteristic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="연결된 Peripheral 디바이스에 특정 서비스의 Characteristic 값을 저장하는 메소드입니다.">
+        <Syntax text="BluetoothLE.writeCharacteristic( strSvcUUID, strCharUUID, strVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCharUUID" type="String" in="false" out="false" option="false" variable="false" description="값을 저장하려는 Characteristic 의 UUID 를 문자열로 설정합니다." />
+            <Argument name="strSvcUUID" type="String" in="false" out="false" option="false" variable="false" description="Characteristic 이 정의된 서비스의 UUID 를 문자열로 설정합니다." />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="Characteristic 에 저장할 값을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="BluetoothLE 에서 요청된 작업이 실패했을 때 발생하는 이벤트입니다.">
+        <Syntax text="BluetoothLE.onerror(obj:nexacro.BluetoothLE,e:nexacro.BluetoothLEErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BluetoothLEErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onscanresult" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="scanStart() 메소드로 특정 서비스가 제공되는 디바이스를 찾았을 때 발생하는 이벤트입니다.">
+        <Syntax text="BluetoothLE.onscanresult(obj:nexacro.BluetoothLE,e:nexacro.BluetoothLEScanDeviceEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BluetoothLEScanDeviceEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsubscriberesult" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="BluetoothLE 와 연결된 디바이스에서 Notification 이 전달되었을 때 발생하는 이벤트입니다.">
+        <Syntax text="BluetoothLE.onsubscriberesult(obj:nexacro.BluetoothLE,e:nexacro.BluetoothLEEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BluetoothLEEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="BluetoothLE 에서 요청된 작업이 성공했을 때 발생하는 이벤트입니다.">
+        <Syntax text="BluetoothLE.onsuccess(obj:nexacro.BluetoothLE,e:nexacro.BluetoothLEEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BluetoothLEEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

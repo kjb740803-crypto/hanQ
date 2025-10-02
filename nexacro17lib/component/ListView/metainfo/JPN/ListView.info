@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ListView">
+    <ObjectInfo finalclass="false" inheritance="nexacro.ComplexComponent" classname="nexacro.ListView" shorttypename="ListView" csstypename="ListView" csscontrolname="ListViewControl" group="Component" subgroup="Component ( default )" csspseudo="true" container="false" composite="false" tabstop="true" cssstyle="true" contents="true" formats="true" contentseditor="basic" defaultwidth="270" defaultheight="180" registration="allow" edittype="listview" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewはDatasetの内容をアイテム単位で表現するコンポーネントです。" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに選択ボックスを移動した場合、アクセシビリティに出力されるActionを設定するプロパティです。" csspropertyname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに選択ダイアログを移動する際に下位コンポーネントのアクセシビリティの出力有無を設定するプロパティです。" csspropertyname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに選択ボックス移動する際にアクセシビリティで出力されるDescriptionを設定するプロパティです。" csspropertyname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに選択ボックスを移動する際のアクセシビリティ関連のプロパティ値の出力有無を設定するプロパティです。" csspropertyname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに選択ボックス移動時、アクセシビリティに出力されるLabelを設定するプロパティです。" csspropertyname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに選択ダイアログ移動時にアクセシビリティで出力されるRoleを設定するプロパティです。" csspropertyname="" normalpropertyname="accessibilityrole" />
+      <Property name="autoenter" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridAutoEnterType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで編集可能なCellが選択された場合、編集モード用コントロールが有効になる方法を設定するプロパティです。" csspropertyname="" normalpropertyname="autoenter" />
+      <Property name="autoupdatetype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridAutoUpdateType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがComboまたはCalendar形式の場合、ポップアップで選択された値がDataSetに適用される時点を設定するプロパティです。" csspropertyname="" normalpropertyname="autoupdatetype" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの背景領域を設定するプロパティです。" csspropertyname="background" normalpropertyname="background" />
+      <Property name="bandexpandtype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="expand" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ListView_BandExpandType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでDetailバンドが表示される方法を設定するプロパティです。" csspropertyname="" normalpropertyname="bandexpandtype" />
+      <Property name="bandindentsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでDetailバンドが表示される左余白の幅を設定するプロパティです。" csspropertyname="" normalpropertyname="bandindentsize" />
+      <Property name="bandinitstatus" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="expand" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ListView_BandInitStatus" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="bandexpandtypeプロパティ値が「expand」である場合、Detailバンドの最初表示状態を設定するプロパティです。" csspropertyname="" normalpropertyname="bandinitstatus" />
+      <Property name="binddataset" group="Binding" subgroup="" refreshinfo="" edittype="DatasetID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの全体CellとバインドされるDataSetのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="binddataset" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの枠線の形状を設定するプロパティです。" csspropertyname="border-radius" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewを表示するための下部座標を設定するプロパティです。" csspropertyname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+      <Property name="cellcalendarbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合、表示されるドロップダウンボタンのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="cellcalendarbuttonsize" />
+      <Property name="cellcalendarpopupsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式のときにポップアップで表示されるカレンダーのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="cellcalendarpopupsize" />
+      <Property name="cellcalendarpopuptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CalendarPopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCalendar形式の場合に、ポップアップカレンダー（DatePicker）が表示される方法を設定するプロパティです。" csspropertyname="" normalpropertyname="cellcalendarpopuptype" />
+      <Property name="cellcheckboxsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCheckBox形式である場合、CheckBoxのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="cellcheckboxsize" />
+      <Property name="cellclickbound" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="control" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridCellClickBound" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CheckBox形式のCellでマウスのクリックで値が変更される領域を設定するプロパティです。" csspropertyname="" normalpropertyname="cellclickbound" />
+      <Property name="cellcombobuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式のときに表示されるドロップダウンボタンのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="cellcombobuttonsize" />
+      <Property name="cellcombopopupsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式の場合、ポップアップで表示されるアイテムのリストのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="cellcombopopupsize" />
+      <Property name="cellcombopopuptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="PopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="CellがCombo形式のときにアイテムリストが表示される方式を設定するプロパティです。" csspropertyname="" normalpropertyname="cellcombopopuptype" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのStyleをXCSSファイルに定義されたクラスに設定するプロパティです。" csspropertyname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" normalpropertyname="cursor" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewが使用可能かどうかを設定するプロパティです。" csspropertyname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでイベントを発生させるか否かを決定するプロパティです。 &#xA;　&#xA;　" csspropertyname="" normalpropertyname="enableevent" />
+      <Property name="enableredraw" group="Hidden" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに変更が発生した場合、画面を自動的に再描画するかを設定するプロパティです。" csspropertyname="" normalpropertyname="enableredraw" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで使用するフォントを設定するプロパティです。" csspropertyname="font" normalpropertyname="font" />
+      <Property name="formatid" group="Binding" subgroup="" refreshinfo="" edittype="FormatID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="formatsプロパティで定義された形式の中で、ListViewに表示する形式のIDを設定するプロパティです。" csspropertyname="" normalpropertyname="formatid" />
+      <Property name="formats" group="Binding" subgroup="" refreshinfo="" edittype="Contents" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに定義されたすべてのフォーマットの情報を持つプロパティです。" csspropertyname="" normalpropertyname="formats" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewを表示するための高さを設定するプロパティです。" csspropertyname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに適用されるInitValueのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewを表示するための左側座標を設定するプロパティです。" csspropertyname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+      <Property name="locale" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに適用される国と言語（locale）を設定するプロパティです。" csspropertyname="" normalpropertyname="locale" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewが画面に表示される最大高さを設定するプロパティです。" csspropertyname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewが画面に表示される最大の幅を設定するプロパティです。" csspropertyname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewが画面に表示される最小の高さを設定するプロパティです。" csspropertyname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewが画面に表示される最小の幅を設定するプロパティです。" csspropertyname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの境界線を設定するプロパティです。" csspropertyname="-nexa-border" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-padding" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+      <Property name="nodataimage" group="Appearance" subgroup="" refreshinfo="" edittype="ImageID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示するデータがない場合、出力する画像のパスを設定するプロパティです。" csspropertyname="" normalpropertyname="nodataimage" />
+      <Property name="nodatatext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示するデータがない場合、出力するテキストを設定するプロパティです。" csspropertyname="" normalpropertyname="nodatatext" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域の透明度を設定するプロパティです。" csspropertyname="opacity" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの親オブジェクトを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親オブジェクトが画面分割機能を使用する際にListViewが表示される画面のインデックスを設定するプロパティです。" csspropertyname="" normalpropertyname="positionstep" />
+      <Property name="readonly" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewコンポーネントが編集できるかどうかを示す値を設定するプロパティです。" csspropertyname="" normalpropertyname="readonly" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewを表示するための右側座標を設定するプロパティです。" csspropertyname="" normalpropertyname="right" />
+      <Property name="rtl" group="Action" subgroup="" refreshinfo="" edittype="Boolean" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで内部コンテンツもしくはコンポーネントの表示基準を設定するプロパティです。" csspropertyname="" normalpropertyname="rtl" />
+      <Property name="scrollbarbarminsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるスクロールバーのトラックバー（TrackBar）の最小サイズを設定するプロパティです。" csspropertyname="" normalpropertyname="scrollbarbarminsize" />
+      <Property name="scrollbarbaroutsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのスクロールバーからトラックバー（TrackBar）が非表示になる基準サイズを設定するプロパティです。" csspropertyname="" normalpropertyname="scrollbarbaroutsize" />
+      <Property name="scrollbardecbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるスクロールバーの減少ボタン（DecButton）サイズを設定するプロパティです。" csspropertyname="" normalpropertyname="scrollbardecbuttonsize" />
+      <Property name="scrollbarincbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるスクロールバーの増加ボタン（IncButton）サイズを設定するプロパティです。" csspropertyname="" normalpropertyname="scrollbarincbuttonsize" />
+      <Property name="scrollbarsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるスクロールバーのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="scrollbarsize" />
+      <Property name="scrollbartrackbarsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView に表示されるスクロールバーのトラックバー(TrackBar)のサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="scrollbartrackbarsize" />
+      <Property name="scrollbartype" group="Action" subgroup="" refreshinfo="" edittype="Enum2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollBarType" enuminfo2="ScrollBarType" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにスクロールバーが表示される形式を設定するプロパティです。" csspropertyname="" normalpropertyname="scrollbartype" />
+      <Property name="scrollindicatorsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるスクロールインジケーターバーのサイズを設定するプロパティです。" csspropertyname="" normalpropertyname="scrollindicatorsize" />
+      <Property name="scrolltype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで使用されるスクロールの種類を設定するプロパティです。" csspropertyname="" normalpropertyname="scrolltype" />
+      <Property name="selectchangetype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="down" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridSelectChangeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでマウスクリック時のアイテム選択の決定時点を設定するプロパティです。" csspropertyname="" normalpropertyname="selectchangetype" />
+      <Property name="selectscrollmode" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="SelectScrollMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でドラッグアクションを行った際に実行される動作を設定するプロパティです。" csspropertyname="" normalpropertyname="selectscrollmode" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="タブキー入力でコンポーネント間にフォーカスを移動するときにListViewの順序を設定するプロパティです。" csspropertyname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="タブキー入力でコンポーネント間フォーカスを移動するとき、ListViewがフォーカスを受け取るか否かを設定するプロパティです。" csspropertyname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="text" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE" description="ListViewにマウスポインタを置いたときに表示されるバルーンヘルプを設定するプロパティです。" csspropertyname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="ListViewでバルーンヘルプが表示される位置と方法を設定するプロパティです。" csspropertyname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewを表示するための上段座標を設定するプロパティです。" csspropertyname="" normalpropertyname="top" />
+      <Property name="useselcolor" group="Appearance" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでアイテム選択時、XCSSに定義されたSelect関連Statusの適用有無を設定するプロパティです。" csspropertyname="" normalpropertyname="useselcolor" />
+      <Property name="usesoftkeyboard" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE" description="セルの編集モードにてフォーカスを受けた際にソフトウェアキーボードを使用するかどうかを設定するプロパティです。" csspropertyname="" normalpropertyname="usesoftkeyboard" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewが画面に表示されるかを設定するプロパティです。" csspropertyname="" normalpropertyname="visible" />
+      <Property name="vscrollbar" group="Misc." subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのサブコントロールである垂直スクロールバーのオブジェクトを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="vscrollbar" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewを表示するための幅を設定するプロパティです。" csspropertyname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの背景領域を設定するプロパティです。" csspropertyname="background" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの枠線の形状を設定するプロパティです。" csspropertyname="border-radius" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="box-shadow" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで使用するフォントを設定するプロパティです。" csspropertyname="font" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの境界線を設定するプロパティです。" csspropertyname="-nexa-border" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" defaultvalue="0px 0px 0px 0px" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-padding" normalpropertyname="padding" />
+        <Property name="-nexa-rtl-background-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのrtlプロパティが「true」に適用された場合、背景に表示される画像を設定するプロパティです。" csspropertyname="-nexa-rtl-background-image" normalpropertyname="" />
+        <Property name="-nexa-rtl-edge-image" group="Style" subgroup="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのrtlプロパティが「true」に適用された場合、境界線（Border）の内側に表示されるEdge画像を設定するプロパティです。" csspropertyname="-nexa-rtl-edge-image" normalpropertyname="" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-text-align" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-text-decoration" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-vertical-align" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="" description="" csspropertyname="-nexa-word-wrap" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域の透明度を設定するプロパティです。" csspropertyname="opacity" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="PixelNegative" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="readonly" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="body" classname="nexacro._ListViewBandControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="detail" classname="nexacro._ListViewDetailBandControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="Position" subgroup="defaultpopup" />
+      <Control name="vscrollbar" classname="nexacro.ScrollBarControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="vscrollindicator" classname="nexacro.ScrollIndicatorControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにイベントを宣言して追加するメソッドです。">
+        <Syntax text="ListView.addEvent( strEventID )">
+          <Return type="Boolean" description="イベントの追加に成功した場合は「true」を返します。&#xA;&#xA;イベントの追加に失敗した場合、もしくは同一のイベントIDが既に宣言されている場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="ListView.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="検索結果の関数をListViewのイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="ListView.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数が定義されているスコープを指定します。指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親が同じコンポーネントのうち、ListViewが画面の最前面に表示されるようにします。">
+        <Syntax text="ListView.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親が同じコンポーネントのうち、ListViewが画面の一段階前に表示されるようにします。">
+        <Syntax text="ListView.bringToPrev()">
+          <Return type="" description="　" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="ListView.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで選択されたアイテムの選択状態を解除するメソッドです。">
+        <Syntax text="ListView.clearSelect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="createFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewとバインドされたDataSetのColumn情報に基づいて、新しいフォーマットを生成するメソッドです。">
+        <Syntax text="ListView.createFormat()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="スクリプトで動的に生成したListViewを削除するメソッドです。">
+        <Syntax text="ListView.destroy()">
+          <Return type="Boolean" description="ListViewが正常に削除された場合、「true」を返します。&#xA;&#xA;ListViewが正常に削除されない場合、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="dropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでedittypeプロパティ値が「date」であるCellが編集状態である場合にポップアップカレンダーを表示するメソッドです。">
+        <Syntax text="ListView.dropdownCalendar()">
+          <Return type="Boolean" description="ポップアップカレンダーが正常に表示された場合は「true」を返します。&#xA;&#xA;ポップアップカレンダーが正常に表示されていない場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="dropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでedittypeプロパティ値が「combo」のCellが編集状態の場合にComboアイテムリストを表示するメソッドです。">
+        <Syntax text="ListView.dropdownCombo()">
+          <Return type="Boolean" description="Comboアイテムリストが正常に表示された場合は「true」を返します。&#xA;&#xA;Comboアイテムリストが正常に表示されていない場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="ListView.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="特定のイベントで検出したハンドラ関数のインデックスを返します。&#xA;&#xA;特定のイベントで検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getBandExpandStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで特定のアイテムのDetailバンドの表示有無を返すメソッドです。">
+        <Syntax text="LIstView.getBandExpandStatus( nRow )">
+          <Return type="Boolean" description="特定のアイテムのDetailバンドが表示されている場合は、「true」を返します。&#xA;特定のアイテムのDetailバンドが表示されていない場合は、「false」を返します。&#xA;&#xA;Detailバンドが存在しないか無効なnRowパラメータを設定した場合は、「false」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="Detailバンドの表示有無を確認するアイテムのインデックスを数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のバンドで指定されたプロパティ値を返すメソッドです。">
+        <Syntax text="ListView.getBandProperty( enumBand, strPropID )">
+          <Return type="String" description="特定のバンドで指定されたプロパティ値を返します。" />
+          <Arguments>
+            <Argument name="enumBand" type="String" in="false" out="false" option="false" variable="false" description="プロパティ値を取得するバンドを文字列に設定します。&#xA;&#xA;「body」設定時、Bodyバンドでプロパティ値を返します。&#xA;「detail」設定時、Detailバンドでプロパティ値を返します。" />
+            <Argument name="strPropID" type="String" in="false" out="false" option="false" variable="false" description="値を取得するプロパティのプロパティ名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getBindCellId" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetの特定のColumnとバインドされたCellのIDを返すメソッドです。">
+        <Syntax text="ListView.getBindCellId enumBand, strColID )">
+          <Return type="String" description="IDがstrColIDであるColumnとバインドされた最初のCellのIDを返します。&#xA;&#xA;IDがstrColIDであるColumnとバインドされたCellがない場合、空の文字列（Empty String）を返します。" />
+          <Arguments>
+            <Argument name="enumBand" type="String" in="false" out="false" option="false" variable="false" description="現在ListView形式で特定のColumnとバインドされたCellを検索するバンド領域を文字列に設定します。&#xA;&#xA;「body」設定時、Bodyバンド領域でCellを検索します。&#xA;「detail」設定時、Detailバンド領域でCellを検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSetのColumn IDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのbinddatasetプロパティに設定されているDataSetオブジェクトを返すメソッドです。">
+        <Syntax text="ListView.getBindDataset()">
+          <Return type="Object" description="binddatasetプロパティに設定されているDataSetオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCellCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで特定のバンドに定義されたCellの数を返すメソッドです。">
+        <Syntax text="ListView.getCellCount( enumBand )">
+          <Return type="Number" description="enumBandに設定したバンド領域に定義されたCellの数を返します。" />
+          <Arguments>
+            <Argument name="enumBand" type="String" in="false" out="false" option="false" variable="false" description="現在ListViewフォーマットに定義されたCellの数を求めるバンドを文字列に設定します。&#xA;&#xA;「body」設定時、Bodyバンド領域に定義されたCellの数を求めます。&#xA;「detail」設定時、Detailバンド領域に定義されたCellの数を求めます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellの特定のプロパティ値を返すメソッドです。">
+        <Syntax text="ListView.getCellProperty( enumBand, strCellID, strPropID )">
+          <Return type="String" description="特定のCellの特定のプロパティ値を返します。" />
+          <Arguments>
+            <Argument name="enumBand" type="String" in="false" out="false" option="false" variable="false" description="プロパティ値を取得するCellが属するバンドを文字列に設定します。&#xA;&#xA;「body」設定時、BodyバンドのCellでプロパティ値を返します。&#xA;「detail」設定時、DetailバンドのCellでプロパティ値を返します。" />
+            <Argument name="strCellID" type="String" in="false" out="false" option="false" variable="false" description="プロパティ値を取得するCellのIDを設定します。" />
+            <Argument name="strPropID" type="String" in="false" out="false" option="false" variable="false" description="値を取得するプロパティ名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCellRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のCellの位置領域情報をRectオブジェクトとして返すメソッドです。">
+        <Syntax text="ListView.getCellRect( nRow, strBandID, strCellID )">
+          <Return type="Object" description="引数として渡されたCellの領域情報を持つRectオブジェクトを返します。&#xA;無効なCellを指定した場合、すべてのプロパティ値が「0」であるRectオブジェクトを返します。&#xA;&#xA;Rectオブジェクトは、「left」、「top」、「right」、「bottom」、「width」、「height」プロパティを持っています。&#xA;Cell領域の情報は、Rectオブジェクトの各プロパティに保存されます。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="領域情報を取得するCellがあるアイテムのインデックスを設定します。" />
+            <Argument name="strBandID" type="String" in="false" out="false" option="false" variable="false" description="領域情報を取得するCellがあるバンドを文字列に設定します。&#xA;&#xA;「body」設定時、Bodyバンドに適用されます。&#xA;「detail」設定時、Detailバンドに適用されます。" />
+            <Argument name="strCellID" type="String" in="false" out="false" option="false" variable="false" description="領域情報を取得するCellのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCellText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のCellに表示される文字列を返すメソッドです。">
+        <Syntax text="ListView.getCellText( nRow, strBandID, strCellID )">
+          <Return type="String" description="引数として渡されたCellに表示される文字列を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="文字列を取得するCellがあるアイテムのインデックスを設定します。" />
+            <Argument name="strBandID" type="String" in="false" out="false" option="false" variable="false" description="文字列を取得するCellがあるバンドを文字列に設定します。&#xA;&#xA;「body」設定時、Bodyバンドに適用されます。&#xA;「detail」設定時、Detailバンドに適用されます。" />
+            <Argument name="strCellID" type="String" in="false" out="false" option="false" variable="false" description="文字列を取得するCellのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCellValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のCellのtextプロパティに設定された値を返すメソッドです。">
+        <Syntax text="ListView.getCellValue( nRow, strBandID, strCellID )">
+          <Return type="String" description="CellのtextプロパティがDataSetにバインドされている場合は、バインドされたDataSetのColumn値を返します。&#xA;Cellのtextプロパティに値が設定されている場合は、設定された値を返します。&#xA;CellのtextプロパティがEXPR形式で設定されている場合、EXPRが適用された値を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="textプロパティ値を取得するCellがあるアイテムのインデックスを設定します。" />
+            <Argument name="strBandID" type="String" in="false" out="false" option="false" variable="false" description="textプロパティ値を取得するCellがあるバンドを文字列に設定します。&#xA;&#xA;「body」設定時、Bodyバンドに適用されます。&#xA;「detail」設定時、Detailバンドに適用されます。" />
+            <Argument name="strCellID" type="String" in="false" out="false" option="false" variable="false" description="textプロパティ値を取得するCellのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurEditType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで選択されたCellのedittypeプロパティ値を返すメソッドです。">
+        <Syntax text="ListView.getCurEditType()">
+          <Return type="String" description="現在選択されたCellのeditytypeプロパティ値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCurFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに現在表示されているフォーマットをXML形式の文字列に返すメソッドです。">
+        <Syntax text="ListView.getCurFormatString( [bOrginal] )">
+          <Return type="String" description="現在ListViewに表示されているフォーマットをXML形式の文字列に返します。&#xA;&#xA;基本的なXML形式は下記の通りであり、Body、Detail定義はフォーマットに基づいて存在しないことがあります。&#xA;&#xA;&lt;code&gt;&amp;lt;Format id=&quot;default&quot;&amp;gt;&#xA;  &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;Band id=&quot;detail&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;&amp;lt;/Format&amp;gt; &lt;/code&gt;" />
+          <Arguments>
+            <Argument name="bOrginal" type="Boolean" in="false" out="false" option="false" variable="false" description="動的に変更されたフォーマットを反映して返すがを設定します。&#xA;&#xA;「true」に設定時、動的に変更されたフォーマットは無視し、デザイン時に設定したフォーマットを返します。&#xA;「false」に設定時、動的に変更されたフォーマットを反映して返します。&#xA;&#xA;値を設定しない場合は「false」に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDatasetRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのアイテムのインデックスに該当するDataSetのRowインデックスを返すメソッドです。">
+        <Syntax text="ListView.getDatasetRow( nRowIndex )">
+          <Return type="Number" description="ListViewのアイテムインデックスに該当するDataSetのRowインデックス値を返します。&#xA;&#xA;通常の値を求めることができない場合は-1を返します。" />
+          <Arguments>
+            <Argument name="nRowIndex" type="Number" in="false" out="false" option="false" variable="false" description="ListViewのアイテムインデックスを数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="getDisplayText()">
+          <Return type="String" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEditCaret" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが編集状態のとき、キャレットが位置しているインデックスを返すメソッドです。">
+        <Syntax text="ListView.getEditCaret()">
+          <Return type="Number" description="インデックスは0から始まり、キャレットが位置しているインデックスを返します。&#xA;&#xA;Cellが編集状態でなければ、-1を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが編集状態のときに選択された文字列のインデックスを配列として返すメソッドです。">
+        <Syntax text="ListView.getEditSelect()">
+          <Return type="Array" description="選択したテキストの開始インデックスと終了インデックスをそれぞれ配列の0番、1番元素として返します。&#xA;選択したテキストがない場合は、現在のキャレット位置を配列の0番、1番元素として返します。&#xA;&#xA;インデックスは0から始まります。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEditSelectedText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが編集状態のときに選択されたテキストを返すメソッドです。">
+        <Syntax text="ListView.getEditSelectedText()">
+          <Return type="String" description="選択した文字列を返します。&#xA;&#xA;選択した文字列がない場合は、空の文字列（Empty String）を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEditText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが編集状態のときに表示される編集モード用コントロールのtextプロパティ値を返すメソッドです。">
+        <Syntax text="ListView.getEditText()">
+          <Return type="String" description="Cellに表示された編集モードのコントロールのtextプロパティ値を文字列として返します。&#xA;&#xA;ListViewのedittypeプロパティ値が「checkbox」、「tree」である場合、undefinedを返します。&#xA;ListViewのedittypeプロパティ値が「combo」、「date」である場合、コントロールに入力されている値ではなく、元のtextプロパティ値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="ListView.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;&#xA;ハンドラ関数のインデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="XComponent.getFocus()">
+          <Return type="Object" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFormatIdList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Format idの配列値を返すメソッドです。">
+        <Syntax text="ListView.getFormatIdList();">
+          <Return type="Object" description="Format idのリストを配列として返します。&#xA;値が存在しない場合は空の配列を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="デザイン時に定義されたすべてのフォーマットをXML形式の文字列に返すメソッドです。">
+        <Syntax text="ListView.getFormatString()">
+          <Return type="String" description="デザイン時に定義されたすべてのフォーマットをXML形式の文字列に返します。&#xA;動的に変更されたフォーマット値は反映されません。&#xA;&#xA;基本的なXML形式は下記の通りであり、Body、Detail定義フォーマットに基づいてい存在しないことがあります。&#xA;&lt;code&gt;&#xA;&amp;lt;Formats&amp;gt;&#xA;  &amp;lt;Format id=&quot;default&quot;&amp;gt;&#xA;    &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;    &amp;lt;Band id=&quot;detail&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;/Format&amp;gt;&#xA;  &amp;lt;Format id=&quot;format00&quot;&amp;gt;&#xA;    &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;    &amp;lt;Band id=&quot;detail&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;/Format&amp;gt;&#xA;&amp;lt;/Formats&amp;gt;&#xA;&lt;/code&gt;" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親コンポーネントのTop位置を基準にListViewのbottom値をピクセル単位の数値に返すメソッドです。">
+        <Syntax text="ListView.getOffsetBottom();">
+          <Return type="Number" description="親コンポーネントのTop位置を基準にListViewのbottom値をピクセル単位の数値に返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの高さをピクセル単位の数字で返すメソッドです。">
+        <Syntax text="ListView.getOffsetHeight();">
+          <Return type="Number" description="ListViewの高さをピクセル単位での数字に変換して返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親コンポーネントのLeft位置を基準にListViewのLeft値をピクセル単位の数値に返すメソッドです。">
+        <Syntax text="ListView.getOffsetLeft();">
+          <Return type="Number" description="親コンポーネントのLeft位置を基準にListViewのleft値をピクセル単位の数値に返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親コンポーネントのLeft位置を基準にListViewのright値をピクセル単位の数値に返すメソッドです。">
+        <Syntax text="ListView.getOffsetRight();">
+          <Return type="Number" description="親コンポーネントのLeft位置を基準にListViewのright値をピクセル単位の数値に返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親コンポーネントのTop位置を基準にListViewのtop値をピクセル単位の数値に返すメソッドです。">
+        <Syntax text="ListView.getOffsetTop();">
+          <Return type="Number" description="親コンポーネントのTop位置を基準にListViewのtop値をピクセル単位の数値に返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの幅をピクセル単位の数字で返すメソッドです。">
+        <Syntax text="ListView.getOffsetWidth();">
+          <Return type="Number" description="ListViewの幅をピクセル単位での数字に変換して返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのbottomプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="ListView.getPixelBottom();">
+          <Return type="Number" description="ListViewのbottomプロパティ値をピクセル単位で返します。&#xA;&#xA;bottomプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのheightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="ListView.getPixelHeight();">
+          <Return type="Number" description="ListViewのheightプロパティ値をピクセル単位で返します。&#xA;&#xA;heightプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのleftプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="ListView.getPixelLeft();">
+          <Return type="Number" description="ListViewのwidthプロパティ値をピクセル単位で返します。&#xA;&#xA;leftプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのrightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="ListView.getPixelRight();">
+          <Return type="Number" description="ListViewのrightプロパティ値をピクセル単位で返します。&#xA;&#xA;rightプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのtopプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="ListView.getPixelTop();">
+          <Return type="Number" description="ListViewのtopプロパティ値をピクセル単位で返します。&#xA;&#xA;topプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのwidthプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="ListView.getPixelWidth();">
+          <Return type="Number" description="ListViewのwidthプロパティ値をピクセル単位で返します。&#xA;&#xA;widthプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSelectedRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに選択されているアイテムのインデックスを配列に返すメソッドです。">
+        <Syntax text="ListView.getSelectedRows()">
+          <Return type="Array" description="ListViewに選択されているアイテムのインデックスを配列に返します。&#xA;&#xA;選択されたアイテムがない場合は、空の配列を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViwに表示された垂直スクロールバーのトラックバーの位置値を返すメソッドです。">
+        <Syntax text="ListView.getVScrollPos()">
+          <Return type="Number" description="垂直スクロールバーの現在のトラックバーの位置値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="hideDetailBand" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで特定のアイテムのDetailバンドを非表示にするメソッドです。">
+        <Syntax text="ListView.hideDetailBand( nRow )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="Detailバンドを非表示にするアイテムのインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="スクリプトでListViewを動的に生成した後に初期化するメソッドです。">
+        <Syntax text="ListView.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="ListViewのIDを文字列に設定します。" />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのbottomプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;vTop、vHeight値をすべて設定した場合vBottom値は無視されます。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのtopプロパティ値に基づいてListViewのbottomが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてListViewのbottomが決定されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのheightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネント値は無視され、pixel値にListViewのheightが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてListViewのheightが決定されます。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのleftプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのrightプロパティ値に基づいてListViewのleftが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてListViewのleftが決定されます。" />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewが画面に表示される最大高さの値をpixel単位の数値に設定します。&#xA;&#xA;vMinHeightよりも小さい値を設定すると、vMinHeight値に設定されます。" />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewが画面に表示される最大幅の値をpixel単位の数値に設定します。&#xA;&#xA;vMinWidthよりも小さい値を設定すると、vMinWidth値に設定されます。" />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewが画面に表示される最小高さの値をpixel単位の数値に設定します。" />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewが画面に表示される最小幅の値をpixel単位の数値に設定します。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのrightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;vLeft、vWidth値をすべて設定した場合vRight値は無視されます。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのleftプロパティ値に基づいてListViewのrightが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてListViewのrightが決定されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのtopプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのbottomプロパティ値に基づいてListViewのtopが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてListViewのtopが決定されます。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのwidthプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネント値は無視され、pixel値にListViewのwidthが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてListViewのwidthが決定されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのイベントにハンドラ関数を指定した位置に挿入するメソッドです。">
+        <Syntax text="ListView.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="イベントに挿入されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;&#xA;正常に挿入されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="ハンドラ関数が挿入される位置のインデックス値を指定します。&#xA;&#xA;-1を指定した場合は最後に追加されます。&#xA;イベントに設定されたハンドラ関数の個数より大きい値を指定した場合は最後に追加されます。&#xA;NaN値を指定した場合はECMA Scriptの仕様に基づいて0が設定されます。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isDropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにポップアップカレンダーが表示されているかを返すメソッドです。">
+        <Syntax text="ListView.isDropdownCalendar()">
+          <Return type="Boolean" description="ListViewにポップアップカレンダーが表示されている場合は、trueを返します。&#xA;&#xA;ListViewにポップアップカレンダーが表示されていない場合は、falseを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isDropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにComboアイテムのリストが表示されているかを返すメソッドです。">
+        <Syntax text="ListView.isDropdownCombo()">
+          <Return type="Boolean" description="ListViewにComboアイテムのリストが表示されている場合は、trueを返します。&#xA;&#xA;ListViewにComboアイテムのリストが表示されていない場合は、falseを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの位置とサイズを変更するメソッドです。">
+        <Syntax text="ListView.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのbottomプロパティ値をpixelもしくは割合（「％」）単位の数値に設定します。&#xA;&#xA;vTop、vHeight値をすべて設定した場合、vBottom値は無視されます。&#xA;&#xA;* 値に基準コンポーネントを含めて設定した場合：&#xA;　pixel単位で設定時、基準コンポーネントのtopプロパティ値に基づいてListViewのbottomが決定されます。&#xA;　割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてListViewのbottomが決定されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのheightプロパティ値をpixelもしくは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含めて設定した場合：&#xA;　pixel単位で設定時、基準コンポーネント値は無視されて、ListViewのheightが決定されます。&#xA;　割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてListViewのheightが決定されます。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのleftプロパティ値をpixelもしくは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含めて設定した場合：&#xA;　pixel単位で設定時、基準コンポーネントのrightプロパティ値に基づいてListViewのleftが決定されます。&#xA;　割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてListViewのleftが決定されます。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのrightプロパティ値をpixelもしくは割合（「％」）単位の数値に設定します。&#xA;&#xA;vLeft、vWidth値をすべて設定した場合、vRight値は無視されます。&#xA;&#xA;* 値に基準コンポーネントを含めて設定した場合：&#xA;　pixel単位で設定時、基準コンポーネントのleftプロパティ値に基づいてListViewのrightが決定されます。&#xA;　割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてListViewのrightが決定されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのtopプロパティ値をpixelもしくは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含めて設定した場合：&#xA;　pixel単位で設定時、基準コンポーネントのbottomプロパティ値に基づいてListViewのtopが決定されます。&#xA;　割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてListViewのtopが決定されます。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのwidthプロパティ値をpixelもしくは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含めて設定した場合：&#xA;　pixel単位で設定時、基準コンポーネント値は無視されて、ListViewのwidthが決定されます。&#xA;　割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてListViewのwidthが決定されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="同じ親を持つコンポーネントのうち、引数として渡されたコンポーネントより、ListViewが画面に一段階後ろに表示されるようにします。">
+        <Syntax text="ListView.moveToNext( objComp )&#xA;ListView.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントをオブジェクトに設定します。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNextCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでCellフォーカスを編集可能な次のCellに移動させるメソッドです。">
+        <Syntax text="ListView.moveToNextCell()">
+          <Return type="Boolean" description="Cellフォーカスの移動に成功した場合、 「true」を返します。&#xA;&#xA;Cellフォーカスの移動に失敗した場合、 「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="同じ親を持つコンポーネントのうち、引数として渡されたコンポーネントより、ListViewが画面の一段階前に表示されるようにします。">
+        <Syntax text="ListView.moveToPrev( objComp )&#xA;ListView.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントをオブジェクトに設定します。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrevCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでCellフォーカスを編集可能な以前のCellに移動させるメソッドです。">
+        <Syntax text="">
+          <Return type="Boolean" description="Cellフォーカスの移動に成功した場合は「true」を返します。&#xA;&#xA;Cellフォーカスの移動に失敗した場合は「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに宣言された特定のイベントを削除するメソッドです。">
+        <Syntax text="ListView.removeEvent( strEventID )">
+          <Return type="Boolean" description="イベントの削除に成功した場合は「true」を返します。&#xA;&#xA;イベントの削除に失敗、もしくは宣言されていないイベントIDの設定時は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ListViewから削除するイベントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="ListView.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="ListView.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのサイズを変更するメソッドです。">
+        <Syntax text="ListView.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのheightプロパティ値をpixelや割合（％）単位の数値に設定します。&#xA;負の値を設定することはできません。&#xA;&#xA;* 値に基準コンポーネントを含めて設定した場合：&#xA;pixel単位で設定時の基準コンポーネント値は無視され、pixel値でListViewのheightが決定されます。&#xA;割合（％）単位で設定時の基準コンポーネントのheightプロパティ値に基づいてListViewのheightが決定されます。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListViewのwidthプロパティ値をpixelや割合（％）単位の数値に設定します。&#xA;負の値を設定することはできません。&#xA;&#xA;* 値に基準コンポーネントを含めて設定した場合：&#xA;pixel単位で設定時の基準コンポーネント値は無視され、pixel値でListViewのwidthが決定されます。&#xA;割合（％）単位で設定時の基準コンポーネントのwidthプロパティ値に基づいてListViewのwidthが決定されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="selectRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで引数として渡された位置のアイテムを選択もしくは選択解除するメソッドです。">
+        <Syntax text="ListView.selectRow( nRowIdx [,bSelect] )">
+          <Return type="Boolean" description="アイテムの選択状態がメソッドの実行前と逆の状態に変更されると、trueを返します。&#xA;&#xA;アイテムの選択状態がメソッド実行前と同様である場合、falseを返します。" />
+          <Arguments>
+            <Argument name="bSelect" type="Boolean" in="false" out="false" option="false" variable="false" description="trueに設定時、アイテムの選択状態に関係なくアイテムを選択します。&#xA;falseに設定時、アイテムの選択状態に関係なくアイテムを選択解除します。&#xA;&#xA;値省略時、trueに適用されます。" />
+            <Argument name="nRowIdx" type="Number" in="false" out="false" option="false" variable="false" description="選択状態を変更するListViewアイテムのインデックスを数字で設定します。&#xA;&#xA;全体のアイテム数よりも大きい値もしくは負の値を設定する場合は、すべての選択が解除されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親が同じコンポーネントのうち、ListViewが画面の最背面に表示されるようにします。">
+        <Syntax text="ListView.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親が同じコンポーネントのうち、ListViewが画面に一段階後ろに表示されるようにします。">
+        <Syntax text="ListView.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のバンドで指定されたプロパティ値を設定するメソッドです。">
+        <Syntax text="ListView.setBandProperty( enumBand, strPropID, varValue )">
+          <Return type="Boolean" description="指定したバンドのプロパティ値の設定に成功した場合、「true」を返します。&#xA;&#xA;指定したバンドのプロパティ値の設定に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="enumBand" type="String" in="false" out="false" option="false" variable="false" description="プロパティ値を設定するバンドを文字列に設定します。&#xA;&#xA;「body」設定時、Bodyバンドのプロパティ値を設定します。&#xA;「detail」設定時、Detailバンドのプロパティ値を設定します。" />
+            <Argument name="strPropID" type="String" in="false" out="false" option="false" variable="false" description="値を設定するプロパティ名を文字列に設定します。" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="strProgID値に指定したプロパティに設定するプロパティ値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのbinddatasetプロパティにDataSetオブジェクトを設定するメソッドです。">
+        <Syntax text="ListView.setBindDataset( objDataset )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="binddatasetプロパティに設定するDataSetをオブジェクト形式で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setCellPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで現在選択されているアイテムに属するCellの特定のCellにフォーカスを移動するメソッドです。">
+        <Syntax text="ListView.setCellPos( strBandID, strCellID )">
+          <Return type="Boolean" description="Cellフォーカスの移動に成功した場合、「true」を返します。&#xA;&#xA;Cellフォーカスの移動に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="strBandID" type="String" in="false" out="false" option="false" variable="false" description="フォーカスを移動するCellが属するバンドを文字列に設定します。&#xA;&#xA;「body」設定時、BodyバンドのCellにフォーカスが移動します。&#xA;「detail」設定時、DetailバンドのCellにフォーカスが移動します。" />
+            <Argument name="strCellID" type="String" in="false" out="false" option="false" variable="false" description="フォーカスを移動するCellのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにて、特定Cellのプロパティ値を設定するメソッドです。">
+        <Syntax text="ListView.setCellProperty( enumBand, strCellID, strPropID, varValue )">
+          <Return type="Boolean" description="Cellの特定のプロパティ値の設定に成功した場合、「true」を返します。&#xA;&#xA;Cellの特定のプロパティ値の設定に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="enumBand" type="String" in="false" out="false" option="false" variable="false" description="プロパティ値を設定するCellが属するバンドを文字列に設定します。&#xA;&#xA;「body」設定時、Bodyバンドに属するCellのプロパティ値を設定します。&#xA;「detail」設定時、Detailバンドに属するCellのプロパティ値を設定します。" />
+            <Argument name="strCellID" type="String" in="false" out="false" option="false" variable="false" description="プロパティ値を設定するCellのIDを文字列で設定します。" />
+            <Argument name="strPropID" type="String" in="false" out="false" option="false" variable="false" description="値を設定するプロパティ名を文字列に設定します。" />
+            <Argument name="varValue" type="Variant" in="false" out="false" option="false" variable="false" description="strPropIDパラメータ値に該当するプロパティに設定するプロパティ値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cellが編集状態のときにエディタに表示される文字列を引数として渡された領域だけ選択するメソッドです。">
+        <Syntax text="ListView.setEditSelect( nBegin [,nEnd] )">
+          <Return type="Boolean" description="文字列の領域の選択に成功した場合は「true」を返します。&#xA;&#xA;文字列の領域の選択に失敗した場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="nBegin" type="Number" in="false" out="false" option="false" variable="false" description="選択領域の開始インデックスを数字で設定します。&#xA;&#xA;インデックスは0から始まり、「0~テキストの長さ」まで設定することができます。&#xA;-1を設定すると、キャレットが0番インデックスに位置し、領域を選択しません。" />
+            <Argument name="nEnd" type="Number" in="false" out="false" option="false" variable="false" description="選択領域の終了インデックスを数字で設定します。&#xA;&#xA;インデックスは0から始まり、「0~文字列の長さ」まで設定することができます。&#xA;-1を設定すると、選択範囲の終了位置が文字列の最右端に設定されます。&#xA;&#xA;値省略時、-1に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="ListView.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="ListView.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにフォーカスを与えるメソッドです。">
+        <Syntax text="ListView.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="ListViewがフォーカスされる前にフォーカスを持っていたコンポーネントを返します。 &#xA;&#xA;フォーカスを持つコンポーネントがなかったか、メソッド実行に失敗した場合には、「null」を返します。" />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="ListViewがコンテナコンポーネントの場合、子コンポーネントにフォーカスを移動するかを設定します。 &#xA;&#xA;「true」に設定時、子コンポーネントのフォーカスを受け取られる最初のコンポーネントがフォーカスになります。&#xA;「false」に設定時、ListViewにフォーカスされます。&#xA;&#xA;ListViewがコンテナコンポーネントの場合、値を設定しないと、「true」で動作します。" />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="親コンポーネントにスクロールがある場合、ListViewを基準にスクロールを移動するかを設定します。 &#xA;&#xA;「true」に設定時、ListViewが画面に表示されるようにスクロールを移動させます。&#xA;「false」に設定時、ListViewの位置に関係なく、スクロールを移動させません。&#xA;&#xA;値を設定しない場合は、「true」で動作します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewに表示するフォーマットのIDを設定するメソッドです。">
+        <Syntax text="ListView.setFormat( strFormatID )">
+          <Return type="Boolean" description="ListViewに表示するフォーマットのIDの設定に成功した場合は、「true」を返します。&#xA;&#xA;ListViewに表示するフォーマットのIDの設定に失敗した場合は、「false」を返します。" />
+          <Arguments>
+            <Argument name="strFormatID" type="String" in="false" out="false" option="false" variable="false" description="ListViewに表示するフォーマットのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親コンポーネントのTop位置を基準にListViewのbottom値をピクセル単位で設定するメソッドです。">
+        <Syntax text="ListView.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのTop位置を基準にListViewのbottom値をピクセル単位で設定するメソッドです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの高さをピクセル単位で設定するメソッドです。">
+        <Syntax text="ListView.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="ListViewの高さをピクセル単位の数値で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親コンポーネントのLeft位置を基準にListViewのleft値をピクセル単位で設定するメソッドです。">
+        <Syntax text="ListView.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのLeft位置を基準にListViewのleft値をピクセル単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親コンポーネントのLeft位置を基準にListViewのright値をピクセル単位で設定するメソッドです。">
+        <Syntax text="ListView.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのLeft位置を基準にListViewのright値をピクセル単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="親コンポーネントのTop位置を基準にListViewのtop値をピクセル単位で設定するメソッドです。">
+        <Syntax text="ListView.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのTop位置を基準にListViewのtop値をピクセル単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの幅をピクセル単位で設定するメソッドです。">
+        <Syntax text="ListView.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="ListViewの幅をピクセル単位の数値で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="スクリプトで動的に生成したListViewを画面に表示するメソッドです。">
+        <Syntax text="ListView.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="showDetailBand" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで特定のアイテムのDetailバンドを表示するメソッドです。">
+        <Syntax text="ListView.showDetailBand( nRow );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="Detailバンドを表示するアイテムのインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showEditor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在選択されているCellが編集可能な場合、編集モード用コントロールを表示するかを設定するメソッドです。">
+        <Syntax text="ListView.showEditor( bShow )">
+          <Return type="Boolean" description="メソッドが正常に実行された場合、「true」を返します。&#xA;&#xA;メソッドが正常に実行されないた場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="bShow" type="Boolean" in="false" out="false" option="false" variable="false" description="現在選択されているCellの編集モード用コントロールを表示するか設定します。&#xA;&#xA;「true」に設定時、現在選択されているCellが編集可能な状態であれば、編集モード用コントロールを表示します。&#xA;&quot;false&quot;に設定時、現在選択されているCellの編集モードが解除され、編集モード用コントロールを表示しません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onbandclick" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでCell領域以外のバンド領域をクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.onbandclick(obj:nexacro.ListView,e:nexacro.ListViewClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbanddblclick" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでCell領域以外のバンド領域をダブルクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.onbanddblclick(obj:nexacro.ListView,e:nexacro.ListViewClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbandexpandclick" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでBodyバンドの拡張バーをクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.onbandexpandclick(obj:nexacro.ListView,e:nexacro.ListViewClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbandstatuschanged" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでDetailバンドが表示もしくは非表示された際に発生するイベントです。">
+        <Syntax text="ListView.onbandstatuschanged(obj:nexacro.ListView,e:nexacro.ListViewBandStatusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewBandStatusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncellclick" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでBodyもしくはDetailバンド領域のCellをクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.oncellclick(obj:nexacro.ListView,e:nexacro.ListViewClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncelldblclick" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでBodyもしくはDetailバンド領域のCellをダブルクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.oncelldblclick(obj:nexacro.ListView,e:nexacro.ListViewClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncellexpandclick" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでCellの右側に表示された拡張ボタンをクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.oncellexpandclick(obj:nexacro.ListView,e:nexacro.ListViewClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncellimeaction" group="Event" deprecated="false" unused="false" requirement="Android NRE" description="キーボードの確定ボタン（EditText）もしくはEnterキーの入力時に発生するイベントです。">
+        <Syntax text="ListView.oncellimeaction(obj:nexacro.ListView,e:nexacro.ListViewKeyEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="イベントオブジェクト" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フォーマットが定義されていないListViewの領域でマウス左ボタンをクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.onclick(obj:nexacro.ListView,e:nexacro.ListViewClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncloseup" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView上に表示されているドロップダウンリストもしくはポップアップカレンダーが閉じられる際に発生するイベントです。">
+        <Syntax text="ListView.oncloseup(obj:nexacro.ListView,e:nexacro.ListViewEditEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewEditEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域でマウス右ボタンをクリックするか、タッチを一定時間維持する場合に発生するイベントです。">
+        <Syntax text="ListView.oncontextmenu(obj:nexacro.ListView,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListView.ondblclick(obj:nexacro.ListView,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondevicebuttonup" group="Event" deprecated="false" unused="false" requirement="Android NRE" description="モバイルでデバイスボタンを押した際に発生するイベントです。">
+        <Syntax text="ListView.ondevicebuttonup(obj:nexacro.ListView,e:nexacro.DeviceButtonEventInfo);">
+          <Return type="Boolean" description="「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;戻り値を省略すると、「false」として適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DeviceButtonEventInfo" in="false" out="false" option="false" variable="false" description="イベントオブジェクト" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でマウス左ボタンでドラッグしたときに発生するイベントです。">
+        <Syntax text="ListView.ondrag(obj:nexacro.ListView,e:nexacro.ListViewDragEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返すと、ドラッグ状態になり、上位コンポーネントにイベントが伝播されません。&#xA;イベントで戻り値として「false」を返すと、ドラッグ状態が解除され、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの戻り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewDragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ドラッグ状態のマウスポインタがListView領域内に移動したときに発生するイベントです。">
+        <Syntax text="ListView.ondragenter(obj:nexacro.ListView,e:nexacro.ListViewDragEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返すと、イベントが上位コンポーネントに伝播されません。&#xA;イベントで返り値として「false」を返すと、イベントが上位コンポーネントに伝播されます。&#xA;&#xA;イベントで返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewDragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ドラッグ状態のマウスポインタがListView領域外に移動したときに発生するイベントです。">
+        <Syntax text="ListView.ondragleave(obj:nexacro.ListView,e:nexacro.ListViewDragEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントで戻り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで戻り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewDragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でドラッグ状態のマウスポインタが移動したときに発生するイベントです。">
+        <Syntax text="ListView.ondragmove(obj:nexacro.ListView,e:nexacro.ListViewDragEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントで戻り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで戻り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewDragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でドラッグ状態のマウスボタンを離したときに発生するイベントです。">
+        <Syntax text="ListView.ondrop(obj:nexacro.ListView,e:nexacro.ListViewDragEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントで戻り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで戻り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewDragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondropdown" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのセル上でドロップダウンリストもしくはポップアップカレンダーが表示される際に発生するイベントです。">
+        <Syntax text="ListView.ondropdown(obj:nexacro.ListView,e:nexacro.ListViewEditEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewEditEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onenterdown" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでCellの編集モード用コントロールが有効になっている場合、エンターキーが入力されると発生するイベントです。">
+        <Syntax text="ListView.onenterdown(obj:nexacro.ListView,e:nexacro.ListViewEditEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewEditEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="入力を行う際に発生するイベントです。">
+        <Syntax text="ListView.oninput(obj:nexacro.ListView,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにフォーカスがある状態で、キーを押下した際に発生するイベントです。">
+        <Syntax text="ListView.onkeydown(obj:nexacro.ListView,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返した場合は上位コンポーネントにイベントが伝播されません。&#xA;イベントで戻り値として「false」を返した場合は上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで戻り値を省略した場合は「false」が適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにフォーカスがある状態で、押下されたキーを離したときに発生するイベントです。">
+        <Syntax text="ListView.onkeyup(obj:nexacro.ListView,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントで返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewからフォーカスが出るときに発生するイベントです。">
+        <Syntax text="ListView.onkillfocus(obj:nexacro.ListView,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でマウス左ボタンを押下したときに発生するイベントです。">
+        <Syntax text="ListView.onlbuttondown(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントで返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewMouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内で押下されたマウス左ボタンを離したときに発生するイベントです。">
+        <Syntax text="ListView.onlbuttonup(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントで返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewMouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でマウスの左/右ボタンを除く残りのボタンが押下されたときに発生するイベントです。">
+        <Syntax text="ListView.onmousedown(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返すと、イベントが上位コンポーネントに伝播されません。&#xA;イベントで戻り値として「false」を返すと、イベントが上位コンポーネントに伝播されます。&#xA;&#xA;イベントで戻り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewMouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内にマウスポインターが入ってきたときに発生するイベントです。　">
+        <Syntax text="ListView.onmouseenter(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返すと、イベントが上位コンポーネントに伝播されません。&#xA;イベントで返り値として「false」を返すと、イベントが上位コンポーネントに伝播されます。&#xA;&#xA;イベントで返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域外にマウスポインターが移動したときに発生するイベントです。">
+        <Syntax text="ListView.onmouseleave(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返すと、イベントが上位コンポーネントに伝播されません。&#xA;イベントで返り値として「false」を返すと、イベントが上位コンポーネントに伝播されます。&#xA;&#xA;イベントで返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でマウスポインターが移動するときに発生するイベントです。">
+        <Syntax text="ListView.onmousemove(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返すと、イベントが上位コンポーネントに伝播されません。&#xA;イベントで返り値として「false」を返すと、イベントが上位コンポーネントに伝播されます。&#xA;&#xA;イベントで返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="マウスの左/右ボタンを除く残りのボタンをListViewの領域内で離したときに発生するイベントです。">
+        <Syntax text="ListView.onmouseup(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返すと、イベントが上位コンポーネントに伝播されません。&#xA;イベントで戻り値として「false」を返すと、イベントが上位コンポーネントに伝播されます。&#xA;&#xA;イベントで戻り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ListViewMouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="ListView.onmousewheel(obj:nexacro.ListView,e:nexacro.);">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewの位置が移動したときに発生するイベントです。">
+        <Syntax text="ListView.onmove(obj:nexacro.ListView,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onnodataareaclick" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでCellもしくはバンドではない領域をクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.onnodataareaclick(obj:nexacro.ListView,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onnodataareadblclick" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewでCellもしくはバンドではない領域をダブルクリックしたときに発生するイベントです。">
+        <Syntax text="ListView.onnodataareadblclick(obj:nexacro.ListView,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でマウスの右ボタンを押下した際に発生するイベントです。">
+        <Syntax text="ListView.onrbuttondown(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返した場合は上位コンポーネントにイベントが伝播されません。&#xA;イベントで戻り値として「false」を返した場合は上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで戻り値を省略した場合は「false」が適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でマウスの右ボタンを離した際に発生するイベントです。">
+        <Syntax text="ListView.onrbuttonup(obj:nexacro.ListView,e:nexacro.ListViewMouseEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返した場合は上位コンポーネントにイベントが伝播されません。&#xA;イベントで戻り値として「false」を返した場合は上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントで戻り値を省略した場合は「false」が適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onselectchanged" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで選択範囲が変更された後に発生するイベントです。">
+        <Syntax text="ListView.onselectchanged(obj:nexacro.ListView,e:nexacro.ListViewSelectEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ListViewSelectEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewにフォーカスが入ったときに発生するイベントです。">
+        <Syntax text="ListView.onsetfocus(obj:nexacro.ListView,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewのサイズが変更されたときに発生するイベントです。">
+        <Syntax text="ListView.onsize(obj:nexacro.ListView,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でタッチを離したときに発生するイベントです。">
+        <Syntax text="ListView.ontouchend(obj:nexacro.ListView,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でタッチ状態を維持しながら移動するときに発生するイベントです。">
+        <Syntax text="ListView.ontouchmove(obj:nexacro.ListView,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView領域内でタッチが始まるときに発生するイベントです。">
+        <Syntax text="ListView.ontouchstart(obj:nexacro.ListView,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvscroll" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViewで垂直スクロールバーを移動したときに発生するイベントです。">
+        <Syntax text="ListView.onvscroll(obj:nexacro.ListView,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+    <ContentsInfo contentsformat="XML" contentstype="formats" showobjtree="false" useundo="false">
+      <Contents tagname="Formats" typename="" maxoccurs="1">
+        <Contents tagname="Format" typename="" maxoccurs="-1">
+          <Contents tagname="Band" typename="nexacro._ListViewBandControl" minocurrs="0" maxoccurs="body,detail">
+            <Contents tagname="Cell" typename="nexacro._ListViewCellControl" maxoccurs="-1" />
+          </Contents>
+        </Contents>
+      </Contents>
+    </ContentsInfo>
+  </Object>
+</MetaInfo>

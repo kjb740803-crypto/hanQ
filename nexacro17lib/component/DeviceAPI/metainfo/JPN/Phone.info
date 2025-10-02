@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Phone">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.Phone" shorttypename="Phone" csstypename="ExternalAPI" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="スマフォンに特化した機能を提供するオブジェクトとしてダイヤルなどの機能を提供します。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="makeCall" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="モバイル機器にて、引数として渡された電話番号に電話連結画面を表示する静的メソッドです。">
+        <Syntax text="Phone.makeCall( strPhoneNumber [, bAutoDialing] )">
+          <Return type="Boolean" description="strPhoneNumberが省略されたり許可されていない文字が使用された場合には、「false」を返します。&#xA;&#xA;それ以外の通常の場合には、「true」を返します。" />
+          <Arguments>
+            <Argument name="bAutoDialing" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」に設定した場合、電話連結画面に切り替えた後ダイヤルが自動的に行われます。&#xA;&quot;false&quot;に設定した場合、電話連結画面への切り替えのみ可能であり、ダイアルが自動的に行われません。&#xA;&#xA;値省略時、「false」に適用されます。&#xA;iOS/iPadOS NREは設定値に関係なく、「false」に適用されます。" />
+            <Argument name="strPhoneNumber" type="String" in="false" out="false" option="false" variable="false" description="電話を繋ぐ相手の電話番号を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

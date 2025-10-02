@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Mobile_PayInfo" width="480" height="728" titletext="New Form" onload="Form_onload">
+    <Layouts>
+      <Layout height="728" mobileorientation="portrait" screenid="Phone_screen" width="480">
+        <Div id="div_search" taborder="0" left="10" top="40" height="50" right="10" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" cssclass="div_WFSA">
+          <Layouts>
+            <Layout>
+              <Static id="Static00" taborder="0" text="년월" left="4" top="14" width="72" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+              <Combo id="comYear" taborder="1" text="Combo00" left="89" top="8" width="120" height="31" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" onitemchanged="div_search_comYear_onitemchanged">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">%</Col>
+                      <Col id="datacolumn">전체</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2021</Col>
+                      <Col id="datacolumn">2021</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2022</Col>
+                      <Col id="datacolumn">2022</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2023</Col>
+                      <Col id="datacolumn">2023</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2024</Col>
+                      <Col id="datacolumn">2024</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">2025</Col>
+                      <Col id="datacolumn">2025</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Combo>
+              <Combo id="comMonth" taborder="2" text="Combo01" left="217" top="8" width="133" height="33" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" onitemchanged="div_search_comMonth_onitemchanged" canitemchange="div_search_comMonth_canitemchange">
+                <Dataset id="innerdataset">
+                  <ColumnInfo>
+                    <Column id="codecolumn" size="256"/>
+                    <Column id="datacolumn" size="256"/>
+                  </ColumnInfo>
+                  <Rows>
+                    <Row>
+                      <Col id="codecolumn">00</Col>
+                      <Col id="datacolumn">전체</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">01</Col>
+                      <Col id="datacolumn">01월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">02</Col>
+                      <Col id="datacolumn">02월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">03</Col>
+                      <Col id="datacolumn">03월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">04</Col>
+                      <Col id="datacolumn">04월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">05</Col>
+                      <Col id="datacolumn">05월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">06</Col>
+                      <Col id="datacolumn">06월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">07</Col>
+                      <Col id="datacolumn">07월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">08</Col>
+                      <Col id="datacolumn">08월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">09</Col>
+                      <Col id="datacolumn">09월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">10</Col>
+                      <Col id="datacolumn">10월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">11</Col>
+                      <Col id="datacolumn">11월</Col>
+                    </Row>
+                    <Row>
+                      <Col id="codecolumn">12</Col>
+                      <Col id="datacolumn">12월</Col>
+                    </Row>
+                  </Rows>
+                </Dataset>
+              </Combo>
+              <Button id="btn_retrieve" taborder="3" text="조회" top="11" width="78" height="30" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" onclick="btn_retrieve_onclick" left="372"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Grid id="Grid00" taborder="1" left="12" top="96" width="458" height="593" binddataset="ds_PayInfo" autofittype="col" summarytype="top">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="85"/>
+                <Column size="68"/>
+                <Column size="96"/>
+                <Column size="64"/>
+                <Column size="146"/>
+              </Columns>
+              <Rows>
+                <Row size="40" band="head"/>
+                <Row size="40"/>
+                <Row size="30" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="일자"/>
+                <Cell col="1" text="NO"/>
+                <Cell col="2" text="성명"/>
+                <Cell col="3" text="구분"/>
+                <Cell col="4" text="금액"/>
+              </Band>
+              <Band id="body">
+                <Cell text="expr:String(REG_DT).substr(4,2) + &quot;-&quot; + String(REG_DT).substr(6,2)" textAlign="center" suppress="1"/>
+                <Cell col="1" text="bind:MEMBER_NO" textAlign="center"/>
+                <Cell col="2" text="bind:MEMBER_NAME" textAlign="center"/>
+                <Cell col="3" text="expr:GUBUN == '001' ? &quot;수입&quot; : &quot;지출&quot;" textAlign="center"/>
+                <Cell col="4" text="bind:PAY_AMT" textAlign="right" displaytype="number"/>
+              </Band>
+              <Band id="summary">
+                <Cell/>
+                <Cell col="1"/>
+                <Cell col="2"/>
+                <Cell col="3" text="합계"/>
+                <Cell col="4" text="expr:dataset.getCaseSum( &quot;GUBUN == '001'&quot;, &quot;PAY_AMT&quot; ) - dataset.getCaseSum( &quot;GUBUN != '001'&quot;, &quot;PAY_AMT&quot; )" displaytype="number" textAlign="right"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="st_title" taborder="2" text="회비관리" left="10" top="5" width="110" height="30" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" cssclass="sta_WF_emptitle"/>
+      </Layout>
+      <Layout height="728" mobileorientation="portrait" screenid="Phone_screen" width="480" name="default0"/>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_PayInfo" onrowsetchanged="Dataset00_onrowsetchanged">
+        <ColumnInfo>
+          <Column id="MEMBER_NO" type="STRING" size="256"/>
+          <Column id="MEMBER_NAME" type="STRING" size="256"/>
+          <Column id="GUBUN" type="STRING" size="256"/>
+          <Column id="PAY_AMT" type="STRING" size="256"/>
+          <Column id="REG_DT" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[this.Form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	var objDate = new nexacro.Date();
+	this.div_search.form.comMonth.set_enable(true);
+	this.div_search.form.comYear.set_value(objDate.getYear());	
+	this.div_search.form.comMonth.set_value(String((objDate.getMonth()+1)).padLeft(2, '0'));
+	
+	this.fn_query();
+	  
+};
+
+
+
+this.btn_retrieve_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fn_query();	
+};
+
+this.fn_query = function()
+{
+	this.gfn_transCOMMClear();   
+	// input , output,args,select  
+	var strMonth = "";
+	if(this.div_search.form.comMonth.value != "00")
+	{
+		strMonth = this.div_search.form.comMonth.value;
+	}  
+	var args =  "REG_DT='" +this.div_search.form.comYear.value + strMonth +  "%'";
+
+	this.gfn_addTransInfo("","output",args,"003,PayInfo,1");	
+
+
+   
+	var strSvcId    = "search";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";           
+	var outData     = "ds_PayInfo=output";
+	var strArg      = ""
+	  
+	var callBackFnc = "fnCallback";      
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+this.fnCallback = function(svcID, errCD, errMSG)
+{
+	if(errCD < 0){
+		this.alert("Error: " + errMSG);
+		return;
+	}
+}	
+
+this.div_search_comMonth_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	this.fn_query();
+};
+
+this.div_search_comYear_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	if(this.div_search.form.comYear.value == "%")
+	{
+		this.div_search.form.comMonth.set_value("00");
+		this.div_search.form.comMonth.set_enable(false);
+	} else {
+		this.div_search.form.comMonth.set_enable(true);
+	}
+	
+	this.fn_query();
+};
+
+]]></Script>
+  </Form>
+</FDL>

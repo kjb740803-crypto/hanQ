@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TypeDefinition version="2.3">
+  <Modules>
+    <Module url="CompBase.json"/>
+    <Module url="ComComp.json"/>
+    <Module url="Grid.json"/>
+    <Module url="DeviceAPI.json"/>
+    <Module url="ListView.json"/>
+    <Module url="EduLib.json"/>
+  </Modules>
+  <Components>
+    <Component type="JavaScript" id="Button" classname="nexacro.Button"/>
+    <Component type="JavaScript" id="Combo" classname="nexacro.Combo"/>
+    <Component type="JavaScript" id="Edit" classname="nexacro.Edit"/>
+    <Component type="JavaScript" id="MaskEdit" classname="nexacro.MaskEdit"/>
+    <Component type="JavaScript" id="TextArea" classname="nexacro.TextArea"/>
+    <Component type="JavaScript" id="Static" classname="nexacro.Static"/>
+    <Component type="JavaScript" id="Div" classname="nexacro.Div"/>
+    <Component type="JavaScript" id="PopupDiv" classname="nexacro.PopupDiv"/>
+    <Component type="JavaScript" id="Radio" classname="nexacro.Radio"/>
+    <Component type="JavaScript" id="CheckBox" classname="nexacro.CheckBox"/>
+    <Component type="JavaScript" id="ListBox" classname="nexacro.ListBox"/>
+    <Component type="JavaScript" id="Grid" classname="nexacro.Grid"/>
+    <Component type="JavaScript" id="Spin" classname="nexacro.Spin"/>
+    <Component type="JavaScript" id="Menu" classname="nexacro.Menu"/>
+    <Component type="JavaScript" id="PopupMenu" classname="nexacro.PopupMenu"/>
+    <Component type="JavaScript" id="Tab" classname="nexacro.Tab"/>
+    <Component type="JavaScript" id="GroupBox" classname="nexacro.GroupBox"/>
+    <Component type="JavaScript" id="Calendar" classname="nexacro.Calendar"/>
+    <Component type="JavaScript" id="ImageViewer" classname="nexacro.ImageViewer"/>
+    <Component type="JavaScript" id="ProgressBar" classname="nexacro.ProgressBar"/>
+    <Component type="JavaScript" id="Plugin" classname="nexacro.Plugin"/>
+    <Component type="JavaScript" id="Dataset" classname="nexacro.NormalDataset"/>
+    <Component type="JavaScript" id="FileUpload" classname="nexacro.FileUpload"/>
+    <Component type="JavaScript" id="FileDownload" classname="nexacro.FileDownload"/>
+    <Component type="JavaScript" id="Sketch" classname="nexacro.Sketch"/>
+    <Component type="JavaScript" id="Camera" classname="nexacro.Camera"/>
+    <Component type="JavaScript" id="WebBrowser" classname="nexacro.WebBrowser"/>
+    <Component type="JavaScript" id="GoogleMap" classname="nexacro.GoogleMap"/>
+    <Component type="JavaScript" id="ListView" classname="nexacro.ListView"/>
+    <Component type="JavaScript" id="WebView" classname="nexacro.WebView"/>
+  </Components>
+  <Services>
+    <Service prefixid="theme" type="resource" url="./_resource_/_theme_/" version="0" communicationversion="0" cachelevel="session" include_subdir="true"/>
+    <Service prefixid="initvalue" type="resource" url="./_resource_/_initvalue_/" version="0" communicationversion="0" cachelevel="session" include_subdir="false"/>
+    <Service prefixid="imagerc" type="resource" url="./_resource_/_images_/" cachelevel="session" include_subdir="true"/>
+    <Service prefixid="font" type="resource" url="./_resource_/_font_/" version="0" communicationversion="0" cachelevel="session" include_subdir="false"/>
+    <Service prefixid="xcssrc" type="resource" url="./_resource_/_xcss_/" cachelevel="session" include_subdir="false"/>
+    <Service prefixid="FrameBase" type="form" url="./FrameBase/" cachelevel="session" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="Images" type="file" cachelevel="session" url="./Images/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="Lib" type="js" cachelevel="session" url="./Lib/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="SvcURL" type="JSP" cachelevel="none" url="http://onewheel.cafe24.com/Sports/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="Mobile" type="form" cachelevel="session" url="./Mobile/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="File" type="file" cachelevel="session" url="./File/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="Popup" type="form" url="./Popup/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+    <Service prefixid="EduLib" type="js" url="./nexacro17lib/component/EduLib/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
+  </Services>
+  <Protocols/>
+  <Update>
+    <Os name="Windows" url="./" timeout="30" retry="3" autoupdate="auto" modulepath="C:\Program Files (x86)\nexacro\17\nexacro17lib\" updatetype="server"/>
+    <Os name="Android" url="./" retry="3" timeout="30" autoupdate="auto" modulepath="C:\Program Files (x86)\nexacro\17\nexacro17lib\">
+      <Version name="common">
+        <Resource type="Module" file="nexacro17lib.zip" version="2" targetpath="./" failpass="false" description=""/>
+        <Resource type="File" file="Archive00.xzip" version="7" targetpath="./" failpass="false" description=""/>
+        <Resource type="Resource" file="Resource.zip" version="2" targetpath="./" failpass="false" description=""/>
+      </Version>
+    </Os>
+    <Os name="iOS" url="./" retry="3" timeout="30" autoupdate="auto" modulepath="C:\Program Files (x86)\nexacro\17\nexacro17lib\" updatetype="update">
+      <Version name="common">
+        <Resource type="Module" file="nexacro17lib.zip" version="2" targetpath="./" description=""/>
+        <Resource type="Engine" file="Run.zip" version="20190220143213" targetpath="./" description=""/>
+        <Resource type="File" file="Archive00.xzip" version="1" targetpath="./" description=""/>
+        <Resource type="Resource" file="Resource.zip" version="2" targetpath="./" description=""/>
+        <Resource type="Engine" file="https://cacao.tobesoft.co.kr/~nexacro/appbuilder/tops//353/app.plist" version="12" targetpath="./"/>
+      </Version>
+    </Os>
+    <Os name="macOS" url="./" timeout="30" retry="3" autoupdate="auto">
+      <Version name="common"/>
+    </Os>
+  </Update>
+  <Deploy>
+    <Os name="Windows"/>
+    <Os name="iOS"/>
+  </Deploy>
+</TypeDefinition>

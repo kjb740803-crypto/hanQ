@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="http://www.tobesoft.com/platform/dataset" ver="5000">
+  <Parameters>
+    <Parameter id="ErrorCode" type="int">0</Parameter>
+    <Parameter id="ErrorMsg" type="string">success</Parameter>
+  </Parameters>
+  <Dataset id="test">
+    <ColumnInfo>
+      <Column id="DOMAIN" type="string" size="255"/>
+      <Column id="MODEL" type="string" size="255"/>
+      <Column id="DESCRIPTION" type="string" size="255"/>
+      <Column id="DATASOURCE" type="string" size="255"/>
+    </ColumnInfo>
+    <Rows>
+      <Row>
+        <Col id="DOMAIN">metadata</Col>
+        <Col id="MODEL">metadata</Col>
+        <Col id="DESCRIPTION">description</Col>
+        <Col id="DATASOURCE">DB</Col>
+        <DatasetLayout>
+          <Dataset id="output">
+            <ColumnInfo>
+              <Column id="NAME" type="string" size="255"/>
+              <Column id="TYPE" type="string" size="255"/>
+              <Column id="DESCRIPTION" type="string" size="255"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="NAME">metadata</Col>
+                <Col id="TYPE">dataset</Col>
+                <Col id="DESCRIPTION">DETAIL&amp;#32;DATA</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+          <Dataset id="metadata">
+            <ColumnInfo>
+              <Column id="ENG_NM" type="string" size="255"/>
+              <Column id="NM" type="string" size="255"/>
+              <Column id="COL_DESC" type="string" size="255"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="ENG_NM">DEPT_CD</Col>
+                <Col id="NM">부서코드</Col>
+                <Col id="COL_DESC">부서코드</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">DEPT_NAME</Col>
+                <Col id="NM">DEPT_NAME</Col>
+                <Col id="COL_DESC">DEPT_NAME</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">EMPL_ID</Col>
+                <Col id="NM">사번</Col>
+                <Col id="COL_DESC">사번</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">FULL_NAME</Col>
+                <Col id="NM">성명</Col>
+                <Col id="COL_DESC">성명</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">GENDER</Col>
+                <Col id="NM">성별</Col>
+                <Col id="COL_DESC">성별</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">HIRE_DATE</Col>
+                <Col id="NM">입사일자</Col>
+                <Col id="COL_DESC">입사일자</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">MARRIED</Col>
+                <Col id="NM">결혼여부</Col>
+                <Col id="COL_DESC">결혼여부</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">MEMO</Col>
+                <Col id="NM">메모</Col>
+                <Col id="COL_DESC">메모</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">POS_CD</Col>
+                <Col id="NM">직위코드</Col>
+                <Col id="COL_DESC">직위코드</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">POS_NAME</Col>
+                <Col id="NM">POS_NAME</Col>
+                <Col id="COL_DESC">POS_NAME</Col>
+              </Row>
+              <Row>
+                <Col id="ENG_NM">SALARY</Col>
+                <Col id="NM">급여</Col>
+                <Col id="COL_DESC">급여</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </DatasetLayout>
+      </Row>
+    </Rows>
+  </Dataset>
+</Root>

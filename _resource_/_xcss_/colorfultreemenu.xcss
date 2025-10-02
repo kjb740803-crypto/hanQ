@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XCSS version="1.0"><![CDATA[.Grid .body .row .cell.cellTreeLevel0 .celltreeitem .treeitemimage[userstatus=expand],
+.Grid .body .row .cell.cellTreeLevel0 .celltreeitem .treeitemimage[userstatus=collapse]
+{
+	-nexa-icon : url('imagerc::colorfultreemenu/img-level0.png');
+}
+.Grid .body .row .cell.cellTreeLevel1 .celltreeitem .treeitemimage[userstatus=expand],
+.Grid .body .row .cell.cellTreeLevel1 .celltreeitem .treeitemimage[userstatus=collapse]
+{
+	-nexa-icon : url('imagerc::colorfultreemenu/img-level1.png');
+}
+.Grid .body .row .cell.cellTreeLevel2 .celltreeitem .treeitemimage[userstatus=expand],
+.Grid .body .row .cell.cellTreeLevel2 .celltreeitem .treeitemimage[userstatus=collapse]
+{
+	-nexa-icon : url('imagerc::colorfultreemenu/img-level2.png');
+}
+.Grid .body .row .cell .celltreeitem .treeitemimage[userstatus=leaf]
+{
+	-nexa-icon : url('imagerc::colorfultreemenu/img-user1.png');
+}
+.Grid
+{
+	-nexa-border : 1px solid #dddddd;
+}
+.Grid .body .row .cell
+{
+	-nexa-border : 0px none, 0px none, 1px solid #dddddd;
+}
+.Grid .body .row .cell.treeCellExpand, .Grid .body .row .cell.treeCellExpand[status=mouseover],
+.Grid .body .row .cell.treeCellExpand[status=focused], .Grid .body .row .cell.treeCellExpand[userstatus=selected]
+{
+	background : url('imagerc::colorfultreemenu/img-expand.png') no-repeat 95% center;
+}
+.Grid .body .row .cell.treeCellCollapse, .Grid .body .row .cell.treeCellCollapse[status=mouseover],
+.Grid .body .row .cell.treeCellCollapse[status=focused], .Grid .body .row .cell.treeCellCollapse[userstatus=selected]
+{
+	background : url('imagerc::colorfultreemenu/img-collapse.png') no-repeat 95% center;
+}
+.Grid .body .row .cell .celltreeitem .treeitembutton[userstatus=expand],
+.Grid .body .row .cell .celltreeitem .treeitembutton[userstatus=collapse]
+{
+	-nexa-icon : none;
+}
+.Grid .body .row .cell.treeBtn, .Grid .body .row .cell.treeBtn[status=mouseover],
+.Grid .body .row .cell.treeBtn[status=focused]
+{
+	background : url('imagerc::colorfultreemenu/img-expand.png') no-repeat center center;
+}
+.Grid .body .row .cell.treeBtn[userstatus=selected]
+{
+	background : url('imagerc::colorfultreemenu/img-collapse.png') no-repeat center center;
+}]]></XCSS>

@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Dataset">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.NormalDataset" shorttypename="Dataset" csstypename="Dataset" csscontrolname="" group="Object" subgroup="Dataset" csspseudo="false" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="dataset" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="onload" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="データをテーブル形式で保存するコンポーネントです。&#xA;&#xA;nexacroの実行エンジンと密接に関連していて、内部で使用するデータはDataset形式を使用しています。&#xA;各コンポーネントはDatasetのバインドを利用してデータの変更内容を共有します。&#xA;Datasetはサーバとのデータ交換における中心的な役割も持ち、loadメソッドによりデータの取得、およびApplication.transactionメソッド、Form.transactionメソッドにより双方向のデータ交換を行うことができます。&#xA;&#xA;Datasetのカラムやレコードを追加、削除、修正するメソッド、レコードグルーピング、ソート、フィルタ機能、統計メソッド（Sum、Max、Min、Avg、Count）をサポートします。また、他のDatasetをマージ、追加、コピーする機能をサポートします。&#xA;&#xA;filterstrプロパティに式を指定することで、datasetのレコードがフィルタリングされます。&#xA;keystringプロパティによってグルーピング、並び替えができます。" />
+    <PropertyInfo>
+      <Property name="arguments" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのurlプロパティに設定されたBusiness Serviceに渡す引数を設定するプロパティです。" csspropertyname="" normalpropertyname="arguments" />
+      <Property name="binddataobject" group="Binding" subgroup="" refreshinfo="" edittype="DataObjectID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DatasetオブジェクトとバインドするDataObjectオブジェクトのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="binddataobject" />
+      <Property name="colcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetに定義されたColumnの数を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="colcount" />
+      <Property name="colinfos" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetに定義されたColumn情報をCollection形で持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="colinfos" />
+      <Property name="constcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetに定義されたConst Column（定数カラム）の数を持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="constcount" />
+      <Property name="dataobjectpath" group="Binding" subgroup="" refreshinfo="" edittype="DataObjectPath" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="バインドされたDataObjectオブジェクトの全体データパスから新しいルート情報を設定するプロパティです。" csspropertyname="" normalpropertyname="dataobjectpath" />
+      <Property name="enableevent" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetのイベント発生有無を設定するプロパティです。" csspropertyname="" normalpropertyname="enableevent" />
+      <Property name="filterstr" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにロードされたデータをフィルタする条件式を設定するプロパティです。" csspropertyname="" normalpropertyname="filterstr" />
+      <Property name="keystring" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにロードされたデータをグループ化する基準となる条件式を設定するプロパティです。" csspropertyname="" normalpropertyname="keystring" />
+      <Property name="loadfiltermode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="keep" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LoadMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにデータをロードするか、もしくはトランザクションを実行するときにfilterstrプロパティ値の適用方法を設定するプロパティです。" csspropertyname="" normalpropertyname="loadfiltermode" />
+      <Property name="loadkeymode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="keep" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LoadMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにデータをロードするか、もしくはトランザクションを実行するときにkeystringプロパティ値の適用方法を設定するプロパティです。" csspropertyname="" normalpropertyname="loadkeymode" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="preload" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのurlプロパティを設定した場合、DataSetのデータをロードする時点を設定するプロパティです。" csspropertyname="" normalpropertyname="preload" />
+      <Property name="progressload" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="サーバーからデータをChunked形式で複数回に分けてダウンロードする場合の処理方法を設定するプロパティです。" csspropertyname="" normalpropertyname="progressload" />
+      <Property name="reversesubsum" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetがkeystringプロパティによってグループ化された際にグループ小計が表示される位置を設定するプロパティです。" csspropertyname="" normalpropertyname="reversesubsum" />
+      <Property name="rowcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにロードされたデータの数を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="rowcount" />
+      <Property name="rowposition" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetから現在選択されてデータのRowインデックスを持つプロパティです。" csspropertyname="" normalpropertyname="rowposition" />
+      <Property name="saveinfinity" group="DataRule" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DataSetValidation" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにてタイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたInfinity値の処理方法を設定するプロパティです。" csspropertyname="" normalpropertyname="saveinfinity" />
+      <Property name="saveinvaliddate" group="DataRule" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DataSetValidation" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにてタイプがDATE、TIME、DATETIMEであるColumnに保存された無効な日付の処理方法を設定するプロパティです。" csspropertyname="" normalpropertyname="saveinvaliddate" />
+      <Property name="savenan" group="DataRule" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DataSetValidation" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにてタイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたNaN値の処理方法を設定するプロパティです。" csspropertyname="" normalpropertyname="savenan" />
+      <Property name="serverdatasetid" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのurlプロパティに設定されたBusiness Serviceを介して配信されたDataSetの中で実際に使用されるDataSetのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="serverdatasetid" />
+      <Property name="updatecontrol" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのデータがInsert/Update/Deleteされた場合、各RowTypeを自動的に変更するかを設定する属性です。" csspropertyname="" normalpropertyname="updatecontrol" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DatasetにBusiness Serviceを接続する場合に該当サービスのパス(URL)を設定するプロパティです。" csspropertyname="" normalpropertyname="url" />
+      <Property name="useclientlayout" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="トランザクションを実行して、受信されたDataSetのColumn Layoutを適用するかを設定するプロパティです。" csspropertyname="" normalpropertyname="useclientlayout" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DatasetにColumnを追加するメソッドです。">
+        <Syntax text="Dataset.addColumn( strColID, strColType [,nColSize [, strDatapath]] )">
+          <Return type="Number" description="DataSetに追加されたColumnのインデックスを返します。&#xA;もし、Columnの追加に失敗した場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nColSize" type="Number" in="false" out="false" option="false" variable="false" description="Datasetに追加するColumnのデータのサイズを指定します。&#xA;&#xA;値を省略すると、「256」が適用されます。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Datasetに追加するColumnのIDを文字列として指定します。" />
+            <Argument name="strColType" type="String" in="false" out="false" option="false" variable="false" description="Datasetに追加するColumnのタイプを指定します。" />
+            <Argument name="strDatapath" type="String" in="false" out="false" option="false" variable="false" description="データからカラム値として取得するdatapathを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addColumnInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetでColumnInfoオブジェクトを使用してColumnを追加するメソッドです。">
+        <Syntax text="Dataset.addColumnInfo( strID, objColInfo )">
+          <Return type="Number" description="DataSetに追加されたColumnのインデックスを返します。&#xA;もし、Columnの追加に失敗した場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objColInfo" type="Object" in="false" out="false" option="false" variable="false" description="DataSetに追加するColumnInfoオブジェクトを設定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="DataSetに追加するColumnのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DatasetにConst Columnを追加するメソッドです。">
+        <Syntax text="Dataset.addConstColumn( strColID, varVal [, strColType [, nColSize [, strDatapath]]] )">
+          <Return type="Number" description="Datasetに追加されたConst Columnのインデックスを返します。&#xA;&#xA;Const Columnの追加に失敗した場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="nColSize" type="Number" in="false" out="false" option="false" variable="false" description="Datasetに追加するConst Columnのデータサイズを指定します。&#xA;&#xA;値を省略すると、sizeが設定されません。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Datasetに追加するConst ColumnのIDを文字列として指定します。&#xA;&#xA;指定した値と同じConst Columnがすでに存在する場合は値を変更します。" />
+            <Argument name="strColType" type="String" in="false" out="false" option="false" variable="false" description="Datasetに追加するConst Columnのタイプを指定します。&#xA;&#xA;値を省略すると、タイプが設定されないか、不正な値が設定されることがあります。" />
+            <Argument name="strDatapath" type="String" in="false" out="false" option="false" variable="false" description="JSONデータからカラム値として取得するdatapathを指定します。&#xA;$を使ったルートパスを指定します。&#xA;@を使用して繰り返しデータを選択した場合、最初の値を取得します。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="Datasetに追加するConst Columnの値を指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetにイベントを宣言して追加するメソッドです。">
+        <Syntax text="Dataset.addEvent( strEventID )">
+          <Return type="Boolean" description="イベントの追加に成功した場合は「true」を返します。&#xA;&#xA;イベントの追加に失敗した場合、もしくは同一のイベントIDが既に宣言されている場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetのイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="Dataset.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="検索結果の関数をDatasetのイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="Dataset.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数が定義されているスコープを指定します。指定した領域で見つからない場合は上位の領域で検索を行います。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントIDを指定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="検索対象のハンドラ関数の名前を文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetの最終Rowに新しいデータ（Row）を追加するメソッドです。">
+        <Syntax text="Dataset.addRow()">
+          <Return type="Number" description="DataSetに追加されたRowのインデックスを返します。&#xA;もし、Rowの追加に失敗した場合、「-1」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="append" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="引数として渡されたサービスパス（URL）からデータをロードして、現在のDataSetの最終Rowの次に追加するメソッドです。">
+        <Syntax text="Dataset.append([strUrl])">
+          <Return type="" description="選択がキャンセルされたRowの数です。" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="データをロードするためのサービスパス（URL）を設定します。&#xA;許可される形式については、DataSetのurlプロパティを参照してください。&#xA;&#xA;値を設定しない場合、DataSet内のurlプロパティ値が適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="appendData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在のDatasetの最終Rowの次に指定したDatasetのデータ（Row）を追加するメソッドです。">
+        <Syntax text="Dataset.appendData( objDataset [,bCheckCol [,bUpdateConstCol]] )">
+          <Return type="Number" description="新しく追加されたデータを含む現在のDatasetの全体のRowの数を返します。" />
+          <Arguments>
+            <Argument name="bCheckCol" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」に設定時、同じColumnにデータが追加されます。&#xA;「false」に設定時、Column順に合わせてデータが追加されます。&#xA; &#xA;値省略時、「false」に適用されます。" />
+            <Argument name="bUpdateConstCol" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」に設定時、同じIDのConst Columnに定数値を変更します。&#xA;「false」に設定時、同じIDのConst Columnに定数値を変更しません。&#xA; &#xA;値省略時、「false」に適用されます。" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="追加されるデータ（Row）を持っているDataSetをオブジェクトに設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="applyChange" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DatasetオブジェクトのRowのタイプを「Dataset.ROWTYPE_NORMAL」に変更するメソッドです。">
+        <Syntax text="Dataset.applyChange()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="assign" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在のDataSetに指定したDataSetのRow、Column情報と、すべてのデータを付与するメソッドです。">
+        <Syntax text="Dataset.assign( objDataset )">
+          <Return type="Number" description="現在のDataSetに付与されたRowの数を返します。" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="Row、Column情報と、すべてのデータをインポートするDataSetをオブジェクトに設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DatasetのRow、Column情報とデータをすべて削除するメソッドです。">
+        <Syntax text="Dataset.clear()">
+          <Return type="Number" description="削除されたデータ（Row）の数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DatasetのColumn情報以外に、すべてのデータ（Row）を削除するメソッドです。">
+        <Syntax text="Dataset.clearData()">
+          <Return type="Number" description="削除されたデータ（Row）の数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="Dataset.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="copyData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在DataSetに指定したDataSetのデータ（Row）をコピーするメソッドです。">
+        <Syntax text="Dataset.copyData( objDataset [, bFilteredOnly] )">
+          <Return type="Number" description="コピーされたデータ（Row）の数を返します。&#xA;コピーされたデータ（Row）が存在しない場合は「null」を返します。" />
+          <Arguments>
+            <Argument name="bFilteredOnly" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」に設定時、objDatasetがフィルタされている場合は、フィルタされたデータのみをコピーします。&#xA;「false」に設定時、objDatasetのフィルタ有無に関係なく、すべてのデータをコピーします。&#xA;&#xA;値省略時、「false」に適用されます。" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="コピーするデータ（Row）を持っているDataSetをオブジェクトに設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="copyRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在Datasetの特定のデータ（Row）を指定したDatasetのデータ（Row）に更新するメソッドです。">
+        <Syntax text="Dataset.copyRow( nToRow, objDataset, nFromRow [,strColInfo] )">
+          <Return type="Boolean" description="メソッドの実行に成功した場合、「true」を返します。&#xA;メソッドの実行に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="nFromRow" type="Number" in="false" out="false" option="false" variable="false" description="objDatasetからコピーするRowのインデックスを設定します。" />
+            <Argument name="nToRow" type="Number" in="false" out="false" option="false" variable="false" description="新しいデータで更新される現在のDataSetのRowインデックスを設定します。" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="コピーするデータを持っているDataSetをオブジェクトに設定します。" />
+            <Argument name="strColInfo" type="String" in="false" out="false" option="false" variable="false" description="データを更新する際に、「ToColumnID=FromColumnID,ToColumnID1=FromColumnID1」の形式でColumnをマッチングする条件を設定します。&#xA;&#xA;値省略時、同じColumn IDのデータのみ更新されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で設定した条件を満たしているRowで構成されたDatasetを返すメソッドです。">
+        <Syntax text="Dataset.createDataset( strDatasetID, arrColList [ , strWhereExpr [ , nStartIdx [ , nEndIdx ] ] ] )">
+          <Return type="Object" description="設定した条件を満たしているRowで構成されたDatasetを返します。&#xA;&#xA;Datasetを生成することができない場合には、nullを返します。" />
+          <Arguments>
+            <Argument name="arrColList" type="Array" in="false" out="false" option="false" variable="false" description="新たに生成されるDatasetのColumn構造とデータの生成方法を配列の形で設定します。&#xA;&#xA;配列の各引数に下記のような形式で定義することができます。&#xA;「ColID」：新しいDatasetに「ColID」でColumnを生成し、元のDatasetの「ColID」を設定します。&#xA;           元のDatasetに「ColID」の名前を持つColumnがない場合は、データがnull値に設定されます。&#xA;「NewColID：OldColID」：新しいDatasetに「NewColID」でColumnを生成し、元のDatasetの「OldColID」を設定します。&#xA;                         元のDatasetに「OldColID」の名前を持つColumnがない場合は、データが「null」に設定されます。&#xA;「NewColID：strExpr」：新しいDatasetに「NewColID」でColumnを生成し、「strExpr」として定義された式の結果値を設定します。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="元のDatasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="元のDatasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定するか、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strDatasetID" type="String" in="false" out="false" option="false" variable="false" description="新たに生成されるDatasetのIDを設定します。" />
+            <Argument name="strWhereExpr" type="String" in="false" out="false" option="false" variable="false" description="新たに生成されるDatasetにコピーされるRowを選択する条件を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDatasetNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で設定した条件を満たしているRowで構成されたDataSetを返すメソッドです。">
+        <Syntax text="Dataset.createDatasetNF( strDatasetID, arrColList [ , strWhereExpr [ , nStartIdx [ , nEndIdx ] ] ] )">
+          <Return type="Object" description="設定した条件を満たしているRowで構成されたDatasetを返します。&#xA;&#xA;Datasetを生成することができない場合には、nullを返します。" />
+          <Arguments>
+            <Argument name="arrColList" type="Array" in="false" out="false" option="false" variable="false" description="新たに生成されるDatasetのColumn構造とデータの生成方法を配列の形で設定します。&#xA;&#xA;配列の各引数に下記のような形式で定義することができます。&#xA;「ColID」：新しいDatasetに「ColID」でColumnを生成し、元のDatasetの「ColID」を設定します。&#xA;           元のDatasetに「ColID」の名前を持つColumnがない場合は、データがnull値に設定されます。&#xA;「NewColID：OldColID」：新しいDatasetに「NewColID」でColumnを生成し、元のDatasetの「OldColID」を設定します。&#xA;                         元のDatasetに「OldColID」の名前を持つColumnがない場合は、データが「null」に設定されます。&#xA;「NewColID：strExpr」：新しいDatasetに「NewColID」でColumnを生成し、「strExpr」として定義された式の結果値を設定します。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="元のDatasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="元のDatasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定するか、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strDatasetID" type="String" in="false" out="false" option="false" variable="false" description="新たに生成されるDatasetのIDを設定します。" />
+            <Argument name="strWhereExpr" type="String" in="false" out="false" option="false" variable="false" description="新たに生成されるDatasetにコピーされるRowを選択する条件を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetのすべてのデータ（Row）を削除するメソッドです。">
+        <Syntax text="Dataset.deleteAll()">
+          <Return type="Number" description="削除されたデータ（Row）の数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="deleteColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetで指定したColumnもしくはConst Columnを削除するメソッドです。">
+        <Syntax text="Dataset.deleteColumn(nCol)&#xD;&#xA;Dataset.deleteColumn(strColID)">
+          <Return type="Boolean" description="Column削除に成功すると、「true」を返します。&#xA;Column削除に失敗すると、「false」を返します。" />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="削除Columnのインデックスを設定します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="削除ColumnのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteMultiRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rowリストを配列に入力受けて、該当Rowを削除するメソッドです。">
+        <Syntax text="Dataset.deleteMultiRows( arrRowlist );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrRowlist" type="Array" in="false" out="false" option="false" variable="false" description="Rowインデックス値を配列の形で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetから指定したデータ（Row）を削除するメソッドです。">
+        <Syntax text="Dataset.deleteRow(nRow)">
+          <Return type="Boolean" description="データ（Row）の削除に成功した場合、「true」を返します。&#xA;データ（Row）の削除に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="削除するデータのRowインデックス値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exchangeRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetから指定された2つのRowの位置（RowPosition）を互いに変えるメソッドです。">
+        <Syntax text="Dataset.exchangeRow(nRow1,nRow2)">
+          <Return type="Boolean" description="位置交換に成功した場合、「true」を返します。&#xA;位置交換に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="nRow1" type="Number" in="false" out="false" option="false" variable="false" description="位置を交換する最初のデータのRowインデックスを設定します。" />
+            <Argument name="nRow2" type="Number" in="false" out="false" option="false" variable="false" description="位置を交換する2番目のデータのRowインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="extractRows" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で条件式を満足するRowのインデックス配列を返すメソッドです。">
+        <Syntax text="Dataset.extractRows( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Array" description="与えられた条件式を満足するRowのインデックス配列を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="extractRowsNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で条件式を満足するRowのインデックス配列を返すメソッドです。">
+        <Syntax text="Dataset.extractRowsNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Array" description="与えられた条件式を満足するRowのインデックス配列を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="filter" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにロードされたデータを条件に満足しているデータ（Row）のみ見えるようにフィルタするメソッドです。">
+        <Syntax text="Dataset.filter([strFilterExpr])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFilterExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSetのデータがフィルタされる条件を文字列に設定します。&#xA;&#xA;空の文字列（ ）設定時、システム条件が解除されます。&#xA;値省略時、filterstrプロパティ値に設定された条件式を使用します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="filterRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetで指定されたRowを表示されないようにするメソッドです。">
+        <Syntax text="Dataset.filterRow(nRow)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="フィルタするRowのインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="特定のイベントで検出したハンドラ関数のインデックスを返します。&#xA;&#xA;特定のイベントで検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findMaxLengthRow" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定Columnのデータの長さが最も長いRowのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findMaxLengthRow( strColID [ ,nStartIdx [ , nEndIdx] ] )">
+          <Return type="Number" description="特定Columnの値のデータの長さが最も長いRowのインデックスを返します。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索対象となるColumnのIDまたはインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findMaxLengthRowNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定Columnのデータの長さが最も長いRowのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findMaxLengthRowNF( strColID [ ,nStartIdx [ , nEndIdx] ] )">
+          <Return type="Number" description="特定Columnの値のデータの長さが最も長いRowのインデックスを返します。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索対象となるColumnのIDまたはインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findNFRowIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされたDataSetのRowインデックスを、フィルタされないDataSetのRowインデックスとして返すメソッドです。">
+        <Syntax text="Dataset.findNFRowIndex( nRowPos )">
+          <Return type="Number" description="フィルタされていないデータを基準としたRowインデックスを返します。&#xA;&#xA;無効なnRowPos値を引数として渡した場合は、-1を返します。" />
+          <Arguments>
+            <Argument name="nRowPos" type="Number" in="false" out="false" option="false" variable="false" description="フィルタされたDataSetを基準としたRowインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定Columnの値が渡された値と一致する最初のRowのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findRow( strColID, strVal [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="渡された値と一致するデータを持つ最初のRowのインデックスを返します。&#xA;&#xA;もし、一致するデータが存在しない場合には、「-1」を返します。&#xA;検索対象となるColumnがConst Columnの場合、nStartIdx値を返します。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索対象となるColumnのIDまたはインデックスを設定します。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="strColIDに該当するColumnで検索する値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowAs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタリングされて表示されないRowを除く範囲で、特定Columnの値が渡された値で始まる最初のRowのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findRowAs( strColID, strVal, [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="渡された値で始まるColumn値を持つ最初のRowのインデックスを返します。&#xA;&#xA;もし一致するデータが存在しない場合には、「-1」を返します。&#xA;検索対象となるColumnがConst Columnの場合、nStartIdx値を返します。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索対象となるColumnのIDまたはインデックスを設定します。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="strColIDに該当するColumnで検索する値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowAsNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタリングされて表示されないRowを含む範囲で、特定Columnの値が渡された値で始まる最初のRowのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findRowAsNF( strColID, strVal, [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="渡された値で始まるColumn値を持つ最初のRowのインデックスを返します。&#xA;&#xA;もし一致するデータが存在しない場合には、「-1」を返します。&#xA;検索対象となるColumnがConst Columnの場合、nStartIdx値を返します。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索対象となるColumnのIDまたはインデックスを設定します。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="strColIDに該当するColumnで検索する値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowExpr" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で条件式を満足する最初のRowのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findRowExpr( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ])">
+          <Return type="Number" description="与えられた条件式を満足する最初のRowのインデックスを返します。&#xA;&#xA;与えられた条件式を満足するRowがない場合には、「-1」を返します。&#xA;与えられた条件式がConst Columnを対象とした場合、nStartIdx値を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowExprNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で条件式を満足する最初のRowのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findRowExprNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ])">
+          <Return type="Number" description="与えられた条件式を満足する最初のRowのインデックスを返します。&#xA;&#xA;与えられた条件式を満足するRowがない場合には、「-1」を返します。&#xA;与えられた条件式がConst Columnを対象とした場合、nStartIdx値を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定Columnの値が渡された値と一致する最初のRowのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.findRowNF( strColID, strVal [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="渡された値と一致するデータを持つ最初のRowのインデックスを返します。&#xA;&#xA;もし、一致するデータが存在しない場合には、「-1」を返します。&#xA;検索対象となるColumnがConst Columnの場合、nStartIdx値を返します。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索対象となるColumnのIDまたはインデックスを設定します。" />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="strColIDに該当するColumnで検索する値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getAvg" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で指定した領域のColumnの値もしくは計算値の平均値を返すメソッドです。">
+        <Syntax text="Dataset.getAvg( strExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNaN [ ,arrArgs ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の平均値を返します。&#xA;&#xA;平均値を求めることができない場合には、「NaN」値を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。&#xA;&#xA;配列にColumnのIDを設定してもColumn値に置換されません。&#xA;strExprにColumnのIDを直接設定すると、Column値が適用されます。&#xA;つまり、arrArgs[0]にColumn ID設定時に「$0」は文字列に置換され、Column IDに該当する値に置換されません。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="Column値もしくは計算値がnull、undefined、「」（Empty String）、NaNの場合に平均計算から除外するかどうかを設定します。&#xA;平均値の計算に含まれる場合、分母に該当する全本数の値が増加します。&#xA;&#xA;「true」に設定時の平均値の計算から除外されます。&#xA;「false」に設定時の平均値の計算に含みます。&#xA;&#xA;値省略時、「false」に適用されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで計算を終了するRowのインデックスに1を足した値を指定します。&#xA;計算対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、計算対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから計算を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり値を省略すると「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから平均を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getAvgNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で指定した領域のColumnの値もしくは計算値の平均値を返すメソッドです。">
+        <Syntax text="Dataset.getAvgNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNaN [ ,arrArgs ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の平均値を返します。&#xA;&#xA;平均値を求めることができない場合には、「NaN」値を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。&#xA;&#xA;配列にColumnのIDを設定してもColumn値に置換されません。&#xA;strExprにColumnのIDを直接設定すると、Column値が適用されます。&#xA;つまり、arrArgs[0]にColumn ID設定時に「$0」は文字列に置換され、Column IDに該当する値に置換されません。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="Column値もしくは計算値がnull、undefined、「」（Empty String）、NaNの場合に平均計算から除外するかどうかを設定します。&#xA;平均値の計算に含まれる場合、分母に該当する全本数の値が増加します。&#xA;&#xA;「true」に設定時の平均値の計算から除外されます。&#xA;「false」に設定時の平均値の計算に含みます。&#xA;&#xA;値省略時、「false」に適用されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで計算を終了するRowのインデックスに1を足した値を指定します。&#xA;計算対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、計算対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから計算を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり値を省略すると「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから平均を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseAvg" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で条件を満たしているRowの特定Columnの値もしくは計算値の平均値を返すメソッドです。">
+        <Syntax text="Dataset.getCaseAvg( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNaN [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の平均値を返します。&#xA;&#xA;平均値を求めることができない場合には、「NaN」値を返します。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrCmpArgs[0]の値に、「$2」はarrCmpArgs[2]の値に置換されます。&#xA;&#xA;配列にColumnのIDを設定してもColumn値に置換されません。&#xA;strCmpExprにColumnのIDを直接設定すると、Column値が適用されます。&#xA;つまり、arrCmpArgs[0]にColumn ID設定時に「$0」は文字列に置換され、Column IDに該当する値に置換されません。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrValArgs[0]の値に、「$2」はarrValArgs[2]の値に置換されます。&#xA;&#xA;配列にColumnのIDを設定してもColumn値に置換されません。&#xA;strValExprにColumnのIDを直接設定すると、Column値が適用されます。&#xA;つまり、arrValArgs[0]にColumn ID設定時に「$0」は文字列に置換され、Column IDに該当する値に置換されません。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="Column値もしくは計算値がnull、undefined、「」（Empty String）、NaNの場合に平均計算から除外するかどうかを設定します。&#xA;平均値の計算に含まれる場合、分母に該当する全本数の値が増加します。&#xA;&#xA;「true」に設定時の平均値の計算から除外されます。&#xA;「false」に設定時の平均値の計算に含みます。&#xA;&#xA;値省略時、「false」に適用されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり値を省略すると「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrCmpArgsに定義された値に置換されます。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから平均を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseAvgNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で条件を満たしているRowの特定Columnの値もしくは計算値の平均値を返すメソッドです。">
+        <Syntax text="Dataset.getCaseAvgNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNaN [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の平均値を返します。&#xA;&#xA;平均値を求めることができない場合には、「NaN」値を返します。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrCmpArgs[0]の値に、「$2」はarrCmpArgs[2]の値に置換されます。&#xA;&#xA;配列にColumnのIDを設定してもColumn値に置換されません。&#xA;strCmpExprにColumnのIDを直接設定すると、Column値が適用されます。&#xA;つまり、arrCmpArgs[0]にColumn ID設定時に「$0」は文字列に置換され、Column IDに該当する値に置換されません。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrValArgs[0]の値に、「$2」はarrValArgs[2]の値に置換されます。&#xA;&#xA;配列にColumnのIDを設定してもColumn値に置換されません。&#xA;strValExprにColumnのIDを直接設定すると、Column値が適用されます。&#xA;つまり、arrValArgs[0]にColumn ID設定時に「$0」は文字列に置換され、Column IDに該当する値に置換されません。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="Column値もしくは計算値がnull、undefined、「」（Empty String）、NaNの場合に平均計算から除外するかどうかを設定します。&#xA;平均値の計算に含まれる場合、分母に該当する全本数の値が増加します。&#xA;&#xA;「true」に設定時の平均値の計算から除外されます。&#xA;「false」に設定時の平均値の計算に含みます。&#xA;&#xA;値省略時、「false」に適用されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり値を省略すると「0」に適用され、最初のRowから検索します。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrCmpArgsに定義された値に置換されます。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから平均を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で条件式を満足するRowの全体数を返すメソッドです。">
+        <Syntax text="Dataset.getCaseCount( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ] )">
+          <Return type="Number" description="与えられた条件式を満足するRowの総数を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に、置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で条件式を満足するRowの全体数を返すメソッドです。">
+        <Syntax text="Dataset.getCaseCountNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ] )">
+          <Return type="Number" description="与えられた条件式を満足するRowの総数を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に、置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMax" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で条件を満たしているRowの特定のColumn値もしくは計算値の最大値を返すメソッドです。">
+        <Syntax text="Dataset.getCaseMax( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の最大値を返します。&#xA;&#xA;最大値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrCmpArgs[0]の値に、「$2」はarrCmpArgs[2]の値に置換されます。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrValArgs[0]の値に、「$2」はarrValArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrCmpArgsに定義された値に置換されます。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから最大値を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMaxNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で条件を満たしているRowの特定のColumn値もしくは計算値の最大値を返すメソッドです。">
+        <Syntax text="Dataset.getCaseMaxNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の最大値を返します。&#xA;&#xA;最大値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrCmpArgs[0]の値に、「$2」はarrCmpArgs[2]の値に置換されます。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrValArgs[0]の値に、「$2」はarrValArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrCmpArgsに定義された値に置換されます。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから最大値を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMin" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で条件を満たしているRowの特定のColumn値もしくは計算値の最小値を返すメソッドです。">
+        <Syntax text="Dataset.getCaseMin( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の最小値を返します。&#xA;&#xA;最小値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr に定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrCmpArgs[0]の値に、「$2」はarrCmpArgs[2]の値に置換されます。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrValArgs[0]の値に、「$2」はarrValArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrCmpArgsに定義された値に置換されます。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから最小値を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMinNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で条件を満たしているRowの特定のColumn値もしくは計算値の最小値を返すメソッドです。">
+        <Syntax text="Dataset.getCaseMinNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の最小値を返します。&#xA;&#xA;最小値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr に定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrCmpArgs[0]の値に、「$2」はarrCmpArgs[2]の値に置換されます。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrValArgs[0]の値に、「$2」はarrValArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrCmpArgsに定義された値に置換されます。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから最小値を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseSum" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で条件を満たしているRowの特定のColumn値もしくは計算値の合計値を返すメソッドです。">
+        <Syntax text="Dataset.getCaseSum( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の合計値を返します。&#xA;&#xA;合計値を求めることができない場合には、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr に定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrCmpArgs[0]の値に、「$2」はarrCmpArgs[2]の値に置換されます。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrValArgs[0]の値に、「$2」はarrValArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetにて、検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrCmpArgsに定義された値に置換されます。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetにて、合計を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseSumNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で条件を満たしているRowの特定のColumn値もしくは計算値の合計値を返すメソッドです。">
+        <Syntax text="Dataset.getCaseSumNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の合計値を返します。&#xA;&#xA;合計値を求めることができない場合には、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr に定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrCmpArgs[0]の値に、「$2」はarrCmpArgs[2]の値に置換されます。" />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrValArgs[0]の値に、「$2」はarrValArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetにて、検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから検索する条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrCmpArgsに定義された値に置換されます。" />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetにて、合計を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにてConst Columnを含む全体のColumnの数を求めるメソッドです。">
+        <Syntax text="Dataset.getColCount()">
+          <Return type="Number" description="DataSetに定義されたすべてのColumnの数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetから渡されたインデックスに該当するColumnのIDを返すメソッドです。">
+        <Syntax text="Dataset.getColID( nColIdx )">
+          <Return type="String" description="渡されたインデックスに該当するColumnのIDを返します。&#xA;&#xA;該当するColumnがない場合には、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="IDを求めるColumnのインデックスを設定します。&#xA;&#xA;Const Columnに該当するインデックスを設定することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetから渡されたIDに該当するColumnのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.getColIndex( strColID )">
+          <Return type="Number" description="渡されたIDに該当するColumnのインデックスを返します。&#xA;&#xA;該当するColumnが存在しない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="インデックスを求める一般ColumnまたはConst ColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で指定されたRowとColumnの現在の値を返すメソッドです。">
+        <Syntax text="Dataset.getColumn( nRow, nColIdx )&#xA;Dataset.getColumn( nRow, strColID )">
+          <Return type="Variant" description="指定されたRowとColumnの現在の値を返します。&#xA;&#xA;指定されたRowとColumnが存在しない場合は、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSetから値を求めようとするColumnのインデックスを設定します。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="DataSetで値を求めようとRowのインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSetから値を求めようとするColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumnInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetで指定したColumnのColumnInfoオブジェクトを返すメソッドです。">
+        <Syntax text="Dataset.getColumnInfo( nColIdx )&#xA;Dataset.getColumnInfo( strColName )">
+          <Return type="Object" description="指定したインデックスもしくはIDに該当するColumnのColumnInfoオブジェクトを返します。&#xA;&#xA;指定したインデックスもしくはIDに該当するColumnがない場合には、undefinedを返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="対象Columnのインデックスを設定します。" />
+            <Argument name="strColName" type="String" in="false" out="false" option="false" variable="false" description="対象ColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で指定されたRowとColumnの現在の値を返すメソッドです。">
+        <Syntax text="Dataset.getColumnNF( nRow, nColIdx )&#xA;Dataset.getColumnNF( nRow, strColID )">
+          <Return type="Variant" description="指定されたRowとColumnの現在の値を返します。&#xA;&#xA;指定されたRowとColumnが存在しない場合は、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSetから値を求めようとするColumnのインデックスを設定します。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="DataSetで値を求めようとRowのインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSetから値を求めようとするColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetで指定されたIndexに該当するConst Column IDを求めるメソッドです。">
+        <Syntax text="Dataset.getConstColID( nColIdx )">
+          <Return type="String" description="渡されたインデックスに該当するConst ColumnのIDを返します。&#xA;&#xA;該当するConst Columnが存在しない場合には、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="IDを求めるConst Columnのインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetから渡されたIDに該当するConst Columnのインデックスを返すメソッドです。">
+        <Syntax text="Dataset.getConstColIndex( strColID )">
+          <Return type="Number" description="渡されたIDに該当するConst Columnのインデックスを返します。&#xA;&#xA;該当するConst Columnが存在しない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="インデックスを求めるConst ColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetで指定したConst Columnの値を求めるメソッドです。">
+        <Syntax text="Dataset.getConstColumn(nColIdx)&#xD;&#xA;Dataset.getConstColumn(strColID)">
+          <Return type="Variant" description="指定したConst Columnの値を返します。&#xA;もし、指定したConst Columnが存在しない場合は、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSetで値を求めるConst Columnのインデックスを設定します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSetで値を求めるConst ColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetに定義されたConst Columnの数を求めるメソッドです。">
+        <Syntax text="Dataset.getConstCount()">
+          <Return type="Number" description="DataSetに定義されたConst Columnの数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のColumnにデータがあるRowの数を返すメソッドです。">
+        <Syntax text="Dataset.getCount( [ strColID [ ,nStartIdx [ ,nEndIdx ] ] ] )">
+          <Return type="Number" description="特定Columnの値がnullでないRowの数を返します。&#xA;&#xA;ColumnのIDやインデックスを設定しないとRowの総数を返します。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="データの有無を確認するColumnのIDまたはインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のColumnにデータがあるRowの数を返すメソッドです。">
+        <Syntax text="Dataset.getCountNF( [ strColID [ ,nStartIdx [ ,nEndIdx ] ] ] )">
+          <Return type="Number" description="特定Columnの値がnullでないRowの数を返します。&#xA;&#xA;ColumnのIDやインデックスを設定しないとRowの総数を返します。" />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="データの有無を確認するColumnのIDまたはインデックスを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDeletedColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetで削除されたRowの中で指定されたRowのColumn値を取得するメソッドです。">
+        <Syntax text="Dataset.getDeletedColumn(nRow,nColIdx)&#xD;&#xA;Dataset.getDeletedColumn(nRow,strColID)">
+          <Return type="Variant" description="削除されたRowの中で指定されたRow、Columnに該当する値を返します。&#xA;該当するRowやColumnが存在しない場合は、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="削除されたRowの中で値を求めるColumnのインデックスを設定します。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="削除されたRowの中で値を求めるRowのインデックスを設定します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="削除された行の中で値を求める列のIDです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDeletedRowCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetから削除されたRowの数を取得するメソッドです。">
+        <Syntax text="Dataset.getDeletedRowCount()">
+          <Return type="Number" description="DataSetから削除されたRowの数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDeletedRowset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetから削除されたすべてのRowを配列として返すメソッドです。">
+        <Syntax text="Dataset.getDeletedRowset()">
+          <Return type="Array" description="削除されたすべてのRowの内容を配列オブジェクトに返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="Dataset.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;&#xA;ハンドラ関数のインデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getGroupRangeCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetがグループ化されているときに、グループ情報が含まれているRowが参照するRowの数を取得するメソッドです。">
+        <Syntax text="Dataset.getGroupRangeCount(nRow)">
+          <Return type="Number" description="グループ小計Rowの参照対象となったRowの数を返します。&#xA;もし、指定したRowが存在しない場合は、「0」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="対象Rowのインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getGroupRangeStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetがグループ化されているときに、グループ情報が含まれているRowが参照するRowの開始インデックスを取得するメソッドです。">
+        <Syntax text="Dataset.getGroupRangeStart(nRow)">
+          <Return type="Number" description="グループ小計Rowの参照対象となったRowの開始インデックスを返します。&#xA;指定したRowがグループ情報が含まれているRowではない場合には、Rowのインデックスを返します。&#xA;もし、指定したRowが存在しない場合は、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="対象Rowのインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMax" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で指定した領域のColumn値もしくは計算値の最大値を返すメソッドです。">
+        <Syntax text="Dataset.getMax( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の最大値を返します。&#xA;&#xA;最大値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから最大値を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMaxNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で指定した領域のColumn値もしくは計算値の最大値を返すメソッドです。">
+        <Syntax text="Dataset.getMaxNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の最大値を返します。&#xA;&#xA;最大値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから最大値を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMin" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で指定した領域のColumn値もしくは計算値の最小値を返すメソッドです。">
+        <Syntax text="Dataset.getMin( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の最小値を返します。&#xA;&#xA;最小値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetから検索を開始するRowのインデックスを設定します。&#xA;&#xA;負の値を設定したり、値を省略すると、「0」に適用されて最初のRowから検索します。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから最小値を求めるColumnのIDまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMinNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で指定した領域のColumn値もしくは計算値の最小値を返すメソッドです。">
+        <Syntax text="Dataset.getMinNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="特定Columnの値または計算値の最小値を返します。&#xA;&#xA;最小値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列形式で指定します。&#xA;&#xA;「$+数字」の形式からの数値が配列の引数として使用されます。&#xA;例えば、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を終了するRowのインデックスに1を足した値を指定します。&#xA;検索対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、検索対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで検索を開始するRowのインデックスを指定します。&#xA;&#xA;負の値を指定するか、もしくは未指定にした場合には、0として適用され、検索対象は最初の行からとなります。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから最小値を求めるColumnのIDまたは計算式を指定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrValArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getOrgColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で指定されたRowとColumnの初期値を返すメソッドです。">
+        <Syntax text="Dataset.getOrgColumn( nRow ,nColIdx )&#xA;Dataset.getOrgColumn( nRow ,strColID )">
+          <Return type="Variant" description="指定したRowとColumnの初期値を返します。&#xA;&#xA;指定したRowとColumnが存在しない場合は、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="初期値を求めるColumnのインデックスを設定します。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="初期値を求めるRowのインデックスを設定します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="初期値を求めるColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getOrgColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で指定されたRowとColumnの初期値を返すメソッドです。">
+        <Syntax text="Dataset.getOrgColumnNF( nRow ,nColIdx )&#xA;Dataset.getOrgColumnNF( nRow ,strColID )">
+          <Return type="Variant" description="指定したRowとColumnの初期値を返します。&#xA;&#xA;指定したRowとColumnが存在しない場合は、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="初期値を求めるColumnのインデックスを設定します。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="初期値を求めるRowのインデックスを設定します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="初期値を求めるColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲でRowの総数を返すメソッドです。">
+        <Syntax text="Dataset.getRowCount()">
+          <Return type="Number" description="DataSetからRowの総数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRowCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲でRowの総数を返すメソッドです。">
+        <Syntax text="Dataset.getRowCountNF()">
+          <Return type="Number" description="DataSetからRowの総数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRowLevel" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetがグループ化されている場合に指定したRowのLevel値を求めるメソッドです。">
+        <Syntax text="Dataset.getRowLevel(nRow)">
+          <Return type="Number" description="DataSetに指定したRowのレベル値を返します。&#xA;もし指定したRowがない場合は「0」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="対象Rowのインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsAvg" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のRowのColumn値もしくは計算値の平均値を返すメソッドです。">
+        <Syntax text="Dataset.getRowsAvg( arrRows, strColExpr [ ,bExcludeNaN [ ,arrArgs ] ] )">
+          <Return type="Number" description="特定のRowのColumn値もしくは計算値の平均値を返します。&#xA;&#xA;平均値を求めることができない場合には、「POSITIVE_INFINITY」値を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。&#xA;&#xA;配列にColumnのIDを設定してもColumn値に置換されません。&#xA;strColExprにColumnのIDを直接設定すると、Column値が適用されます。&#xA;つまり、arrArgs[0]にColumn ID設定時に「$0」は文字列に置換され、Column IDに該当する値に置換されません。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="平均値を求めるRowのインデックスを数値配列として設定します。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="Column値もしくは計算値がnull、undefined、「」（Empty String）、NaNの場合に平均計算から除外するかどうかを設定します。&#xA;平均値の計算に含まれる場合、分母に該当する全本数の値が増加します。&#xA;&#xA;「true」に設定時の平均値の計算から除外されます。&#xA;「false」に設定時の平均値の計算に含みます。&#xA;&#xA;値省略時、「false」に適用されます。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowで平均を求めるColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsAvgNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のRowのColumn値または計算値の平均値を返すメソッドです。">
+        <Syntax text="Dataset.getRowsAvgNF( arrRows, strColExpr [ ,bExcludeNaN [ ,arrArgs ] ] )">
+          <Return type="Number" description="特定のRowのColumn値もしくは計算値の平均値を返します。&#xA;&#xA;平均値を求めることができない場合には、「POSITIVE_INFINITY」値を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。&#xA;&#xA;配列にColumnのIDを設定してもColumn値に置換されません。&#xA;strColExprにColumnのIDを直接設定すると、Column値が適用されます。&#xA;つまり、arrArgs[0]にColumn ID設定時に「$0」は文字列に置換され、Column IDに該当する値に置換されません。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="平均値を求めるRowのインデックスを数値配列として設定します。" />
+            <Argument name="bExcludeNaN" type="Boolean" in="false" out="false" option="false" variable="false" description="Column値もしくは計算値がnull、undefined、「」（Empty String）、NaNの場合に平均計算から除外するかどうかを設定します。&#xA;平均値の計算に含まれる場合、分母に該当する全本数の値が増加します。&#xA;&#xA;「true」に設定時の平均値の計算から除外されます。&#xA;「false」に設定時の平均値の計算に含みます。&#xA;&#xA;値省略時、「false」に適用されます。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowで平均を求めるColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsCount" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のRowのColumnにデータがあるRowの数を返すメソッドです。">
+        <Syntax text="Dataset.getRowsCount( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="渡されたRowで、特定のColumnの値がnullでないRowの数を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="特定のColumnのデータの有無を確認するRowのインデックスを数値配列として設定します。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowからデータの有無を確認するColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsCountNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のRowのColumnにデータがあるRowの数を返すメソッドです。">
+        <Syntax text="Dataset.getRowsCountNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="渡されたRowで、特定のColumnの値がnullでないRowの数を返します。&#xA;&#xA;* datatyperuleプロパティ値が「2.0」である場合、undefined、null、EmptyString(&quot;&quot;)、NaN、「invalid date」を除いたRowの数を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="特定のColumnのデータの有無を確認するRowのインデックスを数値配列として設定します。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowからデータの有無を確認するColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMax" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のRowのColumn値もしくは計算値の最大値を返すメソッドです。">
+        <Syntax text="Dataset.getRowsMax( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="渡されたRowでColumn値または計算値の最大値を返します。&#xA;&#xA;最大値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="最大値を求めるRowのインデックスを数値配列として設定します。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowで最大値を求めるColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMaxNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のRowのColumn値もしくは計算値の最大値を返すメソッドです。">
+        <Syntax text="Dataset.getRowsMaxNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="渡されたRowでColumn値または計算値の最大値を返します。&#xA;&#xA;最大値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="最大値を求めるRowのインデックスを数値配列として設定します。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowで最大値を求めるColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMin" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のRowのColumn値もしくは計算値の最小値を返すメソッドです。">
+        <Syntax text="Dataset.getRowsMin( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="渡されたRowからColumn値または計算値の最小値を返します。&#xA;&#xA;最小値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="最小値を求めるRowのインデックスを数値配列として設定します。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowで最小値を求めるColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMinNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のRowのColumn値もしくは計算値の最小値を返すメソッドです。">
+        <Syntax text="Dataset.getRowsMinNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="渡されたRowからColumn値または計算値の最小値を返します。&#xA;&#xA;最小値を求めることができない場合には「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="最小値を求めるRowのインデックスを数値配列として設定します。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowで最小値を求めるColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsSum" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のRowのColumn値もしくは計算値の合計値を返すメソッドです。">
+        <Syntax text="Dataset.getRowsSum( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="渡されたRowからColumn値または計算値の合計値を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="合計値を求めるRowのインデックスを数値配列として設定します。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowにて、合計値を求めるColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsSumNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のRowのColumn値もしくは計算値の合計値を返すメソッドです。">
+        <Syntax text="Dataset.getRowsSumNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="渡されたRowからColumn値または計算値の合計値を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExprに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="合計値を求めるRowのインデックスを数値配列として設定します。" />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRowsに該当するRowにて、合計値を求めるColumnのID、インデックスまたは計算式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で指定されたRowのタイプを返すメソッドです。">
+        <Syntax text="Dataset.getRowType( nRow )">
+          <Return type="Number" description="DataSetにて、指定されたRowのタイプを返します。&#xA;&#xA;指定したRowが存在しない場合は、「ROWTYPE_EMPTY」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="対象Rowのインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowTypeNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で指定されたRowのタイプを返すメソッドです。">
+        <Syntax text="Dataset.getRowTypeNF( nRow )">
+          <Return type="Number" description="DataSetにて、指定されたRowのタイプを返します。&#xA;&#xA;指定したRowが存在しない場合は、「ROWTYPE_EMPTY」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="対象Rowのインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getSum" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で指定した領域のColumn値もしくは計算値の合計値を返すメソッドです。">
+        <Syntax text="Dataset.getSum( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="特定のColumnの値または計算値の合計値を返します。&#xA;&#xA;合計値を求めることができない場合には、「0」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列形式で指定します。&#xA;&#xA;「$+数字」の形式からの数値が配列の引数として使用されます。&#xA;例えば、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで計算を終了するRowのインデックスに1を足した値を指定します。&#xA;計算対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、計算対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで計算を開始するRowのインデックスを指定します。&#xA;&#xA;負の値を指定するか、もしくは未指定にした場合には、0として適用され、計算対象は最初の行からとなります。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから合計を求めるColumnのIDまたは計算式を指定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getSumNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で指定した領域のColumn値もしくは計算値の合計値を返すメソッドです。">
+        <Syntax text="Dataset.getSumNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="特定のColumnの値または計算値の合計値を返します。&#xA;&#xA;合計値を求めることができない場合には、「0」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExprに定義された置換文に置換される値を配列形式で指定します。&#xA;&#xA;「$+数字」の形式からの数値が配列の引数として使用されます。&#xA;例えば、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで計算を終了するRowのインデックスに1を足した値を指定します。&#xA;計算対象は[指定したインデックス値-1]のインデックスのRowまでとなります。&#xA;&#xA;nStartIdxに指定した値より大きい値を指定する必要があります。&#xA;負の値を指定するか、もしくは未指定にした場合には、-1として適用され、計算対象は最終行までとなります。" />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="Datasetで計算を開始するRowのインデックスを指定します。&#xA;&#xA;負の値を指定するか、もしくは未指定にした場合には、0として適用され、計算対象は最初の行からとなります。" />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="Datasetから合計を求めるColumnのIDまたは計算式を設定します。&#xA; &#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetのイベントにハンドラ関数を指定した位置に挿入するメソッドです。">
+        <Syntax text="Dataset.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="イベントに挿入されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;&#xA;正常に挿入されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="ハンドラ関数が挿入される位置のインデックス値を指定します。&#xA;&#xA;-1を指定した場合は最後に追加されます。&#xA;イベントに設定されたハンドラ関数の個数より大きい値を指定した場合は最後に追加されます。&#xA;NaN値を指定した場合はECMA Scriptの仕様に基づいて0が設定されます。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetで指定されたRowの位置に新しいRowを挿入するメソッドです。">
+        <Syntax text="Dataset.insertRow(nRow)">
+          <Return type="Number" description="DataSetに挿入されたRowのインデックスを返します。&#xA;もし、Rowの挿入に失敗した場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="挿入する位置のRowインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのurlプロパティに設定されたBusiness Serviceからデータをロードするメソッドです。">
+        <Syntax text="Dataset.load( [bAsync [, bBinary]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="trueに設定時、非同期（Async）にデータをロードします。&#xA;falseに設定時、同期（Sync）にデータをロードします。&#xA;&#xA;値省略時、trueに適用されます。" />
+            <Argument name="bBinary" type="Boolean" in="false" out="false" option="false" variable="false" description="trueに設定時、Binary形式でデータをロードします。&#xA;falseに設定時、一般的な形式でデータをロードします。&#xA;&#xA;値省略時、falseに適用されます。&#xA;&#xA;* web runtime environmentは「false」のみ設定することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadBIN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="DataSetにBinary形式で作成されたデータをロードするメソッドです。">
+        <Syntax text="Dataset.loadBin(varBinData)">
+          <Return type="Number" description="Datasetにロードされたデータの数を返します。" />
+          <Arguments>
+            <Argument name="varBinData" type="Object" in="false" out="false" option="false" variable="false" description="Binary形式で作成されたデータを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadCSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにCSV形式で作成されたデータをロードするメソッドです。">
+        <Syntax text="Dataset.loadCSV(varCsvData[,bClear])">
+          <Return type="Number" description="DataSetにロードされたデータの数を返します。" />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」に設定時、DataSetにロードされていた既存のデータを削除します。&#xA;「false」に設定時、DataSetにロードされていた既存のデータを削除しません。&#xA; &#xA;値省略時、「true」に適用されます。" />
+            <Argument name="varCsvData" type="Object" in="false" out="false" option="false" variable="false" description="CSV形式で作成されたデータを設定します。&#xA;&#xA;「Dataset:Dataset_id」の形式で始まり、Column情報をヘッダに持つCSVデータを設定する必要があります。&#xA;「Dataset_id」と「Column Infos」は、CR/LFもしくはLFで区切ります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadFromDataObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="binddataobject、dataobjectpathプロパティに設定された値をDatasetオブジェクトにすぐに反映させるメソッドです。">
+        <Syntax text="DataObject00.loadFromDataObject()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="loadSSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにSSV形式で作成されたデータをロードするメソッドです。">
+        <Syntax text="Dataset.loadSSV ( varSsvData [,bClear] )">
+          <Return type="Number" description="DataSetにロードされたデータの数を返します。" />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」に設定時、DataSetにロードされていた既存のデータを削除します。&#xA;「false」に設定時、DataSetにロードされていた既存のデータを削除しません。&#xA; &#xA;値省略時、「true」に適用されます。" />
+            <Argument name="varSsvData" type="String" in="false" out="false" option="false" variable="false" description="SSVの形式で作成されたデータを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadXML" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにXML形式で作成されたデータをロードするメソッドです。">
+        <Syntax text="Dataset.loadXML(strXmlData[,bClear]])">
+          <Return type="Number" description="DataSetにロードされたデータの数を返します。" />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="「true」に設定時、DataSetにロードされていた既存のデータを削除します。&#xA;「false」に設定時、DataSetにロードされていた既存のデータを削除しません。&#xA;  &#xA;値省略時、「true」に適用されます。" />
+            <Argument name="strXmlData" type="String" in="false" out="false" option="false" variable="false" description="XML形式で作成されたデータを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のColumn値が配信値と一致する最初のRowの指定されたColumn値を返すメソッドです。">
+        <Syntax text="Dataset.lookup( varCol, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="与えられた条件に満足する最初のRowの指定されたColumn値を返します。&#xA;&#xA;値を取得することができない場合には、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="varColに定義された置換文アに置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="varCol値がvarCmpVal値が一致するRowから値を取得するColumnのIDを設定します。" />
+            <Argument name="varCmpVal" type="String" in="false" out="false" option="false" variable="false" description="DataSetにて、varColに該当するColumn値と比較する値を設定します。" />
+            <Argument name="varCol" type="String, Number" in="false" out="false" option="false" variable="false" description="DataSetにて、varCmpVal値と比較するColumnのID、Index、もしくは条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupAs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のColumn値が配信値で始まる最初のRowの指定されたColumn値を返すメソッドです。">
+        <Syntax text="Dataset.lookupAs( varCol, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="与えられた条件に満足する最初のRowの指定されたColumn値を返します。&#xA;&#xA;値を取得することができない場合には、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="varColに定義された置換文アに置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="varCol値がvarCmpVal値で始まるRowから値を取得するColumnのIDを設定します。" />
+            <Argument name="varCmpVal" type="Variant" in="false" out="false" option="false" variable="false" description="DataSetにて、varColに該当するColumn値と比較する値を設定します。" />
+            <Argument name="varCol" type="String, Number" in="false" out="false" option="false" variable="false" description="DataSetにて、varCmpVal値と比較するColumnのID、Index、もしくは条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupAsNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のColumn値が配信値で始まる最初のRowの指定されたColumn値を返すメソッドです。">
+        <Syntax text="Dataset.lookupAsNF( varCol, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="与えられた条件に満足する最初のRowの指定されたColumn値を返します。&#xA;&#xA;値を取得することができない場合には、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="varColに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="varCol値がvarCmpVal値で始まるRowから値を取得するColumnのIDを設定します。" />
+            <Argument name="varCmpVal" type="Variant" in="false" out="false" option="false" variable="false" description="DataSetにて、varColに該当するColumn値と比較する値を設定します。" />
+            <Argument name="varCol" type="String, Number" in="false" out="false" option="false" variable="false" description="DataSetにて、varCmpVal値と比較するColumnのID、Index、もしくは条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のColumn値が配信値と一致する最初のRowの指定されたColumn値を返すメソッドです。">
+        <Syntax text="Dataset.lookupNF( varCol, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="与えられた条件に満足する最初のRowの指定されたColumn値を返します。&#xA;&#xA;値を取得することができない場合には、「undefined」を返します。" />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="varColに定義された置換文に置換される値を配列の形で設定します。&#xA;&#xA;「$+数字」の形式で数値が配列の引数として使用されます。&#xA;つまり、「$0」はarrArgs[0]の値に、「$2」はarrArgs[2]の値に置換されます。" />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="varCol値とvarCmpVal値が一致するRowから値を取得するColumnのIDを設定します。" />
+            <Argument name="varCmpVal" type="String" in="false" out="false" option="false" variable="false" description="DataSetにて、varColに該当するColumn値と比較する値を設定します。" />
+            <Argument name="varCol" type="String, Number" in="false" out="false" option="false" variable="false" description="DataSetにて、varCmpVal値と比較するColumnのID、Index、もしくは条件式を設定します。&#xA;&#xA;「$+数字」の形式で置換文を使用することができます。&#xA;置換文はarrArgsに定義された値に置換されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mergeData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="現在Datasetに指定したDatasetを統合するメソッドです。">
+        <Syntax text="Dataset.mergeData( objDataset )">
+          <Return type="Number" description="メソッド実行後DatasetのRow数を返します。" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="現在Datasetに統合するDatasetをオブジェクトに設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetで指定したRowを特定の場所に移動するメソッドです。">
+        <Syntax text="Dataset.moveRow(nOldRow,nNewRow)">
+          <Return type="Number" description="Row移動に成功した場合、新しい位置のRowインデックスを返します。&#xA;Row移動に失敗した場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nNewRow" type="Number" in="false" out="false" option="false" variable="false" description="Rowが移動する位置のRowインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+            <Argument name="nOldRow" type="Number" in="false" out="false" option="false" variable="false" description="位置を移動しようとするRowの現在のインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetに宣言された特定のイベントを削除するメソッドです。">
+        <Syntax text="Dataset.removeEvent( strEventID )">
+          <Return type="Boolean" description="イベントの削除に成功した場合は「true」を返します。&#xA;&#xA;イベントの削除に失敗、もしくは宣言されていないイベントIDの設定時は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="Datasetから削除するイベントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="Dataset.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="Dataset.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="reset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのデータを最後に保存した状態に復旧するメソッドです。">
+        <Syntax text="Dataset.reset()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="saveBIN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="DataSetのデータをBinary形式で返すメソッドです。">
+        <Syntax text="Dataset.saveBIN( [strID [, strSaveType [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]]] )">
+          <Return type="String" description="DataSetのデータをBinary形式に変換した文字列を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Binary形式のファイル内に定義されるDataSet IDを設定します。&#xA;実際DataSet IDと保存時に使用するIDを別の方法で使用する場合に設定します。&#xA; &#xA;値省略時、現在のDataSetのIDが適用されます。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="タイプがDATE、TIME、DATETIMEであるColumnに保存された無効な日付の変換方法を設定します。&#xA;&#xA;「include」設定時、「Invalid Date」文字列に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、saveinvaliddateプロパティ値が適用されます。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="タイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたInfinity値の変換方法を設定します。&#xA;&#xA;「include」設定時、Infinity値に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、saveinfinityプロパティ値が適用されます。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="タイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたNaN値の変換方法を設定します。&#xA;&#xA;「include」設定時、NaN値に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、savenanプロパティ値が適用されます。" />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="Binary形式に変換する対象となるデータを選定する基準を設定します。&#xA;&#xA;「n」、「N」、「normal」、「Normal」設定時にDeleteされたデータを除いて変換します。&#xA;「u」、「U」、「update」、「Update」設定時にUpdateされたデータのみを変換します。&#xA;「a」、「A」、「all」、「All」設定時にInsert/Update/Deleteされたすべてのデータを変換します。&#xA;&#xA;値省略時、「Normal」に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveCSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DatasetのデータをCSVファイル形式に変換するメソッドです。">
+        <Syntax text="Dataset.saveCSV( [strID [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]] )">
+          <Return type="String" description="DataSetのデータをCSV形式で変換した文字列を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="CSV形式のファイル内に定義されるDataSet IDを設定します。&#xA;実際のDataSet IDと保存時に使用するIDを別の方法で使用する場合に設定します。&#xA;&#xA;値省略時、現在DataSetのIDが適用されます。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="タイプがDATE、TIME、DATETIMEであるColumnに保存された無効な日付の変換方法を設定します。&#xA;&#xA;「include」設定時、「Invalid Date」文字列に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、saveinvaliddateプロパティ値が適用されます。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="タイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたInfinity値の変換方法を設定します。&#xA;&#xA;「include」設定時、Infinity値に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、saveinfinityプロパティ値が適用されます。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="タイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたNaN値の変換方法を設定します。&#xA;&#xA;「include」設定時、NaN値に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、savenanプロパティ値が適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveSSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのデータをSSV形式に返すメソッドです。">
+        <Syntax text="Dataset.saveSSV( [strID [, strSaveType [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]]] )">
+          <Return type="String" description="DataSetのデータをSSV形式に変換した文字列を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="SSV形式のファイル内に定義されるDataSet IDを設定します。&#xA;実際のDataSet IDと保存時に使用するIDを別の用途で使用する場合に設定します。&#xA;&#xA;値を省略した場合、現在のDataSet IDを適用します。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="タイプがDATE、TIME、DATETIMEであるColumnに保存された無効な日付の変換方法を設定します。&#xA;&#xA;「include」設定時、「Invalid Date」文字列に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、saveinvaliddateプロパティ値が適用されます。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="タイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたInfinity値の変換方法を設定します。&#xA;&#xA;「include」設定時、Infinity値に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、saveinfinityプロパティ値が適用されます。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="タイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたNaN値の変換方法を設定します。&#xA;&#xA;「include」設定時、NaN値に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、savenanプロパティ値が適用されます。" />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="SSV形式に変換する対象となるデータを選定する基準を設定します。&#xA;&#xA;「n」、「N」、「normal」、「Normal」の設定時、Deleteされたデータを除いて変換します。&#xA;「u」、「U」、「update」、「Update」設定時、Updateされたデータのみ変換します。&#xA;「a」、「A」、「all」、「All」設定時、Insert/Update/Deleteされたすべてのデータを変換します。&#xA;「v」、「V」、「view」、「View」設定時、「Normal」の条件のデータをGridに表示された順に変換します。&#xA;&#xA;値省略時、「Normal」に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveXML" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのデータをXML形式に返すメソッドです。">
+        <Syntax text="Dataset.saveXML( [strID [, strSaveType [, strSaveNaN [, strSaveInfinity [, strSaveDate]]]]] )">
+          <Return type="String" description="DatasetのデータをXML形式に変換した文字列を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="XML形式のファイル内に定義されるDataSet IDを設定します。&#xA;実際DataSet IDと保存時に使用するIDを別の方法で使用する場合に設定します。&#xA;&#xA;値省略時、現在DataSetのIDが適用されます。" />
+            <Argument name="strSaveDate" type="String" in="false" out="false" option="false" variable="false" description="タイプがDATE、TIME、DATETIMEであるColumnに保存された無効な日付の変換方法を設定します。&#xA;&#xA;「include」設定時、「Invalid Date」文字列に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、saveinvaliddateプロパティ値が適用されます。" />
+            <Argument name="strSaveInfinity" type="String" in="false" out="false" option="false" variable="false" description="タイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたInfinity値の変換方法を設定します。&#xA;&#xA;「include」設定時、Infinity値に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、saveinfinityプロパティ値が適用されます。" />
+            <Argument name="strSaveNaN" type="String" in="false" out="false" option="false" variable="false" description="タイプがINT、FLOAT、BIGDECIMALであるColumnに保存されたNaN値の変換方法を設定します。&#xA;&#xA;「include」設定時、NaN値に変換します。&#xA;「exclude」設定時、空文字列（「」）に変換します。&#xA;&#xA;値省略時、savenanプロパティ値が適用されます。" />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="XML形式に変換する対象となるデータを選定する基準を設定します。&#xA;&#xA;「n」、「N」、「normal」、「Normal」の設定時、Deleteされたデータを除いて変換します。&#xA;「u」、「U」、「update」、「Update」設定時、Updateされたデータのみ変換します。&#xA;「a」、「A」、「all」、「All」設定時、Insert/Update/Deleteされたすべてのデータを変換します。&#xA;「v」、「V」、「view」、「View」設定時、「Normal」の条件のデータをGridに表示された順に変換します。&#xA;&#xA;値省略時、「Normal」に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除いた範囲で、特定RowのColumn値を変更するメソッドです。">
+        <Syntax text="Dataset.setColumn( nRow, nColIdx, varVal )&#xA;Dataset.setColumn( nRow, strColID, varVal )">
+          <Return type="Boolean" description="Column値の変更に成功した場合は「true」を返します。&#xA;&#xA;Column値の変更に失敗した場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="値を変更するColumnのインデックスを設定します。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="値を変更するColumnのRowインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="値を変更するColumnのIDを設定します。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="変更するColumnの値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定RowのColumn値を変更するメソッドです。">
+        <Syntax text="Dataset.setColumnNF( nRow, nColIdx, varVal )&#xA;Dataset.setColumnNF( nRow, strColID, varVal )">
+          <Return type="Boolean" description="値の変更に成功した場合、 「true」を返します。&#xA;&#xA;値の変更に失敗した場合、 「false」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="値を変更するColumnのインデックスを設定します。" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="値を変更するColumnのRowインデックスを設定します。&#xA;&#xA;最初のRowのインデックス値は「0」です。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="値を変更するColumnのIDを設定します。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="変更するColumnの値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetに定義されたConst Columnの定数値を変更するメソッドです。">
+        <Syntax text="Dataset.setConstColumn(nColIdx,varVal)&#xD;&#xA;Dataset.setConstColumn(strColID,varVal)">
+          <Return type="Boolean" description="定数値の変更に成功すると、「true」を返します。&#xA;定数値の変更に失敗すると、「false」を返します。" />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="値を変更するConst Columnのインデックスを設定します。" />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="値を変更するConst ColumnのIDを設定します。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="変更値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setContents" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetの内部構成のコンテンツを動的に設定するメソッドです。">
+        <Syntax text="Dataset.setContents( strContents );">
+          <Return type="Boolean" description="コンテンツの生成に成功した場合は、「true」を返します。&#xA;コンテンツの生成に失敗した場合は、「false」を返します。&#xA;&#xA;文字列の解析中にエラーが発生するか、もしくは無効なタグ（タイプミスを含む）の定義によりエラーが発生した場合、コンテンツの生成に失敗します。" />
+          <Arguments>
+            <Argument name="strCont" type="String" in="false" out="false" option="false" variable="false" description="Datasetの内部構成のコンテンツ情報をXML形式の文字列に設定します。&#xA;&#xA;「&amp;lt;ColumnInfo&amp;gt; ... &amp;lt;/ColumnInfo&amp;gt; &amp;lt;Rows&amp;gt; ... &amp;lt;/Rows&amp;gt;」の形でColumnInfoとRowsタグを含む設定する必要があります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="Dataset.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="Dataset.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRowType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを除く範囲で、特定のRowのタイプ値を変更するメソッドです。">
+        <Syntax text="Dataset.setRowType( nRow, nRowType )&#xA;Dataset.setRowType( nRow, strRowType )">
+          <Return type="Boolean" description="タイプ変換に成功すると、「true」を返します。&#xA;タイプ変換に失敗すると、「false」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="タイプを変更するRowのインデックスを設定します。" />
+            <Argument name="nRowType" type="Number" in="false" out="false" option="false" variable="false" description="変更Rowのタイプ値を数値に設定します。" />
+            <Argument name="strRowType" type="String" in="false" out="false" option="false" variable="false" description="変更するRowのタイプ値を文字に設定します。&#xA;&#xA;「i」、「I」の設定時、「Dataset.ROWTYPE_INSERT」に適用されます。&#xA;「u」、「U」の設定時、「Dataset.ROWTYPE_UPDATE」に適用されます。&#xA;「d」、「D」の設定時、「Dataset.ROWTYPE_DELETE」に適用されます。&#xA;&#xA;以外の値の設定時に「Dataset.ROWTYPE_NORMAL」に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRowTypeNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="フィルタされて表示されないRowを含む範囲で、特定のRowのタイプ値を変更するメソッドです。">
+        <Syntax text="Dataset.setRowTypeNF( nRow, nRowType )&#xA;Dataset.setRowTypeNF( nRow, strRowType )">
+          <Return type="Boolean" description="タイプ変換に成功すると、「true」を返します。&#xA;タイプ変換に失敗すると、「false」を返します。" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="タイプを変更するRowのインデックスを設定します。" />
+            <Argument name="nRowType" type="Number" in="false" out="false" option="false" variable="false" description="変更Rowのタイプ値を数値に設定します。" />
+            <Argument name="strRowType" type="String" in="false" out="false" option="false" variable="false" description="変更するRowのタイプ値を文字に設定します。&#xA;&#xA;「i」、「I」の設定時、「Dataset.ROWTYPE_INSERT」に適用されます。&#xA;「u」、「U」の設定時、「Dataset.ROWTYPE_UPDATE」に適用されます。&#xA;「d」、「D」の設定時、「Dataset.ROWTYPE_DELETE」に適用されます。&#xA;&#xA;以外の値の設定時に「Dataset.ROWTYPE_NORMAL」に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Const Columnを含めてDataSetに定義されたColumnのIDを変更するメソッドです。">
+        <Syntax text="Dataset.updateColID(nCol, strNewColID)&#xD;&#xA;Dataset.updateColID(strOldColID, strNewColID)">
+          <Return type="Number" description="IDが変更されたColumnのインデックスを返します。&#xA;もし指定されたColumnが存在しないかIDが同じColumnがある場合は、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="IDを変更するColumnのインデックスを設定します。&#xA;&#xA;最初のColumnのインデックス値は「0」です。" />
+            <Argument name="strNewColID" type="String" in="false" out="false" option="false" variable="false" description="変更するColumnの新しいIDを文字列に設定します。" />
+            <Argument name="strOldColID" type="String" in="false" out="false" option="false" variable="false" description="IDを変更するColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateConstColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Datasetで指定したConst ColumnのIDを変更するメソッドです。">
+        <Syntax text="Dataset.updateConstColID(nCol, strNewColID)&#xD;&#xA;Dataset.updateConstColID(strOldColID, strNewColID)">
+          <Return type="Number" description="IDが変更されたConst Columnのインデックスを返します。&#xA;もし指定されたConst Columnが存在しないかIDが同じConst Columnがある場合は、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="IDを変更するConst Columnのインデックスを設定します。&#xA;&#xA;最初のColumnのインデックス値は「0」です。" />
+            <Argument name="strNewColID" type="String" in="false" out="false" option="false" variable="false" description="変更するConst Columnの新しいIDを文字列に設定します。" />
+            <Argument name="strOldColID" type="String" in="false" out="false" option="false" variable="false" description="IDを変更するConst ColumnのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateSortGroup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにロードされたデータをグルーピングまたはソートするメソッドです。">
+        <Syntax text="Dataset.updateSortGroup( [strKeyString] )">
+          <Return type="Boolean" description="グルーピングやソートに成功した場合、trueを返します。&#xA;グルーピングやソートに失敗した場合、falseを返します。&#xA;&#xA;２つ以上のパラメータを指定した場合、falseを返します。&#xA;keystringプロパティ値が設定されていない状態で、パラメータを省略すると、falseを返します。" />
+          <Arguments>
+            <Argument name="strKeyString" type="String" in="false" out="false" option="false" variable="false" description="グルーピングまたはソートの基準となる条件式を文字列に設定します。&#xA;&#xA;値を省略した場合、keystringプロパティに設定された値が条件式に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="cancolumnchange" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのColumn値が変更されたときに発生するイベントです。">
+        <Syntax text="Dataset.cancolumnchange(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返した場合、Columnの値が変更されて、oncolumnchangedイベントが発生します。&#xA;イベントで返り値として「false」を返した場合、Columnの値が変更されず、oncolumnchangedイベントが発生しません。&#xA;&#xA;イベントで返り値を省略すると、「true」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="canrowposchange" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rowの選択が変更されて、DataSetのrowpositionプロパティ値が変更されたときに発生するイベントです。">
+        <Syntax text="Dataset.canrowposchange(obj:nexacro.NormalDataset,e:nexacro.DSRowPosChangeEventInfo);">
+          <Return type="Boolean" description="イベントで戻り値として「true」を返した場合、rowpositionプロパティ値が変更され、onrowposchangedイベントが発生します。&#xA;イベントで戻り値として「false」を返した場合、rowpositionプロパティ値が変更されず、onrowposchangedイベントが発生しません。&#xA;&#xA;イベントで戻り値を省略すると、「true」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DSRowPosChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncolumnchanged" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのColumn値が変更された後に発生するイベントです。">
+        <Syntax text="Dataset.oncolumnchanged(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetにデータロードが完了した後に発生するイベントです。">
+        <Syntax text="Dataset.onload(obj:nexacro.NormalDataset,e:nexacro.DSLoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSLoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrowposchanged" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rowの選択が変更されてDataSetのrowpositionプロパティ値が変更された後に発生するイベントです。">
+        <Syntax text="Dataset.onrowposchanged(obj:nexacro.NormalDataset,e:nexacro.DSRowPosChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSRowPosChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrowsetchanged" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="データがDataSetにInsert、Deleteされるか、Rowの位置、状態などが変更された後に発生するイベントです。">
+        <Syntax text="Dataset.onrowsetchanged(obj:nexacro.NormalDataset,e:nexacro.DSRowsetChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSRowsetChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvaluechanged" group="" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSetのデータをInsert、Delete、Updateするか、Rowの位置、状態などを変更した場合、最後に発生するイベントです。">
+        <Syntax text="Dataset.onvaluechanged(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

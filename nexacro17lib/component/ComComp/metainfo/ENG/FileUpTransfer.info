@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileUpTransfer">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.FileUpTransfer" shorttypename="FileUpTransfer" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This is an invisible object designed to upload files to the server." />
+    <PropertyInfo>
+      <Property name="filelist" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This read-only property holds a collection that contains the information on the files to be uploaded from a FileUpTransfer to the server." csspropertyname="" normalpropertyname="filelist" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to set the identification of a FileUpTransfer." csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to specify the name of a FileUpTransfer." csspropertyname="" normalpropertyname="name" />
+      <Property name="postdatalist" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This read-only property holds the data that will be sent to the server. The data, which takes the form of a collection, is used to request file upload." csspropertyname="" normalpropertyname="postdatalist" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This property is used to define a server location onto which a FileUpTransfer will upload files." csspropertyname="" normalpropertyname="url" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to declare a certain event and then add it to a FileUpTransfer.">
+        <Syntax text="FileUpTransfer.addEvent( strEventID )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if an event is added successfully.&#xA;&#xA;This method will return &quot;false&quot; if it fails to add an event or you specify the ID of an event that has been declared already." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of an event to add to the FileUpTransfer." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add a handler to a certain event of a FileUpTransfer.">
+        <Syntax text="FileUpTransfer.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to find a function and add it to a certain event of a FileUpTransfer as a handler.">
+        <Syntax text="FileUpTransfer.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add a file item to the end position of the filelist property.">
+        <Syntax text="FileUpTransfer.addFile( strID, objVFile )">
+          <Return type="Number" description="If a file item is added successfully, this method will return the index number of the added item.&#xA;&#xA;This method will return -1 if there is a duplicate of the strID parameter's value or if you fail to set the strlD or objVFile parameter accurately." />
+          <Arguments>
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="This is a VirtualFile object containing the information on the file that will be added to the filelist property." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the ID of a file to add to the filelist property.&#xA;&#xA;This parameter is used as the value of the name parameter for file uploading." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="FileUpTransfer.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearFileList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to delete all the file items held by the filelist property.">
+        <Syntax text="FileUpTransfer.clearFileList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearPostDataList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove all the entries of the data set by the postdatalist property.">
+        <Syntax text="FileUpTransfer.clearPostDataList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to delete a FileUpTransfer that is dynamically created through a script.">
+        <Syntax text="FileUpTransfer.destroy()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a FileUpTransfer is successfully removed.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="existFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the existence of a file item that matches a VirtualFile object delivered as an argument. The file item here is held by the filelist property.">
+        <Syntax text="FileUpTransfer.existFile( objVFile )">
+          <Return type="Boolean" description="if this method finds that there is a file item that matches a VirtualFile object delivered as an argument, &quot;true&quot; will be returned. The file item here is held by the filelist property.&#xA;&#xA;If this method finds that there is no such file item, &quot;false&quot; will be returned." />
+          <Arguments>
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="This is a VirtualFile object containing the information on the file whose existence will be checked." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method finds a handler in a certain event of a FileUpTransfer and returns the index of the handler.">
+        <Syntax text="FileUpTransfer.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you attempt to find.&#xA;&#xA;If the handler does not exist, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns a specific handler from a certain event of a FileUpTransfer by specifying the index number of the handler.">
+        <Syntax text="FileUpTransfer.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;&#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileArrayByFileName" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns an array whose elements are VirtualFile objects that match specified file names. The specified files are among the file items held by the filelist property.">
+        <Syntax text="FileUpTransfer.getFileArrayByFileName( strFileName )">
+          <Return type="Array" description="This method returns an array whose elements are VirtualFile objects that match specified file names. The specified files are among the file items held by the filelist property.&#xA;&#xA;Even if only one file item is returned, this method will return an array.&#xA;&#xA;If no file item matches the specified file names, this method will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the names of files whose information will be returned." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getIndexArrayByFileName" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns an array whose elements are index numbers of the file items that match specified file names. The file items here are held by the filelist property.">
+        <Syntax text="FileUpTransfer.getIndexArrayByFileName( strFileName )">
+          <Return type="Object" description="This method returns an array whose elements are index numbers of the file items that match specified file names. The file items here are held by the filelist property.&#xA;&#xA;Even if only one file item is returned, this method will return an array.&#xA;&#xA;If no file item matches the specified file names, this method will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the names of files whose index numbers will be returned." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getPostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns the entry of a certain key from the data set by the postdatalist property.">
+        <Syntax text="FileUpTransfer.getPostData( strKey )">
+          <Return type="Variant" description="This method returns the data entry whose key is designated by the strKey parameter.&#xA;&#xA;If this method fails to find the specified data, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key of the data entry that will be returned." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add a handler to a certain event of a FileUpTransfer at a specified position.">
+        <Syntax text="FileUpTransfer.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been inserted to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;&#xA;If this method fails to insert a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="This is an index number of the position at which the handler will be added.&#xA;&#xA;If you specify -1, the handler will be added at the end.&#xA;If you specify a value bigger than the number of handlers defined in the event, the handler will be added at the end.&#xA;If you specify a NaN value, the values will turn to 0 in compliance with ECMA's conversion rule." />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be inserted to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a certain event that is declared in a FileUpTransfer.">
+        <Syntax text="FileUpTransfer.removeEvent( strEventID )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if an event is removed successfully.&#xA;&#xA;This method will return &quot;false&quot; if it fails to remove an event or you specify the ID of an event that has not been declared." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of an event to remove from the FileUpTransfer." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a handler in a certain event of a FileUpTransfer.">
+        <Syntax text="FileUpTransfer.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to find a handler in a certain event of a FileUpTransfer and remove it.">
+        <Syntax text="FileUpTransfer.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a file item that matches a VirtualFile object delivered as an argument. The file item here is held by the filelist property.">
+        <Syntax text="FileUpTransfer.removeFile( strID )">
+          <Return type="Number" description="This method will return the index number of the removed item.&#xA;&#xA;If the strID parameter is not set appropriately or this method fails to remove a file item, this method will return -1." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of a file to remove from the filelist property." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeFileByIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a file item whose index number matches a number delivered as an argument. The file item here is held by the filelist property.">
+        <Syntax text="FileUpTransfer.removeFileByIndex( nIndex )">
+          <Return type="Number" description="This method will return the index number of the removed item.&#xA;&#xA;If the nIndex parameter is not set appropriately or this method fails to remove a file item, this method will return -1." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the index number of a file item that will be removed. The file item here is held by the filelist property.&#xA;&#xA;If you specify a NaN value, the values will turn to 0 in compliance with ECMA's conversion rule." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removePostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove the entry of a certain key from the data set by the postdatalist property.">
+        <Syntax text="FileUpTransfer.removePostData( strKey );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key of the data entry that will be removed." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to change the first handler in a certain event of a FileUpTransfer.">
+        <Syntax text="FileUpTransfer.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method finds a function and uses it to replace the first handler in a certain event of a FileUpTransfer.">
+        <Syntax text="FileUpTransfer.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to change a file item that is held by the filelist property. The index number of the item is delivered as an argument.">
+        <Syntax text="FileUpTransfer.setFile( nIndex, objVFile )">
+          <Return type="Boolean" description="If this method successfully changes the file item whose index number is delivered as an argument, &quot;true&quot; will be returned.&#xA;&#xA;If the nIndex parameter is not set appropriately or this method fails to change the file item, this method will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="This is a number representing the index number of a file item that will be changed. The file item here is held by the filelist property.&#xA;&#xA;If you specify a NaN value, the values will turn to 0 in compliance with ECMA's conversion rule." />
+            <Argument name="objVFile" type="Object" in="false" out="false" option="false" variable="false" description="This is a VirtualFile object containing the information on the file that will replace the existing file item." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPostData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add data to the postdatalist property, whose data will be sent to the server to request file upload.">
+        <Syntax text="FileUpTransfer.setPostData( strKey, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="This is a string representing the key of the data entry that will be sent to the server.&#xA;&#xA;If there exists already an entry of the same key, the entry will be replaced with the new data." />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="This is data that will be sent to the server.&#xA;&#xA;You can use basic data types like number, string and Boolean." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="upload" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to upload the files set by the filelist property in the &quot;POST&quot; manner by using the HTTP/HTTPS protocol.">
+        <Syntax text="FileUpTransfer.upload( [strUrl] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="It is a string that represents the server location onto which files will be uploaded.&#xA;&#xA;If you omit this parameter, the value of the url property will be applied instead.&#xA;If you specify this parameter, the url property will be ignored." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs when file upload fails or an error code is returned.">
+        <Syntax text="FileUpTransfer.onerror(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onprogress" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs at regular intervals while files are uploaded.">
+        <Syntax text="FileUpTransfer.onprogress(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferProgressEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferProgressEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs when a success code is delivered after the uploading of files.">
+        <Syntax text="FileUpTransfer.onsuccess(obj:nexacro.FileUpTransfer,e:nexacro.FileUpTransferEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileUpTransferEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

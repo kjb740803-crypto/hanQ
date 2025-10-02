@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.VirtualFile">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.VirtualFile" shorttypename="VirtualFile" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This is a virtual file object used to read or write files in a local system." />
+    <PropertyInfo>
+      <Property name="async" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="This property is used to determine how a VirtualFile object performs a requested task." csspropertyname="" normalpropertyname="async" />
+      <Property name="filename" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This read-only property holds the name of a file loaded onto a VirtualFile." csspropertyname="" normalpropertyname="filename" />
+      <Property name="fullpath" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the information on the full path of a file opened in a VirtualFile." csspropertyname="" normalpropertyname="fullpath" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This property is used to set the identification of a VirtualFile." csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This property is used to specify the name of a VirtualFile." csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the parent object of a VirtualFile." csspropertyname="" normalpropertyname="parent" />
+      <Property name="path" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This read-only property holds the information on the path of a file opened in a VirtualFile." csspropertyname="" normalpropertyname="path" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to declare a certain event and then add it to a VirtualFile.">
+        <Syntax text="VirtualFile.addEvent( strEventID )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if an event is added successfully.&#xA;&#xA;This method will return &quot;false&quot; if it fails to add an event or you specify the ID of an event that has been declared already." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of an event to add to the VirtualFile." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add a handler to a certain event of a VirtualFile.">
+        <Syntax text="VirtualFile.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="VirtualFile.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to close a file opened by a VirtualFile.">
+        <Syntax text="VirtualFile.close()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to copy a certain file in a VirtualFile.">
+        <Syntax text="VirtualFile.copy( strSrc, strDest );">
+          <Return type="Boolean" description="If there is a flaw, such as the absence of parameters or input of invalid characters, the method will return &quot;false&quot;.&#xA;&#xA;If there is no problem, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strDest" type="String" in="false" out="false" option="false" variable="false" description="It specifies the name of a copy file with the file's path.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias." />
+            <Argument name="strSrc" type="String" in="false" out="false" option="false" variable="false" description="It specifies the name of an original file with the file's path.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to create a folder in a VirtualFile.">
+        <Syntax text="VirtualFile.createDirectory( strPath, [bAllCreate] )">
+          <Return type="Boolean" description="It returns whether the method has been successfully called, regardless of the creation of a folder." />
+          <Arguments>
+            <Argument name="bAllCreate" type="Boolean" in="false" out="false" option="false" variable="false" description="If you specify &quot;true&quot;, a folder will be created after the entire intermediate path is created.&#xA;If you specify &quot;false&quot;, a folder will be created only when the specified intermediate path exists.&#xA;&#xA;The default value is &quot;false&quot;." />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="This is a string that specifies the name of a folder to create, along with the intermediate path.&#xA;&#xA;If you specify a absolute path like &quot;C:\\TobeSoft\\TestFolder&quot;, a folder will be created in the relevant location.&#xA;However, if you specify only a directory name like &quot;My_Folder&quot;, a folder will be created in My Documents." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to remove a folder in a VirtualFile.">
+        <Syntax text="VirtualFile.deleteDirectory( strPath [, bAllChild] )">
+          <Return type="Boolean" description="It returns whether the method has been successfully called, regardless of the removal of a folder." />
+          <Arguments>
+            <Argument name="bAllChild" type="Boolean" in="false" out="false" option="false" variable="false" description="If you specify &quot;true&quot;, the specified folder will be removed together with subordinate folders and files.&#xA;If you specify &quot;false&quot;, the subordinate folders and files of the specified folder will not be removed.&#xA;&#xA;The default value is &quot;false&quot;." />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="This is a string that specifies the name of a folder to remove, along with the intermediate path.&#xA;&#xA;If you specify a absolute path like &quot;C:\\TobeSoft\\TestFolder&quot;, a folder will be removed from the relevant location.&#xA;However, if you specify only a directory name like &quot;My_Folder&quot;, a folder will be removed from My Documents." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method finds a handler in a certain event of a VirtualFile and returns the index of the handler.">
+        <Syntax text="VirtualFile.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method returns a specific handler from a certain event of a VirtualFile object by specifying the index number of the handler.">
+        <Syntax text="VirtualFile.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns a list comprising the files or sub-folders in a certain location.">
+        <Syntax text="VirtualFile.getFileList( strPath, strSearchExpr [, constOption] )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if successfully executed.&#xA;This method will return &quot;false&quot; if it fails to executed or arguments are invalid.&#xA;&#xA;This method returns whether it is successfully executed regardless of whether it has returned a file or folder list." />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="This is a constant representing the types of search targets that can be found in a returned file list.&#xA;&#xA;If you specify &quot;VirtualFile.findAll&quot; or 1 (0x01), this method will search the files and folders in the location specified by the strPath parameter.&#xA;If you specify &quot;VirtualFile.findFileOnly&quot; or 2 (0x02), this method will search only the files in the location specified by the strPath parameter.&#xA;If you specify &quot;VirtualFile.findDirectoryOnly&quot; or 4 (0x04), this method will search only the subordinate folders in the location specified by the strPath parameter.&#xA;&#xA;If you specify &quot;VirtualFile.findRecursive&quot; or 8 (0x08), this method will search the sub-folders recursively.&#xA;If you specify &quot;VirtualFile.findCaseless&quot; or 16 (0x10), this method will conduct case-insensitive search. &#xA;&#xA;You can specify the values &quot;VirtualFile.findRecursive&quot; and &quot;VirtualFile.findCaseless&quot; together with another option by using &quot;|&quot; as a divider.&#xA;&#xA;The default value of this parameter is &quot;VirtualFile.findAll&quot;." />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="This string represents a folder whose list of files or folders you want to obtain.&#xA;&#xA;You can use either an absolute path or an alias." />
+            <Argument name="strSearchExpr" type="String" in="false" out="false" option="false" variable="false" description="This string represents a regular expression used to find files and folders that will be included in a returned file list.&#xA;The defined regular expression is set to match file names or folder names.&#xA;&#xA;If you use an escape character (&quot;\&quot;) in a regular expression, you need to use it twice like &quot;\\&quot;.&#xA; eg) The regular expression &quot;Text\\d&quot; is designed to search for a file name or folder name that comprises &quot;Text&quot; and a following number.&#xA;&#xA;Since the &quot;.&quot; in a regular expression matches all characters except line feed characters, you must specify &quot;\\.&quot; to match the character &quot;.&quot; itself.&#xA; eg) The regular expression &quot;\\.txt$&quot; is designed to search for a file whose extension is txt." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to obtain the size of a file opened in a VirtualFile.">
+        <Syntax text="VirtualFile.getFileSize()">
+          <Return type="Boolean" description="This method returns whether it has been executed regardless of the success/failure in returning a file size.&#xA;&#xA;If this method is executed, it will return &quot;true&quot;.&#xA;If this method fails to be executed, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to add a handler to a certain event of a VirtualFile at a specified position.">
+        <Syntax text="VirtualFile.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been inserted to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;&#xA;If this method fails to insert a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="This is an index number of the position at which the handler will be added.&#xA;&#xA;If you specify -1, the handler will be added at the end.&#xA;If you specify a value bigger than the number of handlers defined in the event, the handler will be added at the end.&#xA;If you specify a NaN value, the values will turn to 0 in compliance with ECMA's conversion rule." />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be inserted to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isExist" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method returns the existence of a certain file or folder.">
+        <Syntax text="VirtualFile.isExist(strPath)">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if you omit the parameter or use prohibited characters as a value of the parameter.&#xA;&#xA;Otherwise, this method will be executed successfully, thus returning &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="This string represents a file or folder whose existence you want to check.&#xA;&#xA;You can use either an absolute path or an alias." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to open a file loaded onto a VirtualFile in a specified mode.">
+        <Syntax text="VirtualFile.open( strFileName ,constOptions )">
+          <Return type="Boolean" description="If this method is successfully called, it returns &quot;true&quot; regardless of the opening of the file.&#xA;&#xA;If this method fails to be called, it returns &quot;false&quot; regardless of the opening of the file.&#xA;Moreover, this method will return &quot;false&quot; if you omit a parameter or set an invalid argument." />
+          <Arguments>
+            <Argument name="constOptions" type="Object" in="false" out="false" option="false" variable="false" description="This is a constant that represents an option for opening a file.&#xA;You can specify multiple options by using OR operators (|) as dividers.&#xA;&#xA;If you specify &quot;VirtualFile.openRead&quot; or 1, you can open a file in the read-only mode.&#xA;If a designated file does not exist, an error occurs.&#xA;&#xA;If you specify &quot;VirtualFile.openWrite&quot; or 2, you can open a file in the write-only mode.&#xA;If a designated file does not exist, the file will be created.&#xA;&#xA;If you specify &quot;VirtualFile.openAppend&quot; or 16, you can open a file in the read and write mode.&#xA;If a designated file exists, the file pointer will be situated at the end of the opened file.&#xA;If a designated file does not exist, the file will be created.&#xA;&#xA;If you specify &quot;VirtualFile.openText&quot; or 4096, you can create and open a file.&#xA;If a designated file already exists, the onerror event will occur.&#xA;&#xA;If you specify &quot;VirtualFile.openCreate&quot; or 256, you can open a file in the text mode.&#xA;&#xA;If you specify &quot;VirtualFile.openBinary&quot; or 512, you can open a file in the binary mode." />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="This is the name of a file you want to open, specified with an absolute path or alias.&#xA;&#xA;This parameter is applicable only to a virtual file delivered through a FileUpload, FileUpTransfer or FileDialog object as well as a virtual file that is dragged and dropped." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to read the contents of a file opened in a VirtualFile.">
+        <Syntax text="VirtualFile.read([nLength [, strCharset]])">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if its parameters contain a character that is not permitted. &#xA;&#xA;Otherwise, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="nLength" type="Number" in="false" out="false" option="false" variable="false" description="The length of contents to read from the file, specified in byte.&#xA;&#xA;If omitted, the entire fill will be read." />
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="It specifies a character set applied to contents to read&#xA;&#xA;This parameter is supported only by the Windows NRE. In mobile devices, the UTF-8 character set will be applied." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to read the contents of a file opened in a VirtualFile up to a certain point.">
+        <Syntax text="VirtualFile.readLine([strDelimeter[, strCharset]])">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if its parameters contain a character that is not permitted. &#xA;Otherwise, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="It specifies a character set applied to contents to read&#xA;&#xA;This parameter is supported only by the Windows NRE. In mobile devices, the UTF-8 character set will be applied." />
+            <Argument name="strDelimeter" type="String" in="false" out="false" option="false" variable="false" description="It specifies a delimiter that indicates where to stop reading in a file.&#xA;&#xA;The default value is &quot;\n&quot;." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="remove" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to remove the file in a VirtualFile.">
+        <Syntax text="VirtualFile.remove( strFilePath )&#xA;VirtualFile.remove( objVirtualFile )">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if a parameter is omitted or an invalid character is used.&#xA;Otherwise, this method will return &quot;true&quot;, suggesting normality." />
+          <Arguments>
+            <Argument name="objVirtualFile" type="Object" in="false" out="false" option="false" variable="false" description="This is a VirtualFile object that is returned from the FileDialog object and will be removed.&#xA;&#xA;You cannot designate a VirtualFile object if the object itself is a subject that executes this method.&#xA;The onerror event will occur if the designated VirtualFile object itself is a subject that executes this method." />
+            <Argument name="strFilePath" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the name of a file to remove, specified with the file's path.&#xA; &#xA;For specifying the path, you can use either an absolute path or an alias." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a certain event that is declared in a VirtualFile.">
+        <Syntax text="VirtualFile.removeEvent( strEventID )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if an event is removed successfully.&#xA;&#xA;This method will return &quot;false&quot; if it fails to remove an event or you specify the ID of an event that has not been declared." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the ID of an event to remove from the VirtualFile." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to remove a handler in a certain event of a VirtualFile.">
+        <Syntax text="VirtualFile.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rename" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This is method used to relocate or rename a certain file in a VirtualFile.">
+        <Syntax text="VirtualFile.rename( strOldname, strNewname );">
+          <Return type="Boolean" description="If there is a flaw, such as the absence of parameters or input of invalid characters, the method will return &quot;false&quot;.&#xA;&#xA;If there is no problem, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strNewname" type="String" in="false" out="false" option="false" variable="false" description="It specifies a new path and name of the file.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias." />
+            <Argument name="strOldname" type="String" in="false" out="false" option="false" variable="false" description="It specifies the name and path of a file whose location or name will be changed.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="renameDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to rename a folder in a VirtualFile.">
+        <Syntax text="VirtualFile.renameDirectory( strOldName, strNewName )">
+          <Return type="Boolean" description="It returns whether the method has been successfully called, regardless of the renaming of a folder." />
+          <Arguments>
+            <Argument name="strNewName" type="String" in="false" out="false" option="false" variable="false" description="This is the new name of the specified folder, not including the intermediate path." />
+            <Argument name="strOldName" type="String" in="false" out="false" option="false" variable="false" description="This is a string that specifies the name of a folder to rename, along with the intermediate path.&#xA;&#xA;If you specify a absolute path like &quot;C:\\TobeSoft\\TestFolder&quot;, a folder in the relevant location will be renamed.&#xA;However, if you specify only a directory name like &quot;My_Folder&quot;, a folder in My Documents will be renamed." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to relocate a file pointer in a file opened in a VirtualFile.">
+        <Syntax text="VirtualFile.seek(nOffset[, constOption])">
+          <Return type="Boolean" description="If there is a flaw, such as the absence of parameters or input of invalid characters, the method will return &quot;false&quot;.&#xA;&#xA;If there is no problem, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="This is a constant representing the options that can be applied when the file pointer is moved.&#xA;&#xA;If you specify &quot;VirtualFile.seekBegin&quot; or 0, the file pointer will move from the beginning position of the file.&#xA;If you specify &quot;VirtualFile.seekCurrent&quot; or 1, the file pointer will move from its current position.&#xA;If you specify &quot;VirtualFile.seekEnd&quot; or 2, the file pointer will move from the end position of the file.&#xA;&#xA;The default value is &quot;VirtualFile.seekCurrent&quot;." />
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="This the number of bytes indicating how far the file pointer will be moved from the current position.&#xA;&#xA;If you specify a negative number, the pointer will move toward the beginning position from the current position." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This method is used to change the first handler in a certain event of a VirtualFile.">
+        <Syntax text="VirtualFile.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="This method is used to save data in a file opened in a VirtualFile.">
+        <Syntax text="VirtualFile.write( varData [, strCharset] )">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if its parameters contain a character that is not permitted. It will also return &quot;false&quot; when the required parameter is omitted.&#xA;&#xA;Otherwise, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="It specifies a character set applied to data to save.&#xA;&#xA;This parameter is supported only by the Windows NRE. In mobile devices, the UTF-8 character set will be applied." />
+            <Argument name="varData" type="Variant" in="false" out="false" option="false" variable="false" description="It specifies a string or buffer object that represents data to save" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs when a task requested to a VirtualFile fails.">
+        <Syntax text="VirtualFile.onerror(obj:nexacro.VirtualFile,e:nexacro.VirtualFileErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileErrorEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="This event occurs when a task requested to a VirtualFile succeeds.">
+        <Syntax text="VirtualFile.onsuccess(obj:nexacro.VirtualFile,e:nexacro.VirtualFileEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

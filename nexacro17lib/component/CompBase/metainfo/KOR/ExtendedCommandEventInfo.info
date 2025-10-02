@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExtendedCommandEventInfo">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ExtendedCommandEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="DeviceAdaptors 에 정의된 디바이스에 의해 발생하는 onextendedcommand 이벤트에 전달되는 EventInfo 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="data" group="" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="이벤트 발생 시 DeviceAdaptors 에서 전달된 데이터를 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="data" />
+      <Property name="deviceid" group="" subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="이벤트 발생의 원인이 되는 디바이스의 ID 를 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="deviceid" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="이벤트의 ID를 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="eventid" />
+      <Property name="eventtype" group="" subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="이벤트가 발생한 이유에 대한 정보를 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="eventtype" />
+      <Property name="fromobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="이벤트 발생의 원인이 되는 컴포넌트를 갖는 속성입니다." csspropertyname="" normalpropertyname="fromobject" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="preventDefault" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="현재 이벤트의 Default Action 을 취소하는 메소드입니다.">
+        <Syntax text="ExtendedCommandEventInfo.preventDefault()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="stopPropagation" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="현재 이벤트를 상위컴포넌트로 전파하지 않게 중지시키는 메소드입니다.">
+        <Syntax text="ExtendedCommandEventInfo.stopPropagation()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

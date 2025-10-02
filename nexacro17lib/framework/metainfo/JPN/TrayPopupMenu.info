@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TrayPopupMenu">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.TrayPopupMenu" shorttypename="TrayPopupMenu" csstypename="" csscontrolname="" group="Component" subgroup="Component ( default )" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows NRE" description="TrayのPopupMenuオブジェクトです。&#xA;システムが提供するAPIポップアップメニューを使用します。" />
+    <PropertyInfo>
+      <Property name="captioncolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="innerdatasetプロパティに設定されたDatasetのColumnの中から、ポップアップメニューアイテムのテキストが定義されたColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="captioncolumn" />
+      <Property name="checkboxcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="innerdatasetプロパティに設定されたDatasetのColumnの中から、サブメニューのアイテムにチェックマークの画像を表示するかどうかが定義されたColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="checkboxcolumn" />
+      <Property name="enablecolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="innerdatasetプロパティに設定されたDatasetのColumnの中から、メニューアイテムの活性・非活性状態が定義されたColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="enablecolumn" />
+      <Property name="hotkeycolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="innerdatasetプロパティに設定されたDatasetのColumnの中から、メニューアイテムのホットキーの内容が定義されたColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="hotkeycolumn" />
+      <Property name="iconcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="innerdatasetプロパティに設定されたDatasetのColumnの中から、メニューアイテムのアイコン画像のURLが定義されたColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="iconcolumn" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE" description="TrayPopupMenuの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="idcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="innerdatasetプロパティに設定されたDatasetのColumnの中から、ポップアップメニューアイテムのIDを定義したColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="idcolumn" />
+      <Property name="innerdataset" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerDatasetID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="Trayのポップアップメニューアイテムが定義されたDatasetのIDを設定するプロパティです。" csspropertyname="" normalpropertyname="innerdataset" />
+      <Property name="levelcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="innerdatasetプロパティに設定されたDatasetのColumnの中から、ポップアップメニューの階層レベルが定義されたColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="levelcolumn" />
+      <Property name="userdatacolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="innerdatasetプロパティに設定されたDatasetのColumnの中から、ユーザーデータが定義されたColumnを設定するプロパティです。" csspropertyname="" normalpropertyname="userdatacolumn" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="trackPopup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Trayのポップアップメニューをマウスカーソルの位置に表示するメソッドです。">
+        <Syntax text="TrayPopupMenu.trackPopup()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="oninnerdatachanged" group="Event" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="TrayPopupMenuのinnerdatasetプロパティにバインドされたDataSetで、データが変更された後に発生するイベントです。">
+        <Syntax text="TrayPopupMenu.oninnerdatachanged(obj:nexacro.TrayPopupMenu,e:nexacro.InnerdataChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InnerdataChangedEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmenuclick" group="Event" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Trayよりメニューアイテムをマウスの左ボタンでクリックした際に発生するイベントです。">
+        <Syntax text="TrayPopupMenu.onmenuclick(obj:nexacro.TrayPopupMenu,e:nexacro.MenuClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MenuClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

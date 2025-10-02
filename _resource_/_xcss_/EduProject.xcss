@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XCSS version="1.0"><![CDATA[.Grid .body .row .cell.cell_style1
+{
+	color : #3da2df;
+	-nexa-color-odd : #3da2df;
+	font : bold italic 12pt/normal "Arial";
+}
+
+.Grid .body .row .cell.grd_fix_left
+{
+	background : #f6edc5;
+	-nexa-background-odd : #f6edc5;
+
+}
+.Grid .body .row .cell.grd_fix_right
+{
+	background : #f8d2e3;
+	-nexa-background-odd : #f8d2e3;
+
+}
+.Grid.grd_MT_mnuPop
+{
+	-nexa-border : 2px solid #b42854,0px none,0px none,0px none;
+	background : #546169;
+}
+.Grid.grd_MT_mnuPop .body .row .cell, .Grid.grd_MT_mnuPop .body .row .cell[status=mouseover]
+{
+	-nexa-background-odd : transparent;
+	-nexa-color-odd : #ffffff;
+	color : #ffffff;
+	font : normal 700 20px/normal "Verdana";
+	-nexa-text-align : left;
+	-nexa-vertical-align : middle;
+	-nexa-padding : 2px;
+	background : transparent;
+	-nexa-border : 0px none , 0px none , 1px solid #cbcbcb , 0px none;
+	border-radius : 0px;
+}
+,.Grid.grd_MT_mnuPop .body .row .cell[userstatus=selected]
+{
+	-nexa-background-odd : #cbcbcb;
+	-nexa-color-odd : #546169;
+	color : #546169;
+	font : normal 700 20px/normal "Verdana";
+	-nexa-text-align : left;
+	-nexa-vertical-align : middle;
+	-nexa-padding : 2px;
+	background : #cbcbcb;
+	-nexa-border : 0px none , 0px none , 1px solid #cbcbcb , 0px none;
+	border-radius : 0px;
+}]]></XCSS>

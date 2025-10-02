@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Mobile_Work" width="480" height="840" titletext="참석관리" onload="Form_onload">
+    <Layouts>
+      <Layout height="840" mobileorientation="portrait" screenid="Phone_screen" width="480">
+        <Static id="st_title" taborder="0" text="참석관리" left="10" top="5" width="110" height="30" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" cssclass="sta_WF_emptitle"/>
+        <Div id="div_search" taborder="1" left="10" top="40" height="90" right="10" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" cssclass="div_WFSA">
+          <Layouts>
+            <Layout/>
+          </Layouts>
+        </Div>
+        <Button id="btn_retrieve" taborder="2" text="조회" top="5" width="78" height="30" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" onclick="btn_retrieve_onclick" left="128"/>
+        <Button id="btn_add" taborder="3" text="추가" top="5" width="78" height="30" onclick="btn_add_onclick" left="216"/>
+        <Button id="btn_del" taborder="4" text="삭제" top="5" width="78" height="30" onclick="btn_del_onclick" left="304"/>
+        <Button id="btn_save" taborder="5" text="저장" top="5" width="78" height="30" onclick="btn_save_onclick" left="392"/>
+        <Grid id="grdMember" taborder="6" left="10" top="140" height="275" binddataset="ds_history" autofittype="col" summarytype="top" right="10">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="161"/>
+                <Column size="185"/>
+              </Columns>
+              <Rows>
+                <Row size="40" band="head"/>
+                <Row size="40"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="ID"/>
+                <Cell col="1" text="성명"/>
+                <Cell col="2" text="전화번호"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:MEMBER_NO" textAlign="center"/>
+                <Cell col="1" text="bind:MEMBER_NAME"/>
+                <Cell col="2" text="bind:MEMBER_PHONE" textAlign="center"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static00_00_00" taborder="7" text="강습일자" left="20" top="433" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <Calendar id="Calendar00" taborder="8" left="104" top="427" width="147" height="35"/>
+        <Radio id="Radio00" taborder="9" left="267" top="427" width="191" height="37" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" columncount="3">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">001</Col>
+                <Col id="datacolumn">유료</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">002</Col>
+                <Col id="datacolumn">자율</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">003</Col>
+                <Col id="datacolumn">기타</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <Static id="Static00_00_00_00_00" taborder="10" text="진행시간" left="20" top="473" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <Static id="Static00_00_00_00_01" taborder="11" text="~" left="273" top="473" width="16" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <TextArea id="TextArea00" taborder="12" left="104" top="550" width="355" height="120"/>
+        <TextArea id="TextArea00_00" taborder="13" left="104" top="667" width="355" height="88"/>
+        <Static id="Static00_00_00_00_00_00" taborder="14" text="강습내용" left="20" top="563" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <Static id="Static00_00_00_00_00_00_00" taborder="15" text="메모" left="20" top="673" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <Static id="Static00_00_00_00_00_01" taborder="16" text="강습장소" left="20" top="515" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <Combo id="Combo00_02" taborder="17" text="Combo00" left="104" top="510" width="355" height="33" innerdataset="ds_place" codecolumn="COMMON_CD" datacolumn="COMMON_NM"/>
+        <MaskEdit id="MaskEdit00" taborder="18" left="104" top="468" width="147" height="35" type="string" format="##:##:##"/>
+        <MaskEdit id="MaskEdit00_00" taborder="19" left="313" top="468" width="147" height="35" type="string" format="##:##:##"/>
+        <Static id="Static00_00_00_00" taborder="20" text="강습일자" left="20" top="54" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <Calendar id="calDate" taborder="21" left="104" top="48" width="147" height="35" dateformat="yyyy-MM-dd" onchanged="calDate_onchanged"/>
+        <Static id="Static00_00_00_00_00_02" taborder="22" text="진행시간" left="20" top="94" width="77" height="21" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <MaskEdit id="mskFromDt" taborder="23" left="104" top="89" width="147" height="35" type="string" format="##:##:##"/>
+        <MaskEdit id="mskToDt" taborder="24" left="313" top="89" width="147" height="35" type="string" format="##:##:##"/>
+      </Layout>
+      <Layout height="728" mobileorientation="portrait" screenid="Phone_screen" width="480" name="default0"/>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_history">
+        <ColumnInfo>
+          <Column id="MEMBER_NO" type="STRING" size="256"/>
+          <Column id="SEQ" type="STRING" size="256"/>
+          <Column id="REG_DT" type="STRING" size="256"/>
+          <Column id="HISTORY_INFO" type="STRING" size="256"/>
+          <Column id="GUBUN" type="STRING" size="256"/>
+          <Column id="START_DT" type="STRING" size="256"/>
+          <Column id="END_DT" type="STRING" size="256"/>
+          <Column id="MEMO" type="STRING" size="256"/>
+          <Column id="PLACE" type="STRING" size="256"/>
+          <Column id="UPDATE_DT" type="STRING" size="256"/>
+          <Column id="STATUS" type="STRING" size="256"/>
+          <Column id="MEMBER_NAME" type="STRING" size="256"/>
+          <Column id="MEMBER_PHONE" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_place">
+        <ColumnInfo>
+          <Column id="COMMON_CD" type="STRING" size="256"/>
+          <Column id="COMMON_NM" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_fram_hh">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">06</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">07</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">08</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">09</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">10</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">11</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">12</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">13</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">14</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">15</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">16</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">17</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">18</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">19</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">20</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">21</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">22</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">23</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">24</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_fram_mm">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">00</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">10</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">20</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">30</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">40</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">50</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">60</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_to_hh">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">06</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">07</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">08</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">09</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">10</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">11</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">12</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">13</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">14</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">15</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">16</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">17</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">18</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">19</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">20</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">21</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">22</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">23</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">24</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_to_mm">
+        <ColumnInfo>
+          <Column id="CODE" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="CODE">00</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">10</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">20</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">30</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">40</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">50</Col>
+          </Row>
+          <Row>
+            <Col id="CODE">60</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[include "Lib::Common.xjs"
+
+this.Form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.calDate.set_value(this.gfn_getDate("date"));
+	this.mskFromDt.set_value("100000");
+	this.mskToDt.set_value("120000");
+	this.fn_init(); 
+};
+
+this.fn_init = function(obj)
+{
+	this.gfn_transCOMMClear();   
+	// input , output,args,select  
+	var args =  "KIND='002'"	  
+	this.gfn_addTransInfo("","output",args,"003,Common,1");	
+    
+	var strSvcId    = "strCode";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";           
+	var outData     = "ds_place=output";
+	var strArg      =  "";
+	  
+	var callBackFnc = "fnCallback";      
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}  
+
+
+this.fn_query = function()
+{
+
+	this.gfn_transCOMMClear();   
+	var args =  "REG_DT=" + this.calDate.value;
+
+	this.gfn_addTransInfo("","output",args,"003,History,2");	
+	   
+	var outData     = "ds_history=output";		
+	var strSvcId    = "strSelect";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";           
+
+	var strArg      = args;
+trace(args);	  
+	var callBackFnc = "fnCallback";        
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+// Dept Popup Callback
+this.fn_callback_pop = function(sPopupId, sReturn)
+{
+	if(sReturn == undefined){
+		sReturn = "";
+	}
+	if(sPopupId == "popDept")
+	{
+		if(sReturn.length > 0){
+			var arrRtn = sReturn.split("|");
+			this.div_search.form.edt_emp_no.set_value(arrRtn[0]);
+			this.div_search.form.edt_emp_nm.set_value(arrRtn[1]);
+			this.div_search.form.edt_phone.set_value(arrRtn[2]);
+			this.fn_query(true);
+		}  
+	}  
+}
+
+// Search Area Reset
+this.div_cont_btn_reset_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.div_search.form.edt_dept_cd.set_value("");
+	this.div_search.form.edt_dept_nm.set_value("");
+};
+
+// Retrieve Button
+this.btn_retrieve_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fn_query();	
+};
+
+
+
+// Add Button
+this.btn_add_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+	var nLeft = system.clientToScreenX(this, 10);
+	var nTop  = system.clientToScreenY(this, 10);
+
+	var objChild = new ChildFrame("popDept", "absolute", nLeft, nTop, 300, 400);
+	objChild.set_formurl("Popup::Pop_EmpSearch.xfdl");
+	objChild.set_openalign("center middle");
+	objChild.set_dragmovetype("all");  
+	
+	var objParam = {paramGubun:"S"};    
+
+    objChild.showModal(this.getOwnerFrame()
+                     , objParam   
+                     , this
+                     , "fn_callback_pop");
+	
+
+
+};
+
+this.fn_callback_pop = function(sPopupId, sReturn)
+{
+	if(sReturn == undefined){
+		sReturn = "";
+	}
+	if(sPopupId == "popDept")
+	{
+		if(sReturn.length > 0){
+
+			var arrRtn = sReturn.split(",");
+			for(var i=0;i<arrRtn.length; i++)
+			{
+
+				var arrStr = arrRtn[i].split("|");
+				this.ds_history.addRow();
+				this.ds_history.setColumn(this.ds_history.rowposition,"MEMBER_NO",arrStr[0]);
+				this.ds_history.setColumn(this.ds_history.rowposition,"MEMBER_NAME",arrStr[1]);
+				this.ds_history.setColumn(this.ds_history.rowposition,"MEMBER_PHONE",arrStr[2]);
+				this.ds_history.setColumn(this.ds_history.rowposition,"GUBUN","001");  
+				this.ds_history.setColumn(this.ds_history.rowposition,"PLACE","001");
+				this.ds_history.setColumn(this.ds_history.rowposition,"STATUS","1");
+				this.ds_history.setColumn(this.ds_history.rowposition,"REG_DT",this.calDate.value);
+				this.ds_history.setColumn(this.ds_history.rowposition,"START_DT",this.mskFromDt.value);
+				this.ds_history.setColumn(this.ds_history.rowposition,"END_DT",this.mskToDt.value);
+				this.ds_history.setColumn(this.ds_history.rowposition,"HISTORY_INFO","참석");					
+				this.ds_history.setColumn(this.ds_history.rowposition,"MEMO","");									
+			}
+		}  
+	}  
+}
+
+// Save Button
+this.btn_save_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fn_save();
+};
+
+this.fn_save = function()
+{
+	
+	var args = "";    
+
+	this.gfn_transCOMMClear();  
+	this.gfn_addTransInfo("input","",args,"","003,Member,5","003,Member,7","003,Member,6");	
+
+	var strSvcId    = "strHistorySave";    
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "input=ds_history:U";
+	var outData     = "";               
+	var strArg      = "";  
+	var callBackFnc = "fnCallback";
+     
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+}
+
+
+this.fnCallback = function(svcID, errCD, errMSG)
+{
+	if(errCD < 0){
+		this.alert("Error: " + errMSG);
+		return;
+	}
+	if(svcID == "strCode")
+	{
+		this.fn_query();   
+		return;
+	} else if(svcID == "strHistorySave")
+	{
+		this.alert("저장되었습니다.");
+		this.fn_query();
+		return;
+	}
+	
+}
+
+
+
+// Today
+this.fn_today = function()
+{
+	var objDate = new Date();
+	var sToday  = objDate.getFullYear().toString();
+	    sToday += (objDate.getMonth()+1).toString().padLeft(2, "0")
+	    sToday += objDate.getDate().toString().padLeft(2, "0"); 
+
+	return sToday;
+}
+
+// Gender Code --> Name
+this.fn_gender = function(arg)
+{
+	if(arg == "M"){
+		return "Male";
+	}
+	else{
+		return "Female";
+	}
+}
+
+this.grd_list_onheadclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+//	this.cfn_GridSort(obj, e);
+};
+
+
+this.ds_emp_onrowsetchanged = function(obj:nexacro.NormalDataset,e:nexacro.DSRowsetChangeEventInfo)
+{
+	if(e.reason == 31){
+		this.setTimer(1, 20);
+	}
+};
+
+this.Form_Emp_ontimer = function(obj:nexacro.Form,e:nexacro.TimerEventInfo)
+{
+	if(e.timerid == 1){
+		this.killTimer(1);
+		this.fn_setRow(0);
+	}
+};
+
+this.fn_setRow = function(nRow)
+{
+	
+}
+this.div_search_btnEmp_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var nLeft = system.clientToScreenX(this, 10);
+	var nTop  = system.clientToScreenY(this, 10);
+
+	var objChild = new ChildFrame("popDept", "absolute", nLeft, nTop, 300, 400);
+	objChild.set_formurl("Popup::Pop_EmpSearch.xfdl");
+	objChild.set_openalign("center middle");
+	objChild.set_dragmovetype("all");  
+	
+	var objParam = {paramGubun:"D"};  
+
+    objChild.showModal(this.getOwnerFrame()
+                     , objParam   
+                     , this
+                     , "fn_callback_pop");
+	
+};
+
+this.Tab00_Tabpage2_Radio00_onitemchanged = function(obj:nexacro.Radio,e:nexacro.ItemChangeEventInfo)
+{
+	
+};
+
+this.Tab00_Tabpage2_Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+};
+
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+
+};
+
+this.calDate_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
+{
+	this.fn_query();
+};
+
+this.btn_del_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.ds_history.deleteRow(this.ds_history.rowposition);
+};
+]]></Script>
+    <Bind>
+      <BindItem id="item21" compid="Calendar00" propid="value" datasetid="ds_history" columnid="REG_DT"/>
+      <BindItem id="item23" compid="Radio00" propid="value" datasetid="ds_history" columnid="GUBUN"/>
+      <BindItem id="item24" compid="TextArea00" propid="value" datasetid="ds_history" columnid="HISTORY_INFO"/>
+      <BindItem id="item25" compid="TextArea00_00" propid="value" datasetid="ds_history" columnid="MEMO"/>
+      <BindItem id="item26" compid="Combo00_02" propid="value" datasetid="ds_history" columnid="PLACE"/>
+      <BindItem id="item27" compid="MaskEdit00" propid="value" datasetid="ds_history" columnid="START_DT"/>
+      <BindItem id="item28" compid="MaskEdit00_00" propid="value" datasetid="ds_history" columnid="END_DT"/>
+    </Bind>
+  </Form>
+</FDL>

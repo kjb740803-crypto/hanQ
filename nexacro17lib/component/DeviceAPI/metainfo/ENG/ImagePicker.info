@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ImagePicker">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ImagePicker" shorttypename="ImagePicker" csstypename="ImagePicker" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="Get the path of the image or images are stored in conjunction with the photo album mobile device." />
+    <PropertyInfo>
+      <Property name="encodingtype" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the file type of an image obtained from the gallery app of a mobile device." csspropertyname="" normalpropertyname="encodingtype" />
+      <Property name="gettype" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the information on how the image was obtained from the gallery app of a mobile device." csspropertyname="" normalpropertyname="gettype" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property is used to set the identification of a ImagePicker." csspropertyname="" normalpropertyname="id" />
+      <Property name="imageheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property is used to set the height of an image that is obtained from the gallery app of a mobile device." csspropertyname="" normalpropertyname="imageheight" />
+      <Property name="imagequality" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property sets the quality of an image obtained from the gallery app of a mobile device." csspropertyname="" normalpropertyname="imagequality" />
+      <Property name="imagewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property is used to set the width of an image that is obtained from the gallery app of a mobile device." csspropertyname="" normalpropertyname="imagewidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This property is used to specify the name of a ImagePicker." csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="This read-only property holds the parent object of a ImagePicker." csspropertyname="" normalpropertyname="parent" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This method is used to fetch an image by operating the gallery app of a mobile device.">
+        <Syntax text="ImagePicker.open( enumGettype, enumEncodingype )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if this method is executed successfully.&#xA;&#xA;This method will return &quot;false&quot; if this method fails to be executed or you enter an invalid argument." />
+          <Arguments>
+            <Argument name="enumEncodingtype" type="String" in="false" out="false" option="false" variable="false" description="This parameter determines the file type of an image delivered from the gallery app.&#xA;&#xA;If you specify &quot;JPEG&quot;, the image will be delivered as a JPEG file.&#xA;If you specify &quot;PNG&quot;, the image will be delivered as a PNG file.&#xA;&#xA;After the execution of the method, this parameter's value will be saved to the encodingtype property." />
+            <Argument name="enumGettype" type="String" in="false" out="false" option="false" variable="false" description="This parameter determines how to deliver an image from the gallery app.&#xA;&#xA;If you specify &quot;url&quot;, the location of the image will be delivered in the form of a URL.&#xA;If you specify &quot;imagedata&quot;, the image will be delivered in the form of an object.&#xA;&#xA;After the execution of the method, this parameter's value will be saved to the gettype property." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This event occurs when the import of an image fails in a mobile device.">
+        <Syntax text="ImagePicker.onerror(obj:nexacro.ImagePicker,e:nexacro.ImagePickerErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ImagePickerErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This event occurs when an image is successfully obtained from the gallery app of a mobile device.">
+        <Syntax text="ImagePicker.onsuccess(obj:nexacro.ImagePicker,e:nexacro.ImagePickerEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ImagePickerEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

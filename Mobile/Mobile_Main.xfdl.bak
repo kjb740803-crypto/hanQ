@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Mobile_Main" width="480" height="768" titletext="New Form">
+    <Layouts>
+      <Layout height="768" mobileorientation="portrait" screenid="Phone_screen" width="480">
+        <Div id="div_work" taborder="0" left="0" top="88" text="" bottom="0" border="0px none" cssclass="div_MB_work" url="Mobile::Mobile_Main_Sub.xfdl" right="0"/>
+        <Static id="Static02" taborder="2" left="0" top="0" height="88" right="0" cssclass="sta_TF_bg" onclick="Static02_onclick"/>
+        <Button id="btn_menu" taborder="1" left="21" top="30" width="33" height="29" onclick="btn_menu_onclick" cssclass="btn_MB_menu"/>
+        <Button id="btn_home" taborder="3" top="24" height="41" cssclass="btn_MB_home" width="44" left="418" onclick="btn_home_onclick"/>
+        <Static id="Static00" taborder="4" left="136" top="23" width="208" height="42" onclick="btn_home_onclick" cssclass="sta_MB_titlelogo"/>
+        <PopupDiv id="PopupDiv00" visible="false" left="577" top="69" width="347" height="254" cssclass="pdiv_MT_menu" background="#546169">
+          <Layouts>
+            <Layout>
+              <Grid id="Grid00" taborder="0" left="0" top="0" width="345" height="252" cssclass="grd_MT_mnuPop" binddataset="ds_data" autofittype="col" oncellclick="Grid00_oncellclick">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="70"/>
+                      <Column size="231"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="50"/>
+                    </Rows>
+                    <Band id="body">
+                      <Cell text="bind:MENU_IMAGE" displaytype="imagecontrol"/>
+                      <Cell col="1" text="bind:MENU_NAME"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+            </Layout>
+          </Layouts>
+        </PopupDiv>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.btn_menu_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.PopupDiv00.trackPopupByComponent(obj, -24, 57);
+	
+};
+
+this.btn_home_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.div_work.set_url("Mobile::Mobile_Main_Sub.xfdl");
+};
+
+
+this.Grid00_oncellclick = function(obj:nexacro.Grid,e:nexacro.GridClickEventInfo)
+{
+	var sURL = this.ds_data.getColumn(e.row, "MENU_URL");
+	
+	this.div_work.set_url(sURL);
+	
+	this.PopupDiv00.closePopup();
+};
+]]></Script>
+    <Objects>
+      <Dataset id="ds_data">
+        <ColumnInfo>
+          <Column id="MENU_IMAGE" type="STRING" size="256"/>
+          <Column id="MENU_NAME" type="STRING" size="256"/>
+          <Column id="MENU_URL" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="MENU_NAME">회원관리</Col>
+            <Col id="MENU_IMAGE">Images::img_b_setting.png</Col>
+            <Col id="MENU_URL">Mobile::Mobile_Work.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="MENU_NAME">참석관리</Col>
+            <Col id="MENU_IMAGE">Images::img_b_setting.png</Col>
+            <Col id="MENU_URL">Mobile::Mobile_Append.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="MENU_NAME">강습현황</Col>
+            <Col id="MENU_IMAGE">Images::img_b_setting.png</Col>
+            <Col id="MENU_URL">Mobile::Mobile_History.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="MENU_IMAGE">Images::img_b_setting.png</Col>
+            <Col id="MENU_NAME">강습회수</Col>
+            <Col id="MENU_URL">Mobile::Mobile_Check.xfdl</Col>
+          </Row>
+          <Row>
+            <Col id="MENU_NAME">강습비관리</Col>
+            <Col id="MENU_IMAGE">Images::img_b_setting.png</Col>
+            <Col id="MENU_URL">Mobile::Mobile_PayInfo.xfdl</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

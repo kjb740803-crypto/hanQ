@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExternalAPI">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.ExternalAPI" shorttypename="ExternalAPI" csstypename="ExternalAPI" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="외부 앱에 정의된 API 모듈을 연동할 수 있는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="ExternalAPI의 고유 식별자를 설정하는 속성입니다." csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="ExternalAPI 의 이름을 설정하는 속성입니다." csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android NRE,iOS/iPadOS NRE" description="ExternalAPI 의 부모 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="parent" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="execExtAPI" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="특정 외부 앱에 정의된 API 모듈을 실행하는 메소드입니다.">
+        <Syntax text="ExternalAPI.execExtAPI( strRecvID, strAppID, strAPI [, strParams] )">
+          <Return type="Boolean" description="API 모듈의 실행여부와 관계없이 메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;API 모듈의 실행여부와 관계없이 메소드 실행에 실패하면 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="strAPI" type="String" in="false" out="false" option="false" variable="false" description="실행하려는 API 모듈의 이름을 문자열로 설정합니다." />
+            <Argument name="strAppID" type="String" in="false" out="false" option="false" variable="false" description="실행하려는 API 모듈이 정의된 외부 앱의 ID 를 문자열로 설정합니다." />
+            <Argument name="strParams" type="String" in="false" out="false" option="false" variable="false" description="실행할 API 모듈에 전달할 파라미터를 문자열로 설정합니다.&#xA;&#xA;파라미터가 여러개일 경우 각 파라미터는 공백으로 구분합니다.&#xA;파라미터값에 공백이 포함된 경우는 &quot; ' &quot; (홑따옴표) 를 사용하여야 합니다." />
+            <Argument name="strRecvID" type="String" in="false" out="false" option="false" variable="false" description="실행한 메소드를 구분하기 위한 ID 를 문자열로 설정합니다.&#xA;&#xA;onsuccess, onrecvdata 이벤트에서 ExternalAPIEventIfo 오브젝트의 recvid 속성에 설정한 값이 전달됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAccessible" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="특정 외부 앱에 접근이 가능한지 확인하는 메소드입니다.">
+        <Syntax text="ExternalAPI.isAccessible ( strAppID )">
+          <Return type="Boolean" description="외부 앱의 접근 가능여부와 관계없이 메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;외부 앱의 접근 가능여부와 관계없이 메소드 실행에 실패하면 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="strAppID" type="String" in="false" out="false" option="false" variable="false" description="접근 가능여부를 확인하려는 외부 앱의 ID 를 문자열로 설정합니다.&#xA;&#xA;Android 는 Domain 형태로 설정합니다. (&quot;com.tobesoft.nexacroplatform.testmodule&quot;)&#xA;iOS 는 URL Scheme 형태로 설정합니다. (&quot;TobesoftTestApp://&quot;)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="ExternalAPI 오브젝트에서 요청한 작업이 실패했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ExternalAPI.onerror(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrecvdata" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="외부 앱에서 데이터(문자열)를 전달받았을 때 발생하는 이벤트입니다.">
+        <Syntax text="ExternalAPI.onrecvdata(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="ExternalAPI 오브젝트에서 요청한 작업이 성공했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ExternalAPI.onsuccess(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

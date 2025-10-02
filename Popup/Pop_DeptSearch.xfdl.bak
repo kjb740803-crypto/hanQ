@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Pop_EmpSearch" width="340" height="400" titletext="New Form" onload="Form_onload">
+    <Layouts>
+      <Layout height="400" width="340">
+        <Static id="Static00" taborder="0" text="회원정보" left="10" top="5" width="193" height="30" right="" bottom="" cssclass="sta_WF_emptitle" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <Grid id="grd_list" taborder="1" left="10" top="40" width="" height="310" right="10" bottom="" binddataset="ds_member" autofittype="col" oncelldblclick="fn_ok" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="52"/>
+                <Column size="105"/>
+                <Column size="119"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="NO"/>
+                <Cell col="1" text="성명"/>
+                <Cell col="2" text="연락처"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:MEMBER_NO" textAlign="center"/>
+                <Cell col="1" text="bind:MEMBER_NAME" textAlign="center"/>
+                <Cell col="2" text="bind:MEMBER_PHONE"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="btn_ok" taborder="3" text="OK" left="83" top="358" width="77" height="32" onclick="fn_ok" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+        <Button id="btn_cancel" taborder="2" text="Cancel" left="183" top="358" width="77" height="32" onclick="fn_cancel" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_member">
+        <ColumnInfo>
+          <Column id="MEMBER_NO" type="STRING" size="32"/>
+          <Column id="MEMBER_NAME" type="STRING" size="32"/>
+          <Column id="MEMBER_PHONE" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[this.Form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.fn_deptSearch();
+};
+
+
+this.fn_deptSearch = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{	
+	var args = "";
+	  
+	this.gfn_transCOMMClear();   
+	// input , output,args,select  
+	
+	  
+	this.gfn_addTransInfo("","output",args,"003,Member,1");	
+	var objEnv = nexacro.getEnvironment(); 
+
+   
+	var strSvcId    = "search";  
+	var strSvcUrl   = "SvcURL::SqlManager/JspAgent.jsp"; 
+	var inData      = "";       
+	var outData     = "ds_member=output";
+	var strArg      = "";       
+	var callBackFnc = "fnCallback";      
+
+	this.gfn_xtransCommon( strSvcId , 	// transaction을 구분하기 위한 svc id값
+								strSvcUrl , 	// trabsaction을 요청할 주소
+								inData , 		// 입력값으로 보낼 dataset id , a=b형태로 실제이름과 입력이름을 매칭
+								outData , 		// 처리결과값으로 받을 dataset id, a=b형태로 실제이름과 입력이름을 매칭
+								strArg, 			// 입력갑스로 보낼 arguments, strFormData="20120607"
+								callBackFnc,
+								true); // 통신방법 정의 [생략가능]
+};
+
+this.fnCallback = function(svcID, errCD, errMSG)
+{
+trace(this.ds_member.saveXML());
+	if(errCD < 0){
+		this.alert("Error: " + errMSG);
+	}
+}
+
+this.fn_ok = function()
+{
+	var sRtn =  this.ds_dept.getColumn(this.ds_dept.rowposition, "MEMBER_NO") + "|";
+	    sRtn += this.ds_dept.getColumn(this.ds_dept.rowposition, "MEMBER_NAME");
+		sRtn += this.ds_dept.getColumn(this.ds_dept.rowposition, "MEMBER_PHONE");
+	this.close(sRtn);   
+}
+
+this.fn_cancel = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.close();
+};]]></Script>
+  </Form>
+</FDL>

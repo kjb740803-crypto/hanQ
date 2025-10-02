@@ -1,0 +1,15 @@
+{
+	"name": "EduLib",
+	"version": "1.0.0.0",
+	"description": "Library for nexacro platform17",
+	"license": "",
+	"scripts": [
+        "EduLib/Frame.js",
+        "EduLib/Util.js",
+        "EduLib/Transaction.js",
+        "EduLib/Popup.js",
+        "EduLib/Message.js",
+        "CryptoJS/pad-zeropadding.js",
+        "CryptoJS/seed.js",
+	]
+}

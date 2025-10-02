@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Vscroll" width="660" height="720" titletext="New Form" onmousewheel="Vscroll_onmousewheel">
+    <Layouts>
+      <Layout height="720" width="660">
+        <Button id="Button00" taborder="0" text="Button00" left="37" top="28" width="208" height="108"/>
+        <Button id="Button01" taborder="1" text="Button01" left="50" top="180" width="178" height="142"/>
+        <Button id="Button02" taborder="2" text="Button02" left="55" top="345" width="265" height="265"/>
+        <Button id="Button03" taborder="3" text="Button03" left="373" top="396" width="161" height="11"/>
+        <Button id="Button04" taborder="4" text="Button04" left="299" top="650" width="75" height="69"/>
+        <Button id="Button05" taborder="5" text="Button05" left="590" top="430" width="66" height="82"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[this.Vscroll_onmousewheel = function(obj:nexacro.Form,e:nexacro.MouseWheelEventInfo)
+{
+	if(e.amount > 0)
+	{
+		obj.scrollBy( -5, -5);	
+	} else { 
+		obj.scrollBy( 5, 5 );	
+	}	
+	return true;     
+};]]></Script>
+    <Objects>
+      <Dataset id="Dataset00">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">2</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">3</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">4</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">5</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">6</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">7</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">8</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">9</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">10</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">11</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">12</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">13</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">14</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">15</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">16</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">2</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">3</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">4</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">5</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">6</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">7</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">8</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">9</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">10</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">11</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">12</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">13</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">14</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">15</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">16</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">17</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

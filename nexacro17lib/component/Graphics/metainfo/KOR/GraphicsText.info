@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GraphicsText">
+    <ObjectInfo finalclass="false" inheritance="nexacro._GraphicsShape" classname="nexacro.GraphicsText" shorttypename="GraphicsText" csstypename="" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Graphics 컴포넌트에 텍스트를 표시할 때 사용되는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="" normalpropertyname="color" />
+      <Property name="fillstyle" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="fillstyle" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" normalpropertyname="font" />
+      <Property name="height" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="height" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 고유 식별자를 설정하는 속성입니다." csspropertyname="" normalpropertyname="id" />
+      <Property name="miterlimit" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="miterlimit" />
+      <Property name="opacity" group="Style" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 영역의 투명도를 설정하는 속성입니다." csspropertyname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 부모 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" normalpropertyname="parent" />
+      <Property name="strokecap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokecap" />
+      <Property name="strokejoin" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokejoin" />
+      <Property name="strokepen" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="strokepen" />
+      <Property name="text" group="Appearance" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" normalpropertyname="text" />
+      <Property name="textAlign" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 x 속성값 위치를 기준으로 텍스트가 표시되는 가로위치를 설정하는 속성입니다." csspropertyname="" normalpropertyname="textAlign" />
+      <Property name="textwidth" group="Style" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="wordWrap 속성값이 &quot;char&quot; 일 때 GraphicsText 에 텍스트가 표시되는 영역의 너비를 설정하는 속성입니다." csspropertyname="" normalpropertyname="textwidth" />
+      <Property name="verticalAlign" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="top" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 y 속성값 위치를 기준으로 텍스트가 표시되는 세로위치를 설정하는 속성입니다." csspropertyname="" normalpropertyname="verticalAlign" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 가 화면에 표시될지 여부를 설정하는 속성입니다." csspropertyname="" normalpropertyname="visible" />
+      <Property name="width" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" normalpropertyname="width" />
+      <Property name="wordWrap" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에 표시되는 텍스트가 textwidth 속성값보다 길 경우 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="" normalpropertyname="wordWrap" />
+      <Property name="x" group="Position" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 오브젝트를 기준으로 GraphicsText 가 표시될 x 축 좌표값을 설정하는 속성입니다." csspropertyname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 오브젝트를 기준으로 GraphicsText 가 표시될 y 축 좌표값을 설정하는 속성입니다." csspropertyname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" normalpropertyname="font" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 를 메모리에서 완전히 삭제하는 메소드입니다.">
+        <Syntax text="GraphicsText.destroy()">
+          <Return type="Boolean" description="GraphicsText 가 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;GraphicsText 가 정상적으로 삭제되지 않으면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 가 표시되는 영역정보를 Graphics 컴포넌트 기준으로 Border 영역을 포함하여 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.getBoundRect( );">
+          <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsText 에 Border 가 있을 경우 반환되는 영역정보에는 Border 영역이 포함됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 와 부모가 동일한 Graphics 오브젝트 중 다음 순서의 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.getNextSibling()">
+          <Return type="Object" description="부모가 동일한 다음 순서의 Graphics 오브젝트를 반환합니다.&#xA;&#xA;다음 순서의 Graphics 오브젝트가 없을 경우 null 을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 가 표시되는 영역정보를 부모 오브젝트 기준으로 Border 영역을 포함하여 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.getOffsetBoundRect( );">
+          <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsText 에 Border 가 있을 경우 반환되는 영역정보에는 Border 영역이 포함됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 가 표시되는 영역정보를 부모 오브젝트 기준으로 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.getOffsetRect( );">
+          <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsText 에 Border 가 있어도 Border 영역과 관계없이 GraphicsText 의 실제 영역이 반환됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 가 표시되는 영역정보를 부모 오브젝트 기준으로 Border 영역을 제외하고 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.getOffsetRegion( );">
+          <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsText 에 Border 가 있을 경우 반환되는 영역정보에는 Border 영역이 제외됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 와 부모가 동일한 Graphics 오브젝트 중 이전 순서의 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.getPreviousSibling()">
+          <Return type="Object" description="부모가 동일한 이전 순서의 Graphics 오브젝트를 반환합니다.&#xA;&#xA;이전 순서의 Graphics 오브젝트가 없을 경우 null 을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 영역정보를 Graphics 컴포넌트 기준으로 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.getRect( );">
+          <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsText 에 Border 가 있어도 Border 영역과 관계없이 GraphicsText 의 실제 영역이 반환됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 가 표시되는 영역정보를 Graphics 컴포넌트 기준으로 Border 영역을 제외하고 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.getRegion( );">
+          <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;GraphicsText 에 Border 가 있을 경우 반환되는 영역정보에는 Border 영역이 제외됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEmptyRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에 설정된 텍스트의 존재여부를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.isEmptyRect()">
+          <Return type="Boolean" description="GraphicsText 에 설정된 텍스트가 없으면 true 를 반환합니다.&#xA;&#xA;GraphicsText 에 설정된 텍스트가 있으면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 좌표위치가 GraphicsText 영역에 포함되는지 여부를 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.isHitTest( nX, nY )">
+          <Return type="Boolean" description="인수로 전달된 좌표위치가 GraphicsText 영역에 포함되면 true 를 반환합니다.&#xA;&#xA;인수로 전달된 좌표위치가 GraphicsText 영역에 포함되지 않으면 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="확인할 위치의 x 좌표값을 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;설정값은 Graphics 컴포넌트를 기준으로 처리됩니다." />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="확인할 위치의 y 좌표값을 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;설정값은 Graphics 컴포넌트를 기준으로 처리됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에 회전효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsText.rotate( nAngle [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nAngle" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 회전될 각도를 숫자로 설정합니다.&#xA;&#xA;양수로 설정 시 시계방향으로 회전합니다.&#xA;음수로 설정 시 반시계방향으로 회전합니다." />
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="회전의 중심이 되는 x 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="회전의 중심이 되는 y 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에 확대/축소 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsText.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="확대/축소의 중심이 되는 x 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="확대/축소의 중심이 되는 y 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="현재 크기에서 확대/축소 될 가로 배율을 실수로 설정합니다.&#xA;&#xA;1.0 보다 큰값을 설정하면 GraphicsText 가 확대됩니다.&#xA;1.0 보다 작은값을 설정하면 GraphicsText 가 축소됩니다." />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="현재 크기에서 확대/축소 될 세로 배율을 실수로 설정합니다.&#xA;&#xA;1.0 보다 큰값을 설정하면 GraphicsText 가 확대됩니다.&#xA;1.0 보다 작은값을 설정하면 GraphicsText 가 축소됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 일부 영역만 표시되게 Clipping 할 영역의 좌표를 설정하는 메소드입니다.">
+        <Syntax text="GraphicsText.setClipRect( nX, nY, nWidth, nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="Clipping 할 영역의 높이를 숫자로 설정합니다.&#xA;&#xA;설정값은 nY 파라미터값을 기준으로 처리됩니다." />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="Clipping 할 영역의 너비를 숫자로 설정합니다.&#xA;&#xA;설정값은 nX 파라미터값을 기준으로 처리됩니다." />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="Clipping 할 영역의 x 좌표를 숫자로 설정합니다.&#xA;&#xA;설정값은 GraphicsText 의 x 속성값 위치를 0 으로 가정하고 처리됩니다." />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="Clipping 할 영역의 y 좌표를 숫자로 설정합니다.&#xA;&#xA;설정값은 GraphicsText 의 y 속성값 위치를 0 으로 가정하고 처리됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 원본 위치를 기준으로 Transform 관련 효과를 연속적으로 적용하는 메소드입니다.">
+        <Syntax text="GraphicsText.setTransform( strMethod );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="GraphicsText 에 적용할 Transform 관련 메소드를 &quot;,&quot; 로 구분하여 설정합니다.&#xA;translate(), scale(), rotate(), shear() 메소드를 사용할 수 있습니다.&#xA;null 값 설정 시 transform 효과가 지정되지 않은 상태로 초기화합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에 비틀기 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsText.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nCenterX" type="Number" in="false" out="false" option="false" variable="false" description="비틀기의 중심이 되는 x 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nCenterY" type="Number" in="false" out="false" option="false" variable="false" description="비틀기의 중심이 되는 y 좌표를 숫자로 설정합니다.&#xA;설정값은 부모 오브젝트를 기준으로 처리됩니다.&#xA;&#xA;값 생략 시 0 값이 적용됩니다." />
+            <Argument name="nRadianX" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 x 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+            <Argument name="nRadianY" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 y 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 타입을 문자열로 반환하는 메소드입니다.">
+        <Syntax text="GraphicsText.toString();">
+          <Return type="String" description="일반적으로 &quot;[object GraphicsText]&quot; 형태의 문자열을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 에 Transform 관련 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsText.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nScaleX" type="Number" in="false" out="false" option="false" variable="false" description="현재 크기에서 확대/축소 될 가로 배율을 실수로 설정합니다.&#xA;&#xA;1.0 보다 큰값을 설정하면 GraphicsText 가 확대됩니다.&#xA;1.0 보다 작은값을 설정하면 GraphicsText 가 축소됩니다." />
+            <Argument name="nScaleY" type="Number" in="false" out="false" option="false" variable="false" description="현재 크기에서 확대/축소 될 세로 배율을 실수로 설정합니다.&#xA;&#xA;1.0 보다 큰값을 설정하면 GraphicsText 가 확대됩니다.&#xA;1.0 보다 작은값을 설정하면 GraphicsText 가 축소됩니다." />
+            <Argument name="nShearX" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 x 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+            <Argument name="nShearY" type="Number" in="false" out="false" option="false" variable="false" description="현재 모습에서 y 축 기준으로 비틀어질 각도를 라디안값으로 설정합니다." />
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="현재 위치에서 x 축 방향으로 이동 할 거리를 pixel 단위의 숫자로 설정합니다." />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="현재 위치에서 y 축 방향으로 이동 할 거리를 pixel 단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE9,IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsText 의 위치가 이동되는 효과를 적용하는 메소드입니다.">
+        <Syntax text="GraphicsText.translate( nTransX, nTransY );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTransX" type="Number" in="false" out="false" option="false" variable="false" description="현재 위치에서 x 축 방향으로 이동 할 거리를 pixel 단위의 숫자로 설정합니다." />
+            <Argument name="nTransY" type="Number" in="false" out="false" option="false" variable="false" description="현재 위치에서 y 축 방향으로 이동 할 거리를 pixel 단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

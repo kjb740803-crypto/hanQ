@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Phone">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.Phone" shorttypename="Phone" csstypename="ExternalAPI" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android NRE,iOS/iPadOS NRE" description="This object provides smartphone-dedicated functions including phone call." />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="makeCall" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="This static method opens the phone dialer of a mobile device with the phone number delivered as an argument.">
+        <Syntax text="Phone.makeCall( strPhoneNumber [, bAutoDialing] )">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if you do not set the strPhoneNumber parameter or use an invalid character.&#xA;&#xA;Otherwise, this method will return &quot;true&quot; provided there is no problem." />
+          <Arguments>
+            <Argument name="bAutoDialing" type="Boolean" in="false" out="false" option="false" variable="false" description="If you specify &quot;true&quot;, a phone call will proceed automatically after the dialer is opened.&#xA;If you specify &quot;false&quot;, just the dialer will be opened without an automatic phone call.&#xA;&#xA;The default value is &quot;false&quot;.&#xA;In the iOS/iPadOS NRE, this parameter will work as if it is set to &quot;false&quot; regardless of an actual value." />
+            <Argument name="strPhoneNumber" type="String" in="false" out="false" option="false" variable="false" description="This is a string that represents the phone number of a person to contact." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

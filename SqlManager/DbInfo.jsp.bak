@@ -1,0 +1,20 @@
+<%
+    /***********************
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        String jdbcDriver = "jdbc:sqlserver://172.10.10.20:1443;databaseName=TOBE_OPEN;";
+        String dbUser = "tobeopen";
+        String dbPass = "tobe@open@0701";
+		
+    String db_driver   = "com.microsoft.sqlserver.jdbc.SQLServerDriver";         
+    String db_url      = "jdbc:sqlserver://172.27.0.91:1433;databaseName=NEXTp"; 
+    String db_user     = "NEXTp"; 
+    String db_password = "eFd3JysRxlk/";
+		
+    ********************************/
+    String db_driver   = "com.microsoft.sqlserver.jdbc.SQLServerDriver";         
+    String db_url      = "jdbc:sqlserver://10.0.20.4:14333;databaseName=NEXTp"; 
+    String db_user     = "NEXTp"; 
+    String db_password = "ld1r4DIztfg4";
+
+
+%>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.VirtualFile">
+    <ObjectInfo finalclass="false" inheritance="" classname="nexacro.VirtualFile" shorttypename="VirtualFile" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ローカルシステムのファイルを読み書きするために使用される仮想ファイルオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="async" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE" description="VirtualFileに要求されたタスクが動作する方法を設定するプロパティです。" csspropertyname="" normalpropertyname="async" />
+      <Property name="filename" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileにロードされたファイルの名前を持つ、読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="filename" />
+      <Property name="fullpath" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileにオープンされたファイルの完全なパス情報を持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="fullpath" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileの一意識別子を設定するプロパティです。" csspropertyname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileの名前を設定するプロパティです。" csspropertyname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileの親オブジェクトを持つ読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="parent" />
+      <Property name="path" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileにオープンされたファイルのパス情報を取得する読み取り専用のプロパティです。" csspropertyname="" normalpropertyname="path" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileにイベントを宣言して追加するメソッドです。">
+        <Syntax text="VirtualFile.addEvent( strEventID )">
+          <Return type="Boolean" description="イベントの追加に成功した場合は「true」を返します。&#xA;&#xA;イベントの追加に失敗した場合、もしくは同一のイベントIDが既に宣言されている場合は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="対象のイベントのIDを文字列として指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileのイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="VirtualFile.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;正常に追加されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="特定のイベントに登録されたハンドラ関数を削除するメソッドです。">
+        <Syntax text="VirtualFile.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントから削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileにオープンしたファイルを閉じるメソッドです。">
+        <Syntax text="VirtualFile.close()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileで特定のファイルをコピーするメソッドです。">
+        <Syntax text="VirtualFile.copy( strSrc, strDest );">
+          <Return type="Boolean" description="パラメータが省略されたり許可されない文字を使用した場合には、「false」を返します。&#xA;&#xA;それ以外の通常の場合には、「true」を返します。" />
+          <Arguments>
+            <Argument name="strDest" type="String" in="false" out="false" option="false" variable="false" description="コピーして生成されるファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスまたはAliasを使用して設定します。" />
+            <Argument name="strSrc" type="String" in="false" out="false" option="false" variable="false" description="コピーする元ファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスまたはAliasを使用して設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileでフォルダを生成するメソッドです。">
+        <Syntax text="VirtualFile.createDirectory( strPath, [bAllCreate] )">
+          <Return type="Boolean" description="フォルダの生成有無に関係なく、メソッドの実行有無を返します。" />
+          <Arguments>
+            <Argument name="bAllCreate" type="Boolean" in="false" out="false" option="false" variable="false" description="trueに設定時、中間のパスの両方を生成した後、フォルダが生成されます。&#xA;falseに設定時、中間のパスが存在する場合のみフォルダが生成されます。&#xA;&#xA;値省略時、falseに適用されます。" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="生成するフォルダ名をパスと一緒に設定します。&#xA;&#xA;「C:\\tobe_dir\\xplatform_test」のように絶対パスを設定した場合、該当位置にフォルダが生成されます。&#xA;「My_Folder」のようにディレクトリ名のみ設定した場合、「マイドキュメント」位置にフォルダが生成されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileからフォルダを削除するメソッドです。">
+        <Syntax text="VirtualFile.deleteDirectory( strPath [, bAllChild] )">
+          <Return type="Boolean" description="フォルダの削除有無に関係なく、メソッドを実行有無を返します。" />
+          <Arguments>
+            <Argument name="bAllChild" type="Boolean" in="false" out="false" option="false" variable="false" description="trueに設定時、削除されるフォルダの下位フォルダとファイルがすべて削除されます。&#xA;falseに設定時、削除されるフォルダの下位フォルダとファイルを削除しません。&#xA;&#xA;値省略時、falseに適用されます。" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="削除するフォルダ名をパスと一緒に設定します。&#xA;&#xA;「C:\\nexaweb\\TestFolder」のように絶対パスを設定した場合、該当位置にフォルダが削除されます。&#xA;「My_Folder」のようにフォルダ名のみ設定した場合、「マイドキュメント」位置にフォルダが削除されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileの特定のイベントのハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="VirtualFile.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索しようとするハンドラ関数が存在しない場合「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileの特定のイベントに指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="VirtualFile.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="指定されたインデックスのハンドラ関数オブジェクトを返します。&#xA;指定されたインデックスにハンドラ関数が存在しない場合、 &quot;null&quot;を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得するハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="特定のフォルダ内のファイルまたはサブフォルダをリストに返すメソッドです。">
+        <Syntax text="VirtualFile.getFileList( strPath, strSearchExpr [, constOption] )">
+          <Return type="Boolean" description="メソッドの実行に成功した場合は「true」を返します。&#xA;メソッドの実行に失敗、もしくは無効なパラメータ値を設定した場合は「false」を返します。&#xA;&#xA;ファイルまたはフォルダのリストを返すかどうかに関係なく、メソッドを実行するかどうかを返します。" />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="返すファイル一覧を構成する検索オプションを定数の値に設定します。&#xA;&#xA;「VirtualFile.findAll」もしくは1 (0x01)に設定時、すべてのファイルとサブフォルダを対象に検索します。&#xA;「VirtualFile.findFileOnly」もしくは2 (0x02)設定時、ファイルのみを対象に検索します。&#xA;「VirtualFile.findDirectoryOnly」もしくは4 (0x04)設定時、サブフォルダのみを対象に検索します。&#xA;&#xA;「VirtualFile.findRecursive」もしくは8 (0x08)設定時、サブフォルダに対する再帰検索を行います。&#xA;「VirtualFile.findCaseless」もしくは16 (0x10)設定時、大文字と小文字を区別しません。&#xA;&#xA;「VirtualFile.findCaseless&quot;の値は、他のオプションと「|」文字で区切って一緒にすることができます。&#xA;&#xA;値省略時、「VirtualFile.findAll」に適用されます。" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="ファイルまたはフォルダのリストを取得する対象フォルダを設定します。&#xA;&#xA;絶対パスもしくはAliasを使用して設定します。" />
+            <Argument name="strSearchExpr" type="String" in="false" out="false" option="false" variable="false" description="返されるリストに含めるファイルまたはフォルダの検索条件を正規表現に設定します。&#xA;設定した正規表現をファイル名またはフォルダ名とマッチングします。&#xA;&#xA;正規表現でEscape文字（\）を使用する場合、2回（\\）設定する必要があります。&#xA;例）Textの後に数字が付いたファイル名またはフォルダ名を検索した場合、「Text\\d」の形で設定&#xA;&#xA;正規表現で「.」文字は改行文字以外のすべての文字とマッチングされるので、「.」文字自体をマッチングするためには「\\.」に設定する必要があります。&#xA;例）拡張子が「txt」であるファイル名を検索した場合、「\\.txt$」の形で設定" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileにオープンされたファイルのサイズを返すメソッドです。">
+        <Syntax text="VirtualFile.getFileSize()">
+          <Return type="Boolean" description="ファイルのサイズを取得できる場合は、trueを返します。&#xA;&#xA;ファイルのサイズを取得できない場合は、falseを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileのイベントにハンドラ関数を指定した位置に挿入するメソッドです。">
+        <Syntax text="VirtualFile.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
+          <Return type="Number" description="イベントに挿入されたハンドラ関数のインデックスを返します。&#xA;同一のハンドラ関数が既に存在する場合は該当のハンドラ関数のインデックスを返します。&#xA;&#xA;正常に挿入されなかった場合は「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="ハンドラ関数が挿入される位置のインデックス値を指定します。&#xA;&#xA;-1を指定した場合は最後に追加されます。&#xA;イベントに設定されたハンドラ関数の個数より大きい値を指定した場合は最後に追加されます。&#xA;NaN値を指定した場合はECMA Scriptの仕様に基づいて0が設定されます。" />
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数をオブジェクト型として指定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義されているスコープを指定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="対象のイベントIDを指定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isExist" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="指定されたファイルもしくはフォルダの存在有無を返すメソッドです。">
+        <Syntax text="VirtualFile.isExist(strPath)">
+          <Return type="Boolean" description="パラメータが省略されたり許可されていない文字が使用されている場合には、falseを返します。&#xA;&#xA;それ以外の通常の場合には、trueを返します。" />
+          <Arguments>
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="存在有無を確認するファイルもしくはフォルダを設定します。&#xA;&#xA;絶対パスもしくはAliasを使用して設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileにロードされたファイルを条件に合わせてオープンするメソッドです。">
+        <Syntax text="VirtualFile.open( strFileName ,constOptions )">
+          <Return type="Boolean" description="ファイルのオープン有無に関係なく、メソッドの実行に成功した場合、trueを返します。&#xA;&#xA;ファイルのオープン有無に関係なく、メソッドの実行に失敗した場合、falseを返します。&#xA;パラメータを省略したり、無効な文字が設定された場合、falseを返します。" />
+          <Arguments>
+            <Argument name="constOptions" type="Object" in="false" out="false" option="false" variable="false" description="ファイルを開くオプションを定数に設定します。&#xA;各オプション値は、OR（|）演算子を使用して、重複して設定することができます。&#xA;&#xA;VirtualFile.openReadまたは1を設定時、読み取り専用でファイルをオープンします。&#xA;ファイルが存在しない場合、エラーが発生します。&#xA;&#xA;VirtualFile.openWriteまたは2を設定時、書き込み専用でファイルをオープンします。&#xA;ファイルが存在しない場合は、ファイルを生成します。&#xA;&#xA;VirtualFile.openAppendまたは16を設定時、読み取り/書き込みの用途でファイルを開きます。&#xA;ファイルが存在する場合、開いたファイルで、ファイルポインタが一番最後に位置することになります。&#xA;ファイルが存在しない場合は、ファイルを生成します。&#xA;&#xA;VirtualFile.openCreateまたは4096の設定時、ファイルを生成して開きます。&#xA;ファイルが存在する場合、該当ファイルをオープンします。&#xA;&#xA;VirtualFile.openTextまたは256の設定時、ファイルをテキストモードでオープンします。&#xA;&#xA;VirtualFile.openBinaryまたは512の設定時、ファイルをバイナリモードでオープンします。" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="開くファイル名を絶対パスもしくはAliasを使用して設定します。&#xA;&#xA;* FileUpload、FileUpTransfer、FileDialogもしくはDrag＆Dropで配信されたVirtualFileオブジェクトである場合にのみ、strFileNameパラメータ値をnullもしくは空値に設定することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileにオープンされたファイルの内容を読み込むメソッドです。">
+        <Syntax text="VirtualFile.read([nLength [, strCharset]])">
+          <Return type="Boolean" description="パラメータに許可されていない文字が使用された場合はfalseを返します。&#xA;&#xA;上記以外の正常の場合はtrueを返します。" />
+          <Arguments>
+            <Argument name="nLength" type="Number" in="false" out="false" option="false" variable="false" description="ファイルから読み込む長さをByte単位の数値に設定します。&#xA;&#xA;値省略時、ファイル全体を読み込みます。" />
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="ファイルから読み込む内容に適用するCharSetを設定します。&#xA;&#xA;Windows NREでのみ適用され、モバイルは「UTF-8」で動作します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileにオープンされたファイルの内容を特定の位置まで読み込むメソッドです。">
+        <Syntax text="VirtualFile.readLine([strDelimeter[, strCharset]])">
+          <Return type="Boolean" description="パラメータに許可されていない文字が使用された場合には、falseを返します。&#xA;&#xA;それ以外の通常の場合には、trueを返します。" />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="ファイルから読み込む内容に適用するCharSetを設定します。&#xA;&#xA;Windows NREでのみ適用され、モバイルは「UTF-8」で動作します。" />
+            <Argument name="strDelimeter" type="String" in="false" out="false" option="false" variable="false" description="ファイルの読み込みを停止する区切り文字を設定します。&#xA;&#xA;値省略時、「\n」に適用されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="remove" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileに指定されたファイルを削除するメソッドです。">
+        <Syntax text="VirtualFile.remove( strFilePath )&#xA;VirtualFile.remove( objVirtualFile )">
+          <Return type="Boolean" description="パラメータが省略もしくは許可されていない文字が使用された場合には、「false」を返します。&#xA;それ以外の通常の場合には、「true」を返します。" />
+          <Arguments>
+            <Argument name="objVirtualFile" type="Object" in="false" out="false" option="false" variable="false" description="FileDialogオブジェクトで返された、削除するVirtualFileオブジェクトを設定します。&#xA;&#xA;メソッドを実行するVirtualFileオブジェクト自分自身を設定することができません。&#xA;自分自身を設定した場合、onerrorイベントが発生します。" />
+            <Argument name="strFilePath" type="String" in="false" out="false" option="false" variable="false" description="削除ファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスもしくはAliasを使用して設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileに宣言された特定のイベントを削除するメソッドです。">
+        <Syntax text="VirtualFile.removeEvent( strEventID )">
+          <Return type="Boolean" description="イベントの削除に成功した場合は「true」を返します。&#xA;&#xA;イベントの削除に失敗、もしくは宣言されていないイベントIDの設定時は「false」を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="VirtualFileから削除するイベントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileの特定のイベントのハンドラ関数を削除するメソッドです。">
+        <Syntax text="VirtualFile.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功した場合、「1」を返します。&#xA;ハンドラ関数を削除に失敗した場合、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rename" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileで特定のファイルを移動するか、ファイル名を変更するメソッドです。">
+        <Syntax text="VirtualFile.rename( strOldname, strNewname );">
+          <Return type="Boolean" description="パラメータが省略されたり許可されない文字を使用した場合には、「false」を返します。&#xA;&#xA;それ以外の通常の場合には、「true」を返します。" />
+          <Arguments>
+            <Argument name="strNewname" type="String" in="false" out="false" option="false" variable="false" description="新たに移動される位置とファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスまたはAliasを使用して設定します。" />
+            <Argument name="strOldname" type="String" in="false" out="false" option="false" variable="false" description="位置移動や名前を変更するファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスまたはAliasを使用して設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="renameDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileでフォルダ名を変更するメソッドです。">
+        <Syntax text="VirtualFile.renameDirectory( strOldName, strNewName )">
+          <Return type="Boolean" description="フォルダ名の変更有無に関係なく、メソッドを実行有無を返します。" />
+          <Arguments>
+            <Argument name="strNewName" type="String" in="false" out="false" option="false" variable="false" description="パスが含まれていない新しいフォルダ名を文字列に設定します。" />
+            <Argument name="strOldName" type="String" in="false" out="false" option="false" variable="false" description="変更するフォルダ名をパスと一緒に設定します。&#xA;&#xA;「C:\\nexaweb\\TestFolder」のように絶対パスを設定した場合、該当位置にフォルダが変更されます。&#xA;「My_Folder」のようにフォルダ名のみ設定した場合、「マイドキュメント」位置にフォルダが変更されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileにオープンしたファイルで、ファイルポインタの位置を移動するメソッドです。">
+        <Syntax text="VirtualFile.seek(nOffset[, constOption])">
+          <Return type="Boolean" description="パラメータに許可されていない文字が使用された場合には、falseを返します。&#xA;&#xA;それ以外の通常の場合には、trueを返します。" />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="ファイルポインタを移動するときに適用するオプションを定数値に設定します。&#xA;&#xA;「VirtualFile.seekBegin」もしくは0設定時、ファイルの開始位置を基準にファイルポインタが移動します。&#xA;「VirtualFile.seekCurrent」もしくは1設定時、現在のファイルポインタの位置を基準に移動します。&#xA;「VirtualFile.seekEnd」もしくは2設定時、ファイルの最後の位置を基準にファイルポインタが移動します。&#xA;&#xA;値省略時、「VirtualFile.seekCurrent」に適用されます。" />
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="現在の位置からファイルポインタを移動させる位置をByte単位の数値に設定します。&#xA;&#xA;負の値の設定時、現在の位置から開始位置の方向にポインタが移動します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="VirtualFile.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="代替するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="VirtualFileにオープンされたファイルにデータを保存するメソッドです。">
+        <Syntax text="VirtualFile.write( varData [, strCharset] )">
+          <Return type="Boolean" description="必須パラメータが省略されているか、パラメータに許可されていない文字が使用された場合はfalseを返します。&#xA;&#xA;上記以外の正常の場合にはtrueを返します。" />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="オープンされたファイルで保存する内容に適用するCharSetを設定します。&#xA;&#xA;Windows NREでのみ適用され、モバイルは「UTF-8」で動作します。" />
+            <Argument name="varData" type="Variant" in="false" out="false" option="false" variable="false" description="オープンされたファイルに保存するデータを文字列もしくはBufferオブジェクトの形で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileに要求された作業が失敗した際に発生するイベントです。">
+        <Syntax text="VirtualFile.onerror(obj:nexacro.VirtualFile,e:nexacro.VirtualFileErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileErrorEventInfo" in="false" out="false" option="false" variable="false" description="イベントオブジェクト" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="VirtualFileに要求された作業が成功した際に発生するイベントです。">
+        <Syntax text="VirtualFile.onsuccess(obj:nexacro.VirtualFile,e:nexacro.VirtualFileEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileEventInfo" in="false" out="false" option="false" variable="false" description="イベントオブジェクト" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>
